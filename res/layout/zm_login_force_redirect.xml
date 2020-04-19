@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center" n1:orientation="vertical" n1:paddingTop="12.0dip" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:gravity="center" n1:id="@id/txtTitle" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/zm_title_login_with_google" style="@style/ZMTextView.Large.DialogTitle" />
+    <TextView n1:gravity="center" n1:id="@id/txtSubTitle" n1:paddingLeft="24.0dip" n1:paddingRight="24.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="20.0dip" n1:text="@string/zm_alert_login_with_google_13762" n1:lineSpacingExtra="4.0dip" style="@style/ZMTextView.Medium.Dimmed" />
+    <LinearLayout n1:orientation="vertical" n1:id="@id/llRedirect" n1:background="@drawable/zm_btn_dialog_bg" n1:focusable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="20.0dip">
+        <View n1:background="@drawable/zm_list_divider" n1:layout_width="fill_parent" n1:layout_height="1.0dip" n1:alpha="0.5" />
+        <TextView n1:gravity="center" n1:id="@id/txtOk" n1:duplicateParentState="true" n1:layout_width="fill_parent" n1:layout_height="@dimen/zm_btn_normal_height" n1:text="@string/zm_title_login_with_google" style="@style/ZMTextView.DialogItem" />
+    </LinearLayout>
+    <LinearLayout n1:orientation="vertical" n1:id="@id/llCancel" n1:background="@drawable/zm_btn_dialog_bg_bottom_corner" n1:focusable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <View n1:background="@drawable/zm_list_divider" n1:layout_width="fill_parent" n1:layout_height="1.0dip" />
+        <TextView n1:textStyle="bold" n1:gravity="center" n1:duplicateParentState="true" n1:layout_width="fill_parent" n1:layout_height="@dimen/zm_btn_normal_height" n1:text="@string/zm_btn_cancel" style="@style/ZMTextView.DialogItem" />
+    </LinearLayout>
+</LinearLayout>

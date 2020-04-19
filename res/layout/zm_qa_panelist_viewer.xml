@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout n1:id="@id/panelTitleBar" n1:layout_width="fill_parent" n1:layout_height="@dimen/zm_pt_titlebar_height" n1:weightSum="1.0" n1:layout_alignParentTop="true" n2:zm_leftButton="@id/btnBack" n2:zm_rightButton="@id/btnMore" n2:zm_title="@id/txtTitle" style="@style/ZMTitleBar" xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <Button n1:id="@id/btnBack" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_btn_close" n1:contentDescription="@string/zm_btn_close" style="@style/ZMButton.TitleBar" />
+        <TextView n1:gravity="center_horizontal" n1:id="@id/txtTitle" n1:paddingLeft="5.0dip" n1:paddingRight="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_qa_title_qa" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true" style="@style/ZMTextView.Title" />
+        <ImageView n1:id="@id/btnMore" n1:background="@drawable/zm_btn_more" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="" n1:contentDescription="@string/zm_accessibility_more_action_34305" style="@style/ZMButton" />
+    </us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <LinearLayout n1:orientation="vertical" n1:id="@id/llContent" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_below="@id/panelTitleBar">
+        <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:background="@drawable/zm_titlebar_dark_bg" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <us.zoom.androidlib.widget.segement.ZMSegmentTabLayout n1:layout_gravity="center_horizontal" n1:id="@id/zmSegmentTabLayout" n1:layout_width="wrap_content" n1:layout_height="36.0dip" n3:zm_bar_color="@color/zm_transparent" n3:zm_indicator_color="@color/zm_white" n3:zm_indicator_corner_radius="4.0dip" n3:zm_tab_padding="4.0dip" n3:zm_tab_width="@dimen/zm_qa_tab_width" n3:zm_textBold="BOTH" n3:zm_textSelectColor="@color/zm_text_on_light" n3:zm_textUnselectColor="@color/zm_white" n3:zm_textsize="16.0sp" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        </LinearLayout>
+        <us.zoom.androidlib.widget.ZMViewPager n1:id="@id/viewPager" n1:background="@color/zm_white" n1:paddingTop="5.0dip" n1:paddingBottom="5.0dip" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    </LinearLayout>
+    <LinearLayout n1:orientation="vertical" n1:id="@id/panelNoItemMsg" n1:paddingLeft="30.0dip" n1:paddingRight="30.0dip" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerInParent="true">
+        <TextView n1:gravity="center" n1:id="@id/txtMsg" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/zm_qa_msg_stream_conflict" style="@style/ZMTextView.Medium.OnLight" />
+    </LinearLayout>
+</RelativeLayout>

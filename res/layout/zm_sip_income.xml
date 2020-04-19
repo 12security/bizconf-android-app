@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:background="@color/zm_call_incall_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:gravity="center_horizontal" n1:id="@id/tvBuddyName" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="20.0dip" n1:layout_marginRight="20.0dip" n1:maxLines="1" n1:layout_centerInParent="true" style="@style/UIKitTextView.BuddyName.Large" />
+    <com.zipow.videobox.view.sip.SipIncomeAvatar n1:id="@id/avatar" n1:layout_width="@dimen/zm_sip_income_avatar_bg1_size" n1:layout_height="@dimen/zm_sip_income_avatar_bg1_size" n1:layout_marginBottom="27.0dip" n1:layout_above="@id/tvBuddyName" n1:layout_centerHorizontal="true" n2:backgroundStyle="light" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <TextView n1:gravity="center_horizontal" n1:id="@id/tvStatus" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="20.0dip" n1:layout_marginTop="5.0dip" n1:layout_marginRight="20.0dip" n1:maxLines="1" n1:layout_below="@id/tvBuddyName" style="@style/UIKitTextView.PrimaryText.Normal" />
+    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_above="@id/panelCallBtns" n1:layout_below="@id/tvStatus">
+        <TextView n1:textSize="@dimen/zm_ui_kit_text_size_15sp" n1:textColor="@color/zm_ui_kit_color_black_232333" n1:gravity="center" n1:id="@id/tvCallingFor" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_centerInParent="true" n1:lineSpacingExtra="2.0sp" />
+    </RelativeLayout>
+    <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@id/panelCallBtns" n1:paddingLeft="20.0dip" n1:paddingRight="20.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="40.0dip" n1:layout_alignParentBottom="true">
+        <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:id="@id/panelAcceptEndCall" n1:visibility="gone" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+            <ImageView n1:id="@id/btnAcceptEndCall" n1:layout_width="@dimen/zm_sip_dialpad_key_width" n1:layout_height="@dimen/zm_sip_dialpad_key_width" n1:src="@drawable/zm_sip_end_accept" n1:scaleType="centerInside" n1:contentDescription="@string/zm_sip_end_accept_61381" />
+            <TextView n1:gravity="center" n1:id="@id/txtAccpetEndCall" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:text="@string/zm_sip_end_accept_61381" n1:importantForAccessibility="no" style="@style/ZMTextView.Normal.Grey" />
+        </LinearLayout>
+        <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:id="@id/panelEndCall" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+            <ImageView n1:id="@id/btnEndCall" n1:layout_width="@dimen/zm_sip_dialpad_key_width" n1:layout_height="@dimen/zm_sip_dialpad_key_width" n1:src="@drawable/zm_sip_end_call" n1:contentDescription="@string/zm_btn_decline" />
+            <TextView n1:gravity="center" n1:id="@id/txtEndCall" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:text="@string/zm_btn_decline" n1:importantForAccessibility="no" style="@style/ZMTextView.Normal.Grey" />
+        </LinearLayout>
+        <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:id="@id/panelAcceptCall" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+            <ImageView n1:id="@id/btnAcceptCall" n1:layout_width="wrap_content" n1:layout_height="@dimen/zm_sip_dialpad_key_width" n1:src="@drawable/zm_sip_start_call" n1:scaleType="centerInside" n1:contentDescription="@string/zm_btn_accept_call_14480" />
+            <TextView n1:gravity="center" n1:id="@id/txtAccpetCall" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:text="@string/zm_btn_accept_sip_61381" n1:importantForAccessibility="no" style="@style/ZMTextView.Normal.Grey" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

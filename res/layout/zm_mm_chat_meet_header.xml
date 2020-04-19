@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.zipow.videobox.view.ChatMeetToolbar n1:id="@id/chatMeetToolbar" n1:paddingTop="8.0dip" n1:paddingBottom="12.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_centerVertical="true" />
+    <View n1:background="@color/zm_listview_divider" n1:layout_width="fill_parent" n1:layout_height="8.0dip" />
+</LinearLayout>

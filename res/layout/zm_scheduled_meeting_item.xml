@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:paddingLeft="15.0dip" n1:paddingTop="5.0dip" n1:paddingRight="10.0dip" n1:paddingBottom="5.0dip" n1:descendantFocusability="blocksDescendants" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_toLeftOf="@id/btnStart" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true">
+        <TextView n1:textColor="@color/zm_meetinglistitem_time_today" n1:id="@id/txtTime" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Today 10am" style="@style/ZMTextView.Large.OnLight" />
+        <TextView n1:textStyle="bold" n1:textColor="@color/zm_meetinglistitem_topic" n1:id="@id/txtTopic" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Topic: My Meeting" style="@style/ZMTextView.Normal.OnLight" />
+        <TextView n1:textSize="13.0sp" n1:textColor="@color/zm_meetinglistitem_host" n1:id="@id/txtHost" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Host: Reed Yang" />
+        <TextView n1:textSize="13.0sp" n1:textColor="@color/zm_meetinglistitem_id" n1:id="@id/txtMeetingNo" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Meeting ID: 111-111-111" />
+    </LinearLayout>
+    <Button n1:id="@id/btnStart" n1:duplicateParentState="false" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:minWidth="80.0dip" n1:text="@string/zm_btn_start" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" style="@style/ZMButton.Small" />
+</RelativeLayout>

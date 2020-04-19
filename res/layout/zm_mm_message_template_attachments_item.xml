@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:background="@drawable/zm_msg_template_attachments_bg" n1:paddingLeft="12.0dip" n1:paddingRight="5.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="12.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/img" n1:layout_width="30.0dip" n1:layout_height="40.0dip" n1:layout_marginTop="9.0dip" n1:src="@drawable/zm_mm_template_attachment_img" />
+    <LinearLayout n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="11.0dip" n1:layout_marginTop="12.0dip">
+        <TextView n1:textSize="10.0sp" n1:textColor="@color/zm_template_attachments_txt" n1:ellipsize="end" n1:id="@id/attachments_file_name" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:maxLines="1" />
+        <TextView n1:textSize="10.0sp" n1:textColor="@color/zm_template_attachments_txt" n1:ellipsize="end" n1:id="@id/attachments_file_sub" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:maxLines="1" />
+    </LinearLayout>
+</LinearLayout>

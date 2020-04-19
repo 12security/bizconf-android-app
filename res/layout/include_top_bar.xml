@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="#cc22292c" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="48.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/btn_back" n1:background="@drawable/selector_back_press" n1:padding="14.0dip" n1:layout_width="48.0dip" n1:layout_height="fill_parent" n1:src="@mipmap/ic_back" n1:layout_centerVertical="true" />
+    <View n1:background="#cc111111" n1:layout_width="1.0px" n1:layout_height="fill_parent" n1:layout_marginTop="12.0dip" n1:layout_marginBottom="12.0dip" n1:layout_toRightOf="@id/btn_back" />
+    <TextView n1:textSize="16.0dip" n1:textColor="#ffffffff" n1:id="@id/tv_des" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="8.0dip" n1:text="选择图片" n1:layout_toRightOf="@id/btn_back" n1:layout_centerVertical="true" />
+    <Button n1:textSize="14.0dip" n1:textColor="#ffffffff" n1:id="@id/btn_ok" n1:background="@drawable/selector_top_ok" n1:padding="8.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="8.0dip" n1:layout_marginRight="8.0dip" n1:minWidth="50.0dip" n1:minHeight="30.0dip" n1:text="完成(3/9)" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+    <ImageView n1:id="@id/btn_del" n1:background="@drawable/selector_back_press" n1:padding="14.0dip" n1:visibility="gone" n1:layout_width="48.0dip" n1:layout_height="fill_parent" n1:src="@mipmap/ic_del" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+</RelativeLayout>

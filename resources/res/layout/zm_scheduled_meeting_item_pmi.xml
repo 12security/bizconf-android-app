@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:paddingLeft="5dp" android:paddingTop="5dp" android:paddingRight="5dp" android:paddingBottom="10dp" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_lbl_personal_meeting_id" style="@style/ZMTextView.Normal.OnLight"/>
+    <TextView android:textStyle="normal" android:textColor="@color/zm_meetinglistitem_pmi_id" android:id="@+id/txtMeetingNo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="111-111-111" style="@style/ZMTextView.ExtremLarge.OnLight"/>
+    <us.zoom.androidlib.widget.ZMDynTextSizeTextView android:textColor="@color/zm_highlight" android:id="@+id/txtVanityURL" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" style="@style/ZMTextView.Normal.OnLight"/>
+    <LinearLayout android:orientation="horizontal" android:paddingTop="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:id="@+id/btnStart" android:duplicateParentState="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="60dp" android:text="@string/zm_btn_start" style="@style/ZMButton.Small"/>
+        <Button android:id="@+id/btnInvite" android:duplicateParentState="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:minWidth="60dp" android:text="@string/zm_btn_send_invitation" style="@style/ZMButton.Small"/>
+        <Button android:id="@+id/btnEdit" android:duplicateParentState="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:minWidth="60dp" android:text="@string/zm_btn_edit" style="@style/ZMButton.Small"/>
+    </LinearLayout>
+</LinearLayout>

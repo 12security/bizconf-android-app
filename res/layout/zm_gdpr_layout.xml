@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:paddingBottom="20.0dip" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:gravity="center" n1:id="@id/txtMessage" n1:paddingLeft="10.0dip" n1:paddingTop="10.0dip" n1:paddingRight="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="10.0dip" n1:text="@string/zm_msg_gdrp_new_user_join_meeting_41396" style="@style/ZMTextView.Medium" />
+    <TextView n1:gravity="center" n1:id="@id/txtTerms" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip" n1:layout_marginBottom="10.0dip" n1:text="Terms Of Services" style="@style/ZMTextView.Medium" />
+    <TextView n1:gravity="center" n1:id="@id/txtPrivacy" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip" n1:text="Privacy Policy" style="@style/ZMTextView.Medium" />
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/udesk_root_view" android:background="@color/udesk_black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView android:id="@+id/udesk_rv_photos" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/m_bar_root_view" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/m_top_bar_layout" android:background="@color/udesk_color_f2212123" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_gravity="top" android:id="@+id/m_top_bar" android:focusable="true" android:fitsSystemWindows="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="48dp">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/udesk_back_linear" android:layout_width="50dp" android:layout_height="match_parent" android:layout_alignParentLeft="true">
+                    <ImageView android:id="@+id/udesk_back_img" android:layout_width="@dimen/udesk_20" android:layout_height="@dimen/udesk_20" android:src="@drawable/udesk_titlebar_back"/>
+                </LinearLayout>
+                <View android:layout_gravity="center_vertical" android:id="@+id/m_back_line" android:background="#303135" android:layout_width="1dp" android:layout_height="22dp" android:layout_alignRight="@+id/udesk_back_linear" android:layout_centerVertical="true"/>
+                <TextView android:textSize="@dimen/udesk_sp16" android:textColor="@color/udesk_color_bg_white" android:gravity="center" android:id="@+id/tv_number" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_toRightOf="@+id/m_back_line"/>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_centerInParent="true">
+                    <TextView android:textSize="@dimen/udesk_sp16" android:gravity="center" android:id="@+id/udesk_titlebar_right" android:paddingLeft="@dimen/udesk_10" android:paddingRight="@dimen/udesk_10" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_margin="@dimen/udesk_10" android:layout_marginRight="@dimen/udesk_15" android:minWidth="@dimen/udesk_50" android:text="@string/udesk_send_message"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </FrameLayout>
+        <RelativeLayout android:layout_gravity="bottom" android:id="@+id/m_bottom_bar" android:background="@color/udesk_color_f2212123" android:focusable="true" android:fitsSystemWindows="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@+id/fl_fragment" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/original_select_view" android:layout_width="wrap_content" android:layout_height="42dp" android:layout_below="@+id/fl_fragment" android:layout_centerInParent="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                <CheckBox android:id="@+id/udesk_checkbox" android:background="@drawable/udesk_checkbox_selector" android:clickable="false" android:layout_width="17dp" android:layout_height="17dp" android:layout_marginRight="@dimen/udesk_5" android:button="@null"/>
+                <TextView android:textSize="@dimen/udesk_sp13" android:textColor="@color/udesk_color_bg_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/udesk_original_photos"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/selector_select_view" android:layout_width="wrap_content" android:layout_height="42dp" android:layout_marginRight="@dimen/udesk_15" android:layout_below="@+id/fl_fragment" android:layout_alignParentRight="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                <CheckBox android:id="@+id/udesk_select_checkbox" android:background="@drawable/udesk_checkbox_selector" android:clickable="false" android:layout_width="17dp" android:layout_height="17dp" android:layout_marginRight="@dimen/udesk_5" android:button="@null"/>
+                <TextView android:textSize="@dimen/udesk_sp13" android:textColor="@color/udesk_color_bg_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/udesk_selector_photos"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@drawable/zm_window_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout n1:id="@id/panelTitleBar" n1:layout_width="fill_parent" n1:layout_height="@dimen/zm_pt_titlebar_height" n2:zm_leftButton="@id/btnBack" n2:zm_rightButton="@id/viewRight" n2:zm_title="@id/txtTitle" style="@style/ZMTitleBar" xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <Button n1:id="@id/btnBack" n1:layout_width="wrap_content" n1:layout_height="wrap_content" style="@style/ZMBackButton" />
+        <View n1:id="@id/viewRight" n1:layout_width="0.0dip" n1:layout_height="0.0dip" />
+        <TextView n1:gravity="center_horizontal" n1:id="@id/txtTitle" n1:paddingLeft="5.0dip" n1:paddingRight="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_title_my_profile" style="@style/ZMTextView.Title" />
+    </us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <ScrollView n1:id="@id/panelOptions" n1:background="@drawable/zm_window_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <us.zoom.androidlib.widget.ZMSettingsLayout n1:orientation="vertical" n1:paddingLeft="0.0dip" n1:paddingTop="0.0dip" n1:paddingRight="0.0dip" n1:paddingBottom="0.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <us.zoom.androidlib.widget.ZMSettingsCategory n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/zm_setting_item_group_spacing">
+                <LinearLayout n1:gravity="center|left" n1:orientation="horizontal" n1:id="@id/optionProfilePhoto" n1:paddingLeft="0.0dip" n1:paddingTop="@dimen/zm_setting_item_padding_top" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:paddingBottom="@dimen/zm_setting_item_padding_bottom" n1:focusable="true" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <TextView n1:gravity="left" n1:focusable="false" n1:clickable="false" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_profile_photo" style="@style/ZMTextView.SettingsItem" />
+                    <LinearLayout n1:gravity="center|right" n1:orientation="horizontal" n1:duplicateParentState="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                        <com.zipow.videobox.view.AvatarView n1:id="@id/avatarView" n1:duplicateParentState="false" n1:layout_width="50.0dip" n1:layout_height="50.0dip" n1:layout_marginRight="5.0dip" n3:zm_cornerRadiusRatio="0.32" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+                        <ImageView n1:id="@id/avatarArrow" n1:focusable="false" n1:clickable="false" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_next_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout n1:orientation="horizontal" n1:id="@id/optionDisplayName" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:focusable="true" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <TextView n1:layout_gravity="center|left" n1:focusable="false" n1:clickable="false" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="10.0dip" n1:text="@string/zm_lbl_profile_name" style="@style/ZMTextView.SettingsItem" />
+                    <LinearLayout n1:gravity="center|right" n1:layout_gravity="center_vertical" n1:orientation="horizontal" n1:duplicateParentState="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                        <TextView n1:gravity="right" n1:id="@id/txtDisplayName" n1:focusable="false" n1:clickable="false" n1:duplicateParentState="true" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginRight="5.0dip" n1:text="Reed Yang" n1:layout_weight="1.0" style="@style/ZMTextView.Normal.Dimmed" />
+                        <ImageView n1:id="@id/displayNameArrow" n1:focusable="false" n1:clickable="false" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_next_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout n1:orientation="horizontal" n1:id="@id/optionPresenceStatus" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:focusable="true" n1:visibility="gone" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <TextView n1:layout_gravity="center|left" n1:focusable="false" n1:clickable="false" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="10.0dip" n1:text="@string/zm_lbl_profile_presence_status_40739" style="@style/ZMTextView.SettingsItem" />
+                    <LinearLayout n1:gravity="center|right" n1:layout_gravity="center_vertical" n1:orientation="horizontal" n1:duplicateParentState="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                        <ImageView n1:id="@id/presenceStatus" n1:focusable="false" n1:clickable="false" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="5.0dip" n1:src="@drawable/zm_status_available" />
+                        <TextView n1:gravity="right" n1:id="@id/txtPresenceStatus" n1:focusable="false" n1:clickable="false" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="5.0dip" n1:text="" style="@style/ZMTextView.Normal.Dimmed" />
+                        <ImageView n1:focusable="false" n1:clickable="false" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_next_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout n1:gravity="center|left" n1:id="@id/btnPassword" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:focusable="true" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:weightSum="1.0">
+                    <TextView n1:gravity="left" n1:focusable="false" n1:clickable="false" n1:duplicateParentState="true" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_profile_password" n1:layout_weight="1.0" style="@style/ZMTextView.SettingsItem" />
+                    <ImageView n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_next_arrow" />
+                </LinearLayout>
+                <LinearLayout n1:gravity="center|left" n1:id="@id/panelCustomStatus" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:focusable="true" n1:visibility="visible" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:weightSum="1.0">
+                    <TextView n1:gravity="left" n1:focusable="false" n1:clickable="false" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_custom_status_13602" style="@style/ZMTextView.SettingsItem" />
+                    <TextView n1:ellipsize="end" n1:gravity="right" n1:id="@id/txtCustomStatus" n1:focusable="false" n1:clickable="false" n1:duplicateParentState="true" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/zm_hintl_not_set" n1:singleLine="true" n1:layout_weight="1.0" style="@style/ZMTextView.Normal.Dimmed" />
+                    <ImageView n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_next_arrow" />
+                </LinearLayout>
+            </us.zoom.androidlib.widget.ZMSettingsCategory>
+            <TextView n1:gravity="left" n1:id="@id/customStatusDes" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_custom_status_des_13602" style="@style/ZMTextView.SettingsItemDesc.Small" />
+            <us.zoom.androidlib.widget.ZMSettingsCategory n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <LinearLayout n1:gravity="center|left" n1:id="@id/btnPMI" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:focusable="true" n1:visibility="visible" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:weightSum="1.0">
+                    <us.zoom.androidlib.widget.ZMDynTextSizeTextView n1:gravity="center|left" n1:background="@null" n1:focusable="false" n1:clickable="false" n1:duplicateParentState="true" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_personal_meeting_id_with_abbr" n1:layout_weight="1.0" style="@style/ZMTextView.SettingsItem" />
+                    <TextView n1:gravity="center|right" n1:id="@id/txtMeetingId" n1:background="@null" n1:focusable="false" n1:clickable="false" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="111-111-1111" style="@style/ZMTextView.Normal.Dimmed" />
+                    <ImageView n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_next_arrow" />
+                </LinearLayout>
+                <LinearLayout n1:orientation="horizontal" n1:id="@id/btnMeetingRoomName" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:focusable="true" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <TextView n1:layout_gravity="center|left" n1:focusable="false" n1:clickable="false" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="10.0dip" n1:text="@string/zm_lbl_profile_meeting_room_name" style="@style/ZMTextView.SettingsItem" />
+                    <LinearLayout n1:gravity="center|right" n1:layout_gravity="center_vertical" n1:orientation="horizontal" n1:duplicateParentState="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                        <TextView n1:gravity="right" n1:id="@id/txtMeetingRoomName" n1:focusable="false" n1:clickable="false" n1:duplicateParentState="true" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginRight="5.0dip" n1:text="meeting room name" n1:layout_weight="1.0" style="@style/ZMTextView.Normal.Dimmed" />
+                        <ImageView n1:focusable="false" n1:clickable="false" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_next_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout n1:orientation="horizontal" n1:id="@id/btnCallinCountry" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:focusable="true" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <TextView n1:layout_gravity="center|left" n1:focusable="false" n1:clickable="false" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="10.0dip" n1:text="@string/zm_lbl_profile_default_call_in_country" style="@style/ZMTextView.SettingsItem" />
+                    <LinearLayout n1:gravity="center|right" n1:layout_gravity="center_vertical" n1:orientation="horizontal" n1:duplicateParentState="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                        <TextView n1:gravity="right" n1:id="@id/txtCallinCountry" n1:focusable="false" n1:clickable="false" n1:duplicateParentState="true" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginRight="5.0dip" n1:text="China(+86)" n1:layout_weight="1.0" style="@style/ZMTextView.Normal.Dimmed" />
+                        <ImageView n1:focusable="false" n1:clickable="false" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_next_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout n1:gravity="center|left" n1:orientation="horizontal" n1:id="@id/optionFingerprint" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <us.zoom.androidlib.widget.ZMDynTextSizeTextView n1:gravity="center|left" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_profile_use_fingerprint_id_22438" n1:layout_weight="1.0" style="@style/ZMTextView.SettingsItem" />
+                    <us.zoom.androidlib.widget.ZMCheckedTextView n1:id="@id/chkOpenFingerprint" n1:clickable="false" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:checkMark="@drawable/zm_btn_toggle_default" />
+                </LinearLayout>
+            </us.zoom.androidlib.widget.ZMSettingsCategory>
+            <us.zoom.androidlib.widget.ZMSettingsCategory n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <LinearLayout n1:gravity="center|left" n1:id="@id/btnSignout" n1:paddingLeft="@dimen/zm_setting_item_padding_left" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:focusable="true" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:weightSum="1.0" n1:contentDescription="@string/zm_btn_signout">
+                    <TextView n1:textColor="@color/zm_red" n1:focusable="false" n1:clickable="false" n1:duplicateParentState="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/zm_btn_signout" style="@style/ZMButton.SettingsItem" />
+                </LinearLayout>
+            </us.zoom.androidlib.widget.ZMSettingsCategory>
+        </us.zoom.androidlib.widget.ZMSettingsLayout>
+    </ScrollView>
+</LinearLayout>

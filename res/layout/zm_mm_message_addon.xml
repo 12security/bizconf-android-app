@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center|left" n1:orientation="horizontal" n1:id="@id/panelMsgLayout" n1:paddingLeft="8.0dip" n1:paddingTop="6.0dip" n1:paddingRight="8.0dip" n1:paddingBottom="6.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.zipow.videobox.view.AvatarView n1:layout_gravity="top" n1:id="@id/avatarView" n1:layout_width="35.0dip" n1:layout_height="35.0dip" n1:layout_marginRight="5.0dip" />
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <TextView n1:id="@id/txtScreenName" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:text="Reed Yang" style="@style/ZMTextView.ExSmall.Dimmed" />
+        <include layout="@layout/zm_mm_starred_message_title_view" />
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+            <LinearLayout n1:orientation="vertical" n1:id="@id/panelAddon" n1:layout_width="@dimen/zm_msg_addon_width" n1:layout_height="wrap_content">
+                <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/panelTitle" n1:layout_width="fill_parent" n1:layout_height="30.0dip">
+                    <ImageView n1:id="@id/imgIcon" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginLeft="9.0dip" n1:layout_marginTop="2.0dip" n1:layout_marginBottom="2.0dip" n1:scaleType="fitCenter" n1:minWidth="26.0dip" />
+                    <LinearLayout n1:gravity="right" n1:orientation="horizontal" n1:id="@id/zm_msg_addon_title_linear" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout n1:orientation="vertical" n1:background="@drawable/zm_msg_addon_content_bg" n1:paddingTop="15.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <TextView n1:textColorLink="@color/zm_highlight" n1:id="@id/txtSummary" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="15.0dip" n1:layout_marginRight="15.0dip" style="@style/ZMTextView.Normal.OnLight" />
+                    <TextView n1:textColorLink="@color/zm_highlight" n1:id="@id/txtBody" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="15.0dip" n1:layout_marginTop="5.0dip" n1:layout_marginRight="15.0dip" style="@style/ZMTextView.Normal.Dimmed" />
+                    <TextView n1:id="@id/txtFooter" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="15.0dip" n1:layout_marginTop="5.0dip" n1:layout_marginRight="15.0dip" n1:layout_marginBottom="15.0dip" style="@style/ZMTextView.Small.OnLight" />
+                    <LinearLayout n1:gravity="end|center" n1:id="@id/addon_action_bar_linear" n1:background="@drawable/zm_msg_addon_action_bar_bg" n1:paddingLeft="5.0dip" n1:paddingRight="5.0dip" n1:layout_width="fill_parent" n1:layout_height="35.0dip">
+                        <TextView n1:textSize="10.0sp" n1:textColor="@android:color/white" n1:gravity="center" n1:id="@id/addon_action_btn1" n1:background="@drawable/zm_msg_addon_action_btn_bg" n1:paddingLeft="5.0dip" n1:paddingRight="5.0dip" n1:layout_width="wrap_content" n1:layout_height="20.0dip" n1:layout_marginLeft="5.0dip" n1:maxWidth="90.0dip" n1:minWidth="50.0dip" n1:singleLine="true" />
+                        <TextView n1:textSize="10.0sp" n1:textColor="@android:color/white" n1:gravity="center" n1:id="@id/addon_action_btn2" n1:background="@drawable/zm_msg_addon_action_btn_bg" n1:paddingLeft="5.0dip" n1:paddingRight="5.0dip" n1:layout_width="wrap_content" n1:layout_height="20.0dip" n1:layout_marginLeft="5.0dip" n1:maxWidth="90.0dip" n1:minWidth="50.0dip" n1:singleLine="true" />
+                        <TextView n1:textSize="10.0sp" n1:textColor="@android:color/white" n1:gravity="center" n1:id="@id/addon_action_btn_more" n1:background="@drawable/zm_msg_addon_action_btn_bg" n1:padding="0.0px" n1:layout_width="25.0dip" n1:layout_height="20.0dip" n1:layout_marginLeft="8.0dip" n1:text="..." />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView n1:id="@id/zm_mm_starred" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="6.0dip" n1:src="@drawable/zm_mm_starred_message_icon" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

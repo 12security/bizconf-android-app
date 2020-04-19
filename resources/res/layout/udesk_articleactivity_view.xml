@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/udesk_color_bg_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <cn.udesk.widget.UdeskTitleBar android:id="@+id/udesktitlebar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <cn.udesk.widget.UdeskLoadingView android:id="@+id/udesk_loading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@android:color/black" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/udesk_subject" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp"/>
+    <WebView android:id="@+id/udesk_help_content_webview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

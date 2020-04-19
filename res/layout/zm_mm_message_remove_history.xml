@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="horizontal" n1:paddingLeft="5.0dip" n1:paddingTop="8.0dip" n1:paddingRight="5.0dip" n1:paddingBottom="5.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textSize="12.0sp" n1:textColor="#ffbfbfbf" n1:gravity="center" n1:id="@id/txtMessage" n1:background="@drawable/zm_chatsystem_bg" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="" n1:maxLines="2" n1:layout_centerInParent="true" />
+    <ImageView n1:layout_gravity="center_vertical" n1:id="@id/timeChatPop" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/question" n1:layout_toRightOf="@id/txtMessage" n1:layout_centerVertical="true" />
+</RelativeLayout>

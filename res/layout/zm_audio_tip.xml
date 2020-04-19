@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:paddingTop="10.0dip" n1:paddingBottom="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:minWidth="200.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:gravity="center|left" n1:id="@id/btnDisconnectVoIP" n1:background="@drawable/zm_settings_item_selector" n1:focusable="true" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:weightSum="1.0">
+        <TextView n1:gravity="left" n1:focusable="false" n1:clickable="false" n1:duplicateParentState="true" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/zm_btn_disconnect_voip" n1:layout_weight="1.0" style="@style/ZMTextView.SettingsItem" />
+    </LinearLayout>
+    <LinearLayout n1:gravity="center|left" n1:id="@id/btnSwitchAudioSource" n1:background="@drawable/zm_settings_item_selector" n1:focusable="true" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:weightSum="1.0">
+        <TextView n1:gravity="left" n1:focusable="false" n1:clickable="false" n1:duplicateParentState="true" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/zm_btn_switch_audio_source" n1:layout_weight="1.0" style="@style/ZMTextView.SettingsItem" />
+    </LinearLayout>
+    <TextView n1:gravity="center|left" n1:id="@id/btnMutePhone" n1:background="@drawable/zm_settings_item_selector" n1:focusable="true" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:weightSum="1.0" n1:text="@string/zm_btn_mute_phone" style="@style/ZMTextView.SettingsItem" />
+    <LinearLayout n1:gravity="center|left" n1:id="@id/btnCallViaVoIP" n1:background="@drawable/zm_settings_item_selector" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:focusable="true" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:weightSum="1.0">
+        <TextView n1:gravity="left" n1:id="@id/txtCallViaVoIP" n1:focusable="false" n1:clickable="false" n1:duplicateParentState="true" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/zm_btn_call_via_voip" n1:layout_weight="1.0" style="@style/ZMTextView.SettingsItem" />
+        <ProgressBar n1:id="@id/progressCallVoIP" n1:layout_width="20.0dip" n1:layout_height="20.0dip" n1:layout_marginLeft="10.0dip" style="@style/ZMProgressBar.Small" />
+    </LinearLayout>
+    <TextView n1:gravity="center|left" n1:id="@id/btnDialIn" n1:background="@drawable/zm_settings_item_selector" n1:focusable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/zm_btn_dial_in" style="@style/ZMTextView.SettingsItem" />
+    <TextView n1:gravity="center|left" n1:id="@id/btnCallMe" n1:background="@drawable/zm_settings_item_selector" n1:focusable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/zm_callout_btn_callme_by_phone" style="@style/ZMTextView.SettingsItem" />
+</LinearLayout>

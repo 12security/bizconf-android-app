@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_gravity="center" n1:layout_width="wrap_content" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:layout_gravity="center" n1:id="@id/iv_photo" n1:background="@drawable/zm_picker_photo_bg" n1:padding="1.0dip" n1:layout_width="@dimen/zm_picker_bottom_photo_size" n1:layout_height="@dimen/zm_picker_bottom_photo_size" n1:layout_marginLeft="15.0dip" n1:layout_marginRight="15.0dip" n1:scaleType="centerCrop" n1:adjustViewBounds="true" />
+    <View n1:id="@id/cover" n1:background="@color/zm_half_translucent_white" n1:padding="1.0dip" n1:visibility="gone" n1:layout_width="@dimen/zm_picker_bottom_photo_size" n1:layout_height="@dimen/zm_picker_bottom_photo_size" n1:layout_marginLeft="15.0dip" n1:layout_marginRight="15.0dip" />
+</FrameLayout>

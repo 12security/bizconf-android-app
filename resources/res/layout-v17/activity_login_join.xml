@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/activity_login" android:background="@drawable/login_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <LinearLayout android:gravity="bottom|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <ImageView android:id="@+id/imageView" android:layout_width="@dimen/activity_login_logo" android:layout_height="@dimen/activity_login_logo" android:src="@drawable/logo"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/meeting_logi_join_background" android:paddingLeft="@dimen/activity_button_oppointment" android:paddingTop="30dp" android:paddingRight="@dimen/activity_button_oppointment" android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="1" android:layout_weight="2">
+            <RelativeLayout android:orientation="horizontal" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="@dimen/activity_vertical_title">
+                <ImageView android:layout_gravity="center" android:id="@+id/iv_meetingImg" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/icon_login_jion_id" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/iv_meetingImg">
+                    <FrameLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <EditText android:textSize="@dimen/textSize36PX" android:textColor="@color/black" android:textColorHint="@color/edittext_hint_fontcolor" android:id="@+id/login_join_id" android:background="@null" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/login_join_id" android:inputType="number"/>
+                        <FrameLayout android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/btn_meeting_list" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:background="@drawable/joinmeetin_history_button" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        </FrameLayout>
+                    </FrameLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            <include layout="@layout/public_grayline"/>
+            <LinearLayout android:gravity="bottom" android:paddingBottom="@dimen/activity_nomal_hint" android:layout_width="match_parent" android:layout_height="@dimen/activity_vertical_title" android:layout_marginTop="@dimen/activity_horizontal_hint">
+                <ImageView android:layout_gravity="center" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/icon_login_user_logo"/>
+                <EditText android:textSize="@dimen/textSize36PX" android:textColor="@color/black" android:textColorHint="@color/edittext_hint_fontcolor" android:layout_gravity="center" android:id="@+id/login_join_name" android:background="@null" android:paddingLeft="10dp" android:layout_width="293dp" android:layout_height="wrap_content" android:hint="@string/hint_login_join_name" android:layout_weight="1" android:inputType="text"/>
+            </LinearLayout>
+            <include layout="@layout/public_grayline"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="15dp">
+                <RelativeLayout android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/connect_voice" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="@dimen/activity_horizontal_hintx" android:layout_height="@dimen/activity_horizontal_hintx" android:src="@drawable/icon_login_join_checkbox_check" android:layout_centerVertical="true"/>
+                    <ImageView android:id="@+id/join_checkbox_connect_voice_checked" android:visibility="gone" android:layout_width="@dimen/activity_horizontal_hintx" android:layout_height="@dimen/activity_horizontal_hintx" android:src="@drawable/icon_login_join_checkbox_checked" android:layout_centerVertical="true"/>
+                    <TextView android:textSize="@dimen/textSize26PX" android:textColor="@color/edittext_hint_fontcolor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="@string/join_con_voice" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/open_video" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                    <ImageView android:layout_width="@dimen/activity_horizontal_hintx" android:layout_height="@dimen/activity_horizontal_hintx" android:src="@drawable/icon_login_join_checkbox_check" android:layout_centerVertical="true"/>
+                    <ImageView android:id="@+id/join_checkbox_open_video_checked" android:visibility="gone" android:layout_width="@dimen/activity_horizontal_hintx" android:layout_height="@dimen/activity_horizontal_hintx" android:src="@drawable/icon_login_join_checkbox_checked" android:layout_centerVertical="true"/>
+                    <TextView android:textSize="@dimen/textSize26PX" android:textColor="@color/edittext_hint_fontcolor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="@string/join_open_video" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <Button android:textSize="@dimen/textSize36PX" android:textColor="@color/white" android:id="@+id/login_join_button_join" android:background="@drawable/shape_button_login" android:layout_width="match_parent" android:layout_height="@dimen/activity_login_button" android:text="@string/login_join_start"/>
+                <Button android:textSize="@dimen/textSize36PX" android:textColor="@drawable/public_login_join_text_shape" android:id="@+id/login_button_back_login" android:background="@drawable/shape_login_join" android:layout_width="match_parent" android:layout_height="@dimen/activity_login_button" android:layout_marginTop="40dp" android:text="@string/login_join_back_login" android:layout_below="@+id/login_join_button_join"/>
+                <LinearLayout android:gravity="center" android:id="@+id/version" android:layout_width="match_parent" android:layout_height="@dimen/activity_login_button" android:layout_alignParentBottom="true" android:layout_centerVertical="true">
+                    <TextView android:textSize="@dimen/textSize14PX" android:textColor="@color/edittext_hint_fontcolor" android:id="@+id/version_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hint_login_version"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list>
+    <item>
+        <shape>
+            <size n1:height="200.0dip" n1:width="200.0dip"
+              xmlns:n1="http://schemas.android.com/apk/res/android" />
+            <solid n2:color="@color/udesk_color_999999"
+              xmlns:n2="http://schemas.android.com/apk/res/android" />
+        </shape>
+    </item>
+    <item>
+        <bitmap n3:gravity="center" n3:src="@drawable/udesk_ic_placeholder"
+          xmlns:n3="http://schemas.android.com/apk/res/android" />
+    </item>
+</layer-list>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/activity_about" android:background="?android:attr/colorBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/public_toolbar"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <ImageView android:id="@+id/version_background" android:layout_width="@dimen/activity_version_high" android:layout_height="@dimen/activity_version_high" android:src="@mipmap/icon" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/textSize24PX" android:textColor="@color/light_gray" android:id="@+id/version_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_horizontal_margin" android:text="@string/hint_login_version" android:layout_below="@+id/version_background" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <RelativeLayout android:gravity="center_vertical" android:id="@+id/no_update" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/activity_public_editext">
+            <TextView android:textSize="@dimen/textSize28px" android:textColor="@color/black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/activity_public_hint" android:text="@string/setting_version_update"/>
+            <TextView android:textSize="@dimen/textSize28px" android:textColor="@color/light_gray" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/activity_public_hint" android:text="@string/setting_no_new_version" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:id="@+id/new_version_update" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/activity_public_editext">
+            <TextView android:textSize="@dimen/textSize28px" android:textColor="@color/black" android:gravity="center_vertical" android:id="@+id/version_update" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/activity_public_hint" android:text="@string/setting_version_update"/>
+            <Button android:textSize="@dimen/textSize26PX" android:textColor="@color/white" android:background="@drawable/public_shape_version_update" android:layout_width="48dp" android:layout_height="24dp" android:layout_marginLeft="@dimen/activity_nomal_hint" android:text="New" android:layout_toRightOf="@+id/version_update" android:layout_centerVertical="true"/>
+            <TextView android:textSize="@dimen/textSize28px" android:textColor="@color/light_gray" android:gravity="center_vertical" android:id="@+id/new_version_code" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/activity_nomal_hint" android:text="V1.0.1" android:layout_toLeftOf="@+id/version_update_arrow"/>
+            <ImageView android:id="@+id/version_update_arrow" android:paddingRight="@dimen/activity_public_hint" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/icon_arrow_right_big" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

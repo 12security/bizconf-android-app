@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView n1:id="@id/recyclerView" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <LinearLayout n1:orientation="vertical" n1:id="@id/panelNoItemMsg" n1:paddingLeft="30.0dip" n1:paddingRight="30.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerInParent="true">
+        <TextView n1:gravity="center" n1:id="@id/txtMsg" n1:paddingTop="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/zm_qa_msg_no_question_41047" style="@style/ZMTextView.Medium.Dimmed" />
+    </LinearLayout>
+</RelativeLayout>

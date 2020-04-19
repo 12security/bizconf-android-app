@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="?android:colorBackground" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_horizontal_margin2">
+        <TextView n1:textColor="@color/zm_bg_blue" n1:id="@id/tvAvailableHours" n1:paddingLeft="17.0dip" n1:paddingTop="2.0dip" n1:paddingRight="@dimen/activity_horizontal_margin" n1:paddingBottom="2.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/available_hours" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <LinearLayout n1:orientation="vertical" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <RelativeLayout n1:gravity="center_vertical" n1:paddingLeft="@dimen/activity_horizontal_margin" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_vertical_title">
+                <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/fontcolor" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/host_video_open" n1:layout_centerVertical="true" />
+                <com.kyleduo.switchbutton.SwitchButton n1:id="@id/sb_host_video_open" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="0.0dip" n1:layout_alignParentRight="true" n2:kswAnimationDuration="300" n2:kswBackDrawable="@drawable/back_drawable" n2:kswBackMeasureRatio="1.4" n2:kswThumbDrawable="@drawable/thumb_selector" n2:kswThumbMarginBottom="-7.0dip" n2:kswThumbMarginLeft="-4.0dip" n2:kswThumbMarginRight="-4.0dip" n2:kswThumbMarginTop="-1.0dip" style="@style/SwitchButtonStyle" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            </RelativeLayout>
+            <RelativeLayout n1:paddingLeft="@dimen/activity_horizontal_margin" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_vertical_title">
+                <com.kyleduo.switchbutton.SwitchButton n1:id="@id/sb_participants_video_open" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n3:kswAnimationDuration="300" n3:kswBackDrawable="@drawable/back_drawable" n3:kswBackMeasureRatio="1.4" n3:kswThumbDrawable="@drawable/thumb_selector" n3:kswThumbMarginBottom="-7.0dip" n3:kswThumbMarginLeft="-4.0dip" n3:kswThumbMarginRight="-4.0dip" n3:kswThumbMarginTop="-1.0dip" style="@style/SwitchButtonStyle" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+                <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/fontcolor" n1:id="@id/textView" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/participants_video_open" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" n1:layout_alignParentStart="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout n1:orientation="vertical" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/activity_horizontal_margin2">
+            <RelativeLayout n1:gravity="center_vertical" n1:id="@id/turn_host_password" n1:paddingLeft="@dimen/activity_horizontal_margin" n1:paddingRight="@dimen/activity_horizontal_margin" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_vertical_title">
+                <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/fontcolor" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/set_password" n1:layout_alignParentLeft="false" n1:layout_centerVertical="true" />
+                <ImageView n1:id="@id/turn_change_password_arrow" n1:layout_width="@dimen/activity_horizontal_hint" n1:layout_height="@dimen/activity_horizontal_hint" n1:src="@drawable/icon_arrow_right_big" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+                <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/light_gray" n1:ellipsize="end" n1:id="@id/conf_password" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/optional" n1:maxEms="15" n1:singleLine="true" n1:layout_toLeftOf="@id/turn_change_password_arrow" n1:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout n1:layout_gravity="center_vertical" n1:paddingLeft="@dimen/activity_horizontal_margin" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_vertical_title">
+                <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/fontcolor" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/allow_front_moderator" n1:layout_alignParentLeft="false" n1:layout_centerVertical="true" />
+                <com.kyleduo.switchbutton.SwitchButton n1:id="@id/sb_allow_front_moderator" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n4:kswAnimationDuration="300" n4:kswBackDrawable="@drawable/back_drawable" n4:kswBackMeasureRatio="1.4" n4:kswThumbDrawable="@drawable/thumb_selector" n4:kswThumbMarginBottom="-7.0dip" n4:kswThumbMarginLeft="-4.0dip" n4:kswThumbMarginRight="-4.0dip" n4:kswThumbMarginTop="-1.0dip" style="@style/SwitchButtonStyle" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

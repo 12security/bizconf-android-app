@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="wrap_content" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:focusable="true" n1:focusableInTouchMode="true" n1:layout_width="@dimen/dialog_invitation_hight" n1:layout_height="wrap_content" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true">
+        <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/black" n1:gravity="center" n1:layout_gravity="center" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_public_editext" n1:text="@string/proxy_settings" />
+        <include layout="@layout/public_grayline" />
+        <EditText n1:textSize="@dimen/textSize28px" n1:textColor="@color/black" n1:textColorHint="@color/light_gray" n1:gravity="center" n1:layout_gravity="center" n1:id="@id/edit_proxy_name" n1:background="@drawable/public_shape_dialog" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_vertical_title" n1:hint="@string/proxy_name" n1:inputType="textPassword" />
+        <include layout="@layout/public_grayline" />
+        <EditText n1:textSize="@dimen/textSize28px" n1:textColor="@color/black" n1:textColorHint="@color/light_gray" n1:gravity="center" n1:layout_gravity="center" n1:id="@id/edit_proxy_password" n1:background="@drawable/public_shape_dialog" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_vertical_title" n1:hint="@string/proxy_password" n1:inputType="textPassword" />
+        <include layout="@layout/public_grayline" />
+        <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_public_editext">
+            <Button n1:textSize="@dimen/textSize26PX" n1:textColor="@color/violet" n1:gravity="center" n1:layout_gravity="center_horizontal" n1:id="@id/old_password_sure" n1:background="@drawable/public_shape_dialog" n1:layout_width="0.0dip" n1:layout_height="@dimen/activity_public_editext" n1:text="@string/setting_sure" n1:layout_weight="1.0" n1:textAllCaps="false" />
+            <View n1:background="@color/light_gray" n1:layout_width="0.100000024dip" n1:layout_height="fill_parent" />
+            <Button n1:textSize="@dimen/textSize26PX" n1:textColor="@color/light_gray" n1:gravity="center" n1:layout_gravity="center_horizontal" n1:id="@id/old_password_cancel" n1:background="@drawable/public_shape_dialog" n1:layout_width="0.0dip" n1:layout_height="@dimen/activity_public_editext" n1:text="@string/personal_remove_no" n1:layout_weight="1.0" n1:textAllCaps="false" />
+        </LinearLayout>
+        <View n1:layout_width="fill_parent" n1:layout_height="0.0dip" />
+    </LinearLayout>
+</RelativeLayout>

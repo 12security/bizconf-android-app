@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="@drawable/zm_tab_indicator_top_first" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="40.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:id="@id/imageText" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerInParent="true">
+        <ImageView n1:layout_gravity="center" n1:id="@id/icon" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@android:drawable/ic_menu_camera" />
+        <TextView n1:gravity="center_horizontal" n1:layout_gravity="center" n1:id="@id/title" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Title" style="@style/ZMTextView.TabLabel.Top" />
+    </LinearLayout>
+    <TextView n1:gravity="center" n1:id="@id/txtNoteBubble" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="-10.0dip" n1:layout_marginTop="0.0dip" n1:text="9+" n1:layout_toRightOf="@id/imageText" style="@style/ZMTextView.UnreadMessageCount.Small" />
+</RelativeLayout>

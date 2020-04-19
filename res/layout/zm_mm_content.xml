@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:id="@id/panelContent" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:id="@id/panelTitleBar" n1:layout_width="fill_parent" n1:layout_height="@dimen/zm_pt_titlebar_height" n1:weightSum="1.0" style="@style/ZMTitleBar.Dark">
+            <LinearLayout n1:id="@id/panelTitleLeft" n1:layout_width="wrap_content" n1:layout_height="fill_parent">
+                <TextView n1:id="@id/txtFileType" n1:visibility="visible" n1:clickable="false" n1:duplicateParentState="false" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:text="@string/zm_lbl_file_type_filter_51946" style="@style/ZMButton.TitleBar.Small" />
+                <ImageView n1:layout_gravity="center_vertical" n1:id="@id/icon_down_arrow" n1:padding="2.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_content_filter_arrow_down" />
+            </LinearLayout>
+            <LinearLayout n1:orientation="horizontal" n1:id="@id/panelTitleCenter" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:weightSum="2.0" n1:layout_weight="1.0" n1:layout_centerHorizontal="true">
+                <RelativeLayout n1:orientation="vertical" n1:id="@id/panelPerson" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.0">
+                    <TextView n1:textColor="@drawable/zm_title_tab_text_color" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_tab_content_person" n1:layout_centerInParent="true" style="@style/ZMTextView.Large" />
+                    <View n1:background="@drawable/zm_title_tab_indicator_color" n1:duplicateParentState="true" n1:layout_width="fill_parent" n1:layout_height="2.0dip" n1:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <RelativeLayout n1:orientation="vertical" n1:id="@id/panelShared" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.0">
+                    <TextView n1:textColor="@drawable/zm_title_tab_text_color" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_tab_content_shared" n1:layout_centerInParent="true" style="@style/ZMTextView.Large" />
+                    <View n1:background="@drawable/zm_title_tab_indicator_color" n1:duplicateParentState="true" n1:layout_width="fill_parent" n1:layout_height="2.0dip" n1:layout_alignParentBottom="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout n1:gravity="center|right" n1:orientation="horizontal" n1:id="@id/panelTitleRight" n1:paddingLeft="15.0dip" n1:layout_width="wrap_content" n1:layout_height="fill_parent">
+                <ImageButton n1:id="@id/btnSearch" n1:background="@null" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginRight="10.0dip" n1:src="@drawable/zm_ic_search_ondark" n1:contentDescription="@string/zm_description_mm_btn_search" />
+                <ImageButton n1:id="@id/btnUploadFile" n1:background="@null" n1:paddingRight="6.0dip" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:src="@drawable/zm_ic_add_ondark" n1:contentDescription="@string/zm_accessibility_mm_btn_add_file_22870" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout n1:orientation="vertical" n1:id="@id/panelOperator" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <RelativeLayout n1:id="@id/panelSearch" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <EditText n1:id="@id/edtSearch" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:hint="@string/zm_hint_search_content_18680" n1:cursorVisible="false" n1:editable="false" n1:imeOptions="actionDone" style="@style/ZMEditText.ContextSearch" />
+                <Button n1:id="@id/btnClearSearchView" n1:background="@drawable/zm_btn_clear_search_view" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n1:contentDescription="@string/zm_description_mm_btn_clear_search" />
+                <ImageView n1:background="@drawable/zm_ic_titlebar_shadow" n1:layout_width="fill_parent" n1:layout_height="10.0dip" />
+            </RelativeLayout>
+        </LinearLayout>
+        <com.zipow.videobox.view.mm.MMConnectAlertView n1:orientation="vertical" n1:id="@id/panelConnectionAlert" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+        <FrameLayout n1:id="@id/listContainer" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <ViewSwitcher n1:id="@id/view_switcher" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+                <com.zipow.videobox.view.mm.MMContentFilesListView n1:id="@id/listViewPersonalFiles" n1:background="@drawable/zm_listview_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+                <com.zipow.videobox.view.mm.MMContentFilesListView n1:id="@id/listViewSharedFiles" n1:background="@drawable/zm_listview_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+            </ViewSwitcher>
+            <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:id="@id/panelEmptyView" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+                <TextView n1:gravity="center" n1:id="@id/txtEmptyView" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:text="@string/zm_lbl_content_search_result_empty" style="@style/ZMTextView.SettingsItem" />
+                <TextView n1:gravity="center" n1:id="@id/txtLoadingError" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:text="@string/zm_lbl_content_load_error" style="@style/ZMTextView.SettingsItem" />
+                <TextView n1:gravity="center" n1:id="@id/txtContentLoading" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_pull_down_refresh_list_loading" n1:drawableTop="@drawable/zm_ic_conent_loading" n1:drawablePadding="10.0dip" style="@style/ZMTextView.SettingsItem" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

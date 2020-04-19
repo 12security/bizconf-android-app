@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/activity_recommend_rooms" android:background="?android:attr/colorBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/public_toolbar"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/recommend_room_one" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_width="match_parent" android:layout_height="@dimen/activity_horizontal_margin" android:layout_marginTop="@dimen/activity_public_hint">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/appointment_recommend_room1" android:layout_weight="1" android:layout_centerVertical="true"/>
+            <RadioButton android:layout_gravity="center" android:id="@+id/commend_room_one_check" android:layout_width="wrap_content" android:layout_height="@dimen/activity_public_editext" android:button="@drawable/public_radiobutton"/>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/textSize28px" android:id="@+id/ruler_result_one" android:background="@color/white" android:paddingLeft="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=""/>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/name">
+                <cn.bizconf.vcpro.common.view.ruler.RulerShow android:orientation="horizontal" android:id="@+id/ruler_room_one" android:background="#ffffff" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" xmlns:ns1="http://schemas.android.com/apk/res-auto" ns1:max_unit_count="96" xmlns:ns2="http://schemas.android.com/apk/res-auto" ns2:per_unit_count="1" xmlns:ns3="http://schemas.android.com/apk/res-auto" ns3:screen_unit_size="6"/>
+                <TextView android:textSize="9sp" android:id="@+id/ruler_result_text_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="5dp" android:text="x"/>
+            </FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/recommend_room_two" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_width="match_parent" android:layout_height="@dimen/activity_vertical_title" android:layout_marginTop="@dimen/activity_horizontal_margin">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/appointment_recommend_room2" android:layout_weight="1" android:layout_centerVertical="true"/>
+            <RadioButton android:layout_gravity="center" android:id="@+id/commend_room_two_check" android:layout_width="wrap_content" android:layout_height="@dimen/activity_public_editext" android:button="@drawable/public_recommend_checkbox"/>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/textSize28px" android:id="@+id/ruler_result_two" android:background="@color/white" android:paddingLeft="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=""/>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/name">
+                <cn.bizconf.vcpro.common.view.ruler.RulerShow android:orientation="horizontal" android:id="@+id/ruler_room_two" android:background="#ffffff" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" xmlns:ns4="http://schemas.android.com/apk/res-auto" ns4:max_unit_count="96" xmlns:ns5="http://schemas.android.com/apk/res-auto" ns5:per_unit_count="1" xmlns:ns6="http://schemas.android.com/apk/res-auto" ns6:screen_unit_size="6"/>
+                <TextView android:textSize="9sp" android:id="@+id/ruler_result_text_two" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="5dp" android:text="x"/>
+            </FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/recommend_room_three" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_width="match_parent" android:layout_height="@dimen/activity_vertical_title" android:layout_marginTop="@dimen/activity_horizontal_margin">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/appointment_recommend_room3" android:layout_weight="1" android:layout_centerVertical="true"/>
+            <RadioButton android:layout_gravity="center" android:id="@+id/commend_room_three_check" android:layout_width="wrap_content" android:layout_height="@dimen/activity_public_editext" android:button="@drawable/public_recommend_checkbox"/>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/textSize28px" android:id="@+id/ruler_result_three" android:background="@color/white" android:paddingLeft="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=""/>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/name">
+                <cn.bizconf.vcpro.common.view.ruler.RulerShow android:orientation="horizontal" android:id="@+id/ruler_room_three" android:background="#ffffff" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" xmlns:ns7="http://schemas.android.com/apk/res-auto" ns7:max_unit_count="96" xmlns:ns8="http://schemas.android.com/apk/res-auto" ns8:per_unit_count="1" xmlns:ns9="http://schemas.android.com/apk/res-auto" ns9:screen_unit_size="6"/>
+                <TextView android:textSize="9sp" android:id="@+id/ruler_result_text_three" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="5dp" android:text="x"/>
+            </FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <RadioGroup android:id="@+id/radio_group" android:layout_width="0dp" android:layout_height="0dp"/>
+</LinearLayout>

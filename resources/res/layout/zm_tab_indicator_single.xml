@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/imageText" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center" android:id="@+id/title" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Meet &amp; Chat" style="@style/ZMTextView.Title"/>
+    </LinearLayout>
+    <LinearLayout android:paddingLeft="30dp" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:layout_centerHorizontal="true">
+        <TextView android:gravity="center" android:id="@+id/txtNoteBubble" android:visibility="gone" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:text="9+" style="@style/ZMTextView.UnreadMessageCount.Small"/>
+    </LinearLayout>
+</RelativeLayout>

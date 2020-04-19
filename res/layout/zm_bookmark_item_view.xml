@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:paddingLeft="10.0dip" n1:paddingTop="5.0dip" n1:paddingRight="10.0dip" n1:paddingBottom="5.0dip" n1:descendantFocusability="blocksDescendants" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <ImageView n1:layout_gravity="center" n1:id="@id/ImageDelIcon" n1:paddingLeft="2.0dip" n1:paddingTop="2.0dip" n1:paddingRight="2.0dip" n1:paddingBottom="2.0dip" n1:duplicateParentState="false" n1:layout_width="25.0dip" n1:layout_height="25.0dip" n1:src="@drawable/zm_bookmark_remove_btn" n1:contentDescription="@string/zm_description_btn_bookmark_remove" />
+        <ImageView n1:layout_gravity="center" n1:id="@id/ImageBookmarkIcon" n1:layout_width="30.0dip" n1:layout_height="30.0dip" n1:src="@drawable/zm_bookmark" />
+        <TextView n1:ellipsize="end" n1:gravity="center_vertical" n1:layout_gravity="center_vertical" n1:id="@id/txtName" n1:duplicateParentState="false" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="8.0dip" n1:hint="Title" n1:singleLine="true" n1:layout_weight="1.0" style="@style/ZMTextView.Medium.OnLight" />
+        <ImageView n1:layout_gravity="center" n1:id="@id/ImageEditIcon" n1:paddingLeft="2.0dip" n1:paddingTop="2.0dip" n1:paddingRight="2.0dip" n1:paddingBottom="2.0dip" n1:duplicateParentState="false" n1:layout_width="25.0dip" n1:layout_height="25.0dip" n1:src="@drawable/zm_next_arrow" />
+    </LinearLayout>
+</LinearLayout>

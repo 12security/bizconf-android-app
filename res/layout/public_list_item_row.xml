@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <cn.bizconf.vcpro.common.view.expandlayout.ExpandableLayoutItem n1:id="@id/expandItem" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:el_contentLayout="@layout/public_personal_list_item" n2:el_headerLayout="@layout/public_personal_list_hearder" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

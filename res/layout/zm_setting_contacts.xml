@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@drawable/zm_window_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout n1:id="@id/panelTitleBar" n1:layout_width="fill_parent" n1:layout_height="@dimen/zm_pt_titlebar_height" n2:zm_leftButton="@id/btnBack" n2:zm_rightButton="@id/viewRight" n2:zm_title="@id/txtTitle" style="@style/ZMTitleBar" xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <Button n1:id="@id/btnBack" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerVertical="true" style="@style/ZMBackButton" />
+        <View n1:id="@id/viewRight" n1:layout_width="40.0dip" n1:layout_height="fill_parent" />
+        <us.zoom.androidlib.widget.ZMDynTextSizeTextView n1:gravity="center_horizontal" n1:id="@id/txtTitle" n1:paddingLeft="5.0dip" n1:paddingRight="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_share_category_contact" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true" style="@style/ZMTextView.Title" />
+    </us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <ScrollView n1:id="@id/panelOptions" n1:background="@drawable/zm_window_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <us.zoom.androidlib.widget.ZMSettingsLayout n1:orientation="vertical" n1:paddingLeft="0.0dip" n1:paddingTop="0.0dip" n1:paddingRight="0.0dip" n1:paddingBottom="0.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <us.zoom.androidlib.widget.ZMSettingsCategory n1:orientation="vertical" n1:id="@id/panelAlertImMsg" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/zm_setting_item_group_spacing">
+                <LinearLayout n1:gravity="center|left" n1:orientation="horizontal" n1:id="@id/optionPhoneContacts" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <TextView n1:gravity="center|left" n1:duplicateParentState="true" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_enable_address_book" n1:layout_weight="1.0" style="@style/ZMTextView.SettingsItem" />
+                    <ImageView n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_next_arrow" />
+                </LinearLayout>
+                <LinearLayout n1:gravity="center|left" n1:orientation="horizontal" n1:id="@id/optionContactRequests" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <TextView n1:gravity="center|left" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_contact_requests_14291" n1:layout_weight="1.0" style="@style/ZMTextView.SettingsItem" />
+                    <ImageView n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_next_arrow" />
+                </LinearLayout>
+            </us.zoom.androidlib.widget.ZMSettingsCategory>
+        </us.zoom.androidlib.widget.ZMSettingsLayout>
+    </ScrollView>
+</LinearLayout>

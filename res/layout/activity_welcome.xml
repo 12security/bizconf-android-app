@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/activity_welcome" n1:background="@drawable/login_background" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:gravity="bottom|center" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0">
+            <ImageView n1:id="@id/imageView" n1:layout_width="@dimen/activity_login_logo" n1:layout_height="@dimen/activity_login_logo" n1:src="@drawable/logo" />
+        </LinearLayout>
+        <LinearLayout n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="2.0" />
+    </LinearLayout>
+</RelativeLayout>

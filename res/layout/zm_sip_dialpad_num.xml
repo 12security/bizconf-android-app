@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:layout_width="wrap_content" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:id="@id/panelKey" n1:background="@drawable/zm_sip_dialpad_key_bg" n1:duplicateParentState="true" n1:layout_width="@dimen/zm_sip_dialpad_key_width" n1:layout_height="@dimen/zm_sip_dialpad_key_width">
+        <TextView n1:id="@id/txtNum" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="-8.0dip" n1:importantForAccessibility="no" style="@style/ZMTextView.Dialpad" />
+        <ImageView n1:id="@id/imgNum" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:importantForAccessibility="no" />
+        <ImageView n1:id="@id/imgNumDes" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="-4.0dip" n1:importantForAccessibility="no" />
+        <TextView n1:textStyle="bold" n1:id="@id/txtNumDes" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="-4.0dip" n1:importantForAccessibility="no" style="@style/ZMTextView.Dialpad.Des" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@color/zm_black" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout n1:orientation="horizontal" n1:id="@id/vTitleBar" n1:background="@drawable/zm_top_toolbar_bg" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:zm_leftButton="@id/panelTitleLeft" n2:zm_rightButton="@id/btnLeave" n2:zm_title="@id/txtMeetingNumber" xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <LinearLayout n1:orientation="horizontal" n1:id="@id/panelTitleLeft" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+        <Button n1:id="@id/btnLeave" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_btn_leave_meeting" style="@style/ZMButton.TitleBar.Warning" />
+        <TextView n1:layout_gravity="center_vertical" n1:id="@id/txtMeetingNumber" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="111-111-1111" style="@style/ZMTextView.Medium.OnDark" />
+    </us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginLeft="20.0dip" n1:layout_marginRight="20.0dip">
+        <TextView n1:gravity="center" n1:id="@id/meetingTopic" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/zm_msg_you_are_in_silent_mode" style="@style/ZMTextView.ExtremLarge.OnDark" />
+    </LinearLayout>
+</LinearLayout>

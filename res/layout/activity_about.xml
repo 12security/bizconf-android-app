@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/activity_about" n1:background="?android:colorBackground" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/public_toolbar" />
+    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0">
+        <ImageView n1:id="@id/version_background" n1:layout_width="@dimen/activity_version_high" n1:layout_height="@dimen/activity_version_high" n1:src="@mipmap/icon" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true" />
+        <TextView n1:textSize="@dimen/textSize24PX" n1:textColor="@color/light_gray" n1:id="@id/version_code" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/activity_horizontal_margin" n1:text="@string/hint_login_version" n1:layout_below="@id/version_background" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0">
+        <RelativeLayout n1:gravity="center_vertical" n1:id="@id/no_update" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_public_editext">
+            <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/black" n1:gravity="center_vertical" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginLeft="@dimen/activity_public_hint" n1:text="@string/setting_version_update" />
+            <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/light_gray" n1:gravity="center_vertical" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginRight="@dimen/activity_public_hint" n1:text="@string/setting_no_new_version" n1:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout n1:gravity="center_vertical" n1:id="@id/new_version_update" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_public_editext">
+            <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/black" n1:gravity="center_vertical" n1:id="@id/version_update" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginLeft="@dimen/activity_public_hint" n1:text="@string/setting_version_update" />
+            <Button n1:textSize="@dimen/textSize26PX" n1:textColor="@color/white" n1:background="@drawable/public_shape_version_update" n1:layout_width="48.0dip" n1:layout_height="24.0dip" n1:layout_marginLeft="@dimen/activity_nomal_hint" n1:text="New" n1:layout_toRightOf="@id/version_update" n1:layout_centerVertical="true" />
+            <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/light_gray" n1:gravity="center_vertical" n1:id="@id/new_version_code" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginRight="@dimen/activity_nomal_hint" n1:text="V1.0.1" n1:layout_toLeftOf="@id/version_update_arrow" />
+            <ImageView n1:id="@id/version_update_arrow" n1:paddingRight="@dimen/activity_public_hint" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:src="@drawable/icon_arrow_right_big" n1:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

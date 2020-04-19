@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:weightSum="1.0"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout n1:id="@id/panelTitleBar" n1:layout_width="fill_parent" n1:layout_height="@dimen/zm_pt_titlebar_height" n2:zm_leftButton="@id/btnBack" n2:zm_rightButton="@id/viewRight" n2:zm_title="@id/txtTitle" style="@style/ZMTitleBar" xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <Button n1:id="@id/btnBack" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:text="@string/zm_tab_directory_58475" style="@style/ZMBackButton" />
+        <View n1:id="@id/viewRight" n1:layout_width="0.0dip" n1:layout_height="wrap_content" />
+        <us.zoom.androidlib.widget.ZMDynTextSizeTextView n1:ellipsize="end" n1:gravity="center" n1:id="@id/txtTitle" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_saved_sessions" n1:singleLine="true" style="@style/ZMTextView.Title" />
+    </us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <RelativeLayout n1:id="@id/panelSearch" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <EditText n1:id="@id/edtSearch" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:hint="@string/zm_hint_search" n1:imeOptions="actionDone" style="@style/ZMEditText.ContextSearch" />
+        <Button n1:id="@id/btnClearSearchView" n1:background="@drawable/zm_btn_clear_search_view" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n1:contentDescription="@string/zm_description_mm_btn_clear_search" />
+    </RelativeLayout>
+    <FrameLayout n1:id="@id/listContainer" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0">
+        <com.zipow.videobox.view.mm.MMSavedSessionsListView n1:id="@id/sessionsListView" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+        <LinearLayout n1:layout_gravity="center" n1:orientation="vertical" n1:id="@id/panelNoItemMsg" n1:paddingLeft="10.0dip" n1:paddingRight="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+            <TextView n1:gravity="center" n1:layout_gravity="center_horizontal" n1:id="@id/txtNoItemMsg" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_mm_lbl_saved_session_list_empty_hint" style="@style/ZMTextView.Medium" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

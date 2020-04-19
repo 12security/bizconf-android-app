@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textColor="@color/zm_text_blue" n1:gravity="center|left" n1:id="@id/txtEditCountry" n1:background="@color/zm_settings_category_background" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/zm_btn_edit_country_19247" style="@style/ZMTextView.SettingsItem" />
+    <TextView n1:gravity="center|left" n1:id="@id/txtEditCountryDesc" n1:paddingTop="8.0dip" n1:paddingBottom="16.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_desc_dial_in_countries_19247" style="@style/ZMTextView.SettingsItemDesc.Small" />
+    <View n1:id="@id/viewFooterDivider" n1:background="@drawable/zm_settings_center_divider" n1:layout_width="fill_parent" n1:layout_height="2.0px" n1:layout_marginLeft="-20.0dip" />
+    <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@id/optionIncludeTollFree" n1:background="@color/zm_settings_category_background" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <TextView n1:gravity="center|left" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/zm_btn_include_toll_free_19247" n1:layout_weight="1.0" style="@style/ZMTextView.SettingsItem.Small" />
+        <us.zoom.androidlib.widget.ZMCheckedTextView n1:id="@id/chkIncludeTollFree" n1:clickable="false" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:checkMark="@drawable/zm_btn_toggle_default" />
+    </LinearLayout>
+</LinearLayout>

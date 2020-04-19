@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item n1:state_enabled="false"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <shape n1:shape="rectangle">
+            <stroke n1:width="1.0dip" n1:color="@color/zm_line_divider" />
+            <padding n1:left="10.0dip" n1:top="6.0dip" n1:right="10.0dip" n1:bottom="6.0dip" />
+            <corners n1:radius="8.0dip" />
+            <solid n1:color="@color/zm_transparent" />
+        </shape>
+    </item>
+    <item n2:state_pressed="true"
+      xmlns:n2="http://schemas.android.com/apk/res/android">
+        <shape n2:shape="rectangle">
+            <stroke n2:width="1.0dip" n2:color="@color/zm_line_divider" />
+            <padding n2:left="10.0dip" n2:top="6.0dip" n2:right="10.0dip" n2:bottom="6.0dip" />
+            <corners n2:radius="8.0dip" />
+            <solid n2:color="@color/zm_btn_light_pressed" />
+        </shape>
+    </item>
+    <item>
+        <shape n3:shape="rectangle"
+          xmlns:n3="http://schemas.android.com/apk/res/android">
+            <stroke n3:width="1.0dip" n3:color="@color/zm_line_divider" />
+            <padding n3:left="10.0dip" n3:top="6.0dip" n3:right="10.0dip" n3:bottom="6.0dip" />
+            <corners n3:radius="8.0dip" />
+            <solid n3:color="@color/zm_transparent" />
+        </shape>
+    </item>
+</selector>

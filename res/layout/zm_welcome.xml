@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:src="@drawable/zm_welcome_bg" n1:scaleType="centerCrop" />
+    <ImageButton n1:id="@id/btnSettings" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_margin="10.0dip" n1:src="@drawable/zm_btn_settings" n1:contentDescription="@string/zm_btn_settings" style="@style/ZMButton.TitleBar" />
+    <LinearLayout n1:gravity="center|top" n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:weightSum="4.0">
+        <LinearLayout n1:gravity="bottom|center" n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.1">
+            <ImageView n1:id="@id/imgLogo" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="16.0dip" n1:src="@drawable/zm_logo" />
+            <TextView n1:gravity="center" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:maxWidth="300.0dip" n1:text="@string/zm_app_sub_title" style="@style/ZMTextView.AppSubTitle" />
+        </LinearLayout>
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="0.9" />
+        <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:id="@id/panelActions" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="2.0">
+            <Button n1:id="@id/btnLogin" n1:paddingLeft="40.0dip" n1:paddingRight="40.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:text="@string/zm_login_to_start_conf" style="@style/ZMButton.Index" />
+            <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0" />
+            <LinearLayout n1:gravity="center_horizontal" n1:orientation="horizontal" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <Button n1:id="@id/btnSignup" n1:visibility="gone" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_marginRight="1.0dip" n1:text="@string/zm_btn_signup_on_welcome" n1:layout_weight="1.0" style="@style/ZMButton.Index.Bottom" />
+                <us.zoom.androidlib.widget.ZMDynTextSizeTextView n1:gravity="center_horizontal" n1:id="@id/loginInternational" n1:focusable="true" n1:visibility="visible" n1:clickable="true" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_marginRight="1.0dip" n1:text="@string/zm_btn_link_account_zoom_us" n1:layout_weight="1.0" n2:zm_maxReduce="3.0sp" style="@style/ZMButton.Index.Bottom" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+                <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_marginLeft="1.0dip" n1:layout_weight="1.0">
+                    <Button n1:id="@id/btnJoinConf" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:text="@string/zm_btn_join_a_meeting_on_welcome" style="@style/ZMButton.Index.Bottom" />
+                    <Button n1:id="@id/btnReturnToConf" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:text="@string/zm_btn_return_to_conf" style="@style/ZMButton.Index.Bottom" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout n1:gravity="center|top" n1:orientation="horizontal" n1:id="@id/panelConnecting" n1:paddingTop="40.0dip" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="2.0">
+            <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <ProgressBar n1:layout_gravity="center_vertical" n1:id="@id/progressBar1" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="10.0dip" style="@style/ZMProgressBar.Small" />
+                <TextView n1:layout_gravity="center_vertical" n1:id="@id/txtConnecting" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_connecting_facebook" style="@style/ZMTextView.Medium.OnDark" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

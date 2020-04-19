@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center|top" n1:orientation="vertical" n1:background="@color/zm_black" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:gravity="center_horizontal" n1:orientation="horizontal" n1:id="@id/panelConnecting" n1:background="@drawable/zm_top_toolbar_bg" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <ProgressBar n1:layout_gravity="center_vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="10.0dip" style="@style/ZMProgressBar.Small" />
+        <TextView n1:layout_gravity="center_vertical" n1:id="@id/txtConnecting" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_msg_verifying_meetingid" style="@style/ZMTextView.Medium.OnDark" />
+    </LinearLayout>
+</LinearLayout>

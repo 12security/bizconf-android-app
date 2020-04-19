@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="@color/udesk_color_bg_white" android:paddingLeft="@dimen/udesk_10" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/udesk_sp14" android:textColor="@color/udesk_color_666666" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/item_name" android:background="@drawable/udesk_navigation_bg" android:padding="@dimen/udesk_5" android:paddingLeft="@dimen/udesk_10" android:paddingRight="@dimen/udesk_10" android:layout_width="wrap_content" android:layout_height="@dimen/udesk_30" android:maxWidth="@dimen/udesk_80" android:minWidth="@dimen/udesk_45" android:singleLine="true"/>
+</LinearLayout>

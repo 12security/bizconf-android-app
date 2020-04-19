@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/panelSearch" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="@dimen/zm_pt_titlebar_height" style="@style/ZMTitleBar.Dark">
+        <RelativeLayout android:id="@+id/panelSearchBar" android:background="@drawable/zm_search_corner_bg" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/btnSearch" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true">
+            <ImageView android:id="@+id/imgSearch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:src="@drawable/zm_ic_search" android:layout_centerVertical="true"/>
+            <EditText android:id="@+id/edtSearch" android:paddingRight="30dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/zm_hint_search_messages_18680" android:layout_toRightOf="@+id/imgSearch" android:layout_centerVertical="true" android:imeOptions="actionSearch" style="@style/ZMEditText.GlobalSearch"/>
+            <ImageButton android:id="@+id/btnClearSearchView" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_btn_clear_search_view" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <Button android:id="@+id/btnSearch" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/zm_btn_search" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/ZMButton.TitleBar.OnDark"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="bottom|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/panelTitleBar" android:background="@color/zm_title_bar_dark_bg" android:paddingTop="0dp" android:paddingBottom="0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/panelFiles" android:layout_width="140dp" android:layout_height="wrap_content">
+            <TextView android:textColor="@drawable/zm_title_tab_text_color" android:layout_gravity="center_horizontal" android:id="@+id/txtTabFilesLabel" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_tab_content_search_contents" style="@style/ZMTextView.Large"/>
+            <View android:background="@drawable/zm_title_tab_indicator_color" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginTop="5dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/panelMessages" android:layout_width="140dp" android:layout_height="wrap_content">
+            <TextView android:textColor="@drawable/zm_title_tab_text_color" android:layout_gravity="center_horizontal" android:id="@+id/txtTabMessagesLabel" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_tab_content_search_messages" style="@style/ZMTextView.Large"/>
+            <View android:background="@drawable/zm_title_tab_indicator_color" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginTop="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/listContainer" android:background="@color/zm_dimmed_forground" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.zipow.videobox.view.mm.MMContentSearchFilesListView android:id="@+id/listViewContentFiles" android:background="@drawable/zm_listview_bg" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.zipow.videobox.view.mm.MMContentSearchMessagesListView android:id="@+id/listViewContentMessages" android:background="@drawable/zm_listview_bg" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/panelEmptyView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:gravity="center" android:id="@+id/txtEmptyView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/zm_lbl_content_search_result_empty" style="@style/ZMTextView.SettingsItem"/>
+            <TextView android:gravity="center" android:id="@+id/txtLoadingError" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/zm_lbl_content_load_error" style="@style/ZMTextView.SettingsItem"/>
+            <TextView android:gravity="center" android:id="@+id/txtContentLoading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_lbl_pull_down_refresh_list_loading" android:drawableTop="@drawable/zm_ic_conent_loading" android:drawablePadding="10dp" style="@style/ZMTextView.SettingsItem"/>
+        </LinearLayout>
+        <ImageView android:background="@drawable/zm_ic_titlebar_shadow" android:layout_width="match_parent" android:layout_height="10dp"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="?android:attr/colorBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/public_toolbar"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/exclusive_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@color/white" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_width="match_parent" android:layout_height="@dimen/activity_login_logo" android:layout_below="@+id/title_personal" android:layout_alignParentLeft="true" android:layout_alignParentStart="true">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/textSize22px" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hint_join_ID"/>
+                <TextView android:textSize="@dimen/textSize40PX" android:textColor="@color/black" android:id="@+id/exclusive_conference_id" android:paddingLeft="@dimen/activity_horizontal_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12342342342342"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/linearLayout" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginTop="@dimen/activity_vertical_hint">
+                <LinearLayout android:gravity="center_horizontal" android:paddingRight="@dimen/activity_horizontal_hint" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <Button android:textSize="@dimen/textSize24PX" android:textColor="@color/forget_pwd_font_color" android:id="@+id/start_meeting" android:background="@drawable/shape_button2" android:layout_width="100dp" android:layout_height="wrap_content" android:text="@string/personal_start_meeting"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:paddingLeft="@dimen/activity_horizontal_hint" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <Button android:textSize="@dimen/textSize24PX" android:textColor="@color/forget_pwd_font_color" android:id="@+id/turn_personal_room_setting" android:background="@drawable/shape_button2" android:layout_width="100dp" android:layout_height="match_parent" android:text="@string/personal_setting_meeting"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="@dimen/activity_horizontal_margin"/>
+    </LinearLayout>
+    <include layout="@layout/public_weekcalendar"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/have_meetings" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/textSize24PX" android:gravity="center_vertical" android:id="@+id/appointment_meeting_number" android:background="@color/light_yellow" android:paddingLeft="@dimen/personal_meetings_width" android:layout_width="match_parent" android:layout_height="@dimen/activity_public_hint" android:layout_marginTop="@dimen/activity_horizontal_margin" android:text="@string/personal_number_meeting"/>
+        <cn.bizconf.vcpro.common.view.expandlayout.ExpandableLayoutListView android:id="@+id/list_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/no_meeting" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_no_meeting"/>
+        <TextView android:textSize="@dimen/textSize28px" android:textColor="@color/no_meetings" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_meetings"/>
+    </LinearLayout>
+</LinearLayout>

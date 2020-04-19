@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:orientation="vertical" n1:background="@color/zm_black" n1:paddingLeft="1.0dip" n1:paddingRight="1.0dip" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <us.zoom.androidlib.widget.TouchImageView n1:id="@id/imageview" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <com.zipow.videobox.view.ZMGifView n1:id="@id/gifview" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <LinearLayout n1:gravity="center" n1:layout_gravity="center" n1:orientation="vertical" n1:id="@id/viewPlaceHolder" n1:background="@color/zm_dimmed_forground" n1:focusable="false" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <ImageView n1:focusable="false" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_image_download_error" />
+        <TextView n1:gravity="center" n1:id="@id/txtMessage" n1:focusable="false" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip" n1:text="@string/zm_mm_msg_download_image_failed" style="@style/ZMTextView.Normal.Dimmed" />
+    </LinearLayout>
+    <ProgressBar n1:layout_gravity="center" n1:id="@id/progressBar1" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" style="@style/ZMProgressBar" />
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/zm_msg_template_attachments_bg" android:paddingLeft="12dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+    <ImageView android:id="@+id/img" android:layout_width="30dp" android:layout_height="40dp" android:layout_marginTop="9dp" android:src="@drawable/zm_mm_template_attachment_img"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11dp" android:layout_marginTop="12dp">
+        <TextView android:textSize="10sp" android:textColor="@color/zm_template_attachments_txt" android:ellipsize="end" android:id="@+id/attachments_file_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+        <TextView android:textSize="10sp" android:textColor="@color/zm_template_attachments_txt" android:ellipsize="end" android:id="@+id/attachments_file_sub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+    </LinearLayout>
+</LinearLayout>

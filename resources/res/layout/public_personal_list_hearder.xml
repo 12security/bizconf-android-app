@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/my_meeting" android:layout_width="match_parent" android:layout_height="@dimen/activity_public_editext">
+        <ImageView android:id="@+id/cycle_meeting_icon" android:layout_width="@dimen/activity_horizontal_margin" android:layout_height="@dimen/activity_horizontal_margin" android:layout_marginLeft="@dimen/activity_nomal_hint" android:src="@drawable/cycle_meeting_icon"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/textSize36PX" android:textColor="@color/black" android:id="@+id/my_meeting_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/personal_list_six"/>
+            <TextView android:textSize="@dimen/textSize24PX" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:id="@+id/my_meeting_time_zone" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/personal_list_am"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/activity_horizontal_margin" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="@dimen/textSize32PX" android:textColor="@color/black" android:ellipsize="end" android:id="@+id/my_meeting_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/personal_list_name" android:maxEms="13" android:singleLine="true"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/textSize24PX" android:textColor="@color/light_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/personal_list_id"/>
+                <TextView android:textSize="@dimen/textSize24PX" android:textColor="@color/light_gray" android:id="@+id/my_meeting_id" android:paddingLeft="@dimen/activity_nomal_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/personal_list_id_num"/>
+                <TextView android:textSize="@dimen/textSize24PX" android:textColor="@color/light_gray" android:paddingLeft="@dimen/activity_horizontal_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/personal_list_time"/>
+                <TextView android:textSize="@dimen/textSize24PX" android:textColor="@color/light_gray" android:id="@+id/my_meeting_time_all" android:paddingLeft="@dimen/activity_nomal_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/personal_list_time_all"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

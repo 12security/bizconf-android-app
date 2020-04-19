@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:focusable="false" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:focusable="true" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_marginBottom="@dimen/zm_setting_item_padding_bottom" n1:layout_weight="1.0">
+        <us.zoom.androidlib.widget.ZMToolbarLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_alignParentBottom="true">
+            <com.zipow.videobox.view.ToolbarButton n1:id="@id/btnStart" n1:focusable="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n2:zm_icon="@drawable/zm_ic_big_start_meeting" n2:zm_text="@string/zm_btn_start" n2:zm_textColor="@color/zm_ui_kit_color_gray_747487" n2:zm_textSize="13.0sp" n2:zm_vertical_divide_icon_text="6.0dip" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            <com.zipow.videobox.view.ToolbarButton n1:id="@id/btnJoin" n1:focusable="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n3:zm_icon="@drawable/zm_ic_big_join_meeting" n3:zm_text="@string/zm_bo_btn_join_bo" n3:zm_textColor="@color/zm_ui_kit_color_gray_747487" n3:zm_textSize="13.0sp" n3:zm_vertical_divide_icon_text="6.0dip" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        </us.zoom.androidlib.widget.ZMToolbarLayout>
+    </RelativeLayout>
+    <RelativeLayout n1:focusable="true" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_marginTop="@dimen/zm_setting_item_padding_top" n1:layout_weight="1.0">
+        <us.zoom.androidlib.widget.ZMToolbarLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_alignParentTop="true">
+            <com.zipow.videobox.view.ToolbarButton n1:id="@id/btnSchedule" n1:focusable="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n4:zm_icon="@drawable/zm_ic_big_schedule_meeting" n4:zm_text="@string/zm_btn_schedule" n4:zm_textColor="@color/zm_ui_kit_color_gray_747487" n4:zm_textSize="13.0sp" n4:zm_vertical_divide_icon_text="6.0dip" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+            <com.zipow.videobox.view.ToolbarButton n1:id="@id/btnUpcoming" n1:focusable="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n5:zm_icon="@drawable/zm_ic_big_upcoming_meeting" n5:zm_text="@string/zm_btn_upcoming" n5:zm_textColor="@color/zm_ui_kit_color_gray_747487" n5:zm_textSize="13.0sp" n5:zm_vertical_divide_icon_text="6.0dip" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+        </us.zoom.androidlib.widget.ZMToolbarLayout>
+    </RelativeLayout>
+</LinearLayout>

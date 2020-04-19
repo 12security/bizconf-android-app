@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item n1:state_pressed="true"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <shape n1:shape="rectangle">
+            <corners n1:radius="@dimen/zm_toolbar_radius" />
+            <gradient n1:startColor="@color/zm_ui_kit_color_blue_0E71EB_press" n1:endColor="@color/zm_ui_kit_color_blue_0E71EB_press" n1:angle="0.0" />
+        </shape>
+    </item>
+    <item n2:state_focused="true"
+      xmlns:n2="http://schemas.android.com/apk/res/android">
+        <shape n2:shape="rectangle">
+            <corners n2:radius="@dimen/zm_toolbar_radius" />
+            <gradient n2:startColor="@color/zm_ui_kit_color_blue_0E71EB" n2:endColor="@color/zm_ui_kit_color_blue_0E71EB" n2:angle="0.0" />
+        </shape>
+    </item>
+    <item n3:state_enabled="false"
+      xmlns:n3="http://schemas.android.com/apk/res/android">
+        <shape n3:shape="rectangle">
+            <corners n3:radius="@dimen/zm_toolbar_radius" />
+            <gradient n3:startColor="@color/zm_ui_kit_color_blue_0E71EB_disable" n3:endColor="@color/zm_ui_kit_color_blue_0E71EB_disable" n3:angle="0.0" />
+        </shape>
+    </item>
+    <item>
+        <shape n4:shape="rectangle"
+          xmlns:n4="http://schemas.android.com/apk/res/android">
+            <corners n4:radius="@dimen/zm_toolbar_radius" />
+            <gradient n4:startColor="@color/zm_ui_kit_color_blue_0E71EB" n4:endColor="@color/zm_ui_kit_color_blue_0E71EB" n4:angle="0.0" />
+        </shape>
+    </item>
+</selector>

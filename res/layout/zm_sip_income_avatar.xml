@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <View n1:id="@id/bg1" n1:background="@drawable/zm_sip_income_avatar_ondark_bg1" n1:layout_width="@dimen/zm_sip_income_avatar_bg1_size" n1:layout_height="@dimen/zm_sip_income_avatar_bg1_size" n1:layout_centerInParent="true" n1:importantForAccessibility="no" />
+    <View n1:id="@id/bg2" n1:background="@drawable/zm_sip_income_avatar_ondark_bg2" n1:layout_width="@dimen/zm_sip_income_avatar_bg2_size" n1:layout_height="@dimen/zm_sip_income_avatar_bg2_size" n1:layout_centerInParent="true" n1:importantForAccessibility="no" />
+    <ImageView n1:id="@id/content" n1:layout_width="@dimen/zm_sip_income_avatar_content_size" n1:layout_height="@dimen/zm_sip_income_avatar_content_size" n1:layout_centerInParent="true" n1:importantForAccessibility="no" />
+</RelativeLayout>

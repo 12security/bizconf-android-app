@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center|left" n1:orientation="horizontal" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:id="@id/txtLabel" n1:paddingLeft="@dimen/zm_setting_item_padding_left" n1:paddingRight="5.0dip" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_meeting_id2" n1:layout_weight="1.0" style="@style/ZMTextView.Medium.Dimmed" />
+    <TextView n1:id="@id/txtValue" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="123 456 789" style="@style/ZMTextView.SettingsItem" />
+</LinearLayout>

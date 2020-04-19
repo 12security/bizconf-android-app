@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:weightSum="1.0"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:id="@id/panelTitleBar" n1:layout_width="fill_parent" n1:layout_height="wrap_content" style="@style/ZMTitleBar">
+        <Button n1:id="@id/btnBack" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_btn_cancel" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" style="@style/ZMButton.TitleBar" />
+        <TextView n1:gravity="center_horizontal" n1:id="@id/txtTitle" n1:padding="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_title_buddy_invite" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true" style="@style/ZMTextView.Title" />
+    </RelativeLayout>
+    <include n1:layout_width="fill_parent" n1:layout_height="wrap_content" layout="@layout/zm_buddy_invite_send" />
+    <com.zipow.videobox.view.BuddyInviteListView n1:id="@id/buddyInviteListView" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0" />
+</LinearLayout>

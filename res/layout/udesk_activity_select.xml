@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="@color/udesk_color_bg_white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:id="@id/udesk_title_root" n1:background="@color/udesk_color_f2212123" n1:layout_width="fill_parent" n1:layout_height="@dimen/udesk_titlebar_height">
+        <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true">
+            <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:id="@id/udesk_back_linear" n1:layout_width="50.0dip" n1:layout_height="fill_parent">
+                <ImageView n1:id="@id/udesk_back_img" n1:layout_width="@dimen/udesk_20" n1:layout_height="@dimen/udesk_20" n1:src="@drawable/udesk_titlebar_back" />
+            </LinearLayout>
+            <TextView n1:id="@id/udesk_content" n1:layout_marginLeft="@dimen/udesk_15" n1:maxWidth="300.0dip" n1:text="@string/udesk_img_video" style="@style/udesk_titlebar_button_text_style" />
+        </LinearLayout>
+        <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_alignParentRight="true" n1:layout_centerInParent="true">
+            <TextView n1:textSize="@dimen/udesk_sp16" n1:gravity="center" n1:id="@id/udesk_titlebar_right" n1:paddingLeft="@dimen/udesk_10" n1:paddingRight="@dimen/udesk_10" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_margin="@dimen/udesk_10" n1:layout_marginRight="@dimen/udesk_15" n1:minWidth="@dimen/udesk_50" n1:text="@string/udesk_send_message" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout n1:id="@id/udesk_rl_bottom" n1:background="@color/udesk_color_393a3f" n1:layout_width="fill_parent" n1:layout_height="45.0dip" n1:layout_alignParentBottom="true">
+        <LinearLayout n1:orientation="horizontal" n1:id="@id/udesk_select_folder" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_alignParentLeft="true">
+            <TextView n1:textSize="14.0sp" n1:textColor="@color/udesk_color_bg_white" n1:gravity="center|left" n1:id="@id/picture_holder_name" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginLeft="@dimen/udesk_15" />
+            <ImageView n1:layout_gravity="center" n1:layout_width="@dimen/udesk_10" n1:layout_height="@dimen/udesk_10" n1:layout_marginLeft="@dimen/udesk_1" n1:layout_marginTop="@dimen/udesk_3" n1:src="@drawable/udesk_select_picture_icon" />
+        </LinearLayout>
+        <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@id/original_select_view" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_centerInParent="true" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true">
+            <CheckBox n1:id="@id/udesk_checkbox" n1:background="@drawable/udesk_checkbox_selector" n1:clickable="false" n1:layout_width="17.0dip" n1:layout_height="17.0dip" n1:layout_marginRight="@dimen/udesk_5" n1:button="@null" />
+            <TextView n1:textSize="@dimen/udesk_sp13" n1:textColor="@color/udesk_color_bg_white" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/udesk_original_photos" />
+        </LinearLayout>
+        <TextView n1:textSize="14.0sp" n1:textColor="@color/udesk_color_747578" n1:gravity="center" n1:id="@id/udesk_pre" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginRight="@dimen/udesk_15" n1:text="@string/udesk_photo_pre" n1:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView n1:id="@id/udesk_picture_recycler" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_above="@id/udesk_rl_bottom" n1:layout_below="@id/udesk_title_root" />
+    <RelativeLayout n1:id="@id/udesk_root_view_album_items" n1:background="@color/udesk_color_eb212123" n1:paddingTop="50.0dip" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_above="@id/udesk_rl_bottom" n1:layout_below="@id/udesk_title_root">
+        <android.support.v7.widget.RecyclerView n1:id="@id/udesk_album_items" n1:background="@color/udesk_color_bg_white" n1:scrollbars="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

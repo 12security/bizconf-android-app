@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/activity_appointment_number_people" n1:background="?android:colorBackground" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/public_toolbar" />
+    <ListView n1:id="@id/add_room_listview" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    <TextView n1:textSize="@dimen/textSize22px" n1:textColor="@color/light_gray" n1:layout_gravity="center_horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/activity_horizontal_margin" n1:text="@string/appointment_add_rooms_hint1" />
+    <TextView n1:textSize="@dimen/textSize22px" n1:textColor="@color/light_gray" n1:layout_gravity="center" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/activity_nomal_hint" n1:text="@string/appointment_add_rooms_hint2" />
+</LinearLayout>

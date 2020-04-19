@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:paddingLeft="11dp" android:layout_width="match_parent" android:layout_height="@dimen/zm_sip_phone_call_item_height">
+    <CheckBox android:id="@+id/checkDeleteItem" android:background="@drawable/zm_sip_check_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:layout_marginRight="16dp" android:button="@null"/>
+    <ImageView android:id="@+id/imgOutCall" android:layout_width="10dp" android:layout_height="10dp" android:layout_marginTop="17dp" android:layout_marginRight="11dp" android:src="@drawable/zm_ic_outgoing_call"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11dp" android:layout_weight="1">
+        <LinearLayout android:orientation="horizontal" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textStyle="bold" android:id="@+id/txtBuddyName" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/ZMTextView.BuddyName.Medium.OnLight"/>
+                <TextView android:textColor="@color/zm_ui_kit_color_gray_747487" android:id="@+id/txtCallNo" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/ZMTextView.Small.Dimmed"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/imgRecordingPanel" android:layout_width="140dp" android:layout_height="match_parent" android:layout_marginRight="12dp">
+                <TextView android:textSize="15sp" android:textColor="@color/zm_ui_kit_color_gray_747487" android:gravity="right" android:layout_gravity="center_vertical" android:id="@+id/txtCallTime" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ZMTextView.Small.Dimmed"/>
+                <TextView android:textSize="15sp" android:textColor="@color/zm_ui_kit_color_blue_0E71EB" android:ellipsize="end" android:gravity="right" android:layout_gravity="center_vertical" android:id="@+id/txtRecording" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+            </LinearLayout>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/showDialog" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginRight="6dp" android:src="@drawable/zm_sip_history_list_more_action" android:scaleType="centerInside" android:contentDescription="@string/zm_sip_accessbility_detail_61381"/>
+        </LinearLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="1dp" android:src="@drawable/zm_sip_horizontal_line"/>
+    </LinearLayout>
+</LinearLayout>

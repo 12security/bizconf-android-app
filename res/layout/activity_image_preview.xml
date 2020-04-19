@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/content" n1:background="#ff000000" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.lzy.imagepicker.view.ViewPagerFixed n1:id="@id/viewpager" n1:background="#ff000000" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <include n1:id="@id/top_bar" layout="@layout/include_top_bar" />
+    <RelativeLayout n1:id="@id/bottom_bar" n1:background="#cc22292c" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="48.0dip" n1:layout_alignParentBottom="true">
+        <com.lzy.imagepicker.view.SuperCheckBox n1:textColor="#ffffffff" n1:id="@id/cb_origin" n1:paddingLeft="8.0dip" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginLeft="10.0dip" n1:text="原图(3.07M)" style="@style/SuperCheckboxTheme" />
+        <com.lzy.imagepicker.view.SuperCheckBox n1:textColor="#ffffffff" n1:id="@id/cb_check" n1:paddingLeft="8.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="12.0dip" n1:text="选择" n1:includeFontPadding="true" n1:drawablePadding="4.0dip" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" style="@style/SuperCheckboxTheme" />
+    </RelativeLayout>
+</RelativeLayout>

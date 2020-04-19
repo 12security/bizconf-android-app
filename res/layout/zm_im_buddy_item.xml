@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center|left" n1:orientation="horizontal" n1:paddingTop="5.0dip" n1:paddingBottom="5.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:weightSum="1.0"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.zipow.videobox.view.AvatarView n1:id="@id/avatarView" n1:layout_width="50.0dip" n1:layout_height="50.0dip" n1:layout_marginLeft="10.0dip" n1:layout_marginTop="0.0dip" n1:layout_marginRight="15.0dip" n1:layout_marginBottom="0.0dip" n2:zm_description_enable="false" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n1:orientation="horizontal" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+        <TextView n1:ellipsize="end" n1:id="@id/txtScreenName" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Reed Yang" n1:maxLines="2" style="@style/ZMTextView.BuddyName.Medium.OnLight" />
+    </LinearLayout>
+    <LinearLayout n1:gravity="center|right" n1:paddingRight="10.0dip" n1:layout_width="wrap_content" n1:layout_height="fill_parent">
+        <TextView n1:gravity="center" n1:id="@id/txtInvited" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_buddy_invited" style="@style/ZMTextView.Medium.Dimmed" />
+        <TextView n1:gravity="center" n1:id="@id/txtUnreadMessageCount" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="9+" style="@style/ZMTextView.UnreadMessageCount" />
+        <LinearLayout n1:gravity="center|left" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+            <ImageView n1:id="@id/imgPresence" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="15.0dip" n1:src="@drawable/zm_status_available" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

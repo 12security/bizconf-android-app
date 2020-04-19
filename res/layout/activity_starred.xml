@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@color/zm_white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:background="@color/zm_title_bar_dark_bg" n1:layout_width="fill_parent" n1:layout_height="@dimen/zm_titlebar_height">
+        <ImageView n1:layout_gravity="center_vertical" n1:id="@id/zm_starred_title_back_btn" n1:padding="8.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="16.0dip" n1:contentDescription="@string/zm_btn_back" style="@style/ZMBackButton" />
+        <TextView n1:textSize="17.0sp" n1:textColor="@color/zm_white" n1:layout_gravity="center" n1:id="@id/zm_starred_title_name" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_mm_starred_title_name_owp40" />
+    </FrameLayout>
+    <RadioGroup n1:gravity="center" n1:layout_gravity="center_horizontal" n1:orientation="horizontal" n1:background="@drawable/zm_starred_radio_group" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+        <RadioButton n1:textStyle="bold" n1:textColor="@color/zm_starred_radio_btn_text_color" n1:gravity="center" n1:id="@id/zm_starred_radio_btn1" n1:background="@drawable/zm_starred_radio_btn" n1:padding="0.0px" n1:layout_width="0.0px" n1:layout_height="fill_parent" n1:checked="true" n1:button="@null" n1:text="@string/zm_mm_starred_radio_contact_owp40" n1:layout_weight="1.0" />
+        <RadioButton n1:textStyle="bold" n1:textColor="@color/zm_starred_radio_btn_text_color" n1:gravity="center" n1:id="@id/zm_starred_radio_btn2" n1:background="@drawable/zm_starred_radio_btn" n1:layout_width="0.0px" n1:layout_height="fill_parent" n1:button="@null" n1:text="@string/zm_mm_starred_radio_message_owp40" n1:layout_weight="1.0" />
+    </RadioGroup>
+    <android.support.v4.view.ViewPager n1:id="@id/zm_starred_viewPager" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <LinearLayout n1:orientation="horizontal" n1:id="@id/zm_starred_fragment_container" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+</LinearLayout>

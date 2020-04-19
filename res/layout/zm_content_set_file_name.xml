@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:paddingLeft="10.0dip" n1:paddingTop="10.0dip" n1:paddingRight="10.0dip" n1:paddingBottom="20.0dip" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:minWidth="500.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:gravity="center_vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_content_set_file_name_instructions" style="@style/ZMTextView.Large.OnLight" />
+    <EditText n1:id="@id/edtFileName" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginTop="15.0dip" n1:layout_marginRight="10.0dip" n1:text="" n1:hint="@string/zm_hint_file_name" n1:maxLength="50" n1:imeOptions="actionDone|flagNoExtractUi" />
+</LinearLayout>

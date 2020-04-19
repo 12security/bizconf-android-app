@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout n1:id="@id/panelTitleBar" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:zm_leftButton="@id/btnBack" n2:zm_rightButton="@id/btnInvite" n2:zm_title="@id/txtTitle" style="@style/ZMTitleBar" xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <Button n1:id="@id/btnBack" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_btn_back" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" style="@style/ZMBackButton" />
+        <Button n1:id="@id/btnInvite" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:minWidth="80.0dip" n1:text="@string/zm_btn_done" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" style="@style/ZMButton.TitleBar" />
+        <us.zoom.androidlib.widget.ZMDynTextSizeTextView n1:gravity="center_horizontal" n1:id="@id/txtTitle" n1:paddingLeft="5.0dip" n1:paddingRight="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_title_add_favorite" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true" style="@style/ZMTextView.Title" />
+    </us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <RelativeLayout n1:id="@id/panelSearch" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <EditText n1:id="@id/edtSearch" n1:background="@drawable/zm_search_bg_normal" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:hint="@string/zm_hint_search" n1:singleLine="true" n1:layout_toLeftOf="@id/btnSearch" n1:layout_alignParentLeft="true" n1:layout_alignWithParentIfMissing="true" n1:imeOptions="actionSearch" />
+        <Button n1:id="@id/btnClearSearchView" n1:background="@drawable/zm_btn_clear_search_view" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_toLeftOf="@id/btnSearch" n1:layout_centerVertical="true" n1:layout_alignWithParentIfMissing="true" n1:contentDescription="@string/zm_description_mm_btn_clear_search" />
+        <Button n1:id="@id/btnSearch" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="3.0dip" n1:text="@string/zm_btn_search" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" style="@style/ZMButton.TitleBar" />
+    </RelativeLayout>
+    <FrameLayout n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0">
+        <com.zipow.videobox.view.AddFavoriteListView n1:id="@id/buddyListView" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+        <LinearLayout n1:layout_gravity="center" n1:orientation="horizontal" n1:id="@id/panelLoading" n1:background="@drawable/zm_loading_bg" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+            <ProgressBar n1:layout_gravity="center_vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="10.0dip" style="@style/ZMProgressBar.Small" />
+            <TextView n1:layout_gravity="center_vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_msg_waiting_search_domain_user" style="@style/ZMTextView.Medium.OnDark" />
+        </LinearLayout>
+        <LinearLayout n1:gravity="center" n1:layout_gravity="center" n1:orientation="vertical" n1:id="@id/panelConfigAccount" n1:padding="20.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+            <TextView n1:gravity="center" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="10.0dip" n1:text="@string/zm_msg_configure_account_indication" style="@style/ZMTextView.Normal.OnLight" />
+            <Button n1:id="@id/btnConfigAccount" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_btn_configure_account" />
+        </LinearLayout>
+        <LinearLayout n1:gravity="center" n1:layout_gravity="center" n1:orientation="vertical" n1:id="@id/panelFailureMsg" n1:padding="20.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+            <TextView n1:gravity="center" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="10.0dip" n1:text="@string/zm_msg_load_domain_users_failed" style="@style/ZMTextView.Normal.OnLight" />
+        </LinearLayout>
+    </FrameLayout>
+    <us.zoom.androidlib.widget.ZMHorizontalListView n1:id="@id/listSelected" n1:background="#fff0f0f0" n1:layout_width="fill_parent" n1:layout_height="50.0dip" n1:layout_marginLeft="2.0dip" n1:layout_marginTop="5.0dip" n1:layout_marginRight="2.0dip" />
+</LinearLayout>

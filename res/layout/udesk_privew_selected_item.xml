@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:paddingLeft="@dimen/udesk_5" n1:paddingRight="@dimen/udesk_5" n1:layout_width="@dimen/udesk_70" n1:layout_height="@dimen/udesk_60"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView n1:id="@id/udesk_iv_picture" n1:layout_width="@dimen/udesk_60" n1:layout_height="@dimen/udesk_60" n2:actualImageScaleType="fitXY" n2:placeholderImage="@drawable/udesk_image_placeholder" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <View n1:id="@id/udesk_v_selector" n1:background="@drawable/udesk_bg_selected_frame_photos" n1:visibility="gone" n1:layout_width="@dimen/udesk_60" n1:layout_height="@dimen/udesk_60" />
+    <TextView n1:textSize="@dimen/udesk_sp12" n1:textColor="@color/udesk_color_bg_white" n1:gravity="center_vertical" n1:id="@id/udesk_duration" n1:background="@drawable/udesk_photo_time_bg" n1:paddingLeft="5.0dip" n1:paddingTop="8.0dip" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="20.0dip" n1:drawableLeft="@drawable/udesk_video_icon" n1:drawablePadding="5.0dip" n1:layout_alignParentBottom="true" />
+</RelativeLayout>

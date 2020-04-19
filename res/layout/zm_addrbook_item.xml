@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center|left" n1:orientation="horizontal" n1:paddingTop="5.0dip" n1:paddingBottom="5.0dip" n1:descendantFocusability="blocksDescendants" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:weightSum="1.0"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:duplicateParentState="true" n1:layout_width="57.0dip" n1:layout_height="57.0dip" n1:layout_marginLeft="10.0dip">
+        <com.zipow.videobox.view.AvatarView n1:id="@id/avatarView" n1:duplicateParentState="true" n1:layout_width="51.0dip" n1:layout_height="51.0dip" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" n2:zm_description_enable="false" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <com.zipow.videobox.view.PresenceStateView n1:id="@id/presenceStateView" n1:paddingTop="3.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_alignParentTop="true" n1:layout_alignParentRight="true" n3:zm_subpresence_type="0" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    </RelativeLayout>
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="vertical" n1:paddingRight="5.0dip" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+        <LinearLayout n1:gravity="center|left" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <us.zoom.androidlib.widget.ZMEllipsisTextView n1:ellipsize="end" n1:id="@id/txtScreenName" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="" n1:maxLines="1" n1:singleLine="true" n1:layout_weight="1.0" style="@style/UIKitTextView.CellTitle" />
+            <TextView n1:textColor="@color/zm_mm_presence_offline" n1:gravity="center|left" n1:id="@id/waitApproval" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" n1:text="@string/zm_lbl_wait_approval" style="@style/ZMTextView.Small" />
+            <TextView n1:id="@id/txtGroupNums" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="" style="@style/ZMTextView.Small.Dimmed" />
+        </LinearLayout>
+        <TextView n1:ellipsize="end" n1:id="@id/txtCustomMessage" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="" n1:maxLines="1" n1:singleLine="true" style="@style/UIKitTextView.PrimaryText.Normal.Dimmed" />
+    </LinearLayout>
+    <ImageView n1:id="@id/imageCall" n1:padding="10.0dip" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_sip_directory_call" n1:contentDescription="@string/zm_accessibility_sip_call_dial" />
+</LinearLayout>

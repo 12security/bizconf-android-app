@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="@color/zm_white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:id="@id/content" n1:paddingTop="20.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_centerInParent="true">
+        <com.zipow.videobox.view.sip.DialKeyboardView n1:id="@id/panelKeybord" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+        <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:id="@id/panelCallBtns" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/zm_sip_dialpad_content_margin_left" n1:layout_marginTop="@dimen/zm_sip_dialpad_row_space" n1:layout_marginRight="@dimen/zm_sip_dialpad_content_margin_left" n1:layout_below="@id/panelKeybord">
+            <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <ImageView n1:id="@id/imgSearch" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:src="@drawable/zm_sip_ic_keyboard_search" n1:layout_weight="1.0" n1:contentDescription="@string/zm_sip_dial_search_hint_31432" />
+                <ImageView n1:layout_gravity="center_horizontal" n1:id="@id/btnDial" n1:layout_width="0.0dip" n1:layout_height="@dimen/zm_sip_dialpad_key_width" n1:src="@drawable/zm_sip_start_call" n1:scaleType="centerInside" n1:layout_weight="1.0" n1:contentDescription="@string/zm_accessibility_sip_call_dial" />
+                <ImageView n1:id="@id/imgDelete" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:src="@drawable/zm_sip_ic_keyboard_del" n1:layout_weight="1.0" n1:contentDescription="@string/zm_btn_delete" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@id/panelRegisterSipNo" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@id/content" n1:layout_alignParentBottom="true">
+        <TextView n1:gravity="center" n1:id="@id/txtRegisterSipNo" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:singleLine="true" n1:drawableRight="@drawable/zm_sip_ic_outbound_dropdown" n1:drawablePadding="3.0dip" style="@style/UIKitTextView.IconLabel.Dimmed" />
+    </LinearLayout>
+    <LinearLayout n1:gravity="center|right" n1:orientation="horizontal" n1:id="@id/panelClose" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/zm_sip_dialpad_content_margin_left" n1:layout_below="@id/content" n1:layout_alignParentBottom="true">
+        <TextView n1:id="@id/btnClose" n1:visibility="visible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_btn_back_to_call_61381" style="@style/UIKitButton.White.BlueText" />
+    </LinearLayout>
+    <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginBottom="-20.0dip" n1:layout_above="@id/content">
+        <TextView n1:ellipsize="end" n1:gravity="center" n1:id="@id/txtTitle" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="100.0dip" n1:layout_marginRight="100.0dip" style="@style/UIKitTextView.PrimaryText.Normal" />
+        <EditText n1:ellipsize="start" n1:gravity="center" n1:id="@id/txtDialNum" n1:background="@color/zm_transparent" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="54.0dip" n1:layout_marginRight="54.0dip" n1:cursorVisible="true" n1:singleLine="true" n1:inputType="phone" n1:textCursorDrawable="@color/zm_transparent" style="@style/ZMTextView.Dialpad.Num" />
+    </LinearLayout>
+    <TextView n1:id="@id/btnCloseInSip" n1:visibility="visible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="8.0dip" n1:layout_marginTop="8.0dip" n1:text="@string/zm_btn_close" style="@style/UIKitButton.White.BlueText" />
+    <us.zoom.androidlib.widget.ZMDynTextSizeTextView n1:gravity="center" n1:id="@id/txtSipUnvailable" n1:background="@color/zm_ui_kit_color_gray_747487" n1:paddingLeft="20.0dip" n1:paddingRight="20.0dip" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="50.0dip" n1:text="@string/zm_mm_msg_sip_unavailable_14480" n1:layout_alignParentBottom="true" style="@style/UIKitTextView.PrimaryText.Normal.White" />
+    <LinearLayout n1:layout_gravity="center_horizontal" n1:orientation="vertical" n1:id="@id/panel911" n1:background="@drawable/zm_sip_911_shadow" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_alignParentBottom="true" n1:layout_centerHorizontal="true">
+        <TextView n1:textColor="@color/zm_ui_kit_color_black_232333" n1:gravity="center" n1:id="@id/e911_servic" n1:focusable="true" n1:layout_width="fill_parent" n1:layout_height="56.0dip" n1:text="@string/zm_sip_e911_servic_54263" n1:lineSpacingExtra="2.0sp" />
+        <View n1:background="@drawable/zm_sip_horizontal_line" n1:layout_width="fill_parent" n1:layout_height="1.0dip" />
+        <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="48.0dip">
+            <TextView n1:textSize="@dimen/zm_ui_kit_text_size_14sp" n1:textColor="@color/zm_ui_kit_color_gray_747487" n1:gravity="center" n1:id="@id/learn_more" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:text="@string/zm_sip_e911_servic_learn_more_54263" n1:layout_weight="1.0" n1:lineSpacingExtra="3.0sp" />
+            <View n1:background="@drawable/zm_sip_vertical_line" n1:layout_width="1.0dip" n1:layout_height="fill_parent" />
+            <TextView n1:textColor="@color/zm_ui_kit_color_blue_0E71EB" n1:gravity="center" n1:id="@id/dismiss" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:text="@string/zm_qa_btn_dismiss_question_34305" n1:layout_weight="1.0" n1:lineSpacingExtra="3.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

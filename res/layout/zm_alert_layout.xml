@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<us.zoom.androidlib.widget.ZMDialogRootLayout n1:orientation="vertical" n1:id="@id/dialog_root_layout" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minWidth="270.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:id="@id/topPanel" n1:paddingTop="20.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <TextView n1:ellipsize="end" n1:gravity="center" n1:layout_gravity="center_vertical" n1:id="@id/alertTitle" n1:paddingLeft="15.0dip" n1:paddingRight="15.0dip" n1:paddingBottom="12.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="Title text " style="@style/ZMTextView.Large.DialogTitle" />
+        <TextView n1:gravity="bottom" n1:id="@id/alertOptionTitle" n1:background="@color/zm_dialog_option_titlebg" n1:paddingLeft="20.0dip" n1:paddingTop="20.0dip" n1:paddingRight="20.0dip" n1:paddingBottom="10.0dip" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="Test" n1:singleLine="true" style="@style/ZMTextView.OptionTitle" />
+    </LinearLayout>
+    <LinearLayout n1:orientation="vertical" n1:id="@id/customTopPanel" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    <LinearLayout n1:orientation="vertical" n1:id="@id/contentPanel" n1:paddingTop="5.0dip" n1:paddingBottom="5.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+        <ScrollView n1:id="@id/scrollView" n1:paddingLeft="20.0dip" n1:paddingRight="20.0dip" n1:paddingBottom="0.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="40.0dip" n1:overScrollMode="ifContentScrolls">
+            <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <ImageView n1:id="@id/alertIcon" n1:paddingRight="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+                <TextView n1:gravity="center" n1:id="@id/alertdialogmsg" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="message text" style="@style/ZMTextView.Normal.DialogMsg" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <FrameLayout n1:id="@id/customPanel" n1:paddingTop="3.0dip" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+        <FrameLayout n1:id="@id/customView" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    </FrameLayout>
+    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <LinearLayout n1:layout_gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/customPanelBottomGap" n1:paddingLeft="20.0dip" n1:paddingRight="20.0dip" n1:layout_width="fill_parent" n1:layout_height="20.0dip" />
+        <LinearLayout n1:orientation="horizontal" n1:id="@id/buttonPanel" n1:background="@color/zm_split_bg" n1:paddingTop="0.5dip" n1:paddingBottom="0.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@id/customPanelBottomGap">
+            <Button n1:gravity="center" n1:layout_gravity="center|right" n1:id="@id/button2" n1:padding="15.0dip" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_marginRight="0.5dip" n1:text="Cancel" n1:maxLines="2" n1:layout_weight="1.0" style="@style/ZMButton.Dialog" />
+            <Button n1:gravity="center" n1:layout_gravity="center" n1:id="@id/button3" n1:padding="15.0dip" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_marginRight="0.5dip" n1:text="Neutral" n1:maxLines="2" n1:layout_weight="1.0" style="@style/ZMButton.Dialog" />
+            <Button n1:gravity="center" n1:layout_gravity="center|left" n1:id="@id/button1" n1:padding="15.0dip" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:text="OK" n1:maxLines="3" n1:layout_weight="1.0" style="@style/ZMButton.Dialog.HappyPath" />
+        </LinearLayout>
+    </RelativeLayout>
+</us.zoom.androidlib.widget.ZMDialogRootLayout>

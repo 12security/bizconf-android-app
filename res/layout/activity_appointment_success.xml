@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/activity_appointment_success" n1:background="@color/small_gray" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/public_toolbar" />
+    <LinearLayout n1:orientation="vertical" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/activity_horizontal_margin">
+        <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_vertical_title" n1:layout_marginLeft="@dimen/activity_horizontal_margin" n1:layout_marginRight="@dimen/activity_horizontal_margin">
+            <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/black" n1:gravity="center_vertical" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:text="@string/conference_theme" />
+            <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/light_gray" n1:ellipsize="end" n1:gravity="center_vertical" n1:id="@id/meeting_theme" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:text="@string/conference_theme" n1:maxEms="15" n1:singleLine="true" n1:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_vertical_title" n1:layout_marginLeft="@dimen/activity_horizontal_margin" n1:layout_marginRight="@dimen/activity_horizontal_margin">
+            <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/black" n1:gravity="center_vertical" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:text="@string/hint_join_ID" />
+            <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/light_gray" n1:gravity="center_vertical" n1:id="@id/meeting_id" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:text="@string/conference_theme" n1:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_vertical_title" n1:layout_marginLeft="@dimen/activity_horizontal_margin" n1:layout_marginRight="@dimen/activity_horizontal_margin">
+            <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/black" n1:gravity="center_vertical" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:text="@string/start_time" />
+            <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/light_gray" n1:gravity="center_vertical" n1:id="@id/start_time" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:text="@string/conference_theme" n1:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_vertical_title" n1:layout_marginLeft="@dimen/activity_horizontal_margin" n1:layout_marginRight="@dimen/activity_horizontal_margin">
+            <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/black" n1:gravity="center_vertical" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:text="@string/duration_time" />
+            <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/light_gray" n1:gravity="center_vertical" n1:id="@id/duration_time" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:text="@string/conference_theme" n1:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_vertical_title" n1:layout_marginRight="@dimen/activity_vertical_title">
+        <Button n1:textSize="@dimen/textSize28px" n1:textColor="@color/violet" n1:id="@id/invitation_by_wx" n1:background="@drawable/shape_button" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_login_button" n1:layout_marginTop="@dimen/activity_horizontal_margin" n1:text="@string/appointment_invitation_wx" />
+        <Button n1:textSize="@dimen/textSize28px" n1:textColor="@color/violet" n1:id="@id/invitation_by_message" n1:background="@drawable/shape_button" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_login_button" n1:layout_marginTop="@dimen/activity_horizontal_margin" n1:text="@string/appointment_invitation_message" />
+        <Button n1:textSize="@dimen/textSize28px" n1:textColor="@color/violet" n1:id="@id/invitation_by_email" n1:background="@drawable/shape_button" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_login_button" n1:layout_marginTop="@dimen/activity_horizontal_margin" n1:text="@string/appointment_invitation_email" />
+        <Button n1:textSize="@dimen/textSize28px" n1:textColor="@color/violet" n1:id="@id/copy_msg" n1:background="@drawable/shape_button" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_login_button" n1:layout_marginTop="@dimen/activity_horizontal_margin" n1:text="@string/appointment_invitation_copy" />
+        <Button n1:textSize="@dimen/textSize28px" n1:textColor="@color/violet" n1:id="@id/add_event" n1:background="@drawable/shape_button" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_login_button" n1:layout_marginTop="@dimen/activity_horizontal_margin" n1:text="@string/appointment_success_add_event" />
+        <Button n1:textSize="@dimen/textSize28px" n1:textColor="@color/violet" n1:id="@id/btn_invite_bvrooms" n1:background="@drawable/shape_button" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_login_button" n1:layout_marginTop="@dimen/activity_horizontal_margin" n1:text="@string/appointment_invite_bvrooms" />
+    </LinearLayout>
+</LinearLayout>

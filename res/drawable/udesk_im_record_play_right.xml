@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list n1:oneshot="false"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <item n1:duration="150" n1:drawable="@drawable/udesk_im_record_right_default" />
+    <item n1:duration="150" n1:drawable="@drawable/udesk_im_record_right_play1" />
+    <item n1:duration="150" n1:drawable="@drawable/udesk_im_record_right_play2" />
+</animation-list>

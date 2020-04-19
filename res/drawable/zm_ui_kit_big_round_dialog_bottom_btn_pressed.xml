@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape>
+    <corners n1:topLeftRadius="0.0dip" n1:topRightRadius="0.0dip" n1:bottomLeftRadius="@dimen/zm_dialog_radius_big" n1:bottomRightRadius="@dimen/zm_dialog_radius_big"
+      xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <solid n2:color="@color/zm_half_transparent"
+      xmlns:n2="http://schemas.android.com/apk/res/android" />
+</shape>

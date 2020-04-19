@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="@color/zm_transparent" n1:layout_width="wrap_content" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/imgCircle" n1:paddingTop="0.5dip" n1:paddingRight="0.5dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_pie_view_background" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true" />
+    <ImageView n1:id="@id/imgFocusRight" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_pie_view_right" n1:layout_alignRight="@id/imgCircle" n1:layout_centerVertical="true" />
+    <ImageView n1:id="@id/imgFocusLeft" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_pie_view_left" n1:layout_alignLeft="@id/imgCircle" n1:layout_centerVertical="true" />
+    <ImageView n1:id="@id/imgFocusUp" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_pie_view_up" n1:layout_alignTop="@id/imgCircle" n1:layout_centerHorizontal="true" />
+    <ImageView n1:id="@id/imgFocusDown" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_pie_view_down" n1:layout_alignBottom="@id/imgCircle" n1:layout_centerHorizontal="true" />
+</RelativeLayout>

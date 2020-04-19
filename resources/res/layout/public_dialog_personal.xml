@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="@dimen/activity_dialog_width" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/textSize26PX" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:background="@drawable/public_shape_dialog" android:layout_width="wrap_content" android:layout_height="@dimen/activity_public_editext" android:text="@string/appointment_invitation_way"/>
+        <include layout="@layout/public_grayline"/>
+        <Button android:textSize="@dimen/textSize26PX" android:textColor="@color/light_gray" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/invitation_by_wx" android:background="@drawable/public_shape_dialog" android:layout_width="match_parent" android:layout_height="@dimen/activity_public_editext" android:text="@string/appointment_invitation_wx" android:textAllCaps="false"/>
+        <include layout="@layout/public_grayline"/>
+        <Button android:textSize="@dimen/textSize26PX" android:textColor="@color/light_gray" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/invitation_by_message" android:background="@drawable/public_shape_dialog" android:layout_width="match_parent" android:layout_height="@dimen/activity_public_editext" android:text="@string/appointment_invitation_message" android:textAllCaps="false"/>
+        <include layout="@layout/public_grayline"/>
+        <Button android:textSize="@dimen/textSize26PX" android:textColor="@color/light_gray" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/copy_msg" android:background="@drawable/public_shape_dialog" android:layout_width="match_parent" android:layout_height="@dimen/activity_public_editext" android:text="@string/appointment_invitation_copy" android:textAllCaps="false"/>
+        <include layout="@layout/public_grayline"/>
+        <Button android:textSize="@dimen/textSize26PX" android:textColor="@color/violet" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/cancel_invitation" android:background="@drawable/public_shape_dialog" android:layout_width="match_parent" android:layout_height="@dimen/activity_public_editext" android:text="@string/appointment_invitation_cancel" android:textAllCaps="false"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center" n1:orientation="vertical" n1:id="@id/udesk_express_root" n1:visibility="visible" n1:descendantFocusability="blocksDescendants" n1:layout_width="@dimen/udesk_90" n1:layout_height="@dimen/udesk_90" n1:layout_marginRight="@dimen/udesk_14"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/udesk_express_img" n1:layout_width="@dimen/udesk_55" n1:layout_height="@dimen/udesk_55" n1:layout_marginTop="@dimen/udesk_5" />
+    <TextView n1:textSize="@dimen/udesk_sp12" n1:textColor="@color/udesk_color_999999" n1:gravity="center|top" n1:id="@id/udesk_survy_desc" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+</LinearLayout>

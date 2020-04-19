@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:background="@drawable/zm_check_highlight_selection_bg" n1:paddingLeft="20.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="1.0dip" n1:layout_marginBottom="1.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/imgCheck" n1:visibility="gone" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_check_highlight_selection" />
+    <TextView n1:textColor="@drawable/zm_highlight_selection_text_color" n1:id="@id/txtContent" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Text" style="@style/ZMTextView.Normal" />
+</LinearLayout>

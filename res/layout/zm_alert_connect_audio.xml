@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@color/zm_white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:gravity="center_vertical" n1:layout_gravity="center_horizontal" n1:orientation="horizontal" n1:paddingLeft="15.0dip" n1:paddingRight="15.0dip" n1:paddingBottom="12.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="20.0dip">
+        <ImageView n1:id="@id/imgAudioConnected" n1:visibility="gone" n1:layout_width="16.0dip" n1:layout_height="16.0dip" n1:layout_marginRight="6.0dip" n1:src="@drawable/zm_audio_connected" />
+        <TextView n1:ellipsize="end" n1:gravity="center" n1:id="@id/txtTitle" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_title_audio_not_connected_45416" style="@style/ZMTextView.Large.DialogTitle" />
+    </LinearLayout>
+    <TextView n1:gravity="center" n1:id="@id/txtMsg" n1:paddingTop="5.0dip" n1:paddingBottom="5.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="20.0dip" n1:layout_marginRight="20.0dip" n1:text="@string/zm_msg_audio_not_connected_45416" style="@style/ZMTextView.Normal.DialogMsg" />
+    <LinearLayout n1:orientation="horizontal" n1:background="@color/zm_split_bg" n1:paddingTop="0.5dip" n1:paddingBottom="0.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="8.0dip">
+        <Button n1:gravity="center" n1:layout_gravity="center|right" n1:id="@id/btCancel" n1:padding="15.0dip" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_marginRight="0.5dip" n1:text="@string/zm_btn_cancel" n1:maxLines="2" n1:layout_weight="1.0" style="@style/ZMButton.Dialog" />
+        <Button n1:textColor="@drawable/zm_popitem_text_color" n1:gravity="center" n1:layout_gravity="center|left" n1:id="@id/btRaiseHand" n1:padding="15.0dip" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:text="@string/zm_btn_raise_hand" n1:maxLines="2" n1:layout_weight="1.0" style="@style/ZMButton.Dialog.HappyPath" />
+    </LinearLayout>
+</LinearLayout>

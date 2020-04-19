@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:layoutDirection="ltr">
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/udesk_sp14" android:textColor="#ff606060" android:gravity="center" android:id="@+id/udesk_get_more_tips" android:layout_width="match_parent" android:layout_height="@dimen/udesk_50" android:text="@string/udesk_get_more_history"/>
+        <include android:id="@+id/udesk_get_more_progress" android:visibility="gone" android:layout_width="@dimen/udesk_30" android:layout_height="@dimen/udesk_50" android:layout_marginLeft="@dimen/udesk_80" layout="@layout/udesk_default_progressbar"/>
+    </RelativeLayout>
+</LinearLayout>

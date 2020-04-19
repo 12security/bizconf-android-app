@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RadioGroup n1:orientation="vertical" n1:id="@id/public_radio_group" n1:background="@color/white" n1:paddingLeft="@dimen/activity_horizontal_margin" n1:paddingRight="@dimen/activity_horizontal_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/activity_public_hint">
+        <RadioButton n1:textSize="@dimen/textSize28px" n1:id="@id/radioButton1" n1:background="@null" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_public_editext" n1:button="@null" n1:text="10" n1:drawableRight="@drawable/public_radiobutton" />
+        <include layout="@layout/public_grayline" />
+        <RadioButton n1:textSize="@dimen/textSize28px" n1:id="@id/radioButton2" n1:background="@null" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_public_editext" n1:button="@null" n1:text="25" n1:drawableRight="@drawable/public_radiobutton" />
+        <include layout="@layout/public_grayline" />
+        <RadioButton n1:textSize="@dimen/textSize28px" n1:id="@id/radioButton3" n1:background="@null" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_public_editext" n1:button="@null" n1:text="50" n1:drawableRight="@drawable/public_radiobutton" />
+        <include layout="@layout/public_grayline" />
+        <RadioButton n1:textSize="@dimen/textSize28px" n1:id="@id/radioButton4" n1:background="@null" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_public_editext" n1:button="@null" n1:text="100" n1:drawableRight="@drawable/public_radiobutton" />
+        <include layout="@layout/public_grayline" />
+        <RadioButton n1:textSize="@dimen/textSize28px" n1:id="@id/radioButton5" n1:background="@null" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_public_editext" n1:button="@null" n1:text="200" n1:drawableRight="@drawable/public_radiobutton" />
+        <include layout="@layout/public_grayline" />
+        <RadioButton n1:textSize="@dimen/textSize28px" n1:id="@id/radioButton6" n1:background="@null" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_public_editext" n1:button="@null" n1:text="500" n1:drawableRight="@drawable/public_radiobutton" />
+    </RadioGroup>
+</LinearLayout>

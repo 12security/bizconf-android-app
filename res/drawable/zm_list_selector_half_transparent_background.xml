@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item n1:state_window_focused="false" n1:drawable="@color/zm_transparent"
+      xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <item n2:state_focused="true" n2:state_enabled="false" n2:state_pressed="true"
+      xmlns:n2="http://schemas.android.com/apk/res/android">
+        <shape>
+            <solid n2:color="@color/zm_transparent" />
+        </shape>
+    </item>
+    <item n3:state_focused="true" n3:state_enabled="false"
+      xmlns:n3="http://schemas.android.com/apk/res/android">
+        <shape>
+            <solid n3:color="@color/zm_transparent" />
+        </shape>
+    </item>
+    <item n4:state_focused="true" n4:state_pressed="true"
+      xmlns:n4="http://schemas.android.com/apk/res/android">
+        <shape>
+            <solid n4:color="@color/zm_half_transparent" />
+        </shape>
+    </item>
+    <item n5:state_focused="false" n5:state_pressed="true"
+      xmlns:n5="http://schemas.android.com/apk/res/android">
+        <shape>
+            <solid n5:color="@color/zm_half_transparent" />
+        </shape>
+    </item>
+    <item n6:state_focused="true"
+      xmlns:n6="http://schemas.android.com/apk/res/android">
+        <shape>
+            <solid n6:color="@color/zm_half_transparent" />
+        </shape>
+    </item>
+</selector>

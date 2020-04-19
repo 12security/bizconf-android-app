@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@drawable/zm_window_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:gravity="center" n1:id="@id/panelTitleBar" n1:layout_width="fill_parent" n1:layout_height="@dimen/zm_pt_titlebar_height" style="@style/ZMTitleBar">
+        <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <Button n1:id="@id/btnBack" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_btn_cancel" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" style="@style/ZMButton.TitleBar" />
+            <TextView n1:gravity="center_horizontal" n1:id="@id/txtTitle" n1:paddingLeft="5.0dip" n1:paddingRight="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_title_create_profile" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true" style="@style/ZMTextView.Title" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:gravity="center|top" n1:orientation="vertical" n1:paddingBottom="30.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" style="@style/ZMTextView.Instructions">
+                <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_ic_tick" />
+                <TextView n1:id="@id/txtMessage" n1:background="@null" n1:padding="0.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" n1:text="@string/zm_msg_indication_email_verified" style="@style/ZMTextView.Instructions" />
+            </LinearLayout>
+            <LinearLayout n1:background="@drawable/zm_list_divider" n1:layout_width="fill_parent" n1:layout_height="1.0px" />
+            <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:paddingBottom="5.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="15.0dip">
+                <EditText n1:id="@id/edtFirstName" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:hint="@string/zm_hint_first_name" style="@style/ZMSettingOptionEdit.First" />
+                <EditText n1:id="@id/edtLastName" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:hint="@string/zm_hint_last_name" style="@style/ZMSettingOptionEdit.Center" />
+                <EditText n1:id="@id/edtPassword" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:hint="@string/zm_hint_zoom_pwd" n1:selectAllOnFocus="true" n1:maxLength="32" n1:inputType="textPassword" n1:imeOptions="actionNext" n1:contentDescription="@string/zm_hint_zoom_pwd" style="@style/ZMSettingOptionEdit.Center" />
+                <EditText n1:id="@id/edtVerifyPassword" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:hint="@string/zm_hint_retype_pwd" n1:selectAllOnFocus="true" n1:maxLength="32" n1:inputType="textPassword" n1:imeOptions="actionDone" n1:contentDescription="@string/zm_hint_retype_pwd" style="@style/ZMSettingOptionEdit.Last" />
+            </LinearLayout>
+            <TextView n1:textColor="#ffff0000" n1:gravity="center" n1:id="@id/txtError" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:text="@string/zm_msg_confirm_password_not_match" style="@style/ZMTextView.Medium" />
+            <Button n1:id="@id/btnOK" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="15.0dip" n1:layout_marginTop="10.0dip" n1:layout_marginRight="15.0dip" n1:text="@string/zm_btn_get_started" style="@style/ZMButton.HappyPath" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

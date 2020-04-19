@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<us.zoom.androidlib.widget.ZMDialogRootLayout n1:orientation="vertical" n1:background="@color/zm_white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <View n1:layout_width="270.0dip" n1:layout_height="0.0dip" />
+    <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="100.0dip">
+        <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:id="@id/btnPauseRecord" n1:background="@drawable/zm_btn_record_control_bg_color" n1:focusable="true" n1:clickable="true" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.0">
+            <ImageView n1:background="@null" n1:focusable="false" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:src="@drawable/zm_btn_record_pause" />
+            <TextView n1:textColor="@drawable/zm_btn_record_control_txt_color" n1:id="@id/txtPauseRecord" n1:focusable="false" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:text="@string/zm_record_btn_pause" style="@style/ZMTextView.Small" />
+        </LinearLayout>
+        <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:id="@id/btnResumeRecord" n1:background="@drawable/zm_btn_record_control_bg_color" n1:focusable="true" n1:visibility="gone" n1:clickable="true" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.0">
+            <ImageView n1:background="@null" n1:focusable="false" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:src="@drawable/zm_btn_record_resume" />
+            <TextView n1:textColor="@drawable/zm_btn_record_control_txt_color" n1:id="@id/txtResumeRecord" n1:focusable="false" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:text="@string/zm_record_btn_resume" style="@style/ZMTextView.Small" />
+        </LinearLayout>
+        <ImageView n1:background="#10000000" n1:layout_width="1.0dip" n1:layout_height="fill_parent" />
+        <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:id="@id/btnStopRecord" n1:background="@drawable/zm_btn_record_control_bg_color" n1:focusable="true" n1:clickable="true" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.0">
+            <ImageView n1:background="@null" n1:focusable="false" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:src="@drawable/zm_btn_record_stop" />
+            <TextView n1:textColor="@drawable/zm_btn_record_control_txt_color" n1:id="@id/txtResumeStop" n1:focusable="false" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:text="@string/zm_record_btn_stop" style="@style/ZMTextView.Small" />
+        </LinearLayout>
+    </LinearLayout>
+</us.zoom.androidlib.widget.ZMDialogRootLayout>

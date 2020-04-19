@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:minWidth="600.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout n1:gravity="center_vertical" n1:id="@id/panelTitleBar" n1:layout_width="fill_parent" n1:layout_height="@dimen/zm_pt_titlebar_height" n2:zm_leftButton="@id/btnBack" n2:zm_rightButton="@id/btnSchedule" n2:zm_title="@id/txtTitle" style="@style/ZMTitleBar" xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <Button n1:id="@id/btnBack" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_btn_cancel" style="@style/ZMButton.TitleBar" />
+        <Button n1:id="@id/btnSchedule" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:minWidth="55.0dip" n1:text="@string/zm_btn_done" style="@style/ZMButton.TitleBar" />
+        <us.zoom.androidlib.widget.ZMDynTextSizeTextView n1:gravity="center_horizontal" n1:id="@id/txtTitle" n1:paddingLeft="5.0dip" n1:paddingRight="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_title_schedule_meeting" style="@style/ZMTextView.Title" />
+    </us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <ScrollView n1:id="@id/scrollView" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <us.zoom.androidlib.widget.ZMSettingsLayout n1:orientation="vertical" n1:paddingLeft="0.0dip" n1:paddingTop="0.0dip" n1:paddingRight="0.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n3:zm_settingsCategorySpacing="0.0dip" xmlns:n3="http://schemas.android.com/apk/res-auto">
+            <us.zoom.androidlib.widget.ZMSettingsCategory n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/zm_setting_item_group_spacing">
+                <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:paddingLeft="@dimen/zm_setting_item_padding_left" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <EditText n1:id="@id/edtTopic" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:text="@string/zm_lbl_topic_default" n1:singleLine="true" n1:maxLength="128" style="@style/ZMEditText.SettingsItem">
+                        <requestFocus />
+                    </EditText>
+                </LinearLayout>
+            </us.zoom.androidlib.widget.ZMSettingsCategory>
+            <us.zoom.androidlib.widget.ZMSettingsCategory n1:orientation="vertical" n1:paddingBottom="0.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <LinearLayout n1:orientation="horizontal" n1:id="@id/optionDate" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <TextView n1:layout_gravity="center|left" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_date_on_schedle" style="@style/ZMTextView.SettingsItem.Small" />
+                    <TextView n1:gravity="center|right" n1:id="@id/txtDate" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:text="Thu 2012-09-27" style="@style/ZMTextView.Normal.Dimmed" />
+                </LinearLayout>
+                <LinearLayout n1:orientation="horizontal" n1:id="@id/optionTimeFrom" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <TextView n1:layout_gravity="center|left" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_from" style="@style/ZMTextView.SettingsItem.Small" />
+                    <TextView n1:gravity="center|right" n1:id="@id/txtTimeFrom" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:text="09:00 am" style="@style/ZMTextView.Normal.Dimmed" />
+                </LinearLayout>
+                <LinearLayout n1:orientation="horizontal" n1:id="@id/optionTimeTo" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <TextView n1:layout_gravity="center|left" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_to" style="@style/ZMTextView.SettingsItem.Small" />
+                    <TextView n1:gravity="center|right" n1:id="@id/txtTimeTo" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:text="10:00 am" style="@style/ZMTextView.Normal.Dimmed" />
+                </LinearLayout>
+                <LinearLayout n1:orientation="horizontal" n1:id="@id/optionTimeZone" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <TextView n1:layout_gravity="center|left" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_time_zone" style="@style/ZMTextView.SettingsItem.Small" />
+                    <TextView n1:gravity="center|right" n1:id="@id/txtTimeZone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:text="GMT+08:00 China Stardard Time" style="@style/ZMTextView.Normal.Dimmed" />
+                </LinearLayout>
+                <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/optionRepeat" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <TextView n1:layout_gravity="center|left" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_repeat" style="@style/ZMTextView.SettingsItem.Small" />
+                    <TextView n1:gravity="center|right" n1:id="@id/txtRepeatType" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_repeat_never" style="@style/ZMTextView.Normal.Dimmed" />
+                </LinearLayout>
+                <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/optionEndRepeat" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <TextView n1:layout_gravity="center|left" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_end_repeat" style="@style/ZMTextView.SettingsItem.Small" />
+                    <TextView n1:gravity="center|right" n1:id="@id/txtEndRepeat" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_end_repeat_never" style="@style/ZMTextView.Normal.Dimmed" />
+                </LinearLayout>
+                <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@id/optionUsePMI" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <LinearLayout n1:orientation="vertical" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+                        <TextView n1:gravity="center|left" n1:paddingBottom="0.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="0.0dip" n1:text="@string/zm_chk_schedule_use_pmi_21201" style="@style/ZMTextView.SettingsItem.Small" />
+                        <TextView n1:gravity="center|left" n1:id="@id/txtUsePMI" n1:paddingTop="0.0dip" n1:paddingBottom="@dimen/zm_setting_item_padding_bottom" n1:layout_width="fill_parent" n1:layout_height="wrap_content" style="@style/ZMTextView.SettingsItemDesc.Small" />
+                    </LinearLayout>
+                    <us.zoom.androidlib.widget.ZMCheckedTextView n1:id="@id/chkUsePMI" n1:clickable="false" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:checkMark="@drawable/zm_btn_toggle_default" />
+                </LinearLayout>
+            </us.zoom.androidlib.widget.ZMSettingsCategory>
+            <LinearLayout n1:orientation="vertical" n1:background="@color/zm_gray_1" n1:paddingTop="6.0dip" n1:paddingBottom="6.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <TextView n1:gravity="left" n1:paddingTop="0.0dip" n1:paddingBottom="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_description_schedule_pmi_21201" style="@style/ZMTextView.SettingsItemDesc.Small" />
+                <TextView n1:textSize="14.0sp" n1:gravity="left" n1:paddingTop="@dimen/zm_setting_item_padding_top" n1:paddingBottom="0.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/zm_description_meeting_option_21201" style="@style/ZMTextView.SettingsItemDesc.Small" />
+            </LinearLayout>
+            <com.zipow.videobox.view.ZMScheduleMeetingOptionLayout n1:id="@id/zmMeetingOptions" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+            <us.zoom.androidlib.widget.ZMSettingsCategory n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/zm_setting_item_group_spacing">
+                <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@id/optionAddToCalendar" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <TextView n1:gravity="center|left" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/zm_chk_add_to_calendar" n1:layout_weight="1.0" style="@style/ZMTextView.SettingsItem.Small" />
+                    <us.zoom.androidlib.widget.ZMCheckedTextView n1:id="@id/chkAddToCalendar" n1:clickable="false" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:checkMark="@drawable/zm_btn_toggle_default" />
+                </LinearLayout>
+            </us.zoom.androidlib.widget.ZMSettingsCategory>
+        </us.zoom.androidlib.widget.ZMSettingsLayout>
+    </ScrollView>
+</LinearLayout>

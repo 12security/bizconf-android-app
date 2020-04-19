@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="wrap_content" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:background="@color/transparent" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+        <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:background="@drawable/public_dialog_shape" n1:layout_width="@dimen/activity_dialog_width" n1:layout_height="wrap_content" n1:minHeight="100.0dip" n1:layout_centerInParent="true">
+            <TextView n1:textSize="@dimen/textSize32PX" n1:textColor="@color/black" n1:gravity="center" n1:id="@id/update_title" n1:background="@drawable/public_shape_dialog" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_public_editext" n1:text="@string/setting_version_update" />
+            <include layout="@layout/public_grayline" />
+            <TextView n1:textSize="@dimen/textSize24PX" n1:textColor="@color/light_gray" n1:gravity="center_vertical" n1:paddingLeft="@dimen/activity_horizontal_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/activity_nomal_hint" n1:layout_marginBottom="@dimen/activity_nomal_hint" n1:text="@string/setting_version_update_msg" />
+            <TextView n1:textSize="@dimen/textSize24PX" n1:textColor="@color/light_gray" n1:gravity="center_vertical" n1:id="@id/update_message" n1:paddingLeft="@dimen/activity_horizontal_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/activity_nomal_hint" n1:layout_marginBottom="@dimen/activity_public_hint" n1:text="@string/setting_update_mag" />
+            <include layout="@layout/public_grayline" />
+            <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <Button n1:textSize="@dimen/textSize26PX" n1:textColor="@color/violet" n1:gravity="center" n1:layout_gravity="center_horizontal" n1:id="@id/version_update_now" n1:background="@drawable/public_shape_dialog" n1:layout_width="0.0dip" n1:layout_height="@dimen/activity_vertical_title" n1:text="@string/setting_version_update_now" n1:layout_weight="1.0" />
+                <View n1:background="@color/light_gray" n1:layout_width="0.100000024dip" n1:layout_height="fill_parent" />
+                <Button n1:textSize="@dimen/textSize26PX" n1:textColor="@color/light_gray" n1:gravity="center" n1:layout_gravity="center_horizontal" n1:id="@id/version_update_cancel" n1:background="@drawable/public_shape_dialog" n1:layout_width="0.0dip" n1:layout_height="@dimen/activity_vertical_title" n1:text="@string/setting_version_update_cancel" n1:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/udesk_im_content" n1:background="@color/udesk_color_fof2f2" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <cn.udesk.widget.UdeskTitleBar n1:id="@id/udesktitlebar" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    <cn.udesk.widget.UdeskExpandableLayout n1:orientation="vertical" n1:id="@id/udesk_change_status_info" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    <LinearLayout n1:orientation="vertical" n1:id="@id/udesk_content_ll" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0">
+        <include n1:layout_width="fill_parent" n1:layout_height="wrap_content" layout="@layout/udesk_im_commodity_item" />
+        <cn.udesk.widget.UDPullGetMoreListView n1:id="@id/udesk_conversation" n1:background="@color/udesk_color_fof2f2" n1:layout_width="wrap_content" n1:layout_height="0.0dip" n1:listSelector="@android:color/transparent" n1:cacheColorHint="@android:color/transparent" n1:divider="@android:color/transparent" n1:layout_weight="1.0" />
+        <LinearLayout n1:orientation="horizontal" n1:id="@id/navigation_root_view" n1:background="@color/udesk_color_bg_white" n1:layout_width="fill_parent" n1:layout_height="@dimen/udesk_45">
+            <LinearLayout n1:orientation="horizontal" n1:id="@id/fragment_view" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="7.0" />
+            <View n1:background="@color/udesk_color_d8d8d8" n1:layout_width="@dimen/udesk_1" n1:layout_height="@dimen/udesk_15" n1:layout_marginLeft="@dimen/udesk_5" n1:layout_marginTop="@dimen/udesk_15" />
+            <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@id/navigation_survy" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="3.0">
+                <ImageView n1:layout_width="@dimen/udesk_18" n1:layout_height="@dimen/udesk_18" n1:layout_marginRight="@dimen/udesk_4" n1:src="@drawable/udesk_survy_img" />
+                <TextView n1:textSize="@dimen/udesk_sp15" n1:textColor="#ff2d93fa" n1:gravity="center|left" n1:id="@id/survy_content" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:text="@string/service_valuation" />
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/udesk_line_horizontal" />
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:background="@color/udesk_color_bg_white" n1:paddingLeft="@dimen/udesk_5" n1:layout_width="fill_parent" n1:layout_height="52.0dip">
+            <ImageView n1:id="@id/udesk_img_audio" n1:layout_width="28.0dip" n1:layout_height="28.0dip" n1:layout_marginTop="@dimen/udesk_5" n1:layout_marginRight="@dimen/udesk_5" n1:layout_marginBottom="@dimen/udesk_5" n1:src="@drawable/udesk_ic_cheat_voice" />
+            <RelativeLayout n1:gravity="center" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.0">
+                <EditText n1:textColor="@color/udesk_edit_input_msg_cololr1" n1:textColorHint="@color/udesk_edit_input_hint_msg_cololr1" n1:id="@id/udesk_bottom_input" n1:background="@null" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="40.0dip" n1:hint="@string/udesk_edit_hint_msg" n1:drawableBottom="@drawable/udesk_selector_edit_focus" />
+                <cn.udesk.voice.AudioRecordButton n1:textColor="@color/gray1" n1:gravity="center" n1:id="@id/udesk_audio_btn" n1:background="@drawable/udesk_shape_session_btn_voice_normal" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="40.0dip" />
+            </RelativeLayout>
+            <ImageView n1:id="@id/udesk_emoji_img" n1:layout_width="28.0dip" n1:layout_height="28.0dip" n1:layout_margin="5.0dip" n1:src="@drawable/udesk_ic_cheat_emo" />
+            <ImageView n1:id="@id/udesk_more_img" n1:layout_width="28.0dip" n1:layout_height="28.0dip" n1:layout_marginLeft="5.0dip" n1:layout_marginRight="7.0dip" n1:src="@drawable/udesk_ic_cheat_add" />
+            <TextView n1:textSize="15.0sp" n1:textColor="@color/udesk_bottom_send_textcolor2" n1:gravity="center" n1:id="@id/udesk_bottom_send" n1:background="@drawable/udesk_send_msg_bg" n1:visibility="gone" n1:layout_width="45.0dip" n1:layout_height="30.0dip" n1:layout_marginRight="4.0dip" n1:text="@string/udesk_send_message" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout n1:id="@id/udesk_bottom_frame" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <cn.udesk.emotion.EmotionLayout n1:id="@id/udesk_emotion_view" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+        <include n1:id="@id/udesk_more_layout" n1:visibility="gone" layout="@layout/udesk_include_func_layout" />
+    </FrameLayout>
+</LinearLayout>

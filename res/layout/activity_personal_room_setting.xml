@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/activity_personal_room_seeting" n1:background="?android:colorBackground" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/public_toolbar" />
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_public_editext" n1:layout_marginTop="@dimen/activity_horizontal_margin">
+        <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/black" n1:paddingLeft="@dimen/activity_horizontal_margin" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/personal_room_setting_id_hint" />
+        <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/black" n1:id="@id/meeting_id_show" n1:paddingLeft="@dimen/activity_horizontal_margin" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/personal_room_setting_id" n1:layout_weight="1.0" />
+    </LinearLayout>
+    <RelativeLayout n1:layout_gravity="center_vertical" n1:background="@color/white" n1:paddingLeft="@dimen/activity_horizontal_margin" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_public_editext" n1:layout_marginTop="@dimen/activity_horizontal_margin">
+        <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/black" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/allow_front_moderator" n1:layout_alignParentLeft="false" n1:layout_centerVertical="true" />
+        <com.kyleduo.switchbutton.SwitchButton n1:id="@id/sb_allow_front_moderator" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n2:kswAnimationDuration="300" n2:kswBackDrawable="@drawable/back_drawable" n2:kswBackMeasureRatio="1.4" n2:kswThumbDrawable="@drawable/thumb_selector" n2:kswThumbMarginBottom="-7.0dip" n2:kswThumbMarginLeft="-4.0dip" n2:kswThumbMarginRight="-4.0dip" n2:kswThumbMarginTop="-1.0dip" style="@style/SwitchButtonStyle" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    </RelativeLayout>
+    <RelativeLayout n1:gravity="center_vertical" n1:id="@id/turn_host_password" n1:background="@color/white" n1:paddingLeft="@dimen/activity_horizontal_margin" n1:paddingRight="@dimen/activity_horizontal_margin" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_public_editext" n1:layout_marginTop="@dimen/activity_horizontal_margin">
+        <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/black" n1:layout_gravity="center_vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/set_password" n1:layout_alignParentLeft="false" />
+        <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/light_gray" n1:layout_gravity="center_vertical" n1:id="@id/host_password_show" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/optional" n1:drawableRight="@drawable/safari_back" n1:drawablePadding="@dimen/activity_vertical_hint" n1:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

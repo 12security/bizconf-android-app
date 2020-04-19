@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout n1:id="@id/panelTitleBar" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:zm_leftButton="@id/btnCancel" n2:zm_rightButton="@id/btnNext" n2:zm_title="@id/txtTitle" style="@style/ZMTitleBar" xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <Button n1:id="@id/btnCancel" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_btn_cancel" style="@style/ZMButton.TitleBar" />
+        <Button n1:id="@id/btnNext" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_btn_next" style="@style/ZMButton.TitleBar" />
+        <us.zoom.androidlib.widget.ZMDynTextSizeTextView n1:ellipsize="end" n1:gravity="center" n1:id="@id/txtTitle" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_btn_new_group_59554" n1:singleLine="true" style="@style/ZMTextView.Title" />
+    </us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <TextView n1:gravity="center" n1:id="@id/txtInstructions" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/zm_msg_new_group_chat_instructions_59554" style="@style/ZMTextView.Instructions" />
+        <us.zoom.androidlib.widget.ZMSettingsCategory n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="35.0dip">
+            <LinearLayout n1:gravity="center_vertical" n1:paddingLeft="@dimen/zm_setting_item_padding_left" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <EditText n1:gravity="center" n1:id="@id/edtSubject" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:hint="@string/zm_hint_group_chat_subject_59554" n1:singleLine="true" n1:maxLength="@integer/zm_group_chat_topic_max_length" n1:inputType="textCapWords" style="@style/ZMEditText.SettingsItem">
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+        </us.zoom.androidlib.widget.ZMSettingsCategory>
+        <TextView n1:gravity="center" n1:id="@id/txtCharatersLeft" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:text="5 characters left" style="@style/ZMTextView.Small.Dimmed" />
+    </LinearLayout>
+</LinearLayout>

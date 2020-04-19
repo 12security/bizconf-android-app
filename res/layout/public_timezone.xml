@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/ruler_layout" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/activity_horizontal_margin"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textSize="@dimen/textSize28px" n1:id="@id/name" n1:background="@color/white" n1:paddingLeft="10.0dip" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="" />
+    <FrameLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@id/name">
+        <cn.bizconf.vcpro.common.view.ruler.RulerShow n1:orientation="horizontal" n1:id="@id/ruler" n1:background="#ffffffff" n1:paddingTop="@dimen/activity_horizontal_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:max_unit_count="192" n2:per_unit_count="1" n2:screen_unit_size="6" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        <TextView n1:textSize="@dimen/marktextsize" n1:id="@id/ruler_result_text" n1:paddingLeft="@dimen/activity_horizontal_hint" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_public_hint" n1:layout_marginTop="@dimen/activity_horizontal_hint" n1:text="" />
+    </FrameLayout>
+</RelativeLayout>

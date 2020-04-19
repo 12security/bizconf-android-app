@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@color/zm_mm_giphy_preview_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="40.0dip" n1:layout_marginTop="6.0dip" n1:layout_marginBottom="6.0dip">
+        <TextView n1:id="@id/giphy_preview_btn_back" n1:background="@drawable/zm_btn_giphy_back_bg" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="15.0dip" />
+        <EditText n1:textColor="@color/zm_black" n1:textColorHint="@color/zm_mm_giphy_preview_search_hint" n1:gravity="center_vertical" n1:id="@id/giphy_preview_search_bar" n1:background="@drawable/zm_edit_giphy_prevew_search_bg" n1:paddingLeft="11.0dip" n1:layout_width="0.0px" n1:layout_height="30.0dip" n1:layout_marginLeft="16.0dip" n1:layout_marginRight="10.0dip" n1:hint="@string/zm_mm_giphy_preview_search_hint_22379" n1:drawableLeft="@drawable/zm_mm_giphy_preview_search_icon" n1:drawablePadding="10.0dip" n1:layout_weight="1.0" n1:inputType="text" n1:imeOptions="actionSearch" style="@style/ZMEditText.GlobalSearch" />
+        <TextView n1:textSize="14.0sp" n1:textColor="@color/zm_im_search_text_color" n1:id="@id/giphy_preview_search_btn" n1:padding="5.0dip" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="10.0dip" n1:text="@string/zm_btn_search" />
+    </LinearLayout>
+    <LinearLayout n1:orientation="vertical" n1:id="@id/giphy_preview_linear" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <GridView n1:id="@id/giphy_preview_gridView" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:listSelector="@drawable/zm_transparent" n1:horizontalSpacing="5.0dip" n1:verticalSpacing="5.0dip" n1:numColumns="4" />
+        <LinearLayout n1:gravity="center" n1:id="@id/giphy_preview_emptyView" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <ProgressBar n1:id="@id/giphy_preview_progress" n1:layout_width="wrap_content" n1:layout_height="wrap_content" style="@style/ZMProgressBar.Small" />
+            <TextView n1:textColor="@color/zm_gray_3" n1:id="@id/giphy_preview_text" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_mm_giphy_preview_no_match_22379" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

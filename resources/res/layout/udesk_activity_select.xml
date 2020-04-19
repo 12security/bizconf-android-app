@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/udesk_color_bg_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/udesk_title_root" android:background="@color/udesk_color_f2212123" android:layout_width="match_parent" android:layout_height="@dimen/udesk_titlebar_height">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/udesk_back_linear" android:layout_width="50dp" android:layout_height="match_parent">
+                <ImageView android:id="@+id/udesk_back_img" android:layout_width="@dimen/udesk_20" android:layout_height="@dimen/udesk_20" android:src="@drawable/udesk_titlebar_back"/>
+            </LinearLayout>
+            <TextView android:id="@+id/udesk_content" android:layout_marginLeft="@dimen/udesk_15" android:maxWidth="300dp" android:text="@string/udesk_img_video" style="@style/udesk_titlebar_button_text_style"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/udesk_sp16" android:gravity="center" android:id="@+id/udesk_titlebar_right" android:paddingLeft="@dimen/udesk_10" android:paddingRight="@dimen/udesk_10" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_margin="@dimen/udesk_10" android:layout_marginRight="@dimen/udesk_15" android:minWidth="@dimen/udesk_50" android:text="@string/udesk_send_message"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/udesk_rl_bottom" android:background="@color/udesk_color_393a3f" android:layout_width="match_parent" android:layout_height="45dp" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/udesk_select_folder" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentLeft="true">
+            <TextView android:textSize="14sp" android:textColor="@color/udesk_color_bg_white" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/picture_holder_name" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/udesk_15"/>
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/udesk_10" android:layout_height="@dimen/udesk_10" android:layout_marginLeft="@dimen/udesk_1" android:layout_marginTop="@dimen/udesk_3" android:src="@drawable/udesk_select_picture_icon"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/original_select_view" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerInParent="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <CheckBox android:id="@+id/udesk_checkbox" android:background="@drawable/udesk_checkbox_selector" android:clickable="false" android:layout_width="17dp" android:layout_height="17dp" android:layout_marginRight="@dimen/udesk_5" android:button="@null"/>
+            <TextView android:textSize="@dimen/udesk_sp13" android:textColor="@color/udesk_color_bg_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/udesk_original_photos"/>
+        </LinearLayout>
+        <TextView android:textSize="14sp" android:textColor="@color/udesk_color_747578" android:gravity="center" android:id="@+id/udesk_pre" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/udesk_15" android:text="@string/udesk_photo_pre" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView android:id="@+id/udesk_picture_recycler" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/udesk_rl_bottom" android:layout_below="@+id/udesk_title_root"/>
+    <RelativeLayout android:id="@+id/udesk_root_view_album_items" android:background="@color/udesk_color_eb212123" android:paddingTop="50dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/udesk_rl_bottom" android:layout_below="@+id/udesk_title_root">
+        <android.support.v7.widget.RecyclerView android:id="@+id/udesk_album_items" android:background="@color/udesk_color_bg_white" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</RelativeLayout>

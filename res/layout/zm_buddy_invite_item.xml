@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:paddingLeft="10.0dip" n1:paddingTop="5.0dip" n1:paddingRight="10.0dip" n1:paddingBottom="5.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:weightSum="1.0"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="vertical" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+        <TextView n1:id="@id/txtJid" n1:layout_width="wrap_content" n1:layout_height="wrap_content" style="@style/ZMTextView.Medium.OnLight" />
+        <TextView n1:id="@id/txtMsg" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_buddy_invite_invitation_msg" style="@style/ZMTextView.Small.Dimmed" />
+    </LinearLayout>
+    <Button n1:id="@id/btnAccept" n1:background="@drawable/zm_btn_accept" n1:layout_width="40.0dip" n1:layout_height="40.0dip" />
+    <Button n1:id="@id/btnDecline" n1:background="@drawable/zm_btn_decline" n1:layout_width="40.0dip" n1:layout_height="40.0dip" n1:layout_marginLeft="5.0dip" />
+</LinearLayout>

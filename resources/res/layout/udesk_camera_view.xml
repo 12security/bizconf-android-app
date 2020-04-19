@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <VideoView android:id="@+id/video_preview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView android:id="@+id/image_photo" android:background="#000" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="left" android:orientation="horizontal" android:id="@+id/udesk_image_close" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_margin="16dp" android:src="@drawable/udesk_close"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image_switch" android:layout_width="26dp" android:layout_height="20dp" android:layout_margin="16dp" android:src="@drawable/udesk_switch_camera"/>
+    </LinearLayout>
+    <cn.udesk.camera.CaptureLayout android:layout_gravity="bottom" android:id="@+id/capture_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <cn.udesk.camera.FoucsView android:layout_gravity="center" android:id="@+id/fouce_view" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</FrameLayout>

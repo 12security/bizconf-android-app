@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@id/panelMsgLayout" n1:paddingLeft="8.0dip" n1:paddingTop="20.0dip" n1:paddingRight="8.0dip" n1:paddingBottom="20.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <View n1:background="@color/zm_text_dim" n1:layout_width="70.0dip" n1:layout_height="1.0dip" />
+    <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginRight="10.0dip" n1:text="@string/zm_lbl_below_new_msg_24496" style="@style/ZMTextView.Small.Dimmed" />
+    <View n1:background="@color/zm_text_dim" n1:layout_width="70.0dip" n1:layout_height="1.0dip" />
+</LinearLayout>

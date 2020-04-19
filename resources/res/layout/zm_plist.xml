@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/zm_window_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/zm_pt_titlebar_height">
+        <RelativeLayout android:id="@+id/panelSearchBar" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/zm_pt_titlebar_height" style="@style/ZMTitleBar">
+            <RelativeLayout android:background="@drawable/zm_search_corner_bg" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@+id/imgSearch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:src="@drawable/zm_ic_search" android:layout_centerVertical="true"/>
+                <EditText android:id="@+id/edtSearch" android:paddingRight="30dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/zm_hint_search" android:layout_toRightOf="@+id/imgSearch" android:layout_centerVertical="true" android:imeOptions="actionDone" style="@style/ZMEditText.GlobalSearch"/>
+                <Button android:id="@+id/btnClearSearchView" android:background="@drawable/zm_btn_clear_search_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout android:id="@+id/panelTitleBar" android:layout_width="match_parent" android:layout_height="wrap_content" xmlns:ns1="http://schemas.android.com/apk/res-auto" ns1:zm_leftButton="@+id/btnBack" xmlns:ns2="http://schemas.android.com/apk/res-auto" ns2:zm_rightButton="@+id/panelForBtnChatWithAllOnTitleBar" xmlns:ns3="http://schemas.android.com/apk/res-auto" ns3:zm_title="@+id/txtTitle" style="@style/ZMTitleBar">
+            <Button android:id="@+id/btnBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_close" android:layout_centerVertical="true" style="@style/ZMButton.TitleBar"/>
+            <FrameLayout android:id="@+id/panelForBtnChatWithAllOnTitleBar" android:paddingTop="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <us.zoom.androidlib.widget.ZMDynTextSizeTextView android:gravity="center_horizontal" android:id="@+id/txtTitle" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_title_plist" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/ZMTextView.Title"/>
+        </us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/listContainer" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.zipow.videobox.view.PListView android:id="@+id/plistView" android:layout_width="match_parent" android:layout_height="match_parent" android:scrollingCache="false"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/panelActions" android:background="@drawable/zm_tab_bg" android:paddingLeft="3dp" android:paddingTop="3dp" android:paddingRight="3dp" android:layout_width="match_parent" android:layout_height="@dimen/zm_pt_titlebar_height">
+        <RelativeLayout android:id="@+id/layoutChatWithAll" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <Button android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/btnChatWithAll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:maxWidth="80dp" android:text="@string/zm_btn_chats" android:maxLines="1" android:layout_centerVertical="true" style="@style/ZMButton.Mini"/>
+            <TextView android:gravity="center" android:id="@+id/txtUnreadMessageCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5dp" android:layout_marginRight="-5dp" android:text="9+" android:layout_alignTop="@+id/btnChatWithAll" android:layout_alignRight="@+id/btnChatWithAll" style="@style/ZMTextView.UnreadMessageCount.Small"/>
+        </RelativeLayout>
+        <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+        <Button android:ellipsize="end" android:id="@+id/btnInvite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:maxWidth="90dp" android:text="@string/zm_btn_invite" android:maxLines="1" style="@style/ZMButton.Mini"/>
+        <Button android:ellipsize="end" android:id="@+id/btnMuteAll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:maxWidth="90dp" android:text="@string/zm_btn_mute_all" android:maxLines="1" style="@style/ZMButton.Mini"/>
+        <Button android:ellipsize="end" android:id="@+id/btnUnmuteAll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="90dp" android:text="@string/zm_btn_unmute_all" android:maxLines="1" style="@style/ZMButton.Mini"/>
+    </LinearLayout>
+</LinearLayout>

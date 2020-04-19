@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item n1:state_selected="false" n1:drawable="@drawable/icon_setting"
+      xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <item n2:state_selected="true" n2:drawable="@drawable/icon_setting_pressed"
+      xmlns:n2="http://schemas.android.com/apk/res/android" />
+</selector>

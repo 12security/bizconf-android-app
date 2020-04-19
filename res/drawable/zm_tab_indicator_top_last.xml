@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item n1:state_focused="false" n1:state_selected="false" n1:state_pressed="false" n1:drawable="@drawable/zm_tab_top_last_normal"
+      xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <item n2:state_focused="false" n2:state_selected="true" n2:state_pressed="false" n2:drawable="@drawable/zm_tab_top_last_selected"
+      xmlns:n2="http://schemas.android.com/apk/res/android" />
+    <item n3:state_focused="true" n3:state_selected="false" n3:state_pressed="false" n3:drawable="@drawable/zm_tab_top_last_normal"
+      xmlns:n3="http://schemas.android.com/apk/res/android" />
+    <item n4:state_focused="true" n4:state_selected="true" n4:state_pressed="false" n4:drawable="@drawable/zm_tab_top_last_selected"
+      xmlns:n4="http://schemas.android.com/apk/res/android" />
+    <item n5:state_focused="false" n5:state_selected="false" n5:state_pressed="true" n5:drawable="@drawable/zm_tab_top_last_selected"
+      xmlns:n5="http://schemas.android.com/apk/res/android" />
+    <item n6:state_focused="false" n6:state_selected="true" n6:state_pressed="true" n6:drawable="@drawable/zm_tab_top_last_selected"
+      xmlns:n6="http://schemas.android.com/apk/res/android" />
+    <item n7:state_focused="true" n7:state_selected="false" n7:state_pressed="true" n7:drawable="@drawable/zm_tab_top_last_selected"
+      xmlns:n7="http://schemas.android.com/apk/res/android" />
+    <item n8:state_focused="true" n8:state_selected="true" n8:state_pressed="true" n8:drawable="@drawable/zm_tab_top_last_selected"
+      xmlns:n8="http://schemas.android.com/apk/res/android" />
+</selector>

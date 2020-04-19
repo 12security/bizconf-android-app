@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:layout_gravity="left" n1:orientation="horizontal" n1:id="@id/panelCallInNumber1" n1:paddingTop="6.0dip" n1:paddingBottom="6.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textColorLink="@color/zm_link" n1:id="@id/txtCallinNumber" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="+1 (123) 456-7890" style="@style/ZMTextView.Normal.Dimmed" />
+    <TextView n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="3.0dip" n1:text="@string/zm_lbl_tele_conf_us_number" style="@style/ZMTextView.Normal.Dimmed" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:layout_gravity="center_horizontal" n1:orientation="horizontal" n1:background="@color/zm_transparent" n1:paddingLeft="16.0dip" n1:paddingRight="16.0dip" n1:layout_width="320.0dip" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textSize="14.0sp" n1:id="@id/txtMessage" n1:paddingTop="5.0dip" n1:paddingBottom="5.0dip" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="Request approved. You can now control camera" n1:layout_weight="5.0" style="@style/ZMTextView.TipMessage.OnDark" />
+    <TextView n1:gravity="center" n1:id="@id/txtButton" n1:paddingLeft="5.0dip" n1:focusable="true" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:text="@string/zm_fecc_msg_start_control" n1:layout_weight="2.0" style="@style/ZMTextView.TipMessage.Button" />
+</LinearLayout>

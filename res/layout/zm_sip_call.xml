@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@color/zm_white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout n1:id="@id/panelTitleBar" n1:layout_width="fill_parent" n1:layout_height="@dimen/zm_pt_titlebar_height" n2:zm_leftButton="@id/panelTitleLeft" n2:zm_rightButton="@id/panelTitleRight" n2:zm_title="@id/panelTitleCenter" style="@style/ZMTitleBar.Dark" xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <FrameLayout n1:id="@id/panelTitleLeft" n1:layout_width="wrap_content" n1:layout_height="fill_parent">
+            <Button n1:layout_gravity="center_vertical" n1:id="@id/btnClearAll" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_bnt_clear" style="@style/ZMButton.TitleBar.OnDark" />
+            <Button n1:layout_gravity="center_vertical" n1:id="@id/btnKeyboard" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_btn_title_keypad_14480" style="@style/ZMButton.TitleBar.OnDark" />
+        </FrameLayout>
+        <LinearLayout n1:orientation="horizontal" n1:id="@id/panelTitleCenter" n1:layout_width="200.0dip" n1:layout_height="fill_parent" n1:weightSum="2.0" n1:layout_centerHorizontal="true">
+            <RelativeLayout n1:orientation="vertical" n1:id="@id/panelTabAll" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.0">
+                <TextView n1:textColor="@drawable/zm_title_tab_text_color" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_tab_call_all_14480" n1:layout_centerInParent="true" style="@style/ZMTextView.Large" />
+                <View n1:background="@drawable/zm_title_tab_indicator_color" n1:duplicateParentState="true" n1:layout_width="fill_parent" n1:layout_height="2.0dip" n1:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout n1:orientation="vertical" n1:id="@id/panelTabMissed" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.0">
+                <TextView n1:textColor="@drawable/zm_title_tab_text_color" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_tab_call_missed_14480" n1:layout_centerInParent="true" style="@style/ZMTextView.Large" />
+                <View n1:background="@drawable/zm_title_tab_indicator_color" n1:duplicateParentState="true" n1:layout_width="fill_parent" n1:layout_height="2.0dip" n1:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout n1:orientation="horizontal" n1:id="@id/panelTitleRight" n1:layout_width="wrap_content" n1:layout_height="fill_parent">
+            <RelativeLayout n1:orientation="vertical" n1:id="@id/panelTabVoiceMailPlus" n1:visibility="gone" n1:layout_width="44.0dip" n1:layout_height="fill_parent">
+                <ImageView n1:id="@id/email" n1:background="@drawable/zm_sip_email" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerInParent="true" />
+                <TextView n1:textSize="9.0sp" n1:gravity="center" n1:id="@id/bubble" n1:background="@drawable/zm_bubble" n1:visibility="invisible" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="-10.0dip" n1:layout_marginTop="6.0dip" n1:minWidth="7.0dip" n1:text="12" n1:layout_alignParentRight="true" style="@style/ZMTextView.UnreadMessageCount.Small.WhiteBorder" />
+                <ImageView n1:id="@id/dot" n1:background="@drawable/zm_ic_red_dot" n1:visibility="invisible" n1:duplicateParentState="true" n1:layout_width="7.0dip" n1:layout_height="7.0dip" n1:layout_marginLeft="-10.0dip" n1:layout_marginTop="6.0dip" n1:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <Button n1:layout_gravity="center_vertical" n1:id="@id/btnEdit" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_btn_edit" style="@style/ZMButton.TitleBar.OnDark" />
+        </LinearLayout>
+    </us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <RelativeLayout n1:id="@id/panelSearch" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <TextView n1:id="@id/tvSearch" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:hint="@string/zm_hint_search_call_14480" n1:imeOptions="actionDone" style="@style/ZMEditText.ContextSearch" />
+        <ImageView n1:background="@drawable/zm_ic_titlebar_shadow" n1:layout_width="fill_parent" n1:layout_height="10.0dip" />
+    </RelativeLayout>
+    <TextView n1:id="@id/tv_phone_alert" n1:visibility="visible" n1:text="@string/zm_sip_error_network_disconnected_61381" style="@style/ZMPhoneAlertTextView" />
+    <FrameLayout n1:id="@id/panelListViews" n1:background="@drawable/zm_listview_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <com.zipow.videobox.view.sip.PhoneCallsListview n1:id="@id/listviewAllCalls" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:divider="@null" n1:dividerHeight="0.0dip" />
+        <com.zipow.videobox.view.sip.PhoneCallsListview n1:id="@id/listviewMissedCalls" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:divider="@null" n1:dividerHeight="0.0dip" />
+        <TextView n1:layout_gravity="center" n1:id="@id/txtEmptyView" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_call_history_empty_14480" style="@style/ZMTextView.SettingsItem" />
+    </FrameLayout>
+</LinearLayout>

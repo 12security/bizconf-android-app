@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="@dimen/activity_dialog_width" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/textSize18SP" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@+id/dialog_title" android:background="@drawable/public_shape_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_public_hint" android:text="预约失败"/>
+        <TextView android:textSize="@dimen/textSize32PX" android:textColor="@color/light_gray" android:gravity="center" android:layout_gravity="center" android:id="@+id/dialog_msg" android:background="@drawable/public_shape_dialog" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/activity_horizontal_hint" android:text="无符合条件会议室"/>
+        <include layout="@layout/public_grayline"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textSize="@dimen/textSize22px" android:textColor="@color/violet" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/dialog_meetingstatus" android:background="@drawable/public_shape_dialog" android:visibility="gone" android:layout_width="0dp" android:layout_height="@dimen/activity_login_button" android:text="@string/appointment_meeting_status" android:maxLines="1" android:layout_weight="1"/>
+            <View android:background="@color/gray_hint" android:layout_width="0.5dp" android:layout_height="@dimen/activity_login_button"/>
+            <Button android:textSize="@dimen/textSize22px" android:textColor="@color/light_gray" android:gravity="center" android:id="@+id/dialog_cancel" android:background="@drawable/public_shape_dialog" android:layout_width="0dp" android:layout_height="@dimen/activity_login_button" android:text="@string/personal_remove_no" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

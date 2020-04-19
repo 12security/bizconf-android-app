@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="?android:attr/colorBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/public_toolbar"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/public_weekcalendar"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/title_appointment_time" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_horizontal_margin">
+                <RelativeLayout android:gravity="center_vertical" android:id="@+id/turn_change_theme_share" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/activity_vertical_title" android:onClick="onClick">
+                    <TextView android:textSize="@dimen/textSize28px" android:textColor="@color/black" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/conference_theme" android:layout_alignParentLeft="false"/>
+                    <TextView android:textSize="@dimen/textSize28px" android:textColor="@color/light_gray" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/default_name" android:drawableRight="@drawable/safari_back" android:drawablePadding="@dimen/activity_vertical_hint" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_width="match_parent" android:layout_height="@dimen/activity_vertical_title">
+                    <TextView android:textSize="@dimen/textSize28px" android:textColor="@color/black" android:layout_gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/start_time" android:layout_weight="1"/>
+                    <LinearLayout android:layout_gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2.5">
+                        <EditText android:textSize="@dimen/textSize28px" android:textColor="@color/light_gray_hint" android:layout_gravity="center" android:id="@+id/editText" android:background="@drawable/shape_editext" android:padding="@dimen/activity_nomal_hint" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/hint_day" android:drawableRight="@drawable/icon_arrow_right"/>
+                    </LinearLayout>
+                    <LinearLayout android:layout_gravity="center" android:paddingLeft="@dimen/activity_nomal_hint" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.5">
+                        <EditText android:textSize="@dimen/textSize28px" android:textColor="@color/light_gray_hint" android:layout_gravity="center" android:background="@drawable/shape_editext" android:padding="@dimen/activity_nomal_hint" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/hint_time" android:drawableRight="@drawable/icon_arrow_right"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_width="match_parent" android:layout_height="@dimen/activity_vertical_title">
+                    <TextView android:textSize="@dimen/textSize28px" android:textColor="@color/black" android:layout_gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/duration_time" android:layout_weight="1"/>
+                    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="4">
+                        <EditText android:textSize="@dimen/textSize28px" android:layout_gravity="center" android:id="@+id/editText3" android:background="@drawable/shape_editext" android:padding="@dimen/activity_nomal_hint" android:layout_width="@dimen/activity_time_hint" android:layout_height="wrap_content" android:hint="2" android:drawableRight="@drawable/icon_arrow_right"/>
+                        <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_nomal_hint" android:text="@string/hour"/>
+                        <EditText android:textSize="@dimen/textSize28px" android:layout_gravity="center" android:id="@+id/editText2" android:background="@drawable/shape_editext" android:padding="@dimen/activity_nomal_hint" android:layout_width="@dimen/activity_time_hint" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_nomal_hint" android:hint="30" android:drawableRight="@drawable/icon_arrow_right"/>
+                        <TextView android:layout_gravity="center" android:padding="@dimen/activity_nomal_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/min" android:layout_weight="1"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_horizontal_margin">
+                <RelativeLayout android:gravity="center_vertical" android:id="@+id/turn_number_people" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/activity_vertical_title" android:onClick="onClick">
+                    <TextView android:textSize="@dimen/textSize28px" android:textColor="@color/black" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/number_of_meeting_rooms" android:layout_alignParentLeft="false"/>
+                    <TextView android:textSize="@dimen/textSize28px" android:textColor="@color/light_gray" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/number_10" android:drawableRight="@drawable/safari_back" android:drawablePadding="@dimen/activity_vertical_hint" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center_vertical" android:id="@+id/turn_change_time_zone" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_width="match_parent" android:layout_height="@dimen/activity_vertical_title">
+                    <TextView android:textSize="@dimen/textSize28px" android:textColor="@color/black" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/time_zone" android:layout_alignParentLeft="false"/>
+                    <TextView android:textSize="@dimen/textSize28px" android:textColor="@color/light_gray" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/china_standard_time" android:drawableRight="@drawable/safari_back" android:drawablePadding="@dimen/activity_vertical_hint" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/public_appointment_setting"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/linearLayout" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_width="match_parent" android:layout_height="@dimen/activity_button_oppointment" android:layout_marginTop="@dimen/activity_vertical_hint" android:layout_below="@+id/public_setting">
+                <LinearLayout android:gravity="center_horizontal" android:paddingRight="@dimen/activity_horizontal_hint" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <Button android:textSize="@dimen/textSize24PX" android:textColor="@drawable/public_login_login_text_shape" android:id="@+id/turn_add_room" android:background="@drawable/shape_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/new_conference_room"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:paddingLeft="@dimen/activity_horizontal_hint" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <Button android:textSize="@dimen/textSize24PX" android:textColor="@drawable/public_login_login_text_shape" android:id="@+id/turn_room_list" android:background="@drawable/shape_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/enter_the_conference_room_list"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

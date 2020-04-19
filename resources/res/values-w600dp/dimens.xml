@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_button_oppointment">50dp</dimen>
+    <dimen name="activity_dialog_height">450dp</dimen>
+    <dimen name="activity_dialog_width">375dp</dimen>
+    <dimen name="activity_horizontal_hint">18dp</dimen>
+    <dimen name="activity_horizontal_margin">24dp</dimen>
+    <dimen name="activity_login_button">45dp</dimen>
+    <dimen name="activity_login_logo">150dp</dimen>
+    <dimen name="activity_message_user_pic">120dp</dimen>
+    <dimen name="activity_nomal_hint">7.5dp</dimen>
+    <dimen name="activity_public_editext">72dp</dimen>
+    <dimen name="activity_public_hint">36dp</dimen>
+    <dimen name="activity_public_pic">114dp</dimen>
+    <dimen name="activity_tatal_radiogroup">96dp</dimen>
+    <dimen name="activity_time_hint">120dp</dimen>
+    <dimen name="activity_version_high">192dp</dimen>
+    <dimen name="activity_vertical_hint">12dp</dimen>
+    <dimen name="activity_vertical_margin">24dp</dimen>
+    <dimen name="activity_vertical_title">54dp</dimen>
+    <dimen name="appoinment_button_width">225dp</dimen>
+    <dimen name="homeTextSize">19.5sp</dimen>
+    <dimen name="home_bottom_marginBottom">4.5dp</dimen>
+    <dimen name="home_bottom_marginTop">6dp</dimen>
+    <dimen name="marktextsize">15sp</dimen>
+    <dimen name="personal_meetings_width">31.5dp</dimen>
+    <dimen name="textSize14PX">12sp</dimen>
+    <dimen name="textSize22px">18sp</dimen>
+    <dimen name="textSize24PX">19.5sp</dimen>
+    <dimen name="textSize26PX">21sp</dimen>
+    <dimen name="textSize30PX">21sp</dimen>
+    <dimen name="textSize48PX">39sp</dimen>
+    <dimen name="time_dialog_min_height">270dp</dimen>
+    <dimen name="time_dialog_min_width">390dp</dimen>
+</resources>

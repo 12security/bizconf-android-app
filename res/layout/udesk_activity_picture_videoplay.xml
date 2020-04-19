@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="@color/udesk_color_bg_white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <VideoView n1:id="@id/udesk_video_view" n1:background="#00000000" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_centerInParent="true" />
+    <com.facebook.drawee.view.SimpleDraweeView n1:id="@id/video_img" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <ProgressBar n1:id="@id/udesk_wait" n1:layout_width="@dimen/udesk_50" n1:layout_height="@dimen/udesk_50" n1:indeterminateDrawable="@drawable/udesk_anim_progress" n1:layout_centerInParent="true" />
+    <ImageView n1:id="@id/picture_left_back" n1:padding="15.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="15.0dip" n1:src="@drawable/udesk_titlebar_back" />
+</RelativeLayout>

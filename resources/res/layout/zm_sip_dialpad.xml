@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/zm_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/content" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.zipow.videobox.view.sip.DialKeyboardView android:id="@+id/panelKeybord" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/panelCallBtns" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/zm_sip_dialpad_content_margin_left" android:layout_marginTop="@dimen/zm_sip_dialpad_row_space" android:layout_marginRight="@dimen/zm_sip_dialpad_content_margin_left" android:layout_below="@+id/panelKeybord">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/imgSearch" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/zm_sip_ic_keyboard_search" android:layout_weight="1" android:contentDescription="@string/zm_sip_dial_search_hint_31432"/>
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/btnDial" android:layout_width="0dp" android:layout_height="@dimen/zm_sip_dialpad_key_width" android:src="@drawable/zm_sip_start_call" android:scaleType="centerInside" android:layout_weight="1" android:contentDescription="@string/zm_accessibility_sip_call_dial"/>
+                <ImageView android:id="@+id/imgDelete" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/zm_sip_ic_keyboard_del" android:layout_weight="1" android:contentDescription="@string/zm_btn_delete"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/panelRegisterSipNo" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/content" android:layout_alignParentBottom="true">
+        <TextView android:gravity="center" android:id="@+id/txtRegisterSipNo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawableRight="@drawable/zm_sip_ic_outbound_dropdown" android:drawablePadding="3dp" style="@style/UIKitTextView.IconLabel.Dimmed"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/panelClose" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/zm_sip_dialpad_content_margin_left" android:layout_below="@+id/content" android:layout_alignParentBottom="true">
+        <TextView android:id="@+id/btnClose" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_back_to_call_61381" style="@style/UIKitButton.White.BlueText"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="-20dp" android:layout_above="@+id/content">
+        <TextView android:ellipsize="end" android:gravity="center" android:id="@+id/txtTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="100dp" android:layout_marginRight="100dp" style="@style/UIKitTextView.PrimaryText.Normal"/>
+        <EditText android:ellipsize="start" android:gravity="center" android:id="@+id/txtDialNum" android:background="@color/zm_transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="54dp" android:layout_marginRight="54dp" android:cursorVisible="true" android:singleLine="true" android:inputType="phone" android:textCursorDrawable="@color/zm_transparent" style="@style/ZMTextView.Dialpad.Num"/>
+    </LinearLayout>
+    <TextView android:id="@+id/btnCloseInSip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="8dp" android:text="@string/zm_btn_close" style="@style/UIKitButton.White.BlueText"/>
+    <us.zoom.androidlib.widget.ZMDynTextSizeTextView android:gravity="center" android:id="@+id/txtSipUnvailable" android:background="@color/zm_ui_kit_color_gray_747487" android:paddingLeft="20dp" android:paddingRight="20dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp" android:text="@string/zm_mm_msg_sip_unavailable_14480" android:layout_alignParentBottom="true" style="@style/UIKitTextView.PrimaryText.Normal.White"/>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/panel911" android:background="@drawable/zm_sip_911_shadow" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <TextView android:textColor="@color/zm_ui_kit_color_black_232333" android:gravity="center" android:id="@+id/e911_servic" android:focusable="true" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/zm_sip_e911_servic_54263" android:lineSpacingExtra="2sp"/>
+        <View android:background="@drawable/zm_sip_horizontal_line" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="48dp">
+            <TextView android:textSize="@dimen/zm_ui_kit_text_size_14sp" android:textColor="@color/zm_ui_kit_color_gray_747487" android:gravity="center" android:id="@+id/learn_more" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/zm_sip_e911_servic_learn_more_54263" android:layout_weight="1" android:lineSpacingExtra="3sp"/>
+            <View android:background="@drawable/zm_sip_vertical_line" android:layout_width="1dp" android:layout_height="match_parent"/>
+            <TextView android:textColor="@color/zm_ui_kit_color_blue_0E71EB" android:gravity="center" android:id="@+id/dismiss" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/zm_qa_btn_dismiss_question_34305" android:layout_weight="1" android:lineSpacingExtra="3sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

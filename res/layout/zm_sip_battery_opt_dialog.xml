@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textSize="15.0sp" n1:id="@id/tvMessage" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="20.0dip" n1:layout_marginRight="10.0dip" n1:layout_marginBottom="10.0dip" n1:text="@string/zm_sip_battery_optimization_dialog_msg" />
+    <LinearLayout n1:gravity="right" n1:orientation="horizontal" n1:paddingLeft="10.0dip" n1:paddingRight="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <TextView n1:textSize="16.0sp" n1:textStyle="bold" n1:textColor="@color/zm_btn_blacktext_dialog_selector" n1:gravity="center" n1:id="@id/tv1" n1:background="@drawable/zm_btn_dialog_bg" n1:layout_width="200.0dip" n1:layout_height="30.0dip" n1:layout_marginRight="20.0dip" n1:text="@string/zm_sip_battery_optimization_dialog_btn_never" />
+        <TextView n1:textSize="16.0sp" n1:textColor="@color/zm_btn_dialog_selector" n1:gravity="center" n1:id="@id/tv2" n1:background="@drawable/zm_btn_dialog_bg" n1:layout_width="48.0dip" n1:layout_height="30.0dip" n1:layout_marginRight="20.0dip" n1:text="@string/zm_btn_ok" />
+    </LinearLayout>
+</LinearLayout>

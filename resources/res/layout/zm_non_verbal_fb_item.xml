@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="@color/zm_white" android:paddingLeft="8dp" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1">
+    <com.zipow.videobox.view.PListNameRoleLayout android:orientation="horizontal" android:paddingRight="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:ellipsize="end" android:id="@+id/txtScreenName" android:paddingRight="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Very very long long long" android:singleLine="true" style="@style/ZMTextView.BuddyName.Medium.OnLight"/>
+    </com.zipow.videobox.view.PListNameRoleLayout>
+    <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <TextView android:gravity="center" android:id="@+id/txtCount" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9+" style="@style/ZMTextView.UnreadMessageCount"/>
+        <ImageView android:id="@+id/imgFeedback" android:padding="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_ic_like"/>
+    </LinearLayout>
+</LinearLayout>

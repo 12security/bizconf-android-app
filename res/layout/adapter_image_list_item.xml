@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/iv_thumb" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:src="@mipmap/default_image" n1:scaleType="centerCrop" />
+    <View n1:id="@id/mask" n1:background="#88000000" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <com.lzy.imagepicker.view.SuperCheckBox n1:layout_gravity="center|right|top" n1:id="@id/cb_check" n1:paddingTop="20.0dip" n1:paddingRight="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" style="@style/SuperCheckboxTheme" />
+</FrameLayout>

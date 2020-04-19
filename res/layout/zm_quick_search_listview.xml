@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <us.zoom.androidlib.widget.PullDownRefreshListView n1:id="@id/listView" n1:background="@drawable/zm_listview_bg" n1:scrollbars="none" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+      xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <us.zoom.androidlib.widget.QuickSearchSideBar n2:layout_gravity="right" n2:id="@id/quickSearchSideBar" n2:layout_width="25.0dip" n2:layout_height="fill_parent"
+      xmlns:n2="http://schemas.android.com/apk/res/android" />
+    <TextView n3:textSize="48.0sp" n3:textStyle="bold" n3:textColor="#ffffffff" n3:gravity="center" n3:layout_gravity="center" n3:id="@id/txtQuickSearchChar" n3:background="@drawable/zm_quick_search_char_bg" n3:layout_width="70.0dip" n3:layout_height="70.0dip" n3:text="A"
+      xmlns:n3="http://schemas.android.com/apk/res/android" />
+</merge>

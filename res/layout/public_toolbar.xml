@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:background="@color/activity_bg" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_vertical_title">
+        <TextView n1:textSize="@dimen/textSize32PX" n1:textColor="@color/black" n1:ellipsize="end" n1:id="@id/toolbar_reset" n1:paddingLeft="@dimen/activity_horizontal_hint" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/appointment_reset" n1:maxEms="5" n1:singleLine="true" n1:drawablePadding="@dimen/activity_nomal_hint" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+        <TextView n1:textSize="@dimen/textSize32PX" n1:textColor="@color/black" n1:ellipsize="end" n1:id="@id/toolbar_back" n1:paddingLeft="@dimen/activity_horizontal_hint" n1:visibility="visible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/appointment_appointment" n1:maxEms="5" n1:singleLine="true" n1:drawableLeft="@drawable/icon_arrow_left" n1:drawablePadding="@dimen/activity_nomal_hint" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+        <TextView n1:textSize="@dimen/textSize18SP" n1:textStyle="normal" n1:textColor="@color/black" n1:ellipsize="end" n1:id="@id/toolbar_title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/time_zone" n1:singleLine="true" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true" />
+        <TextView n1:textSize="@dimen/textSize32PX" n1:textStyle="normal" n1:textColor="@color/black" n1:id="@id/toolbar_save" n1:paddingRight="@dimen/activity_horizontal_hint" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/done" n1:layout_alignParentRight="true" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true" />
+        <ImageView n1:id="@id/toobar_fastMetting" n1:background="@drawable/fast_startmeeting" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/activity_horizontal_hint" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+    <include layout="@layout/public_grayline" />
+</LinearLayout>

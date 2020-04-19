@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="horizontal" n1:paddingLeft="@dimen/udesk_chat_head_margin_left_or_right" n1:paddingTop="@dimen/udesk_5" n1:paddingRight="@dimen/udesk_chat_head_margin_left_or_right" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layoutDirection="ltr"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textSize="@dimen/udesk_sp14" n1:textColor="@color/udesk_color_im_time_text1" n1:gravity="center" n1:id="@id/udesk_tv_time" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/udesk_5" n1:layout_marginBottom="@dimen/udesk_5" n1:layout_centerHorizontal="true" />
+    <LinearLayout n1:orientation="vertical" n1:background="@drawable/udesk_event_bg" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@id/udesk_tv_time">
+        <TextView n1:textSize="@dimen/udesk_sp16" n1:textStyle="bold" n1:textColor="@color/udesk_color_333333" n1:padding="@dimen/udesk_10" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/udesk_in_the_line" />
+        <TextView n1:textSize="@dimen/udesk_sp16" n1:textColor="@color/udesk_color_666666" n1:id="@id/udesk_queue_context" n1:paddingLeft="@dimen/udesk_10" n1:paddingRight="@dimen/udesk_10" n1:paddingBottom="@dimen/udesk_5" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/udesk_in_the_line" />
+        <TextView n1:textSize="@dimen/udesk_sp16" n1:textColor="@color/udesk_color_2d93fa" n1:gravity="center" n1:id="@id/udesk_leaveing_msg" n1:padding="@dimen/udesk_10" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/udesk_ok" />
+    </LinearLayout>
+    <com.facebook.drawee.view.SimpleDraweeView n1:id="@id/udesk_iv_head" n1:visibility="gone" n1:layout_width="@dimen/udesk_chat_head" n1:layout_height="@dimen/udesk_chat_head" n1:layout_marginTop="@dimen/udesk_chat_head_margin" n2:actualImageScaleType="centerCrop" n2:roundAsCircle="true" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <TextView n1:id="@id/udesk_nick_name" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+    <ImageView n1:layout_gravity="center_vertical" n1:id="@id/udesk_iv_status" n1:visibility="gone" n1:layout_width="@dimen/udesk_chat_msg_send_fail_pic" n1:layout_height="@dimen/udesk_chat_msg_send_fail_pic" />
+    <ProgressBar n1:id="@id/udesk_im_wait" n1:visibility="gone" n1:layout_width="@dimen/udesk_chat_msg_send_fail_pic" n1:layout_height="@dimen/udesk_chat_msg_send_fail_pic" n1:scaleType="centerInside" />
+</RelativeLayout>

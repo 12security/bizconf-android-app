@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout n1:gravity="center_vertical" n1:id="@id/panelTitleBar" n1:layout_width="fill_parent" n1:layout_height="@dimen/zm_pt_titlebar_height" n2:zm_leftButton="@id/btnBack" n2:zm_rightButton="@id/viewRight" n2:zm_title="@id/txtTitle" style="@style/ZMTitleBar" xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <Button n1:id="@id/btnBack" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_btn_close" style="@style/ZMButton.TitleBar" />
+        <View n1:id="@id/viewRight" n1:layout_width="40.0dip" n1:layout_height="fill_parent" />
+        <us.zoom.androidlib.widget.ZMDynTextSizeTextView n1:gravity="center_horizontal" n1:id="@id/txtTitle" n1:paddingLeft="5.0dip" n1:paddingRight="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_callout_title_callme" style="@style/ZMTextView.Title" />
+    </us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <ScrollView n1:id="@id/panelOptions" n1:background="@drawable/zm_window_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <us.zoom.androidlib.widget.ZMSettingsLayout n1:orientation="vertical" n1:paddingLeft="0.0dip" n1:paddingTop="0.0dip" n1:paddingRight="0.0dip" n1:paddingBottom="0.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:gravity="center" n1:id="@id/txtMessage" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/zm_callout_msg_callme_indication" style="@style/ZMTextView.Instructions" />
+            <us.zoom.androidlib.widget.ZMSettingsCategory n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/zm_setting_item_group_spacing">
+                <LinearLayout n1:gravity="center|left" n1:id="@id/btnSelectCountryCode" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:focusable="true" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:weightSum="1.0">
+                    <TextView n1:gravity="center|left" n1:id="@id/txtCountryCode" n1:focusable="false" n1:clickable="false" n1:duplicateParentState="true" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="United States(+1)" n1:layout_weight="1.0" style="@style/ZMTextView.SettingsItem" />
+                    <ImageView n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_next_arrow" />
+                </LinearLayout>
+                <LinearLayout n1:gravity="center_vertical" n1:paddingLeft="@dimen/zm_setting_item_padding_left" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <EditText n1:id="@id/edtNumber" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:hint="@string/zm_callout_hint_number" n1:ems="10" n1:singleLine="true" n1:maxLength="32" n1:inputType="phone" style="@style/ZMEditText.SettingsItem">
+                        <requestFocus />
+                    </EditText>
+                </LinearLayout>
+            </us.zoom.androidlib.widget.ZMSettingsCategory>
+            <Button n1:id="@id/btnCall" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="30.0dip" n1:layout_marginTop="@dimen/zm_setting_item_group_spacing" n1:layout_marginRight="30.0dip" n1:text="@string/zm_callout_btn_call" style="@style/ZMButton.HappyPath" />
+            <Button n1:id="@id/btnHangup" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="30.0dip" n1:layout_marginTop="@dimen/zm_setting_item_group_spacing" n1:layout_marginRight="30.0dip" n1:text="@string/zm_btn_hangup" style="@style/ZMButton.Alert" />
+        </us.zoom.androidlib.widget.ZMSettingsLayout>
+    </ScrollView>
+</LinearLayout>

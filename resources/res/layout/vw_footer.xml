@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="@dimen/activity_public_editext">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/footer_nothing_loading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/activity_public_editext">
+            <View android:layout_gravity="center" android:background="@color/xlist_footer" android:layout_width="0dp" android:layout_height="1dp" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/textSize24PX" android:textColor="@color/xlist_footer" android:gravity="center" android:layout_width="wrap_content" android:layout_height="@dimen/activity_public_editext" android:text="@string/nothing_to_loading"/>
+            <View android:layout_gravity="center" android:background="@color/xlist_footer" android:layout_width="0dp" android:layout_height="1dp" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/footer_foot" android:layout_width="match_parent" android:layout_height="@dimen/activity_public_editext">
+            <View android:layout_gravity="center" android:background="@color/xlist_footer" android:layout_width="0dp" android:layout_height="1dp" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/textSize24PX" android:textColor="@color/xlist_footer" android:gravity="center" android:id="@+id/footer_hint_text" android:layout_width="wrap_content" android:layout_height="@dimen/activity_public_editext" android:text="@string/load_more"/>
+            <View android:layout_gravity="center" android:background="@color/xlist_footer" android:layout_width="0dp" android:layout_height="1dp" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin" android:layout_weight="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

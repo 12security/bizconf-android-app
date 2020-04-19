@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/sip_expand_cover_content" n1:background="@color/zm_white" n1:paddingTop="11.0dip" n1:paddingBottom="14.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="11.0dip" n1:layout_marginRight="16.0dip">
+        <ImageView n1:id="@id/imgOutCall" n1:visibility="invisible" n1:layout_width="10.0dip" n1:layout_height="10.0dip" n1:layout_marginTop="6.0dip" n1:src="@drawable/zm_unread_voicemail" />
+        <LinearLayout n1:orientation="vertical" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="11.0dip" n1:layout_marginRight="10.0dip" n1:layout_weight="1.0">
+            <TextView n1:textStyle="bold" n1:id="@id/txtBuddyName" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="Jing" n1:singleLine="true" style="@style/ZMTextView.BuddyName.Medium.OnLight" />
+            <TextView n1:textColor="@color/zm_ui_kit_color_gray_747487" n1:id="@id/txtCallNo" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="12343124" n1:singleLine="true" style="@style/ZMTextView.Small.Dimmed" />
+            <TextView n1:textColor="@color/zm_ui_kit_color_gray_747487" n1:id="@id/txtRecordStartTime" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="Records start at 8:09 AM" n1:singleLine="true" style="@style/ZMTextView.Small.Dimmed" />
+        </LinearLayout>
+        <LinearLayout n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+            <RelativeLayout n1:gravity="center" n1:id="@id/txtCallback" n1:background="@drawable/zm_sip_ellipse" n1:layout_width="40.0dip" n1:layout_height="40.0dip" n1:contentDescription="@string/zm_sip_accessbility_callback_67408">
+                <ImageView n1:layout_width="16.0dip" n1:layout_height="16.0dip" n1:src="@drawable/zm_sip_call_back" />
+            </RelativeLayout>
+            <RelativeLayout n1:gravity="center" n1:id="@id/btnAudioShare" n1:background="@drawable/zm_sip_ellipse" n1:layout_width="40.0dip" n1:layout_height="40.0dip" n1:layout_marginLeft="16.0dip" n1:contentDescription="@string/zm_sip_accessbility_share_voicemail_67408">
+                <ImageView n1:layout_width="16.0dip" n1:layout_height="wrap_content" n1:src="@drawable/zm_sip_btn_audio_share" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout n1:id="@id/panelScript" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="11.0dip">
+        <LinearLayout n1:orientation="vertical" n1:id="@id/panelScriptContent" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <View n1:background="#ffededf4" n1:layout_width="fill_parent" n1:layout_height="1.0dip" />
+            <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <TextView n1:textSize="15.0sp" n1:textColor="#ff747487" n1:id="@id/transcript" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="32.0dip" n1:layout_marginTop="12.0dip" n1:layout_marginRight="24.0dip" n1:text="transcript" n1:lineSpacingExtra="2.0sp" />
+                <LinearLayout n1:orientation="horizontal" n1:id="@id/seeMore" n1:background="#ffffffff" n1:layout_width="wrap_content" n1:layout_height="20.0dip" n1:layout_marginRight="24.0dip" n1:layout_alignBottom="@id/transcript" n1:layout_alignParentRight="true">
+                    <TextView n1:textSize="15.0sp" n1:textColor="@color/zm_ui_kit_color_gray_747487" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:text="..." />
+                    <TextView n1:textSize="15.0sp" n1:textColor="#ff0072eb" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:text="@string/zm_sip_see_more_61381" />
+                </LinearLayout>
+            </RelativeLayout>
+            <View n1:background="#ffededf4" n1:layout_width="fill_parent" n1:layout_height="1.0dip" n1:layout_marginTop="18.0dip" />
+        </LinearLayout>
+        <RelativeLayout n1:id="@id/panelTranscriptLoading" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="130.0dip">
+            <View n1:background="#ffededf4" n1:layout_width="fill_parent" n1:layout_height="1.0dip" />
+            <TextView n1:textSize="16.0sp" n1:textColor="@color/zm_ui_kit_color_gray_8E8E93" n1:id="@id/tvTranscriptLoading" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_sip_transcribe_processing_61402" n1:layout_centerInParent="true" n1:lineSpacingExtra="2.0sp" />
+            <ProgressBar n1:id="@id/pbTranscriptLoadingProgress" n1:layout_width="20.0dip" n1:layout_height="20.0dip" n1:layout_marginLeft="5.0dip" n1:indeterminateDrawable="@drawable/zm_sip_transcript_loading" n1:layout_toRightOf="@id/tvTranscriptLoading" n1:layout_centerVertical="true" />
+            <View n1:background="#ffededf4" n1:layout_width="fill_parent" n1:layout_height="1.0dip" n1:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </FrameLayout>
+    <RelativeLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="32.0dip" n1:layout_marginTop="16.0dip" n1:layout_marginRight="16.0dip">
+        <com.zipow.videobox.view.sip.ZMSeekBar n1:id="@id/seekAudioPlayer2" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="4.0dip" />
+        <SeekBar n1:id="@id/seekAudioPlayer" n1:paddingLeft="7.0dip" n1:paddingRight="7.0dip" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="4.0dip" n1:maxHeight="2.0dip" n1:max="100" n1:progress="0" n1:progressDrawable="@drawable/zm_sip_audio_player_seekbar" n1:minHeight="2.0dip" n1:thumb="@drawable/zm_sip_audio_player_seekbar_thumbsmall_normal" n1:layout_below="@id/seekAudioPlayer2" style="?android:seekBarStyle" />
+        <TextView n1:textColor="@color/zm_ui_kit_color_gray_747487" n1:id="@id/txtAudioPlayerCurrent" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="8.0dip" n1:text="00:30" n1:layout_below="@id/seekAudioPlayer" n1:layout_alignLeft="@id/seekAudioPlayer" style="@style/ZMTextView.Small.OnLight" />
+        <TextView n1:textColor="@color/zm_ui_kit_color_gray_747487" n1:id="@id/txtAudioPlayerTotal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="8.0dip" n1:text="00:30" n1:layout_below="@id/seekAudioPlayer" n1:layout_alignParentRight="true" style="@style/ZMTextView.Small.OnLight" />
+    </RelativeLayout>
+    <RelativeLayout n1:gravity="center_vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="32.0dip" n1:layout_marginTop="11.0dip" n1:layout_marginRight="16.0dip">
+        <com.zipow.videobox.view.sip.AudioPlayerControllerButton n1:id="@id/btnAudioPlayer" n1:padding="3.0dip" n1:layout_width="20.0dip" n1:layout_height="20.0dip" n1:layout_centerVertical="true" />
+        <TextView n1:textSize="14.0sp" n1:textStyle="bold" n1:textColor="#ff0e71eb" n1:gravity="center" n1:id="@id/txtSpeakerStatus" n1:paddingLeft="5.0dip" n1:paddingRight="5.0dip" n1:layout_width="wrap_content" n1:layout_height="20.0dip" n1:text="@string/zm_lbl_speaker" n1:layout_centerInParent="true" />
+        <ImageView n1:id="@id/txtDelete" n1:layout_width="wrap_content" n1:layout_height="18.0dip" n1:src="@drawable/zm_sip_delete" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n1:contentDescription="@string/zm_accessibility_sip_call_delete_item" />
+    </RelativeLayout>
+    <ImageView n1:id="@id/imgDeleteCall" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+</LinearLayout>

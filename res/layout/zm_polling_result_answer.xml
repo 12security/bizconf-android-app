@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:paddingTop="10.0dip" n1:paddingBottom="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <TextView n1:id="@id/txtAnswer" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="Answer content" n1:layout_weight="1.0" style="@style/ZMTextView.Small.OnLight" />
+        <TextView n1:layout_gravity="bottom" n1:id="@id/txtSelectedCount" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="4.0dip" n1:text="(2)" style="@style/ZMTextView.Normal.Dimmed" />
+        <TextView n1:layout_gravity="bottom" n1:id="@id/txtPercent" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="50%" style="@style/ZMTextView.Normal.OnLight" />
+    </LinearLayout>
+    <ProgressBar n1:id="@id/percent" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip" n1:progress="30" n1:secondaryProgress="70" style="@style/PollingPercentBar" />
+</LinearLayout>

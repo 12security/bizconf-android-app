@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout n1:id="@id/bookmarkTitleBar" n1:layout_width="fill_parent" n1:layout_height="@dimen/zm_pt_titlebar_height" n1:weightSum="1.0" n1:layout_alignParentTop="true" n2:zm_leftButton="@id/btnAdd" n2:zm_rightButton="@id/btnDone" n2:zm_title="@id/txtTitle" style="@style/ZMTitleBar" xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <Button n1:id="@id/btnAdd" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_btn_share_bookmark_add" style="@style/ZMButton.TitleBar" />
+        <Button n1:id="@id/btnDone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_btn_done" style="@style/ZMButton.TitleBar" />
+        <TextView n1:gravity="center_horizontal" n1:id="@id/txtTitle" n1:paddingLeft="5.0dip" n1:paddingRight="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_title_bookmark" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true" style="@style/ZMTextView.Title" />
+    </us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <com.zipow.videobox.view.bookmark.BookmarkListView n1:id="@id/bookmarkListView" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_above="@id/bottomBar" n1:layout_below="@id/bookmarkTitleBar" />
+    <LinearLayout n1:orientation="horizontal" n1:id="@id/bottomBar" n1:background="@drawable/zm_tab_bg" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_alignParentBottom="true">
+        <Button n1:layout_gravity="center|left" n1:id="@id/btnEdit" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_btn_edit" style="@style/ZMButton.NoBackground" />
+    </LinearLayout>
+    <LinearLayout n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerInParent="true">
+        <TextView n1:gravity="center_horizontal" n1:id="@id/txtNoBookmark" n1:paddingLeft="5.0dip" n1:paddingRight="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_msg_no_bookmarks" style="@style/ZMTextView.Large.OnLight" />
+    </LinearLayout>
+</RelativeLayout>

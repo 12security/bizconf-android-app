@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout n1:layout_width="fill_parent" n1:layout_height="@dimen/zm_pt_titlebar_height" n1:weightSum="1.0" n2:zm_leftButton="@id/btnSetting" n2:zm_rightButton="@id/panelTitleRight" n2:zm_title="@id/txtTitle" style="@style/ZMTitleBar"
+  xmlns:n1="http://schemas.android.com/apk/res/android" xmlns:n2="http://schemas.android.com/apk/res-auto">
+    <ImageButton n1:id="@id/btnSetting" n1:background="@null" n1:paddingLeft="5.0dip" n1:paddingTop="10.0dip" n1:paddingRight="10.0dip" n1:paddingBottom="10.0dip" n1:visibility="invisible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_icon_settings" n1:layout_centerVertical="true" />
+    <View n1:id="@id/panelTitleRight" n1:paddingRight="5.0dip" n1:layout_width="40.0dip" n1:layout_height="fill_parent" />
+    <us.zoom.androidlib.widget.ZMDynTextSizeTextView n1:gravity="center_horizontal" n1:id="@id/txtTitle" n1:paddingLeft="5.0dip" n1:paddingRight="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_app_full_name" n1:singleLine="true" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true" style="@style/ZMTextView.Title" />
+</us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>

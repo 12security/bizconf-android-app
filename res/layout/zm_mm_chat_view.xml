@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <us.zoom.androidlib.widget.ZMKeyboardDetector n1:id="@id/keyboardDetector" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:weightSum="1.0">
+        <us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout n1:id="@id/panelTitleBar" n1:layout_width="fill_parent" n1:layout_height="@dimen/zm_pt_titlebar_height" n2:zm_leftButton="@id/btnBack" n2:zm_rightButton="@id/panelTitleRight" n2:zm_title="@id/panelTitleCenter" style="@style/ZMTitleBar" xmlns:n2="http://schemas.android.com/apk/res-auto">
+            <Button n1:id="@id/btnBack" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="" n1:layout_centerVertical="true" n1:contentDescription="@string/zm_btn_back" style="@style/ZMBackButton" />
+            <LinearLayout n1:orientation="horizontal" n1:id="@id/panelTitleRight" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                <ImageButton n1:id="@id/btnSearch" n1:background="@null" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginLeft="0.0dip" n1:src="@drawable/zm_ic_search_blue_ondark" n1:contentDescription="@string/zm_description_mm_btn_search" />
+                <ImageButton n1:id="@id/btnManage" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_mm_title_btn_contact" n1:contentDescription="@string/zm_description_mm_btn_chat_options" style="@style/ZMButton.TitleBar" />
+                <Button n1:id="@id/btnJump" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_btn_jump" style="@style/ZMButton.TitleBar" />
+            </LinearLayout>
+            <LinearLayout n1:gravity="center|left" n1:id="@id/panelTitleCenter" n1:layout_width="wrap_content" n1:layout_height="fill_parent">
+                <us.zoom.androidlib.widget.ZMDynTextSizeTextView n1:textStyle="normal" n1:ellipsize="end" n1:gravity="center|left" n1:id="@id/txtTitle" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="" n1:singleLine="true" n1:layout_weight="1.0" style="@style/ZMTextView.Title" />
+                <com.zipow.videobox.view.PresenceStateView n1:id="@id/imgPresence" n1:focusable="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" n1:layout_marginRight="5.0dip" n2:zm_subpresence_type="0" />
+            </LinearLayout>
+        </us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+        <com.zipow.videobox.view.mm.MMConnectAlertView n1:orientation="vertical" n1:id="@id/panelConnectionAlert" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+        <LinearLayout n1:orientation="vertical" n1:id="@id/myNotesPanel" n1:background="@color/zm_white" n1:padding="15.0dip" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:textSize="18.0sp" n1:textStyle="bold" n1:textColor="@color/zm_my_notes_title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_mm_msg_my_notes_title_45169" />
+            <TextView n1:textSize="13.0sp" n1:textColor="@color/zm_my_notes_sub_title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_mm_msg_my_notes_sub_title_45169" />
+        </LinearLayout>
+        <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0">
+            <LinearLayout n1:orientation="vertical" n1:id="@id/panelTimedChatHint" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:background="#fffff1c3" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <TextView n1:ellipsize="end" n1:id="@id/txtTimedChatHintMsg" n1:padding="10.0dip" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="" n1:maxLines="3" n1:layout_weight="1.0" style="@style/UIKitTextView.SecondaryText.Small.Dimmed" />
+                    <ImageView n1:id="@id/btnTimedChatHintClose" n1:padding="12.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_btn_time_chat_hint_closed" />
+                </LinearLayout>
+            </LinearLayout>
+            <android.support.v4.widget.SwipeRefreshLayout n1:id="@id/swipeRefreshLayout" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@id/panelTimedChatHint">
+                <com.zipow.videobox.view.mm.MMMessageListView n1:id="@id/messageListView" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:divider="@null" style="@style/MMChatListView" />
+            </android.support.v4.widget.SwipeRefreshLayout>
+            <LinearLayout n1:orientation="vertical" n1:id="@id/panelServerError" n1:background="@drawable/zm_notification_background" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <TextView n1:gravity="center" n1:id="@id/txtServerError" n1:paddingLeft="10.0dip" n1:paddingTop="8.0dip" n1:paddingBottom="8.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" style="@style/ZMTextView.Medium.OnLight" />
+                <ImageView n1:background="@drawable/zm_list_divider" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView n1:gravity="center" n1:id="@id/textNewMessageCount" n1:background="@drawable/zm_mm_new_message_count_bg" n1:padding="10.0dip" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="15.0dip" n1:minWidth="60.0dip" n1:minHeight="34.0dip" n1:layout_alignParentRight="true" style="@style/ZMTextView.Small.OnDark" />
+            <TextView n1:gravity="center" n1:id="@id/txtBottomHint" n1:background="@drawable/zm_mm_new_message_count_bg" n1:padding="10.0dip" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="15.0dip" n1:minWidth="60.0dip" n1:minHeight="34.0dip" n1:layout_alignParentRight="true" n1:layout_alignParentBottom="true" style="@style/ZMTextView.Small.OnDark" />
+            <LinearLayout n1:orientation="vertical" n1:id="@id/panelWarnMsg" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_alignParentBottom="true">
+                <LinearLayout n1:background="@color/zm_dim" n1:layout_width="fill_parent" n1:layout_height="0.5dip" />
+                <TextView n1:gravity="center" n1:id="@id/txtWarnMsg" n1:layout_width="fill_parent" n1:layout_height="wrap_content" style="@style/ZMTextView.Instructions.ChatWarn" />
+            </LinearLayout>
+            <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <LinearLayout n1:orientation="vertical" n1:id="@id/panelE2EHint" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+                    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:background="@color/zm_message_hint_bg" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                        <TextView n1:ellipsize="end" n1:id="@id/txtE2EHintMsg" n1:padding="10.0dip" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="" n1:maxLines="3" n1:layout_weight="1.0" style="@style/ZMTextView.Small.OnDark" />
+                        <ImageView n1:id="@id/btnE2EHintClose" n1:padding="12.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_btn_chat_hint_closed" />
+                    </LinearLayout>
+                    <LinearLayout n1:background="@color/zm_toolbar_stopannotation_press" n1:layout_width="fill_parent" n1:layout_height="1.0dip" />
+                </LinearLayout>
+                <LinearLayout n1:orientation="vertical" n1:id="@id/panelAtListHint" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+                    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:background="@color/zm_message_hint_bg" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                        <TextView n1:ellipsize="end" n1:id="@id/txtAtListHintMsg" n1:padding="10.0dip" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="" n1:maxLines="3" n1:layout_weight="1.0" style="@style/ZMTextView.Small.OnDark" />
+                        <ImageView n1:id="@id/btnAtListHintClose" n1:padding="12.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_btn_chat_hint_closed" />
+                    </LinearLayout>
+                    <LinearLayout n1:background="@color/zm_toolbar_stopannotation_press" n1:layout_width="fill_parent" n1:layout_height="1.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:id="@id/panelMsgContextEmptyView" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+                <TextView n1:gravity="center" n1:id="@id/txtMsgContextLoadingError" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:text="@string/zm_lbl_content_load_error" style="@style/ZMTextView.SettingsItem" />
+                <TextView n1:gravity="center" n1:id="@id/txtMsgContextContentLoading" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_pull_down_refresh_list_loading" n1:drawableTop="@drawable/zm_ic_conent_loading" n1:drawablePadding="10.0dip" style="@style/ZMTextView.SettingsItem" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout n1:background="@color/zm_dim" n1:layout_width="fill_parent" n1:layout_height="0.5dip" />
+        <TextView n1:enabled="false" n1:textColorHint="@color/zm_text_deep_grey" n1:id="@id/txtDisableMsg" n1:background="#ffffffff" n1:padding="5.0dip" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="50.0dip" style="@style/ZMEditText.Small" />
+        <Button n1:id="@id/btnInviteE2EChat" n1:background="#fff0f0f0" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="50.0dip" style="@style/ZMButton.TitleBar.Small" />
+        <LinearLayout n1:orientation="vertical" n1:id="@id/panelActions" n1:background="#fff0f0f0" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <LinearLayout n1:gravity="bottom" n1:orientation="horizontal" n1:id="@id/panelSend" n1:background="@color/zm_white" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <ImageButton n1:id="@id/btnMoreOpts" n1:background="@null" n1:paddingLeft="10.0dip" n1:paddingTop="10.0dip" n1:paddingRight="10.0dip" n1:paddingBottom="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_mm_more_btn" n1:contentDescription="@string/zm_description_mm_btn_more" />
+                <RelativeLayout n1:gravity="top" n1:orientation="horizontal" n1:id="@id/panelSendText" n1:paddingTop="7.0dip" n1:paddingBottom="7.0dip" n1:visibility="gone" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:weightSum="1.0" n1:layout_weight="1.0">
+                    <com.zipow.videobox.view.CommandEditText n1:textSize="16.0sp" n1:id="@id/edtMessage" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginRight="0.0dip" n1:text="" n1:hint="@string/zm_lbl_type_message_25495" n1:maxLines="3" n1:maxLength="4096" n1:layout_toLeftOf="@id/panelSendbtns" n1:inputType="textCapSentences|textMultiLine" n3:zm_edtDisableColor="#00000000" n3:zm_edtFocusColor="#00000000" n3:zm_edtNormalColor="#00000000" style="@style/ZMEditText.Small" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+                    <ImageView n1:id="@id/imgE2EFlag" n1:visibility="gone" n1:layout_width="15.0dip" n1:layout_height="15.0dip" n1:layout_marginBottom="11.0dip" n1:src="@drawable/zm_e2e_flag" n1:layout_alignRight="@id/edtMessage" n1:layout_alignBottom="@id/edtMessage" />
+                    <LinearLayout n1:gravity="bottom" n1:layout_gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/panelSendbtns" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_alignBottom="@id/edtMessage" n1:layout_alignParentRight="true">
+                        <ImageButton n1:id="@id/btnEmoji" n1:background="@null" n1:paddingLeft="10.0dip" n1:paddingTop="2.0dip" n1:paddingRight="5.0dip" n1:paddingBottom="2.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_mm_emoji_btn" n1:contentDescription="@string/zm_description_mm_btn_mode_emoji_23159" />
+                        <Button n1:id="@id/btnSend" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/zm_btn_send" style="@style/ZMButton.NoBackground" />
+                        <ImageButton n1:id="@id/btnSetModeVoice" n1:background="@null" n1:paddingLeft="5.0dip" n1:paddingTop="2.0dip" n1:paddingRight="10.0dip" n1:paddingBottom="2.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_mm_setmode_voice_btn" n1:contentDescription="@string/zm_description_mm_btn_mode_voice" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <Button n1:layout_gravity="center_vertical" n1:id="@id/btnHoldToTalk" n1:visibility="visible" n1:layout_width="0.0dip" n1:layout_height="35.0dip" n1:layout_marginTop="5.0dip" n1:layout_marginRight="3.0dip" n1:layout_marginBottom="5.0dip" n1:text="@string/zm_mm_btn_hold_to_talk" n1:layout_weight="1.0" style="@style/ZMButton.VoiceRecord" />
+                <ImageButton n1:id="@id/btnSetModeKeyboard" n1:background="@null" n1:paddingLeft="5.0dip" n1:paddingTop="10.0dip" n1:paddingRight="10.0dip" n1:paddingBottom="10.0dip" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_mm_setmode_keyboard_btn" n1:contentDescription="@string/zm_description_mm_btn_mode_keyboard" />
+            </LinearLayout>
+            <View n1:id="@id/lineBelowSend" n1:background="@color/zm_dim" n1:layout_width="fill_parent" n1:layout_height="0.5dip" />
+            <com.zipow.videobox.view.mm.sticker.StickerInputView n1:id="@id/panelEmojis" n1:background="@color/zm_white" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+            <TableLayout n1:id="@id/panelMoreOpts" n1:background="@color/zm_white" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <TableRow n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <FrameLayout n1:background="@color/zm_white" n1:layout_width="0.0dip" n1:layout_height="70.0dip" n1:layout_marginRight="0.20000005dip" n1:layout_marginBottom="0.20000005dip" n1:layout_weight="1.0">
+                        <LinearLayout n1:gravity="center_horizontal" n1:layout_gravity="center" n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                            <ImageButton n1:id="@id/imgOptVideoCall" n1:background="@null" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_mm_opt_panel_videocall_icon" n1:importantForAccessibility="no" />
+                            <TextView n1:gravity="center" n1:id="@id/txtOptVideoCall" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:text="@string/zm_mm_opt_video_call" n1:importantForAccessibility="no" style="@style/UIKitTextView.SecondaryText.Small.Dimmed" />
+                        </LinearLayout>
+                        <ImageView n1:id="@id/btnVideoCall" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:src="@drawable/zm_mm_opt_btn_overlay" n1:contentDescription="@string/zm_mm_opt_video_call" />
+                    </FrameLayout>
+                    <FrameLayout n1:background="@color/zm_white" n1:layout_width="0.0dip" n1:layout_height="70.0dip" n1:layout_marginLeft="0.20000005dip" n1:layout_marginRight="0.20000005dip" n1:layout_marginBottom="0.20000005dip" n1:layout_weight="1.0">
+                        <LinearLayout n1:gravity="center_horizontal" n1:layout_gravity="center" n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                            <ImageButton n1:id="@id/imgOptVoiceCall" n1:background="@null" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_mm_opt_panel_voicecall_icon" n1:importantForAccessibility="no" />
+                            <TextView n1:gravity="center" n1:id="@id/txtOptVoiceCall" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:text="@string/zm_mm_opt_voice_call" n1:importantForAccessibility="no" style="@style/UIKitTextView.SecondaryText.Small.Dimmed" />
+                        </LinearLayout>
+                        <ImageView n1:id="@id/btnVoiceCall" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:src="@drawable/zm_mm_opt_btn_overlay" n1:contentDescription="@string/zm_mm_opt_voice_call" />
+                    </FrameLayout>
+                    <FrameLayout n1:id="@id/panelCamera" n1:background="@color/zm_white" n1:layout_width="0.0dip" n1:layout_height="70.0dip" n1:layout_marginLeft="0.20000005dip" n1:layout_marginBottom="0.20000005dip" n1:layout_weight="1.0">
+                        <LinearLayout n1:gravity="center_horizontal" n1:layout_gravity="center" n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                            <ImageButton n1:background="@null" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_mm_opt_panel_camera_icon" n1:importantForAccessibility="no" />
+                            <TextView n1:gravity="center" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:text="@string/zm_mm_opt_camera" n1:importantForAccessibility="no" style="@style/UIKitTextView.SecondaryText.Small.Dimmed" />
+                        </LinearLayout>
+                        <ImageView n1:id="@id/btnCamera" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:src="@drawable/zm_mm_opt_btn_overlay" n1:contentDescription="@string/zm_mm_opt_camera" />
+                    </FrameLayout>
+                </TableRow>
+                <TableRow n1:id="@id/panelMoreOptsRow2" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <FrameLayout n1:background="@color/zm_white" n1:layout_width="0.0dip" n1:layout_height="70.0dip" n1:layout_marginTop="0.20000005dip" n1:layout_marginRight="0.20000005dip" n1:layout_marginBottom="0.5dip" n1:layout_weight="1.0">
+                        <LinearLayout n1:gravity="center_horizontal" n1:layout_gravity="center" n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                            <ImageButton n1:background="@null" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_mm_opt_panel_pic_icon" n1:importantForAccessibility="no" />
+                            <TextView n1:gravity="center" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:text="@string/zm_mm_opt_photo" n1:importantForAccessibility="no" style="@style/UIKitTextView.SecondaryText.Small.Dimmed" />
+                        </LinearLayout>
+                        <ImageView n1:id="@id/btnSendPicture" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:src="@drawable/zm_mm_opt_btn_overlay" n1:contentDescription="@string/zm_mm_opt_photo" />
+                    </FrameLayout>
+                    <FrameLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:background="@color/zm_white" n1:layout_width="0.0dip" n1:layout_height="70.0dip" n1:layout_marginLeft="0.20000005dip" n1:layout_marginTop="0.20000005dip" n1:layout_marginRight="0.20000005dip" n1:layout_marginBottom="0.5dip" n1:layout_weight="1.0">
+                        <LinearLayout n1:gravity="center_horizontal" n1:layout_gravity="center" n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                            <ImageButton n1:background="@null" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_mm_opt_panel_file_icon" n1:importantForAccessibility="no" />
+                            <TextView n1:gravity="center" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:text="@string/zm_mm_opt_file" n1:importantForAccessibility="no" style="@style/UIKitTextView.SecondaryText.Small.Dimmed" />
+                        </LinearLayout>
+                        <ImageView n1:id="@id/btnSendFile" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:src="@drawable/zm_mm_opt_btn_overlay" n1:contentDescription="@string/zm_mm_opt_file" />
+                    </FrameLayout>
+                    <FrameLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:background="@color/zm_white" n1:layout_width="0.0dip" n1:layout_height="70.0dip" n1:layout_marginLeft="0.20000005dip" n1:layout_marginTop="0.20000005dip" n1:layout_marginBottom="0.5dip" n1:layout_weight="1.0" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:id="@id/panelVoiceRcdHint" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:gravity="center" n1:layout_gravity="center" n1:orientation="vertical" n1:background="@drawable/zm_voice_rcd_hint_bg" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+            <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                <ImageView n1:id="@id/imgVoiceRcdHint" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_voice_rcd_hint_icon" />
+                <ProgressBar n1:layout_gravity="center_vertical" n1:id="@id/progressBarStartingRecording" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_margin="10.0dip" style="@style/ZMProgressBar" />
+            </LinearLayout>
+            <TextView n1:gravity="center" n1:id="@id/txtRcdHintText" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:minWidth="135.0dip" n1:text="@string/zm_mm_msg_rcd_hint_move_up_to_cancel" style="@style/ZMTextView.Normal.OnDark" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:layout_width="@dimen/activity_dialog_width" n1:layout_height="wrap_content">
+        <TextView n1:textSize="@dimen/textSize18SP" n1:textColor="@color/black" n1:gravity="center" n1:layout_gravity="center" n1:id="@id/dialog_title" n1:background="@drawable/public_shape_dialog" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/activity_public_hint" n1:text="预约失败" />
+        <TextView n1:textSize="@dimen/textSize32PX" n1:textColor="@color/light_gray" n1:gravity="center" n1:layout_gravity="center" n1:id="@id/dialog_msg" n1:background="@drawable/public_shape_dialog" n1:padding="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/activity_horizontal_hint" n1:text="无符合条件会议室" />
+        <include layout="@layout/public_grayline" />
+        <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <Button n1:textSize="@dimen/textSize22px" n1:textColor="@color/violet" n1:gravity="center" n1:layout_gravity="center_horizontal" n1:id="@id/dialog_meetingstatus" n1:background="@drawable/public_shape_dialog" n1:visibility="gone" n1:layout_width="0.0dip" n1:layout_height="@dimen/activity_login_button" n1:text="@string/appointment_meeting_status" n1:maxLines="1" n1:layout_weight="1.0" />
+            <View n1:background="@color/gray_hint" n1:layout_width="0.5dip" n1:layout_height="@dimen/activity_login_button" />
+            <Button n1:textSize="@dimen/textSize22px" n1:textColor="@color/light_gray" n1:gravity="center" n1:id="@id/dialog_cancel" n1:background="@drawable/public_shape_dialog" n1:layout_width="0.0dip" n1:layout_height="@dimen/activity_login_button" n1:text="@string/personal_remove_no" n1:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

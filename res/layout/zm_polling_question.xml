@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@color/zm_white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout n1:id="@id/panelTitleBar" n1:layout_width="fill_parent" n1:layout_height="@dimen/zm_pt_titlebar_height" n2:zm_leftButton="@id/btnBack" n2:zm_rightButton="@id/viewRight" n2:zm_title="@id/txtTitle" style="@style/ZMTitleBar" xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <Button n1:id="@id/btnBack" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_polling_btn_poll_later" style="@style/ZMButton.TitleBar" />
+        <View n1:id="@id/viewRight" n1:layout_width="0.0dip" n1:layout_height="0.0dip" />
+        <TextView n1:gravity="center_horizontal" n1:id="@id/txtTitle" n1:paddingLeft="5.0dip" n1:paddingRight="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Quick Poll" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true" style="@style/ZMTextView.Title" />
+    </us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <ScrollView n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0">
+        <LinearLayout n1:orientation="vertical" n1:paddingTop="20.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:id="@id/txtQuestion" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="20.0dip" n1:layout_marginRight="20.0dip" n1:layout_marginBottom="20.0dip" n1:text="Question" style="@style/ZMTextView.Medium.OnLight" />
+            <RadioGroup n1:id="@id/panelAnswersContainer" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="0.0dip" n1:layout_marginRight="0.0dip">
+                <include n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="1.0dip" n1:layout_marginBottom="1.0dip" layout="@layout/zm_polling_single_choice" />
+                <include n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="1.0dip" n1:layout_marginBottom="1.0dip" layout="@layout/zm_polling_single_choice" />
+                <include n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="1.0dip" n1:layout_marginBottom="1.0dip" layout="@layout/zm_polling_single_choice" />
+            </RadioGroup>
+            <us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout n1:id="@id/panelButtons" n1:paddingTop="20.0dip" n1:paddingBottom="0.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n3:zm_leftButton="@id/btnPrev" n3:zm_rightButton="@id/btnNext" n3:zm_title="@id/txtQuestionIndex" xmlns:n3="http://schemas.android.com/apk/res-auto">
+                <Button n1:id="@id/btnPrev" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_polling_btn_prev" style="@style/PollButton.Prev" />
+                <Button n1:id="@id/btnNext" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_polling_btn_next" style="@style/PollButton.Next" />
+                <TextView n1:gravity="center" n1:id="@id/txtQuestionIndex" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="1/3" style="@style/ZMTextView.Medium.OnLight" />
+            </us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+            <Button n1:layout_gravity="center_horizontal" n1:id="@id/btnSubmitCenter" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="20.0dip" n1:text="@string/zm_polling_btn_submit" style="@style/PollButton" />
+        </LinearLayout>
+    </ScrollView>
+    <TextView n1:textColor="#ffff1e5a" n1:gravity="center" n1:id="@id/txtReadOnlyMessage" n1:background="@drawable/zm_tab_bg" n1:layout_width="fill_parent" n1:layout_height="@dimen/zm_pt_titlebar_height" n1:text="@string/zm_polling_msg_host_and_panelist_cannot_vote" style="@style/ZMTextView.Medium" />
+</LinearLayout>

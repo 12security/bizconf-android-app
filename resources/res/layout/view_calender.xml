@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/month_layout" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="45dp">
+        <RelativeLayout android:gravity="center_vertical" android:id="@+id/iv_previous" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentLeft="true">
+            <ImageView android:id="@+id/pre_btn" android:background="@mipmap/calendar_white_left_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="16sp" android:textColor="#565656" android:gravity="center" android:id="@+id/tv_year_mouth" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+        <RelativeLayout android:gravity="center_vertical" android:id="@+id/iv_next" android:visibility="gone" android:layout_width="50dp" android:layout_height="match_parent" android:layout_alignParentRight="true">
+            <ImageView android:id="@+id/next_btn" android:background="@mipmap/calendar_white_right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <ViewFlipper android:id="@+id/rv_day" android:paddingTop="@dimen/my_calendar_day_padding_vertical" android:paddingBottom="@dimen/my_calendar_day_padding_vertical" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="55.0dip" n1:layout_height="35.0dip" n1:layoutDirection="ltr"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView n1:id="@id/ivIcon" n1:layout_width="25.0dip" n1:layout_height="25.0dip" n1:layout_centerInParent="true" />
+    <View n1:background="@color/line" n1:layout_width="1.0dip" n1:layout_height="fill_parent" n1:layout_alignParentRight="true" />
+</RelativeLayout>

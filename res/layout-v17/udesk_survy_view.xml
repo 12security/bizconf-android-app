@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/udesk_root" n1:background="@color/udesk_color_bg_white" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layoutDirection="ltr"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:id="@id/top_rl" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="@dimen/udesk_55">
+        <TextView n1:textSize="17.0sp" n1:textColor="@color/udesk_color_333333" n1:gravity="center" n1:id="@id/udesk_title" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/udesk_40" n1:layout_marginRight="@dimen/udesk_20" n1:minHeight="@dimen/udesk_55" n1:layout_toLeftOf="@id/udesk_survy_cancle" n1:layout_centerInParent="true" />
+        <ImageView n1:id="@id/udesk_survy_cancle" n1:layout_width="@dimen/udesk_15" n1:layout_height="@dimen/udesk_15" n1:layout_marginRight="@dimen/udesk_15" n1:src="@drawable/udesk_survy_cancle" n1:layout_alignParentRight="true" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View n1:background="#fff3f3f3" n1:layout_width="fill_parent" n1:layout_height="0.5dip" />
+    <android.support.v7.widget.RecyclerView n1:id="@id/rv_text_list" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_marginLeft="@dimen/udesk_40" n1:layout_marginTop="@dimen/udesk_15" n1:layout_marginRight="@dimen/udesk_40" n1:layout_weight="1.0" />
+    <TextView n1:textSize="14.0sp" n1:textColor="@color/udesk_color_2d93fa" n1:ellipsize="end" n1:gravity="center" n1:id="@id/star_des" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="@dimen/udesk_45" n1:singleLine="true" />
+    <android.support.v7.widget.RecyclerView n1:id="@id/rv_options_tags" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/udesk_40" n1:layout_marginTop="@dimen/udesk_10" n1:layout_marginRight="@dimen/udesk_40" />
+    <LinearLayout n1:orientation="vertical" n1:id="@id/udesk_remark_rl" n1:background="@drawable/udesk_remark_bg" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/udesk_40" n1:layout_marginTop="@dimen/udesk_15" n1:layout_marginRight="@dimen/udesk_40" n1:minHeight="@dimen/udesk_40">
+        <EditText n1:textSize="16.0sp" n1:textColor="@color/udesk_color_333333" n1:textColorHint="@color/udesk_color_cccccc" n1:gravity="center|left" n1:id="@id/udesk_remark_et" n1:background="@null" n1:padding="12.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:maxHeight="@dimen/udesk_80" n1:minHeight="@dimen/udesk_40" />
+    </LinearLayout>
+    <TextView n1:textSize="@dimen/udesk_sp10" n1:textColor="@color/udesk_color_cd3f31" n1:gravity="center|left" n1:id="@id/udesk_must_reamrk_tips" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/udesk_40" n1:layout_marginTop="@dimen/udesk_5" n1:layout_marginRight="@dimen/udesk_40" n1:text="@string/udesk_remark_must" />
+    <TextView n1:textSize="@dimen/udesk_sp16" n1:textColor="@color/udesk_color_bg_white" n1:gravity="center" n1:id="@id/submit_survy_tv" n1:background="@drawable/udesk_submit_remark_bg" n1:layout_width="fill_parent" n1:layout_height="@dimen/udesk_45" n1:layout_marginLeft="@dimen/udesk_40" n1:layout_marginTop="@dimen/udesk_20" n1:layout_marginRight="@dimen/udesk_40" n1:layout_marginBottom="@dimen/udesk_25" n1:text="@string/summit_remark" />
+</LinearLayout>

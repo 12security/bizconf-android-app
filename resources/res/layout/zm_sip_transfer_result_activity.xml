@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:background="@color/zm_ui_kit_color_white_ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_sip_title_transfer_to_61381" style="@style/ZMTextView.Large.DialogTitle"/>
+    <TextView android:textSize="30sp" android:textColor="@color/zm_black" android:ellipsize="end" android:gravity="center" android:id="@+id/tvNumber" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="30dp" android:layout_marginRight="30dp" android:layout_marginBottom="30dp" android:singleLine="true"/>
+    <TextView android:textSize="20sp" android:textColor="@color/zm_grey_text" android:gravity="center" android:id="@+id/tvResult" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:textColor="@color/zm_sip_dialog_timer_text_color" android:layout_gravity="right" android:id="@+id/tvTimer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:text="@string/zm_sip_transfer_timer_26673"/>
+</LinearLayout>

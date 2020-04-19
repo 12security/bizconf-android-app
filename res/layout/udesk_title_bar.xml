@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/udesk_root" n1:background="@color/udesk_titlebar_bg1" n1:layout_width="fill_parent" n1:layout_height="@dimen/udesk_titlebar_height"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true">
+        <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:id="@id/udesk_back_linear" n1:layout_width="50.0dip" n1:layout_height="fill_parent">
+            <ImageView n1:id="@id/udesk_back_img" n1:layout_width="@dimen/udesk_20" n1:layout_height="@dimen/udesk_20" n1:src="@drawable/udesk_titlebar_back" />
+        </LinearLayout>
+        <TextView n1:id="@id/udesk_content" n1:layout_marginLeft="@dimen/udesk_15" n1:maxWidth="300.0dip" style="@style/udesk_titlebar_button_text_style" />
+        <ImageView n1:id="@id/udesk_status" n1:visibility="gone" n1:layout_width="@dimen/udesk_8" n1:layout_height="@dimen/udesk_8" n1:layout_marginLeft="@dimen/udesk_2" n1:src="@drawable/udesk_online_status" />
+    </LinearLayout>
+    <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_alignParentRight="true" n1:layout_centerInParent="true">
+        <ImageView n1:id="@id/udesk_transfer_agent" n1:visibility="gone" n1:layout_width="@dimen/udesk_15" n1:layout_height="@dimen/udesk_15" n1:layout_marginRight="@dimen/udesk_2" n1:src="@drawable/udesk_tip_agent" />
+        <TextView n1:id="@id/udesk_titlebar_right" n1:visibility="gone" n1:layout_marginRight="@dimen/udesk_titlebar_right_margin" style="@style/udesk_titlebar_button_text_style" />
+    </LinearLayout>
+</RelativeLayout>

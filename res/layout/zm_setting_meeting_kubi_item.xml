@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center|left" n1:orientation="vertical" n1:paddingLeft="@dimen/zm_setting_item_padding_left" n1:paddingTop="@dimen/zm_setting_item_padding_top" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:paddingBottom="@dimen/zm_setting_item_padding_bottom" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="0.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <us.zoom.androidlib.widget.ZMDynTextSizeTextView n1:gravity="center|left" n1:id="@id/txtKubiName" n1:paddingLeft="0.0dip" n1:paddingTop="0.0dip" n1:paddingRight="0.0dip" n1:paddingBottom="0.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="Kubi name here" style="@style/ZMTextView.SettingsItem" />
+    <TextView n1:gravity="left" n1:id="@id/txtKubiStatus" n1:focusable="false" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/zm_msg_connected" style="@style/ZMTextView.Normal.Dimmed" />
+</LinearLayout>

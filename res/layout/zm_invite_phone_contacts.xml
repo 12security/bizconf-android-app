@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <EditText n1:layout_width="1.0dip" n1:layout_height="1.0dip" n1:layout_marginTop="-2.0dip" />
+    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="@dimen/zm_pt_titlebar_height">
+        <us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout n1:id="@id/panelTitleBar" n1:layout_width="fill_parent" n1:layout_height="@dimen/zm_pt_titlebar_height" n1:weightSum="1.0" n2:zm_leftButton="@id/btnCancel" n2:zm_rightButton="@id/btnInvite" n2:zm_title="@id/txtTitle" style="@style/ZMTitleBar" xmlns:n2="http://schemas.android.com/apk/res-auto">
+            <Button n1:id="@id/btnCancel" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_btn_cancel" style="@style/ZMButton.TitleBar" />
+            <Button n1:id="@id/btnInvite" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_btn_invite" style="@style/ZMButton.TitleBar.Bold" />
+            <us.zoom.androidlib.widget.ZMDynTextSizeTextView n1:ellipsize="end" n1:gravity="center" n1:id="@id/txtTitle" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_title_invite_contacts_33300" n1:singleLine="true" style="@style/ZMTextView.Title" />
+        </us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+        <RelativeLayout n1:id="@id/panelSearchBarReal" n1:paddingLeft="10.0dip" n1:paddingTop="10.0dip" n1:paddingRight="10.0dip" n1:paddingBottom="10.0dip" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="@dimen/zm_pt_titlebar_height" style="@style/ZMTitleBar">
+            <RelativeLayout n1:background="@drawable/zm_search_corner_bg" n1:paddingLeft="5.0dip" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+                <ImageView n1:id="@id/imgSearch" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" n1:layout_marginRight="5.0dip" n1:src="@drawable/zm_ic_search" n1:layout_centerVertical="true" />
+                <EditText n1:id="@id/edtSearchReal" n1:paddingRight="30.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:hint="@string/zm_hint_search_call_14480" n1:layout_toRightOf="@id/imgSearch" n1:layout_centerVertical="true" n1:imeOptions="actionDone" style="@style/ZMEditText.GlobalSearch" />
+                <Button n1:id="@id/btnClearSearchView" n1:background="@drawable/zm_btn_clear_search_view" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout n1:id="@id/panelSearch" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <EditText n1:id="@id/edtSearch" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:hint="@string/zm_hint_search" n1:imeOptions="actionDone" style="@style/ZMEditText.ContextSearch" />
+        <Button n1:background="@drawable/zm_btn_clear_search_view" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n1:contentDescription="@string/zm_description_mm_btn_clear_search" />
+        <ImageView n1:background="@drawable/zm_ic_titlebar_shadow" n1:layout_width="fill_parent" n1:layout_height="10.0dip" />
+    </RelativeLayout>
+    <FrameLayout n1:id="@id/panelListViews" n1:background="@drawable/zm_listview_bg" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0">
+        <us.zoom.androidlib.widget.QuickSearchListView n1:id="@id/contactListView" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    </FrameLayout>
+</LinearLayout>

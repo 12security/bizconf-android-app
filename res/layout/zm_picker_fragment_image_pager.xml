@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager n1:id="@id/vp_photos" n1:background="@color/zm_picker_pager_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <include layout="@layout/zm_picker_titlebar" />
+    <RelativeLayout n1:id="@id/bottomBar" n1:background="@color/zm_picker_dark_title_bg" n1:layout_width="fill_parent" n1:layout_height="@dimen/zm_picker_bottom_bar_height" n1:layout_alignParentBottom="true">
+        <CheckBox n1:textSize="@dimen/zm_picker_text_size_normal" n1:textColor="@color/zm_picker_btn_text_color" n1:gravity="center" n1:id="@id/rbSource" n1:paddingLeft="8.0dip" n1:paddingRight="8.0dip" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:button="@drawable/zm_picker_rb_bg" n1:text="@string/zm_picker_check_source" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true" />
+        <CheckBox n1:textSize="@dimen/zm_picker_text_size_normal" n1:textColor="@color/zm_picker_btn_text_color" n1:gravity="center" n1:id="@id/chkSelect" n1:paddingLeft="8.0dip" n1:paddingRight="8.0dip" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginLeft="10.0dip" n1:layout_marginRight="10.0dip" n1:button="@drawable/zm_picker_checkbox_bg" n1:text="@string/zm_picker_select_photo" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View n1:id="@id/line" n1:background="@color/zm_picker_dark_line" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_above="@id/bottomBar" />
+    <android.support.v7.widget.RecyclerView n1:id="@id/photoHorizentalRecycler" n1:background="@color/zm_picker_dark_title_bg" n1:paddingTop="10.0dip" n1:paddingBottom="10.0dip" n1:layout_width="fill_parent" n1:layout_height="@dimen/zm_picker_bottom_photo_bar_height" n1:layout_marginBottom="1.0px" n1:layout_above="@id/bottomBar" />
+</RelativeLayout>

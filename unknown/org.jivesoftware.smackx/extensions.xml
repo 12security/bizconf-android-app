@@ -1,0 +1,16 @@
+<smack>
+    <startupClasses>
+        <className>udesk.org.jivesoftware.smackx.disco.ServiceDiscoveryManager</className>
+        <className>udesk.org.jivesoftware.smackx.xhtmlim.XHTMLManager</className>
+        <className>udesk.org.jivesoftware.smackx.muc.MultiUserChat</className>
+        <className>udesk.org.jivesoftware.smackx.bytestreams.ibb.InBandBytestreamManager</className>
+        <className>udesk.org.jivesoftware.smackx.bytestreams.socks5.Socks5BytestreamManager</className>
+        <className>udesk.org.jivesoftware.smackx.filetransfer.FileTransferManager</className>
+        <className>udesk.org.jivesoftware.smackx.iqlast.LastActivityManager</className>
+        <className>udesk.org.jivesoftware.smackx.commands.AdHocCommandManager</className>
+        <className>udesk.org.jivesoftware.smackx.ping.PingManager</className>
+        <className>udesk.org.jivesoftware.smackx.privacy.PrivacyListManager</className>
+        <className>udesk.org.jivesoftware.smackx.time.EntityTimeManager</className>
+        <className>udesk.org.jivesoftware.smackx.vcardtemp.VCardManager</className>
+    </startupClasses>
+</smack>

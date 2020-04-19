@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:background="#ffffffff" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/iv_cover" n1:layout_width="68.0dip" n1:layout_height="68.0dip" n1:layout_margin="8.0dip" n1:src="@mipmap/default_image" n1:scaleType="centerCrop" />
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="vertical" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+        <TextView n1:textSize="18.0sp" n1:textColor="@android:color/black" n1:id="@id/tv_folder_name" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/all_images" />
+        <TextView n1:textSize="14.0sp" n1:textColor="#ffd2d2d7" n1:id="@id/tv_image_count" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="4.0dip" n1:text="共0张" />
+    </LinearLayout>
+    <ImageView n1:id="@id/iv_folder_check" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="8.0dip" n1:layout_marginRight="8.0dip" n1:src="@mipmap/list_selected" />
+</LinearLayout>

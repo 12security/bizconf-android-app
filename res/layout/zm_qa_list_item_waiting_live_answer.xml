@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center_vertical" n1:orientation="vertical" n1:id="@id/llActionArea" n1:background="@color/zm_bg_blue" n1:paddingLeft="20.0dip" n1:paddingTop="18.0dip" n1:paddingRight="8.0dip" n1:paddingBottom="12.0dip" n1:focusable="true" n1:focusableInTouchMode="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textColor="@color/zm_white" n1:id="@id/txtWaitingLiveAnswer" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_qa_msg_waiting_live_answer_41047" style="@style/ZMTextView.OnLight.Normal" />
+    <us.zoom.androidlib.ZMMaterialActionButtonLayout n1:id="@id/zmMaterialActionButtonLayout" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:zm_text_negative="@string/zm_btn_cancel" n2:zm_text_positive="@string/zm_btn_done" n2:zm_text_size="17.0sp" n2:zm_visible_negative="false" n2:zm_visible_neutral="false" n2:zm_visible_positive="true" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

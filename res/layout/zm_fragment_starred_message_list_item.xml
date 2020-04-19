@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:paddingLeft="15.0dip" n1:paddingTop="13.0dip" n1:paddingRight="15.0dip" n1:paddingBottom="13.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/zm_mm_starred_message_title_view" />
+    <TextView n1:textStyle="bold" n1:textColor="@color/zm_starred_title_text" n1:id="@id/zm_starred_message_list_item_message_txt" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="9.0dip" />
+</LinearLayout>

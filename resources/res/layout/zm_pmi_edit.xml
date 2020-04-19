@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:minWidth="600dp">
+    <us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout android:gravity="center_vertical" android:id="@+id/panelTitleBar" android:layout_width="match_parent" android:layout_height="@dimen/zm_pt_titlebar_height" xmlns:ns1="http://schemas.android.com/apk/res-auto" ns1:zm_leftButton="@+id/btnBack" xmlns:ns2="http://schemas.android.com/apk/res-auto" ns2:zm_rightButton="@+id/btnSave" xmlns:ns3="http://schemas.android.com/apk/res-auto" ns3:zm_title="@+id/txtTitle" style="@style/ZMTitleBar">
+        <Button android:id="@+id/btnBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_cancel" style="@style/ZMButton.TitleBar"/>
+        <Button android:id="@+id/btnSave" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="55dp" android:text="@string/zm_btn_save" style="@style/ZMButton.TitleBar"/>
+        <us.zoom.androidlib.widget.ZMDynTextSizeTextView android:gravity="center_horizontal" android:id="@+id/txtTitle" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_lbl_personal_meeting_id" style="@style/ZMTextView.Title"/>
+    </us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="0dp" android:paddingTop="0dp" android:paddingRight="0dp" android:paddingBottom="@dimen/zm_setting_item_group_spacing" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:paddingLeft="@dimen/zm_setting_item_padding_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="5dp" android:text="@string/zm_lbl_personal_meeting_id_with_abbr" style="@style/ZMTextView.Medium"/>
+            <us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/optionConfNumber" android:paddingRight="@dimen/zm_setting_item_padding_right" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@+id/txtConfNumber" android:layout_width="0dp" android:layout_height="match_parent" android:text="111-111-1111" android:layout_weight="1" style="@style/ZMTextView.SettingsItem.Small"/>
+                </LinearLayout>
+            </us.zoom.androidlib.widget.ZMSettingsCategory>
+            <us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_setting_item_group_spacing">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/optionHostVideo" android:paddingRight="@dimen/zm_setting_item_padding_right" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:gravity="left|center_vertical|center_horizontal|center" android:background="@null" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zm_chk_host_video_on_21201" android:layout_weight="1" style="@style/ZMTextView.SettingsItem.Small"/>
+                    <us.zoom.androidlib.widget.ZMCheckedTextView android:id="@+id/chkHostVideo" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/optionAttendeeVideo" android:paddingRight="@dimen/zm_setting_item_padding_right" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:gravity="left|center_vertical|center_horizontal|center" android:background="@null" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zm_chk_attendee_video_on_21201" android:layout_weight="1" style="@style/ZMTextView.SettingsItem.Small"/>
+                    <us.zoom.androidlib.widget.ZMCheckedTextView android:id="@+id/chkAttendeeVideo" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/optionAudio" android:paddingRight="@dimen/zm_setting_item_padding_right" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_gravity="left|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_lbl_audio_option_21201" style="@style/ZMTextView.SettingsItem.Small"/>
+                    <TextView android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/txtAudioOption" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/zm_lbl_audio_option_voip_and_telephony_detail" style="@style/ZMTextView.Normal.Dimmed"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/option3rdPartyAudioInfo" android:paddingLeft="@dimen/zm_setting_item_padding_left" android:paddingRight="@dimen/zm_setting_item_padding_right" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <EditText android:id="@+id/edt3rdPartyAudioInfo" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/zm_hint_enter_3rd_party_audio_info" android:maxLength="1024" style="@style/ZMEditText.NoBorder"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/optionEnableJBH" android:paddingRight="@dimen/zm_setting_item_padding_right" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:gravity="left|center_vertical|center_horizontal|center" android:background="@null" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zm_chk_enable_jbh_21201" android:layout_weight="1" style="@style/ZMTextView.SettingsItem.Small"/>
+                    <us.zoom.androidlib.widget.ZMCheckedTextView android:id="@+id/chkEnableJBH" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default"/>
+                </LinearLayout>
+            </us.zoom.androidlib.widget.ZMSettingsCategory>
+            <us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/zm_setting_item_group_spacing">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/zm_setting_item_padding_left" android:paddingRight="@dimen/zm_setting_item_padding_right" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <EditText android:id="@+id/edtPassword" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/zm_lbl_password_schedule" android:maxLength="10" style="@style/ZMEditText.SettingsItem"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/optionOnlySignJoin" android:paddingRight="@dimen/zm_setting_item_padding_right" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/txtOnlySignJoin" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/zm_chk_only_sign_join_21201" android:layout_weight="1" style="@style/ZMTextView.SettingsItem.Small"/>
+                    <us.zoom.androidlib.widget.ZMCheckedTextView android:id="@+id/chkOnlySignJoin" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/zm_btn_toggle_default"/>
+                </LinearLayout>
+                <RelativeLayout android:orientation="horizontal" android:id="@+id/optionJoinUserType" android:paddingRight="@dimen/zm_setting_item_padding_right" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/txtJoinUserTypeLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_lbl_allow_join_meeting" android:layout_centerVertical="true" style="@style/ZMTextView.SettingsItem.Small"/>
+                    <TextView android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/txtJoinUserType" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:layout_toRightOf="@+id/txtJoinUserTypeLabel" android:layout_centerVertical="true" style="@style/ZMTextView.Normal.Dimmed"/>
+                </RelativeLayout>
+            </us.zoom.androidlib.widget.ZMSettingsCategory>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

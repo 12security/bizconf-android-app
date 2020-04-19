@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/panelCommonEmojis" n1:background="@color/zm_white" n1:layout_width="wrap_content" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.zipow.videobox.view.EmojiTextView n1:textSize="22.0sp" n1:gravity="center" n1:layout_width="40.0dip" n1:layout_height="40.0dip" />
+    <com.zipow.videobox.view.EmojiTextView n1:textSize="22.0sp" n1:gravity="center" n1:layout_width="40.0dip" n1:layout_height="40.0dip" />
+    <com.zipow.videobox.view.EmojiTextView n1:textSize="22.0sp" n1:gravity="center" n1:layout_width="40.0dip" n1:layout_height="40.0dip" />
+    <com.zipow.videobox.view.EmojiTextView n1:textSize="22.0sp" n1:gravity="center" n1:layout_width="40.0dip" n1:layout_height="40.0dip" />
+    <com.zipow.videobox.view.EmojiTextView n1:textSize="22.0sp" n1:gravity="center" n1:layout_width="40.0dip" n1:layout_height="40.0dip" />
+    <com.zipow.videobox.view.EmojiTextView n1:textSize="22.0sp" n1:gravity="center" n1:layout_width="40.0dip" n1:layout_height="40.0dip" />
+</LinearLayout>

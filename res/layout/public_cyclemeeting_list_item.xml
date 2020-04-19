@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:paddingLeft="@dimen/activity_horizontal_margin" n1:paddingRight="@dimen/activity_horizontal_margin" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_public_editext">
+        <ImageView n1:id="@id/cycle_meeting_check" n1:layout_width="@dimen/activity_horizontal_margin" n1:layout_height="@dimen/activity_horizontal_margin" n1:src="@drawable/check" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+        <ImageView n1:id="@id/cycle_meeting_checked" n1:visibility="gone" n1:layout_width="@dimen/activity_horizontal_margin" n1:layout_height="@dimen/activity_horizontal_margin" n1:src="@drawable/checked" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+        <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/black" n1:gravity="center_vertical" n1:id="@id/cycle_meeting_list_item_show" n1:layout_width="wrap_content" n1:layout_height="@dimen/activity_public_editext" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:paddingTop="20.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/zm_ui_kit_page_left_padding" n1:layout_marginRight="@dimen/zm_ui_kit_page_left_padding">
+        <TextView n1:id="@id/tv_title" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/zm_sip_title_my_caller_id_61381" n1:layout_weight="1.0" style="@style/UIKitTextView.DialogTitle" />
+        <TextView n1:id="@id/tv_subtitle" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="0.0dip" n1:text="@string/zm_sip_title_my_extension_61381" style="@style/UIKitTextView.PrimaryText.Normal.Dimmed" />
+    </LinearLayout>
+    <View n1:id="@id/line1" n1:layout_marginTop="20.0dip" style="@style/ZMLightLine" />
+    <ListView n1:id="@id/listview" n1:scrollbars="none" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_marginLeft="@dimen/zm_ui_kit_page_left_padding" n1:layout_marginRight="@dimen/zm_ui_kit_page_left_padding" n1:listSelector="@drawable/zm_picker_material_item_bg" n1:divider="@drawable/zm_list_divider" n1:dividerHeight="1.0px" n1:layout_weight="1.0" />
+    <View n1:id="@id/line2" style="@style/ZMLightLine" />
+    <TextView n1:gravity="center" n1:id="@id/btn_close" n1:background="@drawable/zm_ui_kit_big_round_dialog_bottom_btn_transparent_selector" n1:paddingTop="20.0dip" n1:paddingBottom="20.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/zm_btn_close" n1:contentDescription="@string/zm_btn_close" style="@style/UIKitTextView.LargeTitle.Clickable" />
+</LinearLayout>

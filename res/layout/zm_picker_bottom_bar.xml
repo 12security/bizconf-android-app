@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="@color/zm_picker_dark_title_bg" n1:layout_width="fill_parent" n1:layout_height="@dimen/zm_picker_bottom_bar_height"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textSize="@dimen/zm_picker_text_size_normal" n1:textColor="@color/zm_picker_dropdown_text_color" n1:gravity="center" n1:id="@id/button" n1:background="@drawable/zm_picker_dropdown_bg" n1:paddingLeft="20.0dip" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginBottom="10.0dip" n1:text="@string/zm_picker_all_image" n1:layout_centerVertical="true" />
+    <CheckBox n1:textSize="@dimen/zm_picker_text_size_normal" n1:textColor="@color/zm_picker_btn_text_color" n1:gravity="center" n1:id="@id/rbSource" n1:paddingLeft="10.0dip" n1:paddingRight="10.0dip" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:button="@drawable/zm_picker_rb_bg" n1:text="@string/zm_picker_check_source" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true" />
+    <TextView n1:textSize="@dimen/zm_picker_text_size_normal" n1:textColor="@color/zm_picker_btn_text_color" n1:gravity="center" n1:id="@id/btnPreview" n1:paddingLeft="10.0dip" n1:paddingRight="10.0dip" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginLeft="10.0dip" n1:layout_marginRight="10.0dip" n1:text="@string/zm_picker_preview_with_count" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+</RelativeLayout>

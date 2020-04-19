@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="zm_add_buddy_time_exceed_44781">
+        <item quantity="other">嘗試出錯的次數過多。請於%d分鐘後再試。</item>
+        <item quantity="one">嘗試出錯的次數過多。請於%d分鐘後再試。</item>
+    </plurals>
+    <plurals name="zm_lbl_folder_items">
+        <item quantity="other">%d個文件</item>
+    </plurals>
+    <plurals name="zm_lbl_notification_snoozed_hour_19898">
+        <item quantity="other">%d小時</item>
+        <item quantity="one">1 小時</item>
+    </plurals>
+    <plurals name="zm_lbl_notification_snoozed_min_19898">
+        <item quantity="other">%d 分鐘</item>
+        <item quantity="one">1 分鐘</item>
+    </plurals>
+    <plurals name="zm_lbl_webinar_telephony_user_count">
+        <item quantity="other">共有%d位電話撥入聽眾</item>
+    </plurals>
+    <plurals name="zm_mm_lbl_new_message_count_14491">
+        <item quantity="other">↑%s 條新消息</item>
+        <item quantity="one">↑%s 條新消息</item>
+    </plurals>
+    <plurals name="zm_mm_msg_day_33479">
+        <item quantity="other">%d天</item>
+        <item quantity="one">1天</item>
+    </plurals>
+    <plurals name="zm_mm_msg_hour_33479">
+        <item quantity="other">%d小時</item>
+        <item quantity="one">1小時</item>
+    </plurals>
+    <plurals name="zm_mm_msg_month_33479">
+        <item quantity="other">%d個月</item>
+        <item quantity="one">1個月</item>
+    </plurals>
+    <plurals name="zm_mm_msg_year_33479">
+        <item quantity="other">%d年</item>
+        <item quantity="one">1年</item>
+    </plurals>
+    <plurals name="zm_msg_charactors_left">
+        <item quantity="other">還可輸入%d個字元</item>
+    </plurals>
+    <plurals name="zm_msg_invitations_sent">
+        <item quantity="other">%d個會議邀請已經發出</item>
+    </plurals>
+    <plurals name="zm_msg_join_meeting_in_waiting_list">
+        <item quantity="other">%d個人已經在等候室等待加入會議</item>
+        <item quantity="one">1個人已經在等候室等待加入會議</item>
+    </plurals>
+    <plurals name="zm_msg_notification_unread_num_8295">
+        <item quantity="other">%1$s(%2$d條未讀消息)</item>
+        <item quantity="one">%1$s(1條未讀消息)</item>
+    </plurals>
+    <plurals name="zm_sip_delete_x_items_61381">
+        <item quantity="other">刪除%d個項目</item>
+        <item quantity="one">刪除1個項目</item>
+    </plurals>
+    <plurals name="zm_title_edit_emoji_selected">
+        <item quantity="other">%d個表情被選中</item>
+        <item quantity="one">已選擇一個表情符號</item>
+    </plurals>
+</resources>

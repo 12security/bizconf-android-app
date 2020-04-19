@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/fragment_join_view" n1:background="@color/activity_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/public_toolbar" />
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <RelativeLayout n1:orientation="horizontal" n1:id="@id/meetig_list_background" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_public_editext">
+            <FrameLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_public_editext">
+                <EditText n1:textSize="@dimen/textSize28px" n1:textColor="@color/black" n1:textColorHint="@color/edittext_hint_fontcolor" n1:gravity="center" n1:id="@id/edit_meetingid" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_public_editext" n1:hint="@string/hint_join_ID" n1:layout_toLeftOf="@id/btn_meeting_list" n1:layout_centerHorizontal="true" />
+                <FrameLayout n1:layout_gravity="center|right" n1:id="@id/btn_meeting_list" n1:padding="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                    <ImageView n1:layout_gravity="center" n1:id="@id/meeting_ids_popwindow" n1:background="@drawable/joinmeetin_history_button" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+                </FrameLayout>
+            </FrameLayout>
+        </RelativeLayout>
+        <include layout="@layout/public_grayline" />
+        <EditText n1:textSize="@dimen/textSize28px" n1:textColor="@color/black" n1:textColorHint="@color/edittext_hint_fontcolor" n1:gravity="center" n1:id="@id/edit_username" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_public_editext" n1:hint="@string/hint_join_name" />
+        <include layout="@layout/public_grayline" />
+    </LinearLayout>
+    <RelativeLayout n1:paddingLeft="@dimen/activity_horizontal_margin" n1:paddingRight="@dimen/activity_horizontal_margin" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/activity_horizontal_hint">
+        <RelativeLayout n1:id="@id/connect_voice" n1:layout_width="wrap_content" n1:layout_height="@dimen/activity_public_hint">
+            <ImageView n1:layout_width="@dimen/activity_horizontal_hintx" n1:layout_height="@dimen/activity_horizontal_hintx" n1:src="@drawable/icon_join_checkbox_check" n1:layout_centerVertical="true" />
+            <ImageView n1:id="@id/join_checkbox_connect_voice_checked" n1:visibility="gone" n1:layout_width="@dimen/activity_horizontal_hintx" n1:layout_height="@dimen/activity_horizontal_hintx" n1:src="@drawable/icon_join_checkbox_checked" n1:layout_centerVertical="true" />
+            <TextView n1:textSize="@dimen/textSize26PX" n1:textColor="@color/light_gray" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_horizontal_margin" n1:text="@string/join_con_voice" n1:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout n1:id="@id/open_video" n1:layout_width="wrap_content" n1:layout_height="@dimen/activity_public_hint" n1:layout_marginLeft="10.0dip" n1:layout_alignParentRight="true">
+            <ImageView n1:layout_gravity="center_vertical" n1:layout_width="@dimen/activity_horizontal_hintx" n1:layout_height="@dimen/activity_horizontal_hintx" n1:src="@drawable/icon_join_checkbox_check" n1:layout_centerVertical="true" />
+            <ImageView n1:id="@id/join_checkbox_open_video_checked" n1:visibility="gone" n1:layout_width="@dimen/activity_horizontal_hintx" n1:layout_height="@dimen/activity_horizontal_hintx" n1:src="@drawable/icon_join_checkbox_checked" n1:layout_centerVertical="true" />
+            <TextView n1:textSize="@dimen/textSize26PX" n1:textColor="@color/light_gray" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_horizontal_margin" n1:text="@string/join_open_video" n1:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <Button n1:textSize="@dimen/textSize28px" n1:textColor="@color/violet" n1:id="@id/btn_join" n1:background="@drawable/shape_button" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_button_oppointment" n1:layout_marginLeft="@dimen/activity_vertical_title" n1:layout_marginTop="@dimen/activity_public_hint" n1:layout_marginRight="@dimen/activity_vertical_title" n1:layout_marginBottom="@dimen/activity_public_hint" n1:text="@string/hint_join_join" />
+    <LinearLayout n1:orientation="vertical" n1:background="@color/white" n1:paddingLeft="@dimen/activity_horizontal_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <RelativeLayout n1:gravity="center_vertical" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_vertical_title">
+            <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/fontcolor" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/join_con_voice" n1:layout_centerVertical="true" />
+            <com.kyleduo.switchbutton.SwitchButton n1:id="@id/sb_connect_voice" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="0.0dip" n1:layout_alignParentRight="true" n2:kswAnimationDuration="300" n2:kswBackDrawable="@drawable/back_drawable" n2:kswBackMeasureRatio="1.4" n2:kswThumbDrawable="@drawable/thumb_selector" n2:kswThumbMarginBottom="-7.0dip" n2:kswThumbMarginLeft="-4.0dip" n2:kswThumbMarginRight="-4.0dip" n2:kswThumbMarginTop="-1.0dip" style="@style/SwitchButtonStyle" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+        </RelativeLayout>
+        <include layout="@layout/public_grayline" />
+        <RelativeLayout n1:gravity="center_vertical" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_vertical_title">
+            <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/fontcolor" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/join_open_video" n1:layout_centerVertical="true" />
+            <com.kyleduo.switchbutton.SwitchButton n1:id="@id/sb_connect_video" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="0.0dip" n1:layout_alignParentRight="true" n3:kswAnimationDuration="300" n3:kswBackDrawable="@drawable/back_drawable" n3:kswBackMeasureRatio="1.4" n3:kswThumbDrawable="@drawable/thumb_selector" n3:kswThumbMarginBottom="-7.0dip" n3:kswThumbMarginLeft="-4.0dip" n3:kswThumbMarginRight="-4.0dip" n3:kswThumbMarginTop="-1.0dip" style="@style/SwitchButtonStyle" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center|left" n1:orientation="horizontal" n1:id="@id/content" n1:paddingLeft="10.0dip" n1:paddingTop="5.0dip" n1:paddingRight="10.0dip" n1:paddingBottom="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="10.0dip" n1:src="@drawable/zm_ic_raise_hand" />
+    <TextView n1:id="@id/txtMessage" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Reed Yang raised hand" style="@style/ZMTextView.TipMessage.OnDark" />
+</LinearLayout>

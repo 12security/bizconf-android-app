@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!-- Smack configuration file. -->
+<smack>
+    <!-- Classes that will be loaded when Smack starts -->
+    <startupClasses>
+        <className>udesk.org.jivesoftware.smack.initializer.VmArgInitializer</className>
+        <className>udesk.org.jivesoftware.smack.ReconnectionManager</className>
+    </startupClasses>
+
+    <optionalStartupClasses>
+        <className>udesk.org.jivesoftware.smack.util.dns.javax.JavaxResolver</className>
+        <className>udesk.org.jivesoftware.smack.initializer.extensions.ExtensionsInitializer</className>
+        <className>udesk.org.jivesoftware.smack.initializer.experimental.ExperimentalInitializer</className>
+        <className>udesk.org.jivesoftware.smack.initializer.legacy.LegacyInitializer</className>
+    </optionalStartupClasses>
+</smack>
+

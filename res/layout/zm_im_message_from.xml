@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center|left" n1:orientation="horizontal" n1:paddingLeft="8.0dip" n1:paddingTop="3.0dip" n1:paddingRight="8.0dip" n1:paddingBottom="3.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.zipow.videobox.view.AvatarView n1:layout_gravity="top" n1:id="@id/avatarView" n1:layout_width="35.0dip" n1:layout_height="35.0dip" n1:layout_marginRight="5.0dip" />
+    <TextView n1:gravity="center|left" n1:autoLink="all" n1:id="@id/txtMessage" n1:background="@drawable/zm_chatfrom_bg" n1:focusable="true" n1:clickable="true" n1:duplicateParentState="false" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:maxWidth="225.0dip" n1:text="Hi, Zoom. I like you!" style="@style/ZMTextView.MMMessage" />
+</LinearLayout>

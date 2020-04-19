@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <include n1:id="@id/panelLeft" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.0" layout="@layout/zm_imview_left"
+      xmlns:n1="http://schemas.android.com/apk/res/android" />
+    <View n2:id="@id/divider" n2:background="#ff000103" n2:layout_width="1.0dip" n2:layout_height="fill_parent"
+      xmlns:n2="http://schemas.android.com/apk/res/android" />
+    <LinearLayout n3:orientation="vertical" n3:id="@id/panelRight" n3:layout_width="0.0dip" n3:layout_height="fill_parent" n3:layout_weight="2.0"
+      xmlns:n3="http://schemas.android.com/apk/res/android">
+        <RelativeLayout n3:layout_width="fill_parent" n3:layout_height="@dimen/zm_pt_titlebar_height" n3:weightSum="1.0" style="@style/ZMTitleBar">
+            <com.zipow.videobox.view.AvatarView n3:id="@id/avatarViewRight" n3:paddingLeft="6.0dip" n3:paddingTop="4.0dip" n3:paddingRight="6.0dip" n3:paddingBottom="2.0dip" n3:visibility="gone" n3:layout_width="46.0dip" n3:layout_height="40.0dip" n3:layout_margin="0.0dip" n3:layout_centerVertical="true" />
+            <Button n3:id="@id/btnReturnToConf2" n3:visibility="visible" n3:layout_width="wrap_content" n3:layout_height="wrap_content" n3:text="@string/zm_btn_return_to_conf" n3:layout_alignParentRight="true" n3:layout_centerVertical="true" style="@style/ZMButton.TitleBar" />
+        </RelativeLayout>
+        <FrameLayout n3:layout_width="fill_parent" n3:layout_height="fill_parent">
+            <FrameLayout n3:gravity="center" n3:orientation="vertical" n3:id="@id/panelMeeting" n3:layout_width="fill_parent" n3:layout_height="fill_parent" />
+            <LinearLayout n3:orientation="horizontal" n3:id="@id/panelChatParent" n3:background="@drawable/zm_window_bg" n3:layout_width="fill_parent" n3:layout_height="fill_parent">
+                <FrameLayout n3:id="@id/panelChat" n3:background="@drawable/zm_im_right_chat_bg" n3:layout_width="fill_parent" n3:layout_height="fill_parent" n3:layout_marginRight="100.0dip" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</merge>

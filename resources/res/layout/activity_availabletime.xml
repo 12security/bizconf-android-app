@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/activity_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/public_toolbar"/>
+    <RelativeLayout android:gravity="center_vertical" android:background="@color/white" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_width="match_parent" android:layout_height="@dimen/activity_vertical_title">
+        <TextView android:textSize="@dimen/textSize28px" android:textColor="@color/fontcolor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/number_of_meeting_rooms" android:layout_alignParentLeft="false" android:layout_centerVertical="true"/>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <Spinner android:id="@+id/spinner" android:background="@color/white" android:layout_width="60dp" android:layout_height="@dimen/activity_vertical_title" android:layout_marginRight="15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/turn_number_people_arrow" android:layout_width="@dimen/activity_horizontal_hint" android:layout_height="@dimen/activity_horizontal_hint" android:src="@drawable/icon_arrow_right_big" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/zm_ui_kit_text_size_15sp" android:textColor="@color/fontcolor" android:gravity="center" android:id="@+id/tv_confStatus" android:background="@color/white" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_horizontal_margin2"/>
+    <GridView android:gravity="center" android:id="@+id/gridview" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:verticalSpacing="15dp" android:stretchMode="columnWidth" android:numColumns="4" android:fadeScrollbars="true"/>
+</LinearLayout>

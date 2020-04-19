@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TabHost n1:id="@android:id/tabhost" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout n1:id="@id/panelTitleBar" n1:layout_width="fill_parent" n1:layout_height="@dimen/zm_pt_titlebar_height" n2:zm_leftButton="@id/btnClose" n2:zm_rightButton="@id/viewRight" n2:zm_title="@android:id/tabs" style="@style/ZMTitleBar" xmlns:n2="http://schemas.android.com/apk/res-auto">
+                <Button n1:id="@id/btnClose" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_btn_close" style="@style/ZMButton.TitleBar" />
+                <View n1:id="@id/viewRight" n1:layout_width="0.0dip" n1:layout_height="0.0dip" />
+                <TabWidget n1:gravity="center" n1:id="@android:id/tabs" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:layout_marginBottom="5.0dip" />
+            </us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+            <FrameLayout n1:id="@android:id/tabcontent" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:paddingTop="10.0dip" n1:paddingBottom="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:minWidth="200.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/zm_video_tip_item" />
+    <TextView n1:gravity="center|left" n1:id="@id/btnNoCamera" n1:background="@drawable/zm_settings_item_selector" n1:focusable="true" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/zm_btn_no_camera" style="@style/ZMTextView.SettingsItem" />
+</LinearLayout>

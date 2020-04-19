@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:minWidth="@dimen/time_dialog_min_width" n1:minHeight="@dimen/time_dialog_min_width"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <NumberPicker n1:layout_gravity="center" n1:id="@id/numberPicker2" n1:layout_width="@dimen/activity_dialog_width" n1:layout_height="@dimen/activity_dialog_width" n1:calendarViewShown="false" />
+    <Button n1:textColor="@color/violet" n1:id="@id/sure" n1:background="@drawable/shape_button" n1:layout_width="@dimen/activity_login_logo" n1:layout_height="@dimen/activity_login_button" n1:layout_marginTop="@dimen/activity_horizontal_margin" n1:layout_marginBottom="@dimen/activity_public_hint" n1:text="@string/setting_sure" />
+</LinearLayout>

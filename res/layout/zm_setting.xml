@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@drawable/zm_window_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:id="@id/panelTitleBar" n1:layout_width="fill_parent" n1:layout_height="@dimen/zm_pt_titlebar_height" style="@style/ZMTitleBar.Dark">
+        <Button n1:id="@id/btnBack" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_btn_back" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" style="@style/ZMBackButton" />
+        <TextView n1:gravity="center_horizontal" n1:id="@id/txtTitle" n1:paddingLeft="5.0dip" n1:paddingRight="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_title_setting" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true" style="@style/ZMTextView.Title.OnDark" />
+    </RelativeLayout>
+    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <ScrollView n1:id="@id/panelOptions" n1:background="@drawable/zm_window_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <us.zoom.androidlib.widget.ZMSettingsLayout n1:orientation="vertical" n1:paddingLeft="0.0dip" n1:paddingTop="@dimen/zm_setting_item_group_spacing" n1:paddingRight="0.0dip" n1:paddingBottom="0.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <us.zoom.androidlib.widget.ZMSettingsCategory n1:orientation="vertical" n1:id="@id/panelProfile" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <LinearLayout n1:gravity="center|left" n1:orientation="horizontal" n1:id="@id/optionMMProfile" n1:paddingLeft="@dimen/zm_setting_item_padding_left" n1:paddingTop="@dimen/zm_setting_item_padding_top" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:paddingBottom="@dimen/zm_setting_item_padding_bottom" n1:focusable="true" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="46.0dip">
+                        <com.zipow.videobox.view.AvatarView n1:id="@id/avatarView" n1:duplicateParentState="true" n1:layout_width="50.0dip" n1:layout_height="50.0dip" n1:layout_marginRight="10.0dip" n2:zm_cornerRadiusRatio="0.32" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+                        <LinearLayout n1:orientation="vertical" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+                            <TextView n1:gravity="left" n1:id="@id/txtDisplayName" n1:background="@null" n1:focusable="false" n1:clickable="false" n1:duplicateParentState="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="" n1:layout_weight="1.0" style="@style/UIKitTextView.LargeTitle" />
+                            <LinearLayout n1:gravity="center|left" n1:id="@id/optionAccountEmail" n1:focusable="false" n1:clickable="false" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                                <ImageView n1:id="@id/imgAccountType" n1:layout_width="20.0dip" n1:layout_height="20.0dip" n1:src="@drawable/zm_ic_setting_zoom" />
+                                <TextView n1:ellipsize="end" n1:id="@id/txtEmail" n1:background="@null" n1:focusable="false" n1:clickable="false" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" n1:text="" n1:singleLine="true" n1:layout_weight="1.0" style="@style/UIKitTextView.PrimaryText.Normal.Dimmed" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <ImageView n1:id="@id/imgIndicatorSetProfile" n1:focusable="false" n1:clickable="false" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_ic_indicator_new" />
+                        <ImageView n1:focusable="false" n1:clickable="false" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_next_arrow" />
+                    </LinearLayout>
+                </us.zoom.androidlib.widget.ZMSettingsCategory>
+                <us.zoom.androidlib.widget.ZMSettingsCategory n1:orientation="vertical" n1:id="@id/panelPhoneNumber" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <LinearLayout n1:gravity="center|left" n1:id="@id/optionPhoneNumber" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:focusable="true" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:weightSum="1.0">
+                        <TextView n1:gravity="left" n1:focusable="false" n1:clickable="false" n1:duplicateParentState="true" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_share_category_contact" n1:layout_weight="1.0" style="@style/UIKitTextView.SettingsItem" />
+                        <ImageView n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_next_arrow" />
+                    </LinearLayout>
+                </us.zoom.androidlib.widget.ZMSettingsCategory>
+                <us.zoom.androidlib.widget.ZMSettingsCategory n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <LinearLayout n1:gravity="center|left" n1:id="@id/btnMeeting" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:focusable="true" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:weightSum="1.0">
+                        <TextView n1:gravity="left" n1:focusable="false" n1:clickable="false" n1:duplicateParentState="true" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/zm_mm_setting_meeting" n1:layout_weight="1.0" style="@style/UIKitTextView.SettingsItem" />
+                        <ImageView n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_next_arrow" />
+                    </LinearLayout>
+                </us.zoom.androidlib.widget.ZMSettingsCategory>
+                <us.zoom.androidlib.widget.ZMSettingsCategory n1:orientation="vertical" n1:id="@id/panelNotifications" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <LinearLayout n1:gravity="center|left" n1:id="@id/btnNotifications" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:focusable="true" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:weightSum="1.0">
+                        <TextView n1:gravity="left" n1:focusable="false" n1:clickable="false" n1:duplicateParentState="true" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/zm_mm_setting_notifications_19898" n1:layout_weight="1.0" style="@style/UIKitTextView.SettingsItem" />
+                        <ImageView n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_next_arrow" />
+                    </LinearLayout>
+                </us.zoom.androidlib.widget.ZMSettingsCategory>
+                <us.zoom.androidlib.widget.ZMSettingsCategory n1:orientation="vertical" n1:id="@id/panelIntergreatedPhone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <LinearLayout n1:gravity="center|left" n1:id="@id/optionIntergreatedPhone" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:focusable="true" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:weightSum="1.0">
+                        <TextView n1:gravity="left" n1:focusable="false" n1:clickable="false" n1:duplicateParentState="true" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/zm_title_intergreated_phone_67420" n1:layout_weight="1.0" style="@style/UIKitTextView.SettingsItem" />
+                        <ImageView n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_next_arrow" />
+                    </LinearLayout>
+                </us.zoom.androidlib.widget.ZMSettingsCategory>
+                <us.zoom.androidlib.widget.ZMSettingsCategory n1:orientation="vertical" n1:id="@id/panelMessenger" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <LinearLayout n1:gravity="center|left" n1:id="@id/btnMessenger" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:focusable="true" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/zm_setting_item_group_spacing" n1:weightSum="1.0">
+                        <TextView n1:gravity="left" n1:focusable="false" n1:clickable="false" n1:duplicateParentState="true" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/zm_mm_setting_messenger_59554" n1:layout_weight="1.0" style="@style/UIKitTextView.SettingsItem" />
+                        <ImageView n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_next_arrow" />
+                    </LinearLayout>
+                </us.zoom.androidlib.widget.ZMSettingsCategory>
+                <us.zoom.androidlib.widget.ZMSettingsCategory n1:orientation="vertical" n1:id="@id/panelAbout" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <LinearLayout n1:gravity="center|left" n1:id="@id/btnAbout" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:focusable="true" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:weightSum="1.0">
+                        <TextView n1:gravity="left" n1:focusable="false" n1:clickable="false" n1:duplicateParentState="true" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/zm_title_setting_about" n1:layout_weight="1.0" style="@style/UIKitTextView.SettingsItem" />
+                        <ImageView n1:id="@id/imgIndicatorAbout" n1:focusable="false" n1:clickable="false" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginRight="0.0dip" n1:src="@drawable/zm_ic_indicator_new" />
+                        <ImageView n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_next_arrow" />
+                    </LinearLayout>
+                </us.zoom.androidlib.widget.ZMSettingsCategory>
+                <LinearLayout n1:orientation="vertical" n1:id="@id/panelFragmentContent" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+                <LinearLayout n1:orientation="vertical" n1:id="@id/panelCopyright" n1:paddingLeft="20.0dip" n1:paddingTop="@dimen/zm_setting_item_group_spacing" n1:paddingRight="20.0dip" n1:paddingBottom="10.0dip" n1:focusable="false" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <TextView n1:gravity="center_horizontal" n1:layout_gravity="center_horizontal" n1:id="@id/txtCopyright" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_copyright" style="@style/UIKitTextView.SecondaryText.Small.Dimmed" />
+                </LinearLayout>
+            </us.zoom.androidlib.widget.ZMSettingsLayout>
+        </ScrollView>
+        <ImageView n1:background="@drawable/zm_ic_titlebar_shadow" n1:layout_width="fill_parent" n1:layout_height="10.0dip" />
+    </RelativeLayout>
+</LinearLayout>

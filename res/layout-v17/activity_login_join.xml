@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/activity_login" n1:background="@drawable/login_background" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_alignParentLeft="true" n1:layout_alignParentTop="true" n1:layout_alignParentStart="true">
+        <LinearLayout n1:gravity="bottom|center" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0">
+            <ImageView n1:id="@id/imageView" n1:layout_width="@dimen/activity_login_logo" n1:layout_height="@dimen/activity_login_logo" n1:src="@drawable/logo" />
+        </LinearLayout>
+        <LinearLayout n1:orientation="vertical" n1:id="@id/meeting_logi_join_background" n1:paddingLeft="@dimen/activity_button_oppointment" n1:paddingTop="30.0dip" n1:paddingRight="@dimen/activity_button_oppointment" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:weightSum="1.0" n1:layout_weight="2.0">
+            <RelativeLayout n1:orientation="horizontal" n1:focusable="true" n1:focusableInTouchMode="true" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_vertical_title">
+                <ImageView n1:layout_gravity="center" n1:id="@id/iv_meetingImg" n1:layout_width="20.0dip" n1:layout_height="20.0dip" n1:src="@drawable/icon_login_jion_id" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+                <RelativeLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_toRightOf="@id/iv_meetingImg">
+                    <FrameLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+                        <EditText n1:textSize="@dimen/textSize36PX" n1:textColor="@color/black" n1:textColorHint="@color/edittext_hint_fontcolor" n1:id="@id/login_join_id" n1:background="@null" n1:paddingLeft="10.0dip" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:hint="@string/login_join_id" n1:inputType="number" />
+                        <FrameLayout n1:layout_gravity="center|right" n1:id="@id/btn_meeting_list" n1:padding="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                            <ImageView n1:background="@drawable/joinmeetin_history_button" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+                        </FrameLayout>
+                    </FrameLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            <include layout="@layout/public_grayline" />
+            <LinearLayout n1:gravity="bottom" n1:paddingBottom="@dimen/activity_nomal_hint" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_vertical_title" n1:layout_marginTop="@dimen/activity_horizontal_hint">
+                <ImageView n1:layout_gravity="center" n1:layout_width="20.0dip" n1:layout_height="20.0dip" n1:src="@drawable/icon_login_user_logo" />
+                <EditText n1:textSize="@dimen/textSize36PX" n1:textColor="@color/black" n1:textColorHint="@color/edittext_hint_fontcolor" n1:layout_gravity="center" n1:id="@id/login_join_name" n1:background="@null" n1:paddingLeft="10.0dip" n1:layout_width="293.0dip" n1:layout_height="wrap_content" n1:hint="@string/hint_login_join_name" n1:layout_weight="1.0" n1:inputType="text" />
+            </LinearLayout>
+            <include layout="@layout/public_grayline" />
+            <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="15.0dip" n1:layout_marginBottom="15.0dip">
+                <RelativeLayout n1:layout_gravity="center|left" n1:id="@id/connect_voice" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                    <ImageView n1:layout_width="@dimen/activity_horizontal_hintx" n1:layout_height="@dimen/activity_horizontal_hintx" n1:src="@drawable/icon_login_join_checkbox_check" n1:layout_centerVertical="true" />
+                    <ImageView n1:id="@id/join_checkbox_connect_voice_checked" n1:visibility="gone" n1:layout_width="@dimen/activity_horizontal_hintx" n1:layout_height="@dimen/activity_horizontal_hintx" n1:src="@drawable/icon_login_join_checkbox_checked" n1:layout_centerVertical="true" />
+                    <TextView n1:textSize="@dimen/textSize26PX" n1:textColor="@color/edittext_hint_fontcolor" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="20.0dip" n1:text="@string/join_con_voice" n1:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout n1:id="@id/open_video" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip">
+                    <ImageView n1:layout_width="@dimen/activity_horizontal_hintx" n1:layout_height="@dimen/activity_horizontal_hintx" n1:src="@drawable/icon_login_join_checkbox_check" n1:layout_centerVertical="true" />
+                    <ImageView n1:id="@id/join_checkbox_open_video_checked" n1:visibility="gone" n1:layout_width="@dimen/activity_horizontal_hintx" n1:layout_height="@dimen/activity_horizontal_hintx" n1:src="@drawable/icon_login_join_checkbox_checked" n1:layout_centerVertical="true" />
+                    <TextView n1:textSize="@dimen/textSize26PX" n1:textColor="@color/edittext_hint_fontcolor" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="20.0dip" n1:text="@string/join_open_video" n1:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+                <Button n1:textSize="@dimen/textSize36PX" n1:textColor="@color/white" n1:id="@id/login_join_button_join" n1:background="@drawable/shape_button_login" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_login_button" n1:text="@string/login_join_start" />
+                <Button n1:textSize="@dimen/textSize36PX" n1:textColor="@drawable/public_login_join_text_shape" n1:id="@id/login_button_back_login" n1:background="@drawable/shape_login_join" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_login_button" n1:layout_marginTop="40.0dip" n1:text="@string/login_join_back_login" n1:layout_below="@id/login_join_button_join" />
+                <LinearLayout n1:gravity="center" n1:id="@id/version" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_login_button" n1:layout_alignParentBottom="true" n1:layout_centerVertical="true">
+                    <TextView n1:textSize="@dimen/textSize14PX" n1:textColor="@color/edittext_hint_fontcolor" n1:id="@id/version_code" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/hint_login_version" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

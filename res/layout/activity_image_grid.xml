@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/content" n1:background="#ff000000" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include n1:id="@id/top_bar" layout="@layout/include_top_bar" />
+    <RelativeLayout n1:background="#ff111111" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <GridView n1:id="@id/gridview" n1:paddingLeft="2.0dip" n1:paddingTop="2.0dip" n1:paddingRight="2.0dip" n1:paddingBottom="50.0dip" n1:clipToPadding="false" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:listSelector="@android:color/transparent" n1:horizontalSpacing="2.0dip" n1:verticalSpacing="2.0dip" n1:stretchMode="columnWidth" n1:numColumns="3" />
+        <RelativeLayout n1:id="@id/footer_bar" n1:background="#dc22292c" n1:layout_width="fill_parent" n1:layout_height="48.0dip" n1:layout_alignParentBottom="true">
+            <Button n1:textSize="16.0sp" n1:textColor="#ffffffff" n1:ellipsize="end" n1:id="@id/btn_dir" n1:background="@null" n1:paddingLeft="16.0dip" n1:paddingRight="16.0dip" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:text="全部图片" n1:singleLine="true" n1:drawableRight="@mipmap/text_indicator" n1:drawablePadding="4.0dip" n1:layout_centerVertical="true" n1:textAllCaps="false" />
+            <Button n1:textSize="16.0sp" n1:textColor="#ffffffff" n1:id="@id/btn_preview" n1:background="@null" n1:paddingLeft="16.0dip" n1:paddingRight="16.0dip" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:text="预览(3)" n1:layout_alignParentRight="true" n1:textAllCaps="false" />
+            <View n1:background="#cc111111" n1:layout_width="1.0px" n1:layout_height="fill_parent" n1:layout_marginTop="12.0dip" n1:layout_marginBottom="12.0dip" n1:layout_toLeftOf="@id/btn_preview" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

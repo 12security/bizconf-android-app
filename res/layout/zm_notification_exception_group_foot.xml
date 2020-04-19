@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <us.zoom.androidlib.widget.ZMSettingsLayout n1:orientation="vertical" n1:paddingLeft="0.0dip" n1:paddingTop="@dimen/zm_setting_item_group_spacing" n1:paddingRight="0.0dip" n1:paddingBottom="@dimen/zm_setting_item_group_spacing" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <us.zoom.androidlib.widget.ZMSettingsCategory n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <RelativeLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/paneResetAll" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <TextView n1:textColor="@drawable/zm_button_text_color" n1:gravity="center|left" n1:background="@color/zm_white" n1:paddingLeft="@dimen/zm_setting_item_padding_left" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:clickable="false" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_notification_reset_exception_group_19898" style="@style/ZMButton.SettingsItem" />
+            </RelativeLayout>
+        </us.zoom.androidlib.widget.ZMSettingsCategory>
+    </us.zoom.androidlib.widget.ZMSettingsLayout>
+</LinearLayout>

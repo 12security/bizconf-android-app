@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/public_grayline" />
+    <RelativeLayout n1:id="@id/rl_history" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="40.0dip">
+        <TextView n1:textSize="@dimen/textSize26PX" n1:textColor="@color/light_gray" n1:ellipsize="end" n1:gravity="center|right" n1:id="@id/pop_window_list_item" n1:paddingLeft="@dimen/activity_vertical_margin" n1:paddingRight="@dimen/activity_vertical_margin" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:maxLines="1" n1:singleLine="true" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+        <TextView n1:textSize="@dimen/textSize26PX" n1:textColor="@color/light_gray" n1:ellipsize="end" n1:gravity="center|left" n1:id="@id/pop_window_list_item_title" n1:paddingLeft="@dimen/activity_vertical_margin" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:maxLines="1" n1:layout_toLeftOf="@id/pop_window_list_item" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout n1:orientation="vertical" n1:id="@id/ll_deleteHistory" n1:background="@color/activity_bg" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <include layout="@layout/public_grayline" />
+        <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="45.0dip">
+            <TextView n1:textSize="@dimen/textSize26PX" n1:textColor="@color/forget_pwd_font_color" n1:gravity="center" n1:id="@id/tv_deletehistory" n1:paddingLeft="@dimen/activity_vertical_margin" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/clear_history" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+            <TextView n1:textSize="@dimen/textSize26PX" n1:textColor="@color/forget_pwd_font_color" n1:gravity="center" n1:id="@id/tv_close" n1:paddingLeft="@dimen/activity_vertical_margin" n1:paddingRight="@dimen/activity_vertical_margin" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/close_history" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+        </RelativeLayout>
+        <include layout="@layout/public_grayline" />
+    </LinearLayout>
+</LinearLayout>

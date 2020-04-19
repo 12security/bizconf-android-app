@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <Button n1:id="@id/btnWarmTransfer" n1:layout_width="fill_parent" n1:layout_height="@dimen/zm_ui_kit_large_button_height" n1:layout_marginLeft="@dimen/zm_ui_kit_page_left_padding" n1:layout_marginTop="24.0dip" n1:layout_marginRight="@dimen/zm_ui_kit_page_left_padding" n1:text="@string/zm_sip_btn_warm_transfer_61381" style="@style/UIKitItinactivatedBtn" />
+    <TextView n1:gravity="center" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/zm_ui_kit_page_left_padding" n1:layout_marginTop="10.0dip" n1:layout_marginRight="@dimen/zm_ui_kit_page_left_padding" n1:text="@string/zm_sip_warm_transfer_des_61381" style="@style/UIKitTextView.PrimaryText.Normal.Gray" />
+    <Button n1:id="@id/btnBlindTransfer" n1:layout_width="fill_parent" n1:layout_height="@dimen/zm_ui_kit_large_button_height" n1:layout_marginLeft="@dimen/zm_ui_kit_page_left_padding" n1:layout_marginTop="24.0dip" n1:layout_marginRight="@dimen/zm_ui_kit_page_left_padding" n1:text="@string/zm_sip_btn_blind_transfer_61381" style="@style/UIKitItinactivatedBtn" />
+    <TextView n1:gravity="center" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/zm_ui_kit_page_left_padding" n1:layout_marginTop="10.0dip" n1:layout_marginRight="@dimen/zm_ui_kit_page_left_padding" n1:text="@string/zm_sip_blind_transfer_des_61381" style="@style/UIKitTextView.PrimaryText.Normal.Gray" />
+    <View n1:id="@id/line1" n1:layout_marginTop="24.0dip" style="@style/ZMLightLine" />
+    <TextView n1:gravity="center" n1:id="@id/btn_close" n1:background="@drawable/zm_ui_kit_big_round_dialog_bottom_btn_transparent_selector" n1:paddingTop="13.0dip" n1:paddingBottom="15.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/zm_btn_cancel" n1:contentDescription="@string/zm_btn_cancel" style="@style/UIKitTextView.LargeTitle.Clickable" />
+</LinearLayout>

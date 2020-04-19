@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v4.view.ViewPager android:id="@+id/vpEmotioin" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/llPageNumber" android:layout_width="wrap_content" android:layout_height="12dp" android:layout_marginTop="10dp" android:layout_marginBottom="4dp"/>
+    <View android:background="@color/line" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/rlEmotionAdd" android:background="@drawable/udesk_selector_common_item" android:layout_width="55dp" android:layout_height="35dp">
+            <View android:background="@color/line" android:layout_width="1dp" android:layout_height="match_parent" android:layout_alignParentRight="true"/>
+            <ImageView android:id="@+id/ivIcon" android:layout_width="25dp" android:layout_height="25dp" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <HorizontalScrollView android:scrollbars="none" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/llTabContainer" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </HorizontalScrollView>
+    </LinearLayout>
+</LinearLayout>

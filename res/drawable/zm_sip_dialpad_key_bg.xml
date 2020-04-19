@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item n1:state_selected="true"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <shape n1:shape="oval">
+            <solid n1:color="@color/zm_sip_dialnum_selected_bg" />
+        </shape>
+    </item>
+    <item n2:state_pressed="true"
+      xmlns:n2="http://schemas.android.com/apk/res/android">
+        <shape n2:shape="oval">
+            <solid n2:color="@color/zm_sip_dialnum_press_bg" />
+        </shape>
+    </item>
+    <item>
+        <shape n3:shape="oval"
+          xmlns:n3="http://schemas.android.com/apk/res/android">
+            <solid n3:color="@color/zm_sip_dialnum_normal_bg" />
+        </shape>
+    </item>
+</selector>

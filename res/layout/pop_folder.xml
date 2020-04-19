@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0">
+        <View n1:id="@id/masker" n1:background="#cc000000" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+        <ListView n1:layout_gravity="bottom" n1:id="@id/listView" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    </FrameLayout>
+    <View n1:id="@id/margin" n1:background="#00000000" n1:layout_width="fill_parent" n1:layout_height="0.0dip" />
+</LinearLayout>

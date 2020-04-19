@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/panelFeedback" android:paddingLeft="8dp" android:paddingRight="8dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/optionRaiseHand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp">
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/txtRaiseHandCnt" android:paddingBottom="5dp" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12" android:singleLine="true" style="@style/ZMTextView.ToolbarBtnLabel"/>
+        <ImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_ic_raise_hand"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/optionYes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp">
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/txtYesCnt" android:paddingBottom="5dp" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12" android:singleLine="true" style="@style/ZMTextView.ToolbarBtnLabel"/>
+        <ImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_ic_yes"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/optionNo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp">
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/txtNoCnt" android:paddingBottom="5dp" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12" android:singleLine="true" style="@style/ZMTextView.ToolbarBtnLabel"/>
+        <ImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_ic_no"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/optionSlower" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp">
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/txtSlowCnt" android:paddingBottom="3dp" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12" android:singleLine="true" style="@style/ZMTextView.ToolbarBtnLabel"/>
+        <ImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_ic_slower"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/optionFaster" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp">
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/txtFastCnt" android:paddingBottom="5dp" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12" android:singleLine="true" style="@style/ZMTextView.ToolbarBtnLabel"/>
+        <ImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_ic_faster"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/optionEmojis" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp">
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/txtEmojisCnt" android:paddingBottom="5dp" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12" android:singleLine="true" style="@style/ZMTextView.ToolbarBtnLabel"/>
+        <ImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zm_ic_emojimore"/>
+    </LinearLayout>
+</LinearLayout>

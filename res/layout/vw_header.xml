@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="bottom" n1:orientation="vertical" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:id="@id/header_content" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_public_hint">
+        <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:id="@id/header_text_layout" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerInParent="true">
+            <TextView n1:id="@id/header_hint_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/load_more" />
+            <LinearLayout n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="3.0dip">
+                <TextView n1:textSize="12.0sp" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/reslse_to_loading" />
+                <TextView n1:textSize="12.0sp" n1:id="@id/header_hint_time" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <ProgressBar n1:id="@id/header_progressbar" n1:visibility="gone" n1:layout_width="30.0dip" n1:layout_height="30.0dip" n1:layout_marginRight="30.0dip" n1:layout_toLeftOf="@id/header_text_layout" n1:layout_centerVertical="true" />
+        <ImageView n1:id="@id/header_arrow" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="30.0dip" n1:layout_toLeftOf="@id/header_text_layout" n1:layout_centerVertical="true" n1:contentDescription="@null" />
+    </RelativeLayout>
+</LinearLayout>

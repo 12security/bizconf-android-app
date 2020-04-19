@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:paddingLeft="16.0dip" n1:paddingTop="4.0dip" n1:paddingRight="10.0dip" n1:paddingBottom="4.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/imgClose" n1:padding="4.0dip" n1:layout_width="32.0dip" n1:layout_height="32.0dip" n1:src="@drawable/zm_dialog_close" n1:layout_alignParentTop="true" n1:layout_alignParentRight="true" n1:contentDescription="@string/zm_btn_close" />
+    <EditText n1:gravity="top" n1:id="@id/edtQuestion" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="4.0dip" n1:layout_marginRight="8.0dip" n1:hint="@string/zm_qa_hint_ask_question_41047" n1:lines="@integer/zm_qa_question_input_max_lines" n1:maxLength="1000" n1:layout_below="@id/imgClose" n1:inputType="textMultiLine" n1:imeOptions="actionSend" />
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="4.0dip" n1:layout_marginRight="8.0dip" n1:layout_below="@id/edtQuestion">
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/optionAnonymously" n1:paddingTop="5.0dip" n1:paddingBottom="5.0dip" n1:layout_width="0.0dip" n1:layout_height="@dimen/zm_pt_titlebar_height" n1:layout_weight="1.0">
+            <CheckBox n1:id="@id/chkAnonymously" n1:clickable="false" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+            <TextView n1:textSize="15.0sp" n1:id="@id/txtAnonymously" n1:paddingLeft="4.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_qa_msg_send_anonymousely_41047" style="@style/ZMTextView.OnLight.Normal" />
+        </LinearLayout>
+        <us.zoom.androidlib.widget.ZMTextButton n1:enabled="false" n1:textSize="14.0sp" n1:textColor="@drawable/zm_button_text_color" n1:id="@id/btnSend" n1:background="@drawable/zm_btn_with_light_grey_frame" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_btn_send" />
+    </LinearLayout>
+</RelativeLayout>

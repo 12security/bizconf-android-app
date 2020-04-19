@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:paddingLeft="24.0dip" n1:paddingTop="24.0dip" n1:paddingRight="24.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <ImageView n1:id="@id/fingerprint_icon" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_ic_fingerprint" n1:contentDescription="@string/zm_title_fingerprint_login_22438" />
+        <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:paddingTop="19.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+            <TextView n1:textSize="20.0sp" n1:textStyle="bold" n1:gravity="center_horizontal" n1:id="@id/txtTitle" n1:paddingBottom="0.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_title_fingerprint_login_22438" n1:lineSpacingExtra="8.0sp" style="@style/ZMTextView.SettingsItem" />
+            <TextView n1:gravity="center_horizontal" n1:id="@id/txtDesc" n1:paddingTop="11.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_desc_fingerprint_login_22438" n1:lineSpacingExtra="8.0sp" style="@style/ZMTextView.SettingsItem.Small" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout n1:layout_gravity="center_horizontal" n1:orientation="horizontal" n1:id="@id/ll_button" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="11.0dip" n1:minHeight="@dimen/zm_setting_item_min_height">
+        <TextView n1:textStyle="bold" n1:textColor="@drawable/zm_button_text_color" n1:gravity="center" n1:id="@id/btn_enter_passwd" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:minWidth="64.0dip" n1:text="@string/zm_btn_enter_passwd_22438" style="@style/ZMMaterialDefaultButton.Normal" />
+        <TextView n1:textStyle="bold" n1:textColor="@drawable/zm_button_text_color" n1:gravity="center" n1:id="@id/btn_cancel" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginLeft="12.0dip" n1:minWidth="64.0dip" n1:text="@string/zm_btn_cancel" n1:layout_alignParentRight="true" style="@style/ZMMaterialDefaultButton.Normal" />
+    </LinearLayout>
+</LinearLayout>

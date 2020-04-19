@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center" n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:background="@drawable/zm_bg_error_dialog" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:minWidth="250.0dip" n1:minHeight="150.0dip">
+        <ImageView n1:id="@id/imgErrorIcon" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_ic_error_msg_attation" />
+        <TextView n1:id="@id/txtErrorMsg" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="30.0dip" n1:layout_marginTop="10.0dip" n1:layout_marginRight="30.0dip" style="@style/ZMTextView.Large.OnDark" />
+    </LinearLayout>
+</LinearLayout>

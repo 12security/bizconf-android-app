@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="10401" android:versionName="1.8.0" package="cn.bizconf.vcpro">
+    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="26"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.SET_TIME_ZONE"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:resizeable="true"/>
+    <uses-feature android:glEsVersion="20000"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="true"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.FLAG_GRANT_READ_URI_PERMISSION"/>
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@mipmap/icon" android:name="MyWrapperProxyApplication" android:allowBackup="true" android:supportsRtl="true">
+        <activity android:theme="@style/Theme.AppCompat.Light" android:name="cn.bizconf.vcpro.module.login.activity.WelcomeActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="cn.bizconf.vcpro.module.common.TestActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light" android:name="cn.bizconf.vcpro.module.login.activity.LoginActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.bizconf.vcpro.module.login.activity.LoginJoinActivity" android:launchMode="singleTask" android:screenOrientation="portrait">
+            <intent-filter>
+                <data android:scheme="pfcloud" android:host="www.confcloud.cn"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="cn.bizconf.vcpro.module.home.activity.HomeActivity" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="cn.bizconf.vcpro.module.home.activity.FastStartMeetingActivity" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="cn.bizconf.vcpro.module.setting.activity.UserMessageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.bizconf.vcpro.module.setting.activity.ChangeUserNameActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.bizconf.vcpro.module.setting.activity.MeetingSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.bizconf.vcpro.module.setting.activity.ChangePasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.bizconf.vcpro.module.setting.activity.AboutActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.bizconf.vcpro.module.setting.activity.HelpActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.bizconf.vcpro.module.personal.activity.MeetingEditActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.bizconf.vcpro.module.personal.activity.PersonalRoomSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.bizconf.vcpro.module.appointment.activity.ChangeNameActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.bizconf.vcpro.module.appointment.activity.AppointmentNumberPeopleActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.bizconf.vcpro.module.appointment.activity.StartEarlyTimeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.bizconf.vcpro.module.appointment.activity.AvailableTimeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.bizconf.vcpro.module.appointment.activity.CycleMeetingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.bizconf.vcpro.module.appointment.activity.HostPasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.bizconf.vcpro.module.appointment.activity.ChangeTimeZoneActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.bizconf.vcpro.module.appointment.activity.RecommendRoomsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.bizconf.vcpro.module.appointment.activity.AddRoomsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.bizconf.vcpro.module.appointment.activity.RoomsListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.bizconf.vcpro.module.appointment.activity.EventRemiderActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.bizconf.vcpro.module.appointment.activity.AppointmentSuccessActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.bizconf.vcpro.module.appointment.activity.AddToCaledarActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.bizconf.vcpro.module.appointment.activity.SelectBvRoomsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.bizconf.vcpro.module.appointment.activity.CompileBvRoomsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.bizconf.vcpro.module.appointment.activity.OccupancyMeetingStatusActivity" android:screenOrientation="portrait"/>
+        <meta-data android:name="UMENG_APPKEY" android:value="587d9110a40fa355620039a3"/>
+        <meta-data android:name="UMENG_CHANNEL" android:value="testCD"/>
+        <activity android:theme="@style/ZMTheme.Transparent" android:name="com.zipow.videobox.JoinByURLActivity" android:launchMode="singleTask" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/ZMTheme.Transparent" android:name="com.zipow.videobox.IntegrationActivity" android:launchMode="singleTask" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/ZMDialog.Transparent" android:name="com.zipow.videobox.MeetingEndMessageActivity" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.ConfActivityNormal" android:configChanges="orientation|screenSize" android:hardwareAccelerated="false"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.PListActivity" android:configChanges="orientation|screenSize" android:hardwareAccelerated="false"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.ConfChatActivityOld" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.MeetingRunningInfoActivity" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.CallInActivity" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.SimpleActivity" android:configChanges="orientation|screenSize" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.SimpleInMeetingActivity" android:configChanges="orientation|screenSize" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.poll.PollingActivity" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.poll.WebinarPollingActivity" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.poll.PollingResultActivity" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="com.zipow.videobox.poll.WebinarPollingResultActivity" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/ZMTheme.SubWindow" android:name="us.zoom.androidlib.app.ZMFileListActivity" android:configChanges="orientation|screenSize"/>
+        <service android:label="@string/zm_app_name" android:name="com.zipow.videobox.kubi.KubiService" android:exported="false"/>
+        <activity android:name="meeting.confcloud.cn.bizaudiosdk.activity.LiveStreamActivity" android:screenOrientation="portrait"/>
+        <activity android:name="meeting.confcloud.cn.bizaudiosdk.activity.ChatMessageActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="meeting.confcloud.cn.bizaudiosdk.activity.CustomMeetingActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/Theme.AppCompat.Light" android:name="meeting.confcloud.cn.bizaudiosdk.AudienceActivity"/>
+        <activity android:theme="@style/Theme.AppCompat.Light" android:name="meeting.confcloud.cn.bizaudiosdk.activity.CommentActivity"/>
+        <activity android:name="com.lzy.imagepicker.ui.ImageBaseActivity"/>
+        <activity android:theme="@style/ImagePickerTheme" android:name="com.lzy.imagepicker.ui.ImageGridActivity" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/ImagePickerTheme" android:name="com.lzy.imagepicker.ui.ImageCropActivity" android:configChanges="orientation|screenSize" android:hardwareAccelerated="false"/>
+        <activity android:theme="@style/ImagePickerThemeFullScreen" android:name="com.lzy.imagepicker.ui.ImagePreviewActivity" android:configChanges="orientation|screenSize"/>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <activity android:theme="@style/Udesk_Theme" android:name="cn.udesk.activity.UdeskHelperActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/Udesk_Theme" android:name="cn.udesk.activity.UdeskHelperArticleActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/Udesk_Theme" android:name="cn.udesk.activity.UdeskRobotActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustUnspecified|stateVisible|adjustResize"/>
+        <activity android:theme="@style/Udesk_Theme" android:name="cn.udesk.activity.UdeskFormActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/Udesk_Theme" android:name="cn.udesk.activity.UdeskChatActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/Udesk_Theme" android:name="cn.udesk.activity.UdeskZoomImageActivty" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/Udesk_Theme" android:name="cn.udesk.activity.UdeskOptionsAgentGroupActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/Udesk_Theme" android:name="cn.udesk.activity.UdeskWebViewUrlAcivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/Udesk_Theme" android:name="cn.udesk.photoselect.PhotoSelectorActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/Udesk_Theme" android:name="cn.udesk.photoselect.PreviewActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/Udesk_Theme" android:name="cn.udesk.photoselect.PictureVideoPlayActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/Udesk_Theme" android:name="cn.udesk.camera.UdeskCameraActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <provider android:name="cn.udesk.provider.UdeskFileProvider" android:exported="false" android:authorities="cn.bizconf.vcpro.udeskfileprovider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/udesk_provider_paths"/>
+        </provider>
+        <meta-data android:name="android.support.VERSION" android:value="26.1.0"/>
+        <meta-data android:name="android.arch.lifecycle.VERSION" android:value="27.0.0-SNAPSHOT"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="1"/>
+    </application>
+</manifest>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="horizontal" n1:paddingLeft="16.0dip" n1:paddingTop="15.0dip" n1:paddingRight="16.0dip" n1:paddingBottom="15.0dip" n1:focusable="true" n1:focusableInTouchMode="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.zipow.videobox.view.AvatarView n1:id="@id/avatarView" n1:duplicateParentState="false" n1:layout_width="32.0dip" n1:layout_height="32.0dip" n1:layout_marginRight="15.0dip" n2:zm_cornerRadiusRatio="0.5" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n1:orientation="vertical" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+        <com.zipow.videobox.view.PListNameRoleLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+            <TextView n1:textStyle="bold" n1:textColor="@color/zm_status_text_light_dark" n1:ellipsize="end" n1:id="@id/txtAnswerName" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Beatruce Walters" n1:maxLines="1" style="@style/ZMTextView.OnLight.Medium.DeepGrey" />
+            <TextView n1:textSize="11.0sp" n1:id="@id/txtAnswerTime" n1:paddingLeft="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="10:20 AM" style="@style/ZMTextView.OnLight.Small.Dimmed" />
+        </com.zipow.videobox.view.PListNameRoleLayout>
+        <TextView n1:textColor="@color/zm_status_text_light_orange" n1:id="@id/txtPrivateAnswer" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_qa_msg_private_answer_41047" style="@style/ZMTextView.OnLight.Small" />
+        <TextView n1:textSize="17.0sp" n1:id="@id/txtAnswer" n1:paddingTop="8.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="If you have a business or premier your customers  online using major  cards (Visa, MasterCard, and American Express) or via PayPal. " style="@style/ZMTextView.OnLight.Normal" />
+    </LinearLayout>
+</LinearLayout>

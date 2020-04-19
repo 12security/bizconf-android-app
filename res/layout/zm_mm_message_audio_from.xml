@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center|left" n1:orientation="horizontal" n1:id="@id/panelMsgLayout" n1:paddingLeft="8.0dip" n1:paddingTop="6.0dip" n1:paddingRight="8.0dip" n1:paddingBottom="6.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.zipow.videobox.view.AvatarView n1:layout_gravity="top" n1:id="@id/avatarView" n1:layout_width="35.0dip" n1:layout_height="35.0dip" n1:layout_marginRight="5.0dip" />
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <TextView n1:id="@id/txtScreenName" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:text="Reed Yang" style="@style/ZMTextView.ExSmall.Dimmed" />
+        <include layout="@layout/zm_mm_starred_message_title_view" />
+        <LinearLayout n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+            <LinearLayout n1:gravity="center|left" n1:orientation="horizontal" n1:id="@id/panelMessage" n1:background="@drawable/zm_chatfrom_bg_voice" n1:focusable="true" n1:clickable="true" n1:duplicateParentState="false" n1:layout_width="100.0dip" n1:layout_height="wrap_content" n1:layout_marginRight="5.0dip">
+                <ImageView n1:id="@id/imgVoice" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_chatfrom_voice" />
+                <TextView n1:id="@id/txtVoicelength" n1:paddingLeft="20.0dip" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="30&quot;" n1:layout_weight="1.0" style="@style/ZMTextView.Normal.OnLight" />
+            </LinearLayout>
+            <ImageView n1:id="@id/imgStatus" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="2.0dip" n1:src="@drawable/zm_ic_red_dot" />
+            <ImageView n1:layout_gravity="center_vertical" n1:id="@id/zm_mm_starred" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="6.0dip" n1:src="@drawable/zm_mm_starred_message_icon" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

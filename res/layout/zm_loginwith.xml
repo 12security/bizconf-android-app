@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/viewLogin" n1:background="@drawable/zm_window_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:minWidth="500.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout n1:id="@id/panelTitleBar" n2:zm_leftButton="@id/btnBack" n2:zm_rightButton="@id/btnSignup" n2:zm_title="@id/txtTitle" style="@style/ZMTitleBar.Light" xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <Button n1:gravity="left" n1:id="@id/btnBack" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_btn_cancel" n1:contentDescription="@string/zm_btn_back" style="@style/UIKitButton.Medium.OnLight.NoBackground" />
+        <Button n1:gravity="right" n1:id="@id/btnSignup" n1:visibility="visible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_btn_signup" style="@style/UIKitButton.Medium.OnLight.NoBackground" />
+        <TextView n1:id="@id/txtTitle" n1:paddingLeft="5.0dip" n1:paddingRight="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_title_login" style="@style/UIKitTextView.LargeTitle" />
+    </us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <ScrollView n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0">
+        <LinearLayout n1:orientation="vertical" n1:paddingLeft="0.0dip" n1:paddingTop="@dimen/zm_setting_item_group_spacing" n1:paddingRight="0.0dip" n1:paddingBottom="30.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <us.zoom.androidlib.widget.ZMSettingsCategory n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:paddingLeft="@dimen/zm_setting_item_padding_left" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <EditText n1:gravity="center" n1:id="@id/edtUserName" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:hint="@string/zm_hint_zoom_account" n1:maxLength="128" n1:layout_weight="1.0" n1:inputType="textEmailAddress" style="@style/ZMEditText.SettingsItem" />
+                </LinearLayout>
+                <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:paddingLeft="@dimen/zm_setting_item_padding_left" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <EditText n1:gravity="center" n1:id="@id/edtPassword" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:hint="@string/zm_hint_zoom_pwd" n1:selectAllOnFocus="true" n1:maxLength="32" n1:layout_weight="1.0" n1:inputType="textPassword" n1:contentDescription="@string/zm_hint_zoom_pwd" style="@style/ZMEditText.SettingsItem" />
+                </LinearLayout>
+            </us.zoom.androidlib.widget.ZMSettingsCategory>
+            <TextView n1:id="@id/txtAutoLogoffWarn" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginLeft="20.0dip" n1:layout_marginTop="10.0dip" n1:layout_marginRight="20.0dip" style="@style/ZMTextView.Small.Warn" />
+            <Button n1:id="@id/btnLoginZoom" n1:layout_width="fill_parent" n1:layout_marginLeft="15.0dip" n1:layout_marginTop="20.0dip" n1:layout_marginRight="15.0dip" n1:text="@string/zm_btn_login" style="@style/UIKitItinactivatedBtn.Large" />
+            <Button n1:layout_gravity="center_horizontal" n1:id="@id/linkForgetPassword" n1:layout_width="wrap_content" n1:layout_marginTop="5.0dip" n1:text="@string/zm_lbl_forget_password_57079" style="@style/UIKitButton.Small.OnLight.NoBackground" />
+            <TextView n1:textColor="@color/zm_ui_kit_color_gray_747487" n1:layout_gravity="left" n1:id="@id/panelLoginViaDivider" n1:paddingLeft="15.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="44.0dip" n1:text="@string/zm_lbl_or_sign_in_with" style="@style/UIKitTextView.SecondaryText.Medium" />
+            <us.zoom.androidlib.widget.ZMSettingsCategory n1:gravity="center_horizontal" n1:layout_gravity="center_horizontal" n1:orientation="vertical" n1:id="@id/panelActions" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip">
+                <LinearLayout n1:gravity="center|left" n1:orientation="horizontal" n1:id="@id/linkSSOLogin" n1:paddingLeft="@dimen/zm_setting_item_padding_left" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_icon_sso" />
+                    <TextView n1:gravity="left" n1:background="@null" n1:paddingLeft="15.0dip" n1:paddingRight="15.0dip" n1:focusable="false" n1:clickable="false" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/zm_login_with_sso" n1:layout_weight="1.0" style="@style/UIKitTextView.SettingsItem" />
+                    <ImageView n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_next_arrow" />
+                </LinearLayout>
+                <LinearLayout n1:gravity="center|left" n1:orientation="horizontal" n1:id="@id/btnLoginGoogle" n1:paddingLeft="@dimen/zm_setting_item_padding_left" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_ic_other_contacts_google" />
+                    <TextView n1:gravity="left" n1:paddingLeft="15.0dip" n1:paddingRight="15.0dip" n1:focusable="false" n1:clickable="false" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/zm_login_with_google" n1:layout_weight="1.0" style="@style/UIKitTextView.SettingsItem" />
+                    <ImageView n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_next_arrow" />
+                </LinearLayout>
+                <LinearLayout n1:gravity="center|left" n1:orientation="horizontal" n1:id="@id/btnLoginFacebook" n1:paddingLeft="@dimen/zm_setting_item_padding_left" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_ic_other_contacts_fb" />
+                    <TextView n1:gravity="left" n1:background="@null" n1:paddingLeft="15.0dip" n1:paddingRight="15.0dip" n1:focusable="false" n1:clickable="false" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/zm_login_with_facebook" n1:layout_weight="1.0" style="@style/UIKitTextView.SettingsItem" />
+                    <ImageView n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_next_arrow" />
+                </LinearLayout>
+            </us.zoom.androidlib.widget.ZMSettingsCategory>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

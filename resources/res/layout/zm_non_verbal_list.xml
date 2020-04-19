@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/zm_window_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1">
+    <us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout android:gravity="center_vertical" android:id="@+id/panelTitleBar" android:layout_width="match_parent" android:layout_height="@dimen/zm_pt_titlebar_height" xmlns:ns1="http://schemas.android.com/apk/res-auto" ns1:zm_leftButton="@+id/btnClose" xmlns:ns2="http://schemas.android.com/apk/res-auto" ns2:zm_rightButton="@+id/btnEmpty" xmlns:ns3="http://schemas.android.com/apk/res-auto" ns3:zm_title="@+id/txtTitle" style="@style/ZMTitleBar">
+        <Button android:id="@+id/btnClose" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_close" style="@style/ZMButton.TitleBar"/>
+        <View android:id="@+id/btnEmpty" android:layout_width="0dp" android:layout_height="wrap_content"/>
+        <us.zoom.androidlib.widget.ZMDynTextSizeTextView android:gravity="center_horizontal" android:id="@+id/txtTitle" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_title_feedback_list_12050" style="@style/ZMTextView.Title"/>
+    </us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <View android:background="@color/zm_list_bg_grey" android:layout_width="match_parent" android:layout_height="35dp"/>
+    <FrameLayout android:id="@+id/listContainer" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.zipow.videobox.view.NonVerbalFeedbackListView android:id="@+id/listView" android:background="@color/zm_list_bg_grey" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/panelActions" android:background="@drawable/zm_tab_bg" android:paddingLeft="3dp" android:paddingTop="3dp" android:paddingRight="3dp" android:layout_width="match_parent" android:layout_height="@dimen/zm_pt_titlebar_height">
+        <Button android:id="@+id/btnClearAll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zm_btn_clear_all_12050" style="@style/ZMButton.Mini"/>
+    </LinearLayout>
+</LinearLayout>

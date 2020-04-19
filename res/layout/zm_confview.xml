@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <SurfaceView n1:id="@id/svPreview" n1:focusable="false" n1:layout_width="1.0px" n1:layout_height="1.0px" n1:layout_marginTop="-2.0dip" />
+    <com.zipow.videobox.view.video.VideoView n1:id="@id/videoView" n1:focusable="false" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <ImageView n1:id="@id/fadeview" n1:background="#ff000000" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <ImageView n1:id="@id/fadeview1" n1:background="#ff000000" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <LinearLayout n1:gravity="center_horizontal" n1:orientation="horizontal" n1:id="@id/panelConnecting" n1:background="@drawable/zm_top_toolbar_bg" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <ProgressBar n1:layout_gravity="center_vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="10.0dip" style="@style/ZMProgressBar.Small" />
+        <TextView n1:layout_gravity="center_vertical" n1:id="@id/txtConnecting" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_msg_connecting" style="@style/ZMTextView.Medium.OnDark" />
+    </LinearLayout>
+    <LinearLayout n1:gravity="center_vertical" n1:layout_gravity="center" n1:orientation="horizontal" n1:id="@id/panelWaitingShare" n1:background="@drawable/zm_loading_bg" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+        <ProgressBar n1:layout_gravity="center_vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="10.0dip" style="@style/ZMProgressBar.Small" />
+        <TextView n1:gravity="left" n1:layout_gravity="center_vertical" n1:id="@id/txtMsgWaitingShare" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_msg_waiting_share" style="@style/ZMTextView.Medium.OnDark" />
+    </LinearLayout>
+    <LinearLayout n1:layout_gravity="bottom|center|left" n1:orientation="vertical" n1:id="@id/panelSharingTitle" n1:background="@color/zm_sharing_title_bg" n1:paddingLeft="4.0dip" n1:paddingRight="4.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+        <TextView n1:ellipsize="end" n1:id="@id/txtSharingTitle" n1:clickable="false" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_msg_sharing" n1:lines="1" style="@style/ZMTextView.Medium.OnDark" />
+        <TextView n1:ellipsize="end" n1:id="@id/txtMyScreenName" n1:clickable="false" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_msg_sharing" n1:lines="1" style="@style/ZMTextView.Medium.OnDark" />
+    </LinearLayout>
+    <LinearLayout n1:gravity="center" n1:layout_gravity="top" n1:orientation="vertical" n1:id="@id/panelShareGalleryExpandPortView" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="20.0dip">
+        <ImageView n1:id="@id/galleryViewExpandArrowImgPort" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_arrow_down_normal" />
+    </LinearLayout>
+    <LinearLayout n1:gravity="center" n1:layout_gravity="left" n1:orientation="vertical" n1:id="@id/panelShareGalleryExpandLandView" n1:visibility="gone" n1:layout_width="20.0dip" n1:layout_height="fill_parent">
+        <ImageView n1:id="@id/galleryViewExpandArrowImgLand" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_arrow_right_normal" />
+    </LinearLayout>
+    <LinearLayout n1:orientation="horizontal" n1:id="@id/panelSwitchScene" n1:paddingTop="340.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@id/panelSwitchSceneButtons" n1:background="@color/zm_dot_panel_background" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.zipow.videobox.view.ConfToolsPanel n1:id="@id/panelTools" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <FrameLayout n1:id="@id/panelTopContent" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <LinearLayout n1:orientation="horizontal" n1:id="@id/panelAudioShare" n1:background="@color/zm_gray_7" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:alpha="0.6">
+                <TextView n1:gravity="center" n1:id="@id/txtAudioShareInfo" n1:paddingTop="8.0dip" n1:paddingBottom="8.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="Someone is Sharing Audio" style="@style/ZMTextView.Normal.OnDark" />
+            </LinearLayout>
+            <LinearLayout n1:orientation="vertical" n1:id="@id/panelTop" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:id="@id/titleBar" n1:background="@drawable/zm_top_toolbar_bg" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <include n1:layout_width="fill_parent" n1:layout_height="wrap_content" layout="@layout/zm_conf_title_bar" />
+                    <TextView n1:layout_gravity="center_horizontal" n1:id="@id/txtPassword" n1:visibility="visible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="-6.0dip" n1:text="@string/zm_lbl_password_xxx" style="@style/ZMTextView.Small.OnDark" />
+                </LinearLayout>
+                <LinearLayout n1:orientation="horizontal" n1:id="@id/praticeModeView" n1:background="#e6f89c08" n1:padding="5.0dip" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:weightSum="3.0">
+                    <LinearLayout n1:orientation="vertical" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="2.3">
+                        <TextView n1:textStyle="bold" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_webinar_txt_practice_mode_title" style="@style/ZMTextView.Normal.OnDark" />
+                        <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:text="@string/zm_webinar_txt_practice_mode_tip" style="@style/ZMTextView.Small.OnDark" />
+                    </LinearLayout>
+                    <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="0.7">
+                        <Button n1:id="@id/btnBroadcast" n1:focusable="true" n1:layout_width="75.0dip" n1:layout_height="29.0dip" n1:text="@string/zm_btn_broadcast" style="@style/ZMButton.BroadCast" />
+                        <ProgressBar n1:id="@id/progressBarBroadcasting" n1:focusable="false" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" style="@style/ZMProgressBar.Small" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@id/broadcastingView" n1:background="#e67ed321" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="50.0dip">
+                    <TextView n1:gravity="center" n1:paddingLeft="40.0dip" n1:paddingRight="40.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_webinar_txt_broadcasting_tip" style="@style/ZMTextView.Normal.OnLight" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout n1:orientation="horizontal" n1:id="@id/panelPrompt" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="17.0dip" n1:layout_below="@id/panelTopContent" n1:layout_alignParentRight="true">
+            <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@id/panelRecording" n1:paddingLeft="4.0dip" n1:paddingTop="2.0dip" n1:paddingRight="4.0dip" n1:paddingBottom="2.0dip" n1:focusable="false" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginRight="10.0dip">
+                <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_recording" />
+                <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_recording" style="@style/ZMTextView.Small.OnDark" />
+            </LinearLayout>
+            <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@id/panelCurUserRecording" n1:background="@drawable/zm_btn_round_dark" n1:paddingLeft="10.0dip" n1:paddingTop="1.0dip" n1:paddingRight="10.0dip" n1:paddingBottom="1.0dip" n1:focusable="true" n1:layout_width="wrap_content" n1:layout_height="26.0dip" n1:layout_marginRight="10.0dip">
+                <ImageView n1:id="@id/imgRecording" n1:paddingRight="4.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_ic_cmr_recording" />
+                <ProgressBar n1:layout_gravity="center_vertical" n1:id="@id/progressStartingRecord" n1:layout_width="14.0dip" n1:layout_height="14.0dip" n1:layout_marginTop="4.0dip" n1:layout_marginRight="4.0dip" n1:layout_marginBottom="4.0dip" style="@style/ZMProgressBar.Small" />
+                <TextView n1:id="@id/txtRecordStatus" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_record_status_recording" style="@style/ZMTextView.Small.OnDark" />
+                <ImageView n1:id="@id/imgRecordControlArrow" n1:paddingLeft="4.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_record_control_arrow" />
+            </LinearLayout>
+            <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@id/panelLiveStream" n1:background="@drawable/zm_btn_round_dark" n1:focusable="true" n1:layout_width="wrap_content" n1:layout_height="26.0dip" n1:layout_marginRight="10.0dip">
+                <TextView n1:textStyle="bold" n1:gravity="center" n1:background="@drawable/zm_btn_live_stream_normal" n1:paddingLeft="10.0dip" n1:paddingRight="10.0dip" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:text="LIVE" style="@style/ZMTextView.Small.OnDark" />
+                <TextView n1:id="@id/txtLiveName" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="12.0dip" n1:layout_marginRight="12.0dip" n1:text="on facebook" style="@style/ZMTextView.Small.OnDark" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@id/btnSwitchToShare" n1:background="@drawable/zm_btn_round_dark" n1:paddingLeft="10.0dip" n1:paddingTop="1.0dip" n1:paddingRight="10.0dip" n1:paddingBottom="1.0dip" n1:layout_width="wrap_content" n1:layout_height="26.0dip" n1:layout_marginLeft="5.0dip" n1:layout_marginTop="17.0dip" n1:layout_marginRight="5.0dip" n1:layout_below="@id/panelTopContent" n1:layout_centerHorizontal="true">
+            <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_btn_switch_to_share" style="@style/ZMTextView.Small.OnDark" />
+        </LinearLayout>
+        <us.zoom.androidlib.widget.ZMVerticalFlowLayout n1:gravity="center" n1:orientation="vertical" n1:id="@id/panelTop2" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginTop="5.0dip" n1:layout_below="@id/panelTopContent" n1:layout_alignWithParentIfMissing="true">
+            <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:id="@id/btnKubi" n1:focusable="true" n1:clickable="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="10.0dip" n1:layout_marginBottom="5.0dip">
+                <ImageView n1:id="@id/imgKubi" n1:background="@null" n1:focusable="false" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_ic_kubi_connected" />
+                <TextView n1:id="@id/txtKubiStatus" n1:focusable="false" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_kubi_status_connected" style="@style/ZMTextView.ExSmall.OnDark" />
+            </LinearLayout>
+            <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:id="@id/btnBreakout" n1:focusable="true" n1:clickable="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="10.0dip" n1:layout_marginBottom="5.0dip">
+                <ImageView n1:background="@null" n1:focusable="false" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_btn_bo_icon" />
+                <TextView n1:focusable="false" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_bo_btn_breakout" style="@style/ZMTextView.ExSmall.OnDark" />
+            </LinearLayout>
+            <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:id="@id/btnBOHelp" n1:focusable="true" n1:clickable="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="10.0dip" n1:layout_marginBottom="5.0dip">
+                <ImageView n1:background="@null" n1:focusable="false" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_btn_bo_help" />
+                <TextView n1:focusable="false" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_bo_btn_ask_for_help" style="@style/ZMTextView.ExSmall.OnDark" />
+            </LinearLayout>
+        </us.zoom.androidlib.widget.ZMVerticalFlowLayout>
+        <us.zoom.androidlib.widget.CaptionView n1:gravity="center" n1:id="@id/txtClosedCaption" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="20.0dip" n1:layout_marginRight="20.0dip" n1:layout_marginBottom="25.0dip" n1:layout_above="@id/btnPoll" style="@style/ZMTextView.Normal.OnDark" />
+        <Button n1:textSize="12.0sp" n1:textColor="#ff8dd626" n1:id="@id/btnPoll" n1:background="@drawable/zm_btn_round_dark" n1:paddingLeft="10.0dip" n1:paddingTop="5.0dip" n1:paddingRight="10.0dip" n1:paddingBottom="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="5.0dip" n1:layout_marginBottom="5.0dip" n1:text="@string/zm_polling_btn_return_to_poll" n1:layout_above="@id/panelBottom" n1:layout_alignParentRight="true" />
+        <RelativeLayout n1:id="@id/panelBottom" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_alignParentBottom="true" n1:layout_alignWithParentIfMissing="true">
+            <com.zipow.videobox.view.ConfToolbar n1:id="@id/confToolbar" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_centerVertical="true" />
+        </RelativeLayout>
+        <com.zipow.videobox.share.ShareView n1:id="@id/sharingView" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_above="@id/panelBottom" n1:layout_below="@id/panelTop" />
+    </com.zipow.videobox.view.ConfToolsPanel>
+    <LinearLayout n1:layout_gravity="center" n1:id="@id/panelStartingRecord" n1:background="@drawable/zm_loading_bg" n1:padding="20.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+        <TextView n1:id="@id/txtStartingRecord" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_starting_record" style="@style/ZMTextView.Normal.OnDark" />
+    </LinearLayout>
+    <LinearLayout n1:orientation="vertical" n1:id="@id/panelBOStatusChange" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <ViewStub n1:id="@id/vBOStatusChange" n1:layout="@layout/zm_bo_status_change" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    </LinearLayout>
+    <com.zipow.videobox.view.ZMFeccView n1:layout_gravity="bottom|center" n1:id="@id/panelFecc" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="70.0dip" />
+    <com.zipow.videobox.view.video.RCFloatView n1:id="@id/rc_float_view" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="100.0dip" n1:layout_marginTop="100.0dip" />
+    <com.zipow.videobox.view.video.RCMouseView n1:id="@id/rc_mouse" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_rc_mouse_normal" />
+</FrameLayout>

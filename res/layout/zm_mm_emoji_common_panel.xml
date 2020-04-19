@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@id/panelInstall" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/panelZoomEmojis" n1:layout_width="wrap_content" n1:layout_height="fill_parent" />
+        <RelativeLayout n1:orientation="horizontal" n1:id="@id/panelEmojiOneUninstall" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_marginLeft="5.0dip" n1:layout_weight="1.0">
+            <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/panelEmojiOne" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+                <LinearLayout n1:gravity="center_vertical" n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="fill_parent">
+                    <ImageView n1:textSize="22.0sp" n1:gravity="center" n1:layout_width="32.0dip" n1:layout_height="32.0dip" n1:layout_marginLeft="5.0dip" n1:layout_marginRight="5.0dip" n1:layout_marginBottom="2.0dip" n1:src="@drawable/zm_emoji_one_1" n1:alpha="0.15" />
+                    <ImageView n1:textSize="22.0sp" n1:gravity="center" n1:layout_width="32.0dip" n1:layout_height="32.0dip" n1:layout_marginLeft="5.0dip" n1:layout_marginTop="2.0dip" n1:layout_marginRight="5.0dip" n1:layout_marginBottom="2.0dip" n1:src="@drawable/zm_emoji_one_2" n1:alpha="0.15" />
+                    <ImageView n1:textSize="22.0sp" n1:gravity="center" n1:layout_width="32.0dip" n1:layout_height="32.0dip" n1:layout_marginLeft="5.0dip" n1:layout_marginTop="2.0dip" n1:layout_marginRight="5.0dip" n1:layout_marginBottom="2.0dip" n1:src="@drawable/zm_emoji_one_3" n1:alpha="0.15" />
+                    <ImageView n1:textSize="22.0sp" n1:gravity="center" n1:layout_width="32.0dip" n1:layout_height="32.0dip" n1:layout_marginLeft="5.0dip" n1:layout_marginTop="2.0dip" n1:layout_marginRight="5.0dip" n1:layout_marginBottom="2.0dip" n1:src="@drawable/zm_emoji_one_4" n1:alpha="0.15" />
+                    <ImageView n1:textSize="22.0sp" n1:gravity="center" n1:layout_width="32.0dip" n1:layout_height="32.0dip" n1:layout_marginLeft="5.0dip" n1:layout_marginTop="2.0dip" n1:layout_marginRight="5.0dip" n1:src="@drawable/zm_emoji_one_5" n1:alpha="0.15" />
+                </LinearLayout>
+                <LinearLayout n1:gravity="center_vertical" n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="fill_parent">
+                    <ImageView n1:textSize="22.0sp" n1:gravity="center" n1:layout_width="32.0dip" n1:layout_height="32.0dip" n1:layout_marginLeft="5.0dip" n1:layout_marginRight="5.0dip" n1:layout_marginBottom="2.0dip" n1:src="@drawable/zm_emoji_one_6" n1:alpha="0.15" />
+                    <ImageView n1:textSize="22.0sp" n1:gravity="center" n1:layout_width="32.0dip" n1:layout_height="32.0dip" n1:layout_marginLeft="5.0dip" n1:layout_marginTop="2.0dip" n1:layout_marginRight="5.0dip" n1:layout_marginBottom="2.0dip" n1:src="@drawable/zm_emoji_one_7" n1:alpha="0.15" />
+                    <ImageView n1:textSize="22.0sp" n1:gravity="center" n1:layout_width="32.0dip" n1:layout_height="32.0dip" n1:layout_marginLeft="5.0dip" n1:layout_marginTop="2.0dip" n1:layout_marginRight="5.0dip" n1:layout_marginBottom="2.0dip" n1:src="@drawable/zm_emoji_one_8" n1:alpha="0.15" />
+                    <ImageView n1:textSize="22.0sp" n1:gravity="center" n1:layout_width="32.0dip" n1:layout_height="32.0dip" n1:layout_marginLeft="5.0dip" n1:layout_marginTop="2.0dip" n1:layout_marginRight="5.0dip" n1:layout_marginBottom="2.0dip" n1:src="@drawable/zm_emoji_one_9" n1:alpha="0.15" />
+                    <ImageView n1:textSize="22.0sp" n1:gravity="center" n1:layout_width="32.0dip" n1:layout_height="32.0dip" n1:layout_marginLeft="5.0dip" n1:layout_marginTop="2.0dip" n1:layout_marginRight="5.0dip" n1:src="@drawable/zm_emoji_one_10" n1:alpha="0.15" />
+                </LinearLayout>
+                <LinearLayout n1:gravity="center_vertical" n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="fill_parent">
+                    <ImageView n1:textSize="22.0sp" n1:gravity="center" n1:layout_width="32.0dip" n1:layout_height="32.0dip" n1:layout_marginLeft="5.0dip" n1:layout_marginRight="5.0dip" n1:layout_marginBottom="2.0dip" n1:src="@drawable/zm_emoji_one_11" n1:alpha="0.15" />
+                    <ImageView n1:textSize="22.0sp" n1:gravity="center" n1:layout_width="32.0dip" n1:layout_height="32.0dip" n1:layout_marginLeft="5.0dip" n1:layout_marginTop="2.0dip" n1:layout_marginRight="5.0dip" n1:layout_marginBottom="2.0dip" n1:src="@drawable/zm_emoji_one_12" n1:alpha="0.15" />
+                    <ImageView n1:textSize="22.0sp" n1:gravity="center" n1:layout_width="32.0dip" n1:layout_height="32.0dip" n1:layout_marginLeft="5.0dip" n1:layout_marginTop="2.0dip" n1:layout_marginRight="5.0dip" n1:layout_marginBottom="2.0dip" n1:src="@drawable/zm_emoji_one_13" n1:alpha="0.15" />
+                    <ImageView n1:textSize="22.0sp" n1:gravity="center" n1:layout_width="32.0dip" n1:layout_height="32.0dip" n1:layout_marginLeft="5.0dip" n1:layout_marginTop="2.0dip" n1:layout_marginRight="5.0dip" n1:layout_marginBottom="2.0dip" n1:src="@drawable/zm_emoji_one_14" n1:alpha="0.15" />
+                    <ImageView n1:textSize="22.0sp" n1:gravity="center" n1:layout_width="32.0dip" n1:layout_height="32.0dip" n1:layout_marginLeft="5.0dip" n1:layout_marginTop="2.0dip" n1:layout_marginRight="5.0dip" n1:src="@drawable/zm_emoji_one_15" n1:alpha="0.15" />
+                </LinearLayout>
+                <LinearLayout n1:gravity="center_vertical" n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="fill_parent">
+                    <ImageView n1:textSize="22.0sp" n1:gravity="center" n1:layout_width="32.0dip" n1:layout_height="32.0dip" n1:layout_marginLeft="5.0dip" n1:layout_marginRight="5.0dip" n1:layout_marginBottom="2.0dip" n1:src="@drawable/zm_emoji_one_16" n1:alpha="0.15" />
+                    <ImageView n1:textSize="22.0sp" n1:gravity="center" n1:layout_width="32.0dip" n1:layout_height="32.0dip" n1:layout_marginLeft="5.0dip" n1:layout_marginTop="2.0dip" n1:layout_marginRight="5.0dip" n1:layout_marginBottom="2.0dip" n1:src="@drawable/zm_emoji_one_17" n1:alpha="0.15" />
+                    <ImageView n1:textSize="22.0sp" n1:gravity="center" n1:layout_width="32.0dip" n1:layout_height="32.0dip" n1:layout_marginLeft="5.0dip" n1:layout_marginTop="2.0dip" n1:layout_marginRight="5.0dip" n1:layout_marginBottom="2.0dip" n1:src="@drawable/zm_emoji_one_18" n1:alpha="0.15" />
+                    <ImageView n1:textSize="22.0sp" n1:gravity="center" n1:layout_width="32.0dip" n1:layout_height="32.0dip" n1:layout_marginLeft="5.0dip" n1:layout_marginTop="2.0dip" n1:layout_marginRight="5.0dip" n1:layout_marginBottom="2.0dip" n1:src="@drawable/zm_emoji_one_19" n1:alpha="0.15" />
+                    <ImageView n1:textSize="22.0sp" n1:gravity="center" n1:layout_width="32.0dip" n1:layout_height="32.0dip" n1:layout_marginLeft="5.0dip" n1:layout_marginTop="2.0dip" n1:layout_marginRight="5.0dip" n1:src="@drawable/zm_emoji_one_20" n1:alpha="0.15" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:id="@id/panelNoInstall" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+                <TextView n1:gravity="center" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" n1:layout_marginTop="10.0dip" n1:layout_marginRight="5.0dip" n1:text="@string/zm_lbl_more_emoji_23626" style="@style/ZMTextView.Small.OnLight" />
+                <Button n1:textSize="15.0sp" n1:id="@id/btnStartUse" n1:paddingLeft="40.0dip" n1:paddingRight="40.0dip" n1:layout_width="wrap_content" n1:layout_height="35.0dip" n1:layout_marginTop="20.0dip" n1:text="@string/zm_btn_download" style="@style/ZMButton.Material" />
+            </LinearLayout>
+            <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@id/panelInstallIng" n1:paddingTop="40.0dip" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+                <ProgressBar n1:layout_gravity="center_vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="10.0dip" style="@style/ZMProgressBar.Small" />
+                <TextView n1:layout_gravity="center_vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_wait_moment_23626" style="@style/ZMTextView.Medium" />
+            </LinearLayout>
+            <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:id="@id/panelDownloadIng" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+                <TextView n1:gravity="center" n1:id="@id/txtProcess" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" n1:layout_marginTop="10.0dip" n1:layout_marginRight="5.0dip" n1:text="@string/zm_lbl_download_emoji_process_23626" style="@style/ZMTextView.Small" />
+                <ProgressBar n1:id="@id/progressBar" n1:layout_width="100.0dip" n1:layout_height="3.0dip" n1:layout_marginTop="10.0dip" style="@style/ZMProgressBar.Horizontal" />
+                <Button n1:textSize="15.0sp" n1:id="@id/btnCancel" n1:paddingLeft="40.0dip" n1:paddingRight="40.0dip" n1:layout_width="wrap_content" n1:layout_height="35.0dip" n1:layout_marginTop="20.0dip" n1:text="@string/zm_btn_cancel" style="@style/ZMButton.Small" />
+            </LinearLayout>
+            <RelativeLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@id/panelDownloadError" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+                <TextView n1:id="@id/txtDownloadError" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_emoji_download_error_23626" n1:layout_centerInParent="true" style="@style/ZMTextView.Small" />
+                <Button n1:id="@id/btnRetry" n1:paddingLeft="40.0dip" n1:paddingRight="40.0dip" n1:layout_width="wrap_content" n1:layout_height="35.0dip" n1:layout_marginTop="20.0dip" n1:text="@string/zm_btn_retry" n1:layout_below="@id/txtDownloadError" n1:layout_centerHorizontal="true" style="@style/ZMButton.Material" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout n1:orientation="vertical" n1:id="@id/panelEmojis" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <RelativeLayout n1:paddingTop="3.0dip" n1:layout_width="10000.0dip" n1:layout_height="wrap_content">
+            <TextView n1:id="@id/txtCategoryAnchor" n1:paddingLeft="10.0dip" n1:paddingRight="20.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:lines="1" style="@style/ZMTextView.Small.Dimmed" />
+            <TextView n1:ellipsize="none" n1:id="@id/txtCategoryRight" n1:paddingLeft="10.0dip" n1:paddingRight="20.0dip" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:lines="1" style="@style/ZMTextView.Small.Dimmed" />
+            <TextView n1:ellipsize="none" n1:id="@id/txtCategoryLeft" n1:paddingLeft="10.0dip" n1:paddingRight="20.0dip" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:lines="1" style="@style/ZMTextView.Small.Dimmed" />
+        </RelativeLayout>
+        <us.zoom.androidlib.widget.ZMHorizontalScrollView n1:id="@id/panelEmojisScrollView" n1:scrollbars="none" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0" />
+        <LinearLayout n1:orientation="horizontal" n1:id="@id/panelEmojiCategories" n1:layout_width="fill_parent" n1:layout_height="30.0dip" />
+    </LinearLayout>
+</LinearLayout>

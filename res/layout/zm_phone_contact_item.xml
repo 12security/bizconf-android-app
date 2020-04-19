@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="vertical" n1:padding="10.0dip" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginRight="50.0dip" n1:layout_centerVertical="true">
+        <TextView n1:ellipsize="end" n1:id="@id/txtContactName" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="" n1:lines="1" style="@style/ZMTextView.Normal.OnLight" />
+        <TextView n1:ellipsize="end" n1:id="@id/txtContactNumber" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="2.0dip" n1:text="" n1:lines="1" style="@style/ZMTextView.Small.Dimmed" />
+    </LinearLayout>
+    <us.zoom.androidlib.widget.ZMCheckedTextView n1:gravity="center_vertical" n1:id="@id/checked" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:checkMark="?android:listChoiceIndicatorMultiple" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+    <TextView n1:id="@id/txtInZoom" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" style="@style/ZMTextView.Normal.Dimmed" />
+</RelativeLayout>

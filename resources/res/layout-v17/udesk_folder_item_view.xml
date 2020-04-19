@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/m_root_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layoutDirection="ltr">
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/udesk_10" android:layout_width="match_parent" android:layout_height="@dimen/udesk_100">
+        <include layout="@layout/udesk_img_itemview"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/udesk_sp16" android:textStyle="bold" android:textColor="@color/udesk_black" android:ellipsize="end" android:id="@+id/udesk_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/udesk_15" android:layout_marginRight="@dimen/udesk_15" android:singleLine="true"/>
+            <TextView android:textSize="@dimen/udesk_sp14" android:textColor="@color/udesk_color_999999" android:id="@+id/udesk_size" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/udesk_15"/>
+        </LinearLayout>
+    </LinearLayout>
+    <include android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="@dimen/udesk_10" android:layout_marginRight="@dimen/udesk_10" layout="@layout/udesk_line_horizontal"/>
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="vertical" n1:background="@color/zm_ui_kit_color_black_060608" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:id="@id/panelContent" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <com.zipow.videobox.view.ZMGifView n1:id="@id/imgGifView" n1:background="@color/zm_black" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+        <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView n1:id="@id/imageview" n1:background="@color/zm_black" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+        <ProgressBar n1:id="@id/zm_content_file_giphy_progress" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerInParent="true" style="@style/ZMProgressBar.Large" />
+        <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:id="@id/panelNormalFile" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <ImageView n1:id="@id/imgFileType" n1:layout_width="60.0dip" n1:layout_height="60.0dip" />
+            <TextView n1:gravity="center" n1:id="@id/txtTranslateSpeed" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip" n1:text="" style="@style/ZMTextView.Normal.Dimmed" />
+            <ProgressBar n1:id="@id/uploadProgressBar" n1:layout_width="150.0dip" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip" n1:max="100" style="@style/PollingPercentBar" />
+            <TextView n1:gravity="center" n1:id="@id/txtNotSupportPreview" n1:visibility="invisible" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="30.0dip" n1:layout_marginTop="10.0dip" n1:layout_marginRight="30.0dip" n1:text="@string/zm_lbl_content_not_support_preview_50227" style="@style/ZMTextView.Small.Dimmed" />
+            <Button n1:id="@id/btnViewFile" n1:paddingLeft="5.0dip" n1:paddingRight="5.0dip" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip" n1:text="@string/zm_btn_view_file" style="@style/ZMButton.Material" />
+            <Button n1:id="@id/btnDownload" n1:paddingLeft="5.0dip" n1:paddingRight="5.0dip" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip" n1:text="@string/zm_btn_download" style="@style/ZMButton.Material" />
+        </LinearLayout>
+        <com.zipow.videobox.pdf.PDFView n1:id="@id/pdfView" n1:background="@color/zm_black" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    </RelativeLayout>
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/panelBottomBar" n1:background="@drawable/zm_ic_image_bottom_bg" n1:paddingLeft="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_alignParentBottom="true">
+        <TextView n1:id="@id/txtFileSharees" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginTop="3.0dip" n1:layout_marginRight="70.0dip" n1:text="private" n1:layout_weight="1.0" n1:layout_below="@id/txtFileDes" style="@style/ZMTextView.Small.OnDark" />
+        <ImageButton n1:id="@id/btnShare" n1:background="@null" n1:padding="10.0dip" n1:visibility="invisible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="5.0dip" n1:src="@drawable/zm_btn_viewer_share" n1:layout_toLeftOf="@id/btnMore" n1:layout_alignBottom="@id/txtFileSharees" />
+        <ImageButton n1:id="@id/btnMore" n1:background="@null" n1:padding="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="5.0dip" n1:src="@drawable/zm_ic_btn_more" n1:layout_alignBottom="@id/txtFileSharees" n1:layout_alignParentRight="true" n1:contentDescription="@string/zm_btn_more_no_dot" />
+    </LinearLayout>
+    <LinearLayout n1:orientation="horizontal" n1:id="@id/panelTitleBar" n1:background="@drawable/zm_ic_image_header_bg" n1:paddingLeft="10.0dip" n1:paddingBottom="10.0dip" n1:layout_width="fill_parent" n1:layout_height="100.0dip" n1:layout_alignParentLeft="true" n1:layout_alignParentTop="true">
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="vertical" n1:layout_width="0.0px" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip" n1:layout_weight="1.0">
+            <TextView n1:ellipsize="end" n1:gravity="center|left" n1:id="@id/txtFileNameTitle" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="10.0dip" n1:text="File name .txt" n1:maxLines="2" style="@style/ZMTextView.Title.OnDark" />
+            <TextView n1:ellipsize="middle" n1:id="@id/txtFileDes" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="12.0dip" n1:text="32KB|one1,Apri 12 at 3:20 PM" n1:singleLine="true" style="@style/ZMTextView.Small.OnDark" />
+        </LinearLayout>
+        <ImageButton n1:id="@id/btnClose" n1:background="@null" n1:padding="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_btn_viewer_close" n1:contentDescription="@string/zm_btn_close" />
+    </LinearLayout>
+    <LinearLayout n1:gravity="center" n1:layout_gravity="center" n1:orientation="vertical" n1:id="@id/viewPlaceHolder" n1:background="@color/zm_dimmed_forground" n1:focusable="false" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_above="@id/panelBottomBar" n1:layout_below="@id/panelTitleBar">
+        <ImageView n1:focusable="false" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_image_download_error" />
+        <TextView n1:gravity="center" n1:id="@id/txtMessage" n1:focusable="false" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip" n1:text="@string/zm_mm_msg_download_image_failed" style="@style/ZMTextView.Normal.Dimmed" />
+    </LinearLayout>
+</RelativeLayout>

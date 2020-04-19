@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout n1:id="@id/panelTitleBar" n1:layout_width="fill_parent" n1:layout_height="@dimen/zm_pt_titlebar_height" n1:weightSum="1.0" n2:zm_leftButton="@id/btnBack" n2:zm_rightButton="@id/panelRight" n2:zm_title="@id/txtTitle" style="@style/ZMTitleBar" xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <Button n1:id="@id/btnBack" n1:visibility="visible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_btn_back" style="@style/ZMBackButton" />
+        <LinearLayout n1:orientation="horizontal" n1:id="@id/panelRight" n1:layout_width="0.0dip" n1:layout_height="0.0dip" />
+        <TextView n1:gravity="center_horizontal" n1:id="@id/txtTitle" n1:paddingLeft="5.0dip" n1:paddingRight="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_title_mm_add_phone_contacts" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true" style="@style/ZMTextView.Title" />
+    </us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <RelativeLayout n1:id="@id/panelSearchBar" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <EditText n1:id="@id/edtSearch" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:hint="@string/zm_hint_search" n1:imeOptions="actionDone" style="@style/ZMEditText.ContextSearch" />
+        <Button n1:id="@id/btnClearSearchView" n1:background="@drawable/zm_btn_clear_search_view" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n1:contentDescription="@string/zm_description_mm_btn_clear_search" />
+    </RelativeLayout>
+    <FrameLayout n1:id="@id/listContainer" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <com.zipow.videobox.view.InviteLocalContactsListView n1:id="@id/addrBookListView" n1:background="@drawable/zm_listview_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+        <LinearLayout n1:layout_gravity="center" n1:orientation="vertical" n1:id="@id/panelNoItemMsg" n1:paddingLeft="10.0dip" n1:paddingRight="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+            <include n1:id="@id/imgNoBuddy" layout="@layout/zm_image_no_buddy" />
+            <TextView n1:gravity="center" n1:layout_gravity="center_horizontal" n1:id="@id/txtNoContactsMessage" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_msg_no_system_contacts" style="@style/ZMTextView.Large.OnLight" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

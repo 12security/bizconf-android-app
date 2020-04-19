@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center" n1:orientation="vertical" n1:background="@drawable/udesk_popvodieo_bg" n1:padding="20.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+        <ImageView n1:id="@id/iv_record" n1:visibility="visible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/udesk_recorder" />
+        <ImageView n1:id="@id/iv_voice_level" n1:visibility="visible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/udeskv_1" />
+    </LinearLayout>
+    <TextView n1:textSize="16.0sp" n1:textColor="@color/udesk_color_bg_white" n1:id="@id/tv_dialog_tip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:text="@string/move_up_cancel" />
+</LinearLayout>

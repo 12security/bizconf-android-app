@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <EditText android:id="@+id/etstreamUrl" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="rtmp://pub.mudu.tv/watch" android:hint="请输入 streamUrl"/>
+    <EditText android:id="@+id/etstreamKey" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="y6mhud" android:hint="请输入 streamKey"/>
+    <EditText android:id="@+id/etliveUrl" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="http://webcasting-test.bizconf.cn/watch/968239" android:hint="请输入 liveUrl" android:singleLine="true"/>
+    <Button android:id="@+id/btnlivestream" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="开启推流"/>
+</LinearLayout>

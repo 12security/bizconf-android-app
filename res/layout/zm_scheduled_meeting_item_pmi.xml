@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center" n1:orientation="vertical" n1:paddingLeft="5.0dip" n1:paddingTop="5.0dip" n1:paddingRight="5.0dip" n1:paddingBottom="10.0dip" n1:descendantFocusability="blocksDescendants" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_personal_meeting_id" style="@style/ZMTextView.Normal.OnLight" />
+    <TextView n1:textStyle="normal" n1:textColor="@color/zm_meetinglistitem_pmi_id" n1:id="@id/txtMeetingNo" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:text="111-111-111" style="@style/ZMTextView.ExtremLarge.OnLight" />
+    <us.zoom.androidlib.widget.ZMDynTextSizeTextView n1:textColor="@color/zm_highlight" n1:id="@id/txtVanityURL" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="0.0dip" style="@style/ZMTextView.Normal.OnLight" />
+    <LinearLayout n1:orientation="horizontal" n1:paddingTop="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+        <Button n1:id="@id/btnStart" n1:duplicateParentState="false" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:minWidth="60.0dip" n1:text="@string/zm_btn_start" style="@style/ZMButton.Small" />
+        <Button n1:id="@id/btnInvite" n1:duplicateParentState="false" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:minWidth="60.0dip" n1:text="@string/zm_btn_send_invitation" style="@style/ZMButton.Small" />
+        <Button n1:id="@id/btnEdit" n1:duplicateParentState="false" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:minWidth="60.0dip" n1:text="@string/zm_btn_edit" style="@style/ZMButton.Small" />
+    </LinearLayout>
+</LinearLayout>

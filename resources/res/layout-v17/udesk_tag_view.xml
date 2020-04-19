@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="@dimen/udesk_sp12" android:textColor="@color/udesk_color_666666" android:ellipsize="end" android:gravity="center" android:id="@+id/udesk_tag_text" android:layout_width="match_parent" android:layout_height="@dimen/udesk_30" android:layout_margin="@dimen/udesk_7" android:singleLine="true" android:layoutDirection="ltr"/>

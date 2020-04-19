@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include n1:id="@id/verifyingMeetingId" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" layout="@layout/zm_verifying_meetingid" />
+    <com.zipow.videobox.view.WaitingJoinView n1:id="@id/waitingJoinView" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <us.zoom.androidlib.widget.ZMIgnoreKeyboardLayout n1:id="@id/confViewContentLayout" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <include n1:id="@id/confView" n1:layout_width="fill_parent" n1:layout_height="fill_parent" layout="@layout/zm_confview" />
+    </us.zoom.androidlib.widget.ZMIgnoreKeyboardLayout>
+    <com.zipow.videobox.view.CallConnectingView n1:id="@id/callconnectingView" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <com.zipow.videobox.view.OnSilentView n1:id="@id/onHoldView" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <LinearLayout n1:gravity="center_horizontal" n1:layout_gravity="center" n1:orientation="vertical" n1:id="@id/panelRejoinMsg" n1:background="@drawable/zm_tip_dark" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_margin="20.0dip">
+        <TextView n1:gravity="center" n1:id="@id/txtRejoinMsgTitle" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_webinar_msg_host_change_you_to_attendee" style="@style/ZMTextView.Large.OnDark" />
+        <ProgressBar n1:layout_gravity="center" n1:layout_width="30.0dip" n1:layout_height="30.0dip" n1:layout_margin="15.0dip" style="@style/ZMProgressBar" />
+        <TextView n1:gravity="center" n1:id="@id/txtRejoinMsgMessage" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_webinar_msg_connecting_as_attendee" style="@style/ZMTextView.Normal.OnDark" />
+    </LinearLayout>
+    <us.zoom.androidlib.widget.ZMTipLayer n1:id="@id/tipLayer" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+</FrameLayout>

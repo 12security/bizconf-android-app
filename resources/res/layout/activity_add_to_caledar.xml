@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/activity_add_to_caledar" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/public_toolbar"/>
+    <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/activity_vertical_title" android:layout_marginTop="@dimen/activity_horizontal_margin">
+        <TextView android:textSize="@dimen/textSize28px" android:textColor="@color/black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:text="@string/conference_theme"/>
+        <TextView android:textSize="@dimen/textSize28px" android:textColor="@color/light_gray" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/meeting_theme" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/activity_horizontal_margin" android:text="@string/conference_theme" android:maxEms="15" android:singleLine="true" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/add_event_remind" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/activity_vertical_title" android:layout_marginTop="@dimen/activity_horizontal_margin">
+        <TextView android:textSize="@dimen/textSize28px" android:textColor="@color/black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:text="@string/appointment_success_add_event_remind"/>
+        <TextView android:textSize="@dimen/textSize28px" android:textColor="@color/light_gray" android:gravity="center_vertical" android:id="@+id/add_event_remind_show" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/activity_horizontal_margin" android:text="@string/appointment_success_add_event_hint" android:drawableRight="@drawable/icon_arrow_right_big" android:drawablePadding="@dimen/activity_nomal_hint" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:background="@color/white" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_horizontal_margin">
+        <TextView android:textSize="@dimen/textSize24PX" android:textColor="@color/light_gray" android:gravity="start" android:id="@+id/invitation_content" android:padding="@dimen/activity_nomal_hint" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</LinearLayout>

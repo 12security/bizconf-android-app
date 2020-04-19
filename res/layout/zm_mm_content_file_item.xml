@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="horizontal" n1:padding="10.0dip" n1:descendantFocusability="blocksDescendants" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.zipow.videobox.view.ZMGifView n1:id="@id/imgFileLogo" n1:layout_width="40.0dip" n1:layout_height="40.0dip" n1:layout_marginTop="5.0dip" n1:src="@drawable/zm_ic_filetype_image" n1:scaleType="centerCrop" />
+    <LinearLayout n1:orientation="vertical" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_weight="1.0">
+        <TextView n1:id="@id/txtFileName" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="File Name" n1:singleLine="true" style="@style/UIKitTextView.CellTitle" />
+        <TextView n1:id="@id/txtFileOwner" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="File owner" n1:singleLine="true" style="@style/UIKitTextView.SecondaryText.Small.Dimmed" />
+        <TextView n1:id="@id/txtFileGroups" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="shared in Test Group" style="@style/UIKitTextView.SecondaryText.Small.Dimmed" />
+        <LinearLayout n1:orientation="horizontal" n1:id="@id/panelTranslate" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <ImageView n1:id="@id/imgPendingType" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_mm_content_upload" />
+            <TextView n1:id="@id/txtTranslateSpeed" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="" style="@style/UIKitTextView.SecondaryText.Small.Dimmed" />
+        </LinearLayout>
+        <ProgressBar n1:id="@id/progressBarPending" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:max="100" style="@style/PollingPercentBar" />
+    </LinearLayout>
+    <Button n1:id="@id/btnCancel" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:text="@string/zm_btn_cancel" style="@style/ZMButton.NoBackground" />
+    <ImageView n1:id="@id/imgShare" n1:padding="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_ic_share_to" n1:contentDescription="@string/zm_description_share" />
+</LinearLayout>

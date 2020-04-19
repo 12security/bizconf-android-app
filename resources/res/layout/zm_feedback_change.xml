@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<us.zoom.androidlib.widget.ZMSettingsLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingTop="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" xmlns:ns1="http://schemas.android.com/apk/res-auto" ns1:zm_settingsCategorySpacing="0dp">
+    <us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:id="@+id/panelFeedback" android:layout_width="match_parent" android:layout_height="wrap_content" xmlns:ns2="http://schemas.android.com/apk/res-auto" ns2:zm_dividerHeight="0dp">
+        <TextView android:gravity="center" android:paddingTop="5dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/zm_lbl_change_feedback_12050" style="@style/ZMTextView.SettingsItem"/>
+        <com.zipow.videobox.view.NonVerbalFeedbackActionView android:id="@+id/viewFeedback" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+    </us.zoom.androidlib.widget.ZMSettingsCategory>
+    <us.zoom.androidlib.widget.ZMSettingsCategory android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" xmlns:ns3="http://schemas.android.com/apk/res-auto" ns3:zm_dividerHeight="0dp">
+        <TextView android:gravity="center" android:id="@+id/txtClearFeedback" android:background="@drawable/zm_settings_item_selector" android:paddingTop="8dp" android:paddingBottom="5dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/zm_btn_clear_feedback_12050" style="@style/ZMTextView.SettingsItem"/>
+    </us.zoom.androidlib.widget.ZMSettingsCategory>
+</us.zoom.androidlib.widget.ZMSettingsLayout>

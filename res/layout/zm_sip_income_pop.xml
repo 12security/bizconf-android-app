@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@drawable/zm_dialog_white_big_corner_roundrect_bg" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <TextView n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="22.0dip" n1:layout_marginTop="22.0dip" n1:text="@string/zm_sip_income_dialog_title_26673" n1:layout_weight="1.0" style="@style/ZMTextView.Small.OnLight" />
+        <ImageView n1:id="@id/iv_close" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip" n1:layout_marginRight="10.0dip" n1:src="@drawable/zm_dialog_close" n1:layout_alignParentRight="true" />
+    </LinearLayout>
+    <com.zipow.videobox.view.sip.SipIncomeAvatar n1:layout_gravity="center_horizontal" n1:id="@id/avatar" n1:layout_width="@dimen/zm_sip_income_avatar_bg1_size" n1:layout_height="@dimen/zm_sip_income_avatar_bg1_size" n1:layout_marginLeft="20.0dip" n1:layout_marginRight="20.0dip" n1:scaleX="0.83" n1:scaleY="0.83" n2:backgroundStyle="light" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <TextView n1:gravity="center_horizontal" n1:id="@id/tvBuddyName" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="20.0dip" n1:layout_marginRight="20.0dip" n1:maxLines="1" n1:scaleX="0.83" n1:scaleY="0.83" style="@style/ZMTextView.BuddyName.ExtremLarge.OnLight" />
+    <TextView n1:gravity="center_horizontal" n1:id="@id/tvStatus" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="20.0dip" n1:layout_marginTop="5.0dip" n1:layout_marginRight="20.0dip" n1:text="@string/zm_sip_income_status_text_26673" n1:maxLines="1" n1:layout_below="@id/tvBuddyName" n1:scaleX="0.83" n1:scaleY="0.83" style="@style/ZMTextView.BuddyName.Normal.OnLight" />
+    <LinearLayout n1:gravity="center_horizontal" n1:orientation="horizontal" n1:id="@id/panelCallBtns" n1:paddingLeft="20.0dip" n1:paddingRight="20.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="32.0dip" n1:layout_marginBottom="20.0dip" n1:scaleX="0.83" n1:scaleY="0.83">
+        <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:id="@id/panelEndCall" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+            <ImageView n1:id="@id/btnEndCall" n1:duplicateParentState="true" n1:layout_width="@dimen/zm_sip_dialpad_key_width" n1:layout_height="@dimen/zm_sip_dialpad_key_width" n1:src="@drawable/zm_sip_end_call" n1:contentDescription="@string/zm_sip_btn_decline_61431" />
+            <TextView n1:id="@id/txtEndCall" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:text="@string/zm_sip_btn_decline_61431" style="@style/ZMTextView.Normal.OnLight" />
+        </LinearLayout>
+        <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:id="@id/panelAcceptCall" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+            <ImageView n1:id="@id/btnAcceptCall" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="@dimen/zm_sip_dialpad_key_width" n1:src="@drawable/zm_sip_start_call" n1:scaleType="centerInside" n1:contentDescription="@string/zm_btn_accept_call_14480" />
+            <TextView n1:id="@id/txtAccpetCall" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:text="@string/zm_btn_accept_sip_61381" style="@style/ZMTextView.Normal.OnLight" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

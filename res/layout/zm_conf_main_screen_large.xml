@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include n1:id="@id/verifyingMeetingId" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" layout="@layout/zm_verifying_meetingid" />
+    <com.zipow.videobox.view.WaitingJoinView n1:id="@id/waitingJoinView" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <include n1:id="@id/confView" n1:layout_width="fill_parent" n1:layout_height="fill_parent" layout="@layout/zm_confview_large" />
+    <com.zipow.videobox.view.CallConnectingView n1:id="@id/callconnectingView" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <com.zipow.videobox.view.OnSilentView n1:id="@id/onHoldView" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <us.zoom.androidlib.widget.ZMTipLayer n1:id="@id/tipLayer" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+</FrameLayout>

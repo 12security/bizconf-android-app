@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@drawable/zm_window_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout n1:id="@id/panelTitleBar" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:zm_leftButton="@id/btnBack" n2:zm_rightButton="@id/viewRight" n2:zm_title="@id/txtTitle" style="@style/ZMTitleBar" xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <Button n1:id="@id/btnBack" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_btn_back" n1:layout_centerVertical="true" style="@style/ZMBackButton" />
+        <View n1:id="@id/viewRight" n1:visibility="invisible" n1:layout_width="50.0dip" n1:layout_height="0.0dip" />
+        <us.zoom.androidlib.widget.ZMDynTextSizeTextView n1:ellipsize="end" n1:gravity="center" n1:id="@id/txtTitle" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/zm_msg_manage_cloud_storage_btn_5537" n1:singleLine="true" style="@style/ZMTextView.Title" />
+    </us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <ProgressBar n1:id="@id/webLoadingProgress" n1:layout_width="fill_parent" n1:layout_height="3.0dip" n1:max="100" n1:progress="50" style="?android:progressBarStyleHorizontal" />
+    <WebView n1:id="@id/webviewPage" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+</LinearLayout>

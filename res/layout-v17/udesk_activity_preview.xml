@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:id="@id/udesk_root_view" n1:background="@color/udesk_black" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layoutDirection="ltr"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView n1:id="@id/udesk_rv_photos" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <FrameLayout n1:id="@id/m_bar_root_view" n1:fitsSystemWindows="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <FrameLayout n1:id="@id/m_top_bar_layout" n1:background="@color/udesk_color_f2212123" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <RelativeLayout n1:layout_gravity="top" n1:id="@id/m_top_bar" n1:focusable="true" n1:fitsSystemWindows="true" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="48.0dip">
+                <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:id="@id/udesk_back_linear" n1:layout_width="50.0dip" n1:layout_height="fill_parent" n1:layout_alignParentLeft="true" n1:layout_alignParentStart="true">
+                    <ImageView n1:id="@id/udesk_back_img" n1:layout_width="@dimen/udesk_20" n1:layout_height="@dimen/udesk_20" n1:src="@drawable/udesk_titlebar_back" />
+                </LinearLayout>
+                <View n1:layout_gravity="center_vertical" n1:id="@id/m_back_line" n1:background="#ff303135" n1:layout_width="1.0dip" n1:layout_height="22.0dip" n1:layout_alignRight="@id/udesk_back_linear" n1:layout_centerVertical="true" n1:layout_alignEnd="@id/udesk_back_linear" />
+                <TextView n1:textSize="@dimen/udesk_sp16" n1:textColor="@color/udesk_color_bg_white" n1:gravity="center" n1:id="@id/tv_number" n1:paddingLeft="16.0dip" n1:paddingRight="16.0dip" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_toRightOf="@id/m_back_line" n1:layout_toEndOf="@id/m_back_line" />
+                <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_alignParentRight="true" n1:layout_centerInParent="true">
+                    <TextView n1:textSize="@dimen/udesk_sp16" n1:gravity="center" n1:id="@id/udesk_titlebar_right" n1:paddingLeft="@dimen/udesk_10" n1:paddingRight="@dimen/udesk_10" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_margin="@dimen/udesk_10" n1:layout_marginRight="@dimen/udesk_15" n1:minWidth="@dimen/udesk_50" n1:text="@string/udesk_send_message" />
+                </LinearLayout>
+            </RelativeLayout>
+        </FrameLayout>
+        <RelativeLayout n1:layout_gravity="bottom" n1:id="@id/m_bottom_bar" n1:background="@color/udesk_color_f2212123" n1:focusable="true" n1:fitsSystemWindows="true" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <FrameLayout n1:id="@id/fl_fragment" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_alignParentTop="true" />
+            <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@id/original_select_view" n1:layout_width="wrap_content" n1:layout_height="42.0dip" n1:layout_below="@id/fl_fragment" n1:layout_centerInParent="true" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true">
+                <CheckBox n1:id="@id/udesk_checkbox" n1:background="@drawable/udesk_checkbox_selector" n1:clickable="false" n1:layout_width="17.0dip" n1:layout_height="17.0dip" n1:layout_marginRight="@dimen/udesk_5" n1:button="@null" />
+                <TextView n1:textSize="@dimen/udesk_sp13" n1:textColor="@color/udesk_color_bg_white" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/udesk_original_photos" />
+            </LinearLayout>
+            <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@id/selector_select_view" n1:layout_width="wrap_content" n1:layout_height="42.0dip" n1:layout_marginRight="@dimen/udesk_15" n1:layout_below="@id/fl_fragment" n1:layout_alignParentRight="true" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true">
+                <CheckBox n1:id="@id/udesk_select_checkbox" n1:background="@drawable/udesk_checkbox_selector" n1:clickable="false" n1:layout_width="17.0dip" n1:layout_height="17.0dip" n1:layout_marginRight="@dimen/udesk_5" n1:button="@null" />
+                <TextView n1:textSize="@dimen/udesk_sp13" n1:textColor="@color/udesk_color_bg_white" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/udesk_selector_photos" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</FrameLayout>

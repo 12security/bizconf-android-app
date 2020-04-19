@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@drawable/zm_window_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout n1:id="@id/panelTitle" n1:paddingLeft="5.0dip" n1:paddingRight="5.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:zm_leftButton="@id/panelTitleLeft" n2:zm_rightButton="@id/btnLeave" n2:zm_title="@id/txtTopic" style="@style/ZMTitleBar.Light" xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <View n1:id="@id/panelTitleLeft" n1:layout_width="0.0dip" n1:layout_height="40.0dip" />
+        <Button n1:id="@id/btnLeave" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:minWidth="60.0dip" n1:text="@string/zm_btn_leave_conf" style="@style/ZMButton.NoBackground" />
+        <TextView n1:ellipsize="end" n1:id="@id/txtTopic" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Reed Yang's Meeting" n1:singleLine="true" style="@style/ZMTextView.Title.OnLight" />
+    </us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:background="#ff76ad23" n1:layout_width="fill_parent" n1:layout_height="40.0dip">
+        <ProgressBar n1:layout_gravity="center_vertical" n1:id="@id/progressBar1" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" n1:layout_marginRight="5.0dip" style="@style/ZMProgressBar.Small" />
+        <TextView n1:textSize="14.0sp" n1:gravity="center|left" n1:id="@id/txtWaiting" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="5.0dip" n1:text="@string/zm_msg_waiting_for_scheduler" style="@style/ZMTextView.Medium.OnDark" />
+    </LinearLayout>
+    <us.zoom.androidlib.widget.ZMSettingsCategory n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="20.0dip" n1:layout_marginBottom="20.0dip">
+        <TableLayout n1:paddingLeft="@dimen/zm_setting_item_padding_left" n1:paddingTop="@dimen/zm_setting_item_padding_bottom" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:paddingBottom="@dimen/zm_setting_item_padding_top" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TableRow n1:gravity="center_horizontal" n1:id="@id/tableRowMeetingId" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                <TextView n1:layout_gravity="right" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_meeting_id" style="@style/ZMTextView.Large.OnLight" />
+                <TextView n1:id="@id/txtMeetingId" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:text="111-111-111" style="@style/ZMTextView.Medium.OnLight" />
+            </TableRow>
+            <TableRow n1:gravity="center_horizontal" n1:id="@id/tableRowDate" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="15.0dip">
+                <TextView n1:layout_gravity="right" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_date" style="@style/ZMTextView.Large.OnLight" />
+                <TextView n1:id="@id/txtDate" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:text="Wes, Jun 14, 2012" style="@style/ZMTextView.Medium.OnLight" />
+            </TableRow>
+            <TableRow n1:gravity="center_horizontal" n1:id="@id/tableRowTime" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="15.0dip">
+                <TextView n1:layout_gravity="right" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_time" style="@style/ZMTextView.Large.OnLight" />
+                <TextView n1:id="@id/txtTime" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:maxWidth="180.0dip" n1:text="This is a recurring meeting" style="@style/ZMTextView.Medium.OnLight" />
+            </TableRow>
+        </TableLayout>
+    </us.zoom.androidlib.widget.ZMSettingsCategory>
+    <LinearLayout n1:gravity="bottom|center" n1:orientation="vertical" n1:id="@id/panelForScheduler" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="20.0dip" n1:layout_marginBottom="20.0dip">
+        <TextView n1:gravity="center_horizontal" n1:id="@id/txtForScheduler" n1:paddingLeft="10.0dip" n1:paddingRight="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_msg_notify_scheduler_login" style="@style/ZMTextView.Medium.OnLight" />
+        <Button n1:id="@id/btnLogin" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginTop="10.0dip" n1:layout_marginRight="10.0dip" n1:text="@string/zm_btn_login" />
+    </LinearLayout>
+</LinearLayout>

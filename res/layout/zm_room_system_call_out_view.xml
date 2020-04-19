@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<us.zoom.androidlib.widget.ZMSettingsLayout n1:orientation="vertical" n1:paddingLeft="0.0dip" n1:paddingTop="0.0dip" n1:paddingRight="0.0dip" n1:paddingBottom="20.0dip" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n2:zm_settingsCategorySpacing="0.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android" xmlns:n2="http://schemas.android.com/apk/res-auto">
+    <TextView n1:textColor="@color/zm_white" n1:gravity="center" n1:id="@id/txtNotification" n1:background="@color/zm_notification_background_green" n1:paddingTop="8.0dip" n1:paddingBottom="8.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/zm_room_system_notify_calling" style="@style/ZMTextView.Medium.OnLight" />
+    <TextView n1:gravity="left" n1:paddingLeft="@dimen/zm_setting_item_padding_left" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/zm_setting_item_padding_top" n1:layout_marginBottom="@dimen/zm_setting_item_padding_bottom" n1:text="@string/zm_room_system_type_instruction" style="@style/ZMTextView.Medium" />
+    <us.zoom.androidlib.widget.ZMSettingsCategory n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/h323Btn" n1:paddingLeft="@dimen/zm_setting_item_padding_left" n1:focusable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="1.0dip" n1:layout_marginBottom="1.0dip">
+            <ImageView n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_btn_select_default" />
+            <TextView n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_room_system_h323" style="@style/ZMTextView.SettingsItem" />
+        </LinearLayout>
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/sipBtn" n1:paddingLeft="@dimen/zm_setting_item_padding_left" n1:focusable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="1.0dip" n1:layout_marginBottom="1.0dip">
+            <ImageView n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_btn_select_default" />
+            <TextView n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_room_system_sip" style="@style/ZMTextView.SettingsItem" />
+        </LinearLayout>
+    </us.zoom.androidlib.widget.ZMSettingsCategory>
+    <TextView n1:gravity="left" n1:layout_gravity="bottom|center|left" n1:id="@id/txtAddressPromt" n1:paddingLeft="@dimen/zm_setting_item_padding_left" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="45.0dip" n1:layout_marginBottom="@dimen/zm_setting_item_padding_bottom" n1:text="@string/zm_room_system_h323_input_instruction" style="@style/ZMTextView.Medium" />
+    <us.zoom.androidlib.widget.ZMSettingsCategory n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <LinearLayout n1:gravity="center|left" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <EditText n1:id="@id/editAddress" n1:paddingLeft="@dimen/zm_setting_item_padding_left" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="" n1:maxLength="128" n1:layout_weight="1.0" n1:inputType="textCapSentences" n1:imeOptions="actionDone|flagNoExtractUi" style="@style/ZMEditText.SettingsItem" />
+            <ImageView n1:id="@id/deviceList" n1:padding="8.0dip" n1:focusable="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_next_arrow" />
+        </LinearLayout>
+    </us.zoom.androidlib.widget.ZMSettingsCategory>
+    <Button n1:id="@id/btnCall" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="30.0dip" n1:layout_marginTop="@dimen/zm_setting_item_group_spacing" n1:layout_marginRight="30.0dip" n1:text="@string/zm_callout_btn_call" style="@style/ZMButton.HappyPath" />
+    <Button n1:id="@id/btnCancel" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="30.0dip" n1:layout_marginTop="@dimen/zm_setting_item_group_spacing" n1:layout_marginRight="30.0dip" n1:text="@string/zm_btn_cancel" style="@style/ZMButton.Alert" />
+</us.zoom.androidlib.widget.ZMSettingsLayout>

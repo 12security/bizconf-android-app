@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center_vertical" n1:orientation="vertical" n1:id="@id/panelCommonEmojis" n1:layout_width="32.0dip" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.zipow.videobox.view.EmojiTextView n1:textSize="22.0sp" n1:gravity="center" n1:layout_width="32.0dip" n1:layout_height="32.0dip" n1:layout_marginLeft="5.0dip" n1:layout_marginRight="5.0dip" n1:layout_marginBottom="2.0dip" />
+    <com.zipow.videobox.view.EmojiTextView n1:textSize="22.0sp" n1:gravity="center" n1:layout_width="32.0dip" n1:layout_height="32.0dip" n1:layout_marginLeft="5.0dip" n1:layout_marginTop="2.0dip" n1:layout_marginRight="5.0dip" n1:layout_marginBottom="2.0dip" />
+    <com.zipow.videobox.view.EmojiTextView n1:textSize="22.0sp" n1:gravity="center" n1:layout_width="32.0dip" n1:layout_height="32.0dip" n1:layout_marginLeft="5.0dip" n1:layout_marginTop="2.0dip" n1:layout_marginRight="5.0dip" n1:layout_marginBottom="2.0dip" />
+    <com.zipow.videobox.view.EmojiTextView n1:textSize="22.0sp" n1:gravity="center" n1:layout_width="32.0dip" n1:layout_height="32.0dip" n1:layout_marginLeft="5.0dip" n1:layout_marginTop="2.0dip" n1:layout_marginRight="5.0dip" n1:layout_marginBottom="2.0dip" />
+    <com.zipow.videobox.view.EmojiTextView n1:textSize="22.0sp" n1:gravity="center" n1:layout_width="32.0dip" n1:layout_height="32.0dip" n1:layout_marginLeft="5.0dip" n1:layout_marginTop="2.0dip" n1:layout_marginRight="5.0dip" />
+</LinearLayout>

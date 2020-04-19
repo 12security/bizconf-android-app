@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="right" n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginLeft="65.0dip" n1:layout_marginRight="16.0dip">
+        <LinearLayout n1:orientation="horizontal" n1:id="@id/layoutMsgHead" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="20.0dip" n1:layout_marginBottom="4.0dip">
+            <TextView n1:ellipsize="end" n1:id="@id/txtMsgLabel" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="16.0dip" n1:text="From Andy Y to Everyone" n1:singleLine="true" n1:layout_weight="1.0" style="@style/ZMTextView.ExSmall.Dimmed" />
+            <TextView n1:id="@id/txtPrivateStatus" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" n1:text="@string/zm_webinar_txt_private_label" style="@style/ZMTextView.Small.Warn" />
+        </LinearLayout>
+        <TextView n1:autoLink="all" n1:layout_gravity="right" n1:id="@id/txtMsgValue" n1:background="@drawable/zm_webinar_message_out" n1:duplicateParentState="false" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="2.0dip" n1:text="Thisdsafdsafjoidsfdsfdsf\nfjefejdsfjeioejwoifjewoijgiojregjreoijgieoirjg " style="@style/ZMTextView.MMMessage.OnDark" />
+    </LinearLayout>
+</LinearLayout>

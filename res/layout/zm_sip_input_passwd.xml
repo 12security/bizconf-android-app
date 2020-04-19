@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:padding="20.0dip" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:gravity="center" n1:id="@id/title" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="10.0dip" n1:text="@string/zm_lbl_sip_wrong_passwd_msg_25326" style="@style/ZMTextView.Medium.Dimmed" />
+    <EditText n1:textSize="14.0sp" n1:id="@id/edtPassword" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:hint="@string/zm_lbl_sip_wrong_passwd_edit_hint_25326" n1:lines="1" n1:inputType="textPassword" style="@style/ZMEditText" />
+</LinearLayout>

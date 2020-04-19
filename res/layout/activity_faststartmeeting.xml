@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/public_toolbar" />
+    <LinearLayout n1:orientation="vertical" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="20.0dip">
+        <RelativeLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/fontcolor" n1:id="@id/turn_meeting_setting" n1:padding="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/meeting_theme" n1:layout_centerVertical="true" />
+            <EditText n1:textSize="@dimen/textSize28px" n1:textColor="@color/fontcolor" n1:textColorHint="@color/edittext_hint_fontcolor" n1:id="@id/et_meetingname" n1:background="@null" n1:padding="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:hint="@string/appointment_please_input_meeting_theme" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+        </RelativeLayout>
+        <include layout="@layout/public_grayline" />
+        <RelativeLayout n1:orientation="horizontal" n1:id="@id/rl_meetingtime" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/fontcolor" n1:padding="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/meeting_length" />
+            <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/fontcolor" n1:id="@id/tv_meetinglenth" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="30.0dip" n1:text="1时00分" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+            <ImageView n1:layout_width="@dimen/activity_horizontal_hint" n1:layout_height="@dimen/activity_horizontal_hint" n1:layout_marginRight="10.0dip" n1:src="@drawable/icon_arrow_right_big" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+        </RelativeLayout>
+        <include layout="@layout/public_grayline" />
+        <RelativeLayout n1:orientation="horizontal" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/fontcolor" n1:padding="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/meeting_password" />
+            <EditText n1:textSize="@dimen/textSize28px" n1:textColor="@color/fontcolor" n1:textColorHint="@color/edittext_hint_fontcolor" n1:id="@id/et_meetingpwd" n1:background="@null" n1:padding="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:hint="@string/set_pwd" n1:maxLines="1" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+        </RelativeLayout>
+        <include layout="@layout/public_grayline" />
+        <RelativeLayout n1:orientation="horizontal" n1:id="@id/rl_meetingnum" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/fontcolor" n1:padding="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/meeting_number" />
+            <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/fontcolor" n1:id="@id/tv_meeting_num" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="30.0dip" n1:text="2" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+            <ImageView n1:layout_width="@dimen/activity_horizontal_hint" n1:layout_height="@dimen/activity_horizontal_hint" n1:layout_marginRight="10.0dip" n1:src="@drawable/icon_arrow_right_big" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <Button n1:textSize="@dimen/textSize28px" n1:textColor="@color/violet" n1:id="@id/btn_fastStartMeeting" n1:background="@drawable/shape_button" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_login_button" n1:layout_marginLeft="@dimen/activity_vertical_title" n1:layout_marginTop="@dimen/activity_public_hint" n1:layout_marginRight="@dimen/activity_vertical_title" n1:text="@string/begin" />
+</LinearLayout>

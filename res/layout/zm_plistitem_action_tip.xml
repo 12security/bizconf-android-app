@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <us.zoom.androidlib.widget.ZMVerticalImageTextButton n1:id="@id/btnMakeHost" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" n1:layout_marginRight="5.0dip" n1:text="Make Host" n2:zm_image="@drawable/zm_audio_on" style="@style/ZMButton.Small" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <us.zoom.androidlib.widget.ZMVerticalImageTextButton n1:id="@id/btnChat" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" n1:layout_marginRight="5.0dip" n1:text="Chat" n3:zm_image="@drawable/zm_audio_on" style="@style/ZMButton.Small" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+    <us.zoom.androidlib.widget.ZMVerticalImageTextButton n1:id="@id/btnMute" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" n1:layout_marginRight="5.0dip" n1:text="Mute" n4:zm_image="@drawable/zm_audio_on" style="@style/ZMButton.Small" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+    <us.zoom.androidlib.widget.ZMVerticalImageTextButton n1:id="@id/btnUnmute" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" n1:layout_marginRight="5.0dip" n1:text="Unmute" n5:zm_image="@drawable/zm_audio_on" style="@style/ZMButton.Small" xmlns:n5="http://schemas.android.com/apk/res-auto" />
+    <us.zoom.androidlib.widget.ZMVerticalImageTextButton n1:id="@id/btnExpel" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" n1:layout_marginRight="5.0dip" n1:text="Expel" n6:zm_image="@drawable/zm_audio_on" style="@style/ZMButton.Small" xmlns:n6="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

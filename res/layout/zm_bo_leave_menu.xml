@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center" n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:layout_gravity="center_horizontal" n1:orientation="vertical" n1:background="#fff4f5f5" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <ImageView n1:background="@drawable/zm_list_divider" n1:layout_width="fill_parent" n1:layout_height="1.0dip" />
+        <LinearLayout n1:orientation="vertical" n1:id="@id/panelLeaveBOPrompt" n1:paddingLeft="20.0dip" n1:paddingTop="20.0dip" n1:paddingRight="20.0dip" n1:paddingBottom="20.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:gravity="center" n1:id="@id/txtLeavePromt" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/zm_bo_lbl_leave_bo" style="@style/ZMTextView.Medium.Dimmed" />
+        </LinearLayout>
+        <LinearLayout n1:orientation="vertical" n1:id="@id/panelLeaveBO" n1:background="@drawable/zm_btn_dialog_bg" n1:focusable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <ImageView n1:background="@drawable/zm_list_divider" n1:layout_width="fill_parent" n1:layout_height="1.0dip" />
+            <TextView n1:gravity="center" n1:duplicateParentState="true" n1:layout_width="fill_parent" n1:layout_height="46.0dip" n1:text="@string/zm_bo_btn_leave_bo" style="@style/ZMTextView.DialogItem" />
+            <ImageView n1:background="@drawable/zm_list_divider" n1:layout_width="fill_parent" n1:layout_height="1.0dip" />
+        </LinearLayout>
+        <LinearLayout n1:orientation="vertical" n1:id="@id/panelEndAllBO" n1:background="@drawable/zm_btn_dialog_bg" n1:focusable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <ImageView n1:background="@drawable/zm_list_divider" n1:layout_width="fill_parent" n1:layout_height="1.0dip" />
+            <TextView n1:gravity="center" n1:duplicateParentState="true" n1:layout_width="fill_parent" n1:layout_height="46.0dip" n1:text="@string/zm_bo_btn_end_all_bo" style="@style/ZMTextView.DialogItem" />
+            <ImageView n1:background="@drawable/zm_list_divider" n1:layout_width="fill_parent" n1:layout_height="1.0dip" />
+        </LinearLayout>
+        <LinearLayout n1:orientation="vertical" n1:id="@id/panelLeaveMeeting" n1:background="@drawable/zm_btn_dialog_highlight_bg" n1:focusable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <ImageView n1:background="@drawable/zm_list_divider" n1:layout_width="fill_parent" n1:layout_height="1.0dip" />
+            <TextView n1:gravity="center" n1:id="@id/txtLeaveMeeting" n1:duplicateParentState="true" n1:layout_width="fill_parent" n1:layout_height="46.0dip" n1:text="@string/zm_bo_btn_leave_meeting" style="@style/ZMTextView.DialogItem.highligt" />
+            <ImageView n1:background="@drawable/zm_list_divider" n1:layout_width="fill_parent" n1:layout_height="1.0dip" />
+        </LinearLayout>
+        <LinearLayout n1:orientation="vertical" n1:id="@id/panelEndMeeting" n1:background="@drawable/zm_btn_dialog_highlight_bg" n1:focusable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:gravity="center" n1:id="@id/txtEndMeeting" n1:duplicateParentState="true" n1:layout_width="fill_parent" n1:layout_height="46.0dip" n1:text="@string/zm_bo_btn_end_meeting" style="@style/ZMTextView.DialogItem.highligt" />
+            <ImageView n1:background="@drawable/zm_list_divider" n1:layout_width="fill_parent" n1:layout_height="1.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

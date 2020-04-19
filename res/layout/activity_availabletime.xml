@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@color/activity_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/public_toolbar" />
+    <RelativeLayout n1:gravity="center_vertical" n1:background="@color/white" n1:paddingLeft="@dimen/activity_horizontal_margin" n1:paddingRight="@dimen/activity_horizontal_margin" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_vertical_title">
+        <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/fontcolor" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/number_of_meeting_rooms" n1:layout_alignParentLeft="false" n1:layout_centerVertical="true" />
+        <RelativeLayout n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_alignParentRight="true" n1:layout_centerVertical="true">
+            <Spinner n1:id="@id/spinner" n1:background="@color/white" n1:layout_width="60.0dip" n1:layout_height="@dimen/activity_vertical_title" n1:layout_marginRight="15.0dip" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+            <ImageView n1:id="@id/turn_number_people_arrow" n1:layout_width="@dimen/activity_horizontal_hint" n1:layout_height="@dimen/activity_horizontal_hint" n1:src="@drawable/icon_arrow_right_big" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView n1:textSize="@dimen/zm_ui_kit_text_size_15sp" n1:textColor="@color/fontcolor" n1:gravity="center" n1:id="@id/tv_confStatus" n1:background="@color/white" n1:padding="20.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/activity_horizontal_margin2" />
+    <GridView n1:gravity="center" n1:id="@id/gridview" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:verticalSpacing="15.0dip" n1:stretchMode="columnWidth" n1:numColumns="4" n1:fadeScrollbars="true" />
+</LinearLayout>

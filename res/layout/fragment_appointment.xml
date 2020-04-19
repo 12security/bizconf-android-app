@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="?android:colorBackground" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/public_toolbar" />
+    <ScrollView n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <LinearLayout n1:orientation="vertical" n1:paddingBottom="15.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <include layout="@layout/public_weekcalendar" />
+            <include layout="@layout/public_timezone" />
+            <LinearLayout n1:orientation="vertical" n1:id="@id/title_appointment_time" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/activity_horizontal_margin2">
+                <RelativeLayout n1:gravity="center_vertical" n1:id="@id/turn_change_name" n1:paddingLeft="@dimen/activity_horizontal_margin" n1:paddingRight="@dimen/activity_horizontal_margin" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_vertical_title">
+                    <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/fontcolor" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/conference_theme" n1:layout_alignParentLeft="false" n1:layout_centerVertical="true" />
+                    <ImageView n1:id="@id/turn_change_name_arrow" n1:layout_width="@dimen/activity_horizontal_hint" n1:layout_height="@dimen/activity_horizontal_hint" n1:src="@drawable/icon_arrow_right_big" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+                    <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/fontcolor" n1:ellipsize="end" n1:id="@id/conf_name" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:maxEms="15" n1:singleLine="true" n1:layout_toLeftOf="@id/turn_change_name_arrow" n1:layout_centerVertical="true" />
+                </RelativeLayout>
+                <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:paddingLeft="@dimen/activity_horizontal_margin" n1:paddingRight="@dimen/activity_horizontal_margin" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_vertical_title">
+                    <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/fontcolor" n1:layout_gravity="center_vertical" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/start" n1:layout_weight="1.0" />
+                    <LinearLayout n1:layout_gravity="center" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="2.5">
+                        <EditText n1:textSize="@dimen/textSize24PX" n1:textColor="@color/fontcolor" n1:layout_gravity="center" n1:id="@id/editText_date" n1:background="@drawable/shape_editext" n1:padding="@dimen/activity_nomal_hint" n1:focusable="false" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:editable="false" n1:drawableRight="@drawable/icon_arrow_right" />
+                    </LinearLayout>
+                    <LinearLayout n1:layout_gravity="center" n1:paddingLeft="@dimen/activity_nomal_hint" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.5">
+                        <EditText n1:textSize="@dimen/textSize24PX" n1:textColor="@color/fontcolor" n1:layout_gravity="center" n1:id="@id/editText_time" n1:background="@drawable/shape_editext" n1:padding="@dimen/activity_nomal_hint" n1:focusable="false" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:editable="false" n1:drawableRight="@drawable/icon_arrow_right" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:paddingLeft="@dimen/activity_horizontal_margin" n1:paddingRight="@dimen/activity_horizontal_margin" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_vertical_title">
+                    <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/fontcolor" n1:layout_gravity="center_vertical" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/duration_time" n1:layout_weight="1.0" />
+                    <LinearLayout n1:layout_gravity="center" n1:orientation="horizontal" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="4.0">
+                        <EditText n1:textSize="@dimen/textSize24PX" n1:textColor="@color/fontcolor" n1:layout_gravity="center" n1:id="@id/editText_duration_hour" n1:background="@drawable/shape_editext" n1:padding="@dimen/activity_nomal_hint" n1:focusable="false" n1:layout_width="@dimen/activity_time_hint" n1:layout_height="wrap_content" n1:text="00" n1:editable="false" n1:drawableRight="@drawable/icon_arrow_right" />
+                        <TextView n1:textSize="@dimen/textSize24PX" n1:textColor="@color/fontcolor" n1:layout_gravity="center" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_nomal_hint" n1:text="@string/hour" />
+                        <EditText n1:textSize="@dimen/textSize24PX" n1:textColor="@color/fontcolor" n1:layout_gravity="center" n1:id="@id/editText_duration_minutes" n1:background="@drawable/shape_editext" n1:padding="@dimen/activity_nomal_hint" n1:focusable="false" n1:layout_width="@dimen/activity_time_hint" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_nomal_hint" n1:text="15" n1:editable="false" n1:drawableRight="@drawable/icon_arrow_right" />
+                        <TextView n1:textSize="@dimen/textSize24PX" n1:textColor="@color/fontcolor" n1:layout_gravity="center" n1:padding="@dimen/activity_nomal_hint" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/min" n1:layout_weight="1.0" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout n1:orientation="vertical" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/activity_horizontal_margin2">
+                <RelativeLayout n1:gravity="center_vertical" n1:id="@id/turn_change_time_zone" n1:paddingLeft="@dimen/activity_horizontal_margin" n1:paddingRight="@dimen/activity_horizontal_margin" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_vertical_title">
+                    <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/fontcolor" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/time_zone" n1:layout_alignParentLeft="false" n1:layout_centerVertical="true" />
+                    <ImageView n1:id="@id/turn_change_time_zone_arrow" n1:layout_width="@dimen/activity_horizontal_hint" n1:layout_height="@dimen/activity_horizontal_hint" n1:src="@drawable/icon_arrow_right_big" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+                    <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/fontcolor" n1:ellipsize="end" n1:id="@id/time_zone_name" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/china_standard_time" n1:maxEms="12" n1:singleLine="true" n1:layout_toLeftOf="@id/turn_change_time_zone_arrow" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout n1:gravity="center_vertical" n1:id="@id/turn_number_time" n1:paddingLeft="@dimen/activity_horizontal_margin" n1:paddingRight="@dimen/activity_horizontal_margin" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_vertical_title">
+                    <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/fontcolor" n1:id="@id/early_startmeeting" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/early_start_meeting" n1:layout_alignParentLeft="false" n1:layout_centerVertical="true" />
+                    <ImageView n1:id="@id/image" n1:layout_width="@dimen/activity_horizontal_hint" n1:layout_height="@dimen/activity_horizontal_hint" n1:src="@drawable/icon_arrow_right_big" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+                    <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/fontcolor" n1:ellipsize="end" n1:id="@id/tvearlytime" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="0分钟" n1:maxEms="12" n1:singleLine="true" n1:layout_toLeftOf="@id/image" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout n1:gravity="center_vertical" n1:id="@id/turn_number_people" n1:paddingLeft="@dimen/activity_horizontal_margin" n1:paddingRight="@dimen/activity_horizontal_margin" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_vertical_title" n1:onClick="onClick">
+                    <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/fontcolor" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/number_of_meeting_rooms" n1:layout_alignParentLeft="false" n1:layout_centerVertical="true" />
+                    <ImageView n1:id="@id/turn_number_people_arrow" n1:layout_width="@dimen/activity_horizontal_hint" n1:layout_height="@dimen/activity_horizontal_hint" n1:src="@drawable/icon_arrow_right_big" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+                    <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/fontcolor" n1:id="@id/conf_parties" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/number_10" n1:layout_toLeftOf="@id/turn_number_people_arrow" n1:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout n1:gravity="center_vertical" n1:id="@id/time_zone_time_show" n1:paddingLeft="@dimen/activity_horizontal_margin" n1:paddingRight="@dimen/activity_horizontal_margin" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_vertical_title">
+                    <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/light_gray" n1:ellipsize="end" n1:gravity="center" n1:id="@id/time_zone_time_result" n1:background="@drawable/public_zone_time_show" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:maxEms="15" n1:singleLine="true" />
+                </RelativeLayout>
+                <RelativeLayout n1:id="@id/turn_cycle_meeting" n1:paddingLeft="@dimen/activity_horizontal_margin" n1:paddingRight="@dimen/activity_horizontal_margin" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_vertical_title" n1:onClick="onClick">
+                    <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/fontcolor" n1:layout_gravity="center_vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/regular_meeting" n1:layout_alignParentLeft="false" n1:layout_centerVertical="true" />
+                    <ImageView n1:id="@id/turn_cycle_meeting_carrow" n1:layout_width="@dimen/activity_horizontal_hint" n1:layout_height="@dimen/activity_horizontal_hint" n1:src="@drawable/icon_arrow_right_big" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+                    <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/fontcolor" n1:id="@id/cycle_meeting_show" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/never" n1:layout_toLeftOf="@id/turn_cycle_meeting_carrow" n1:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout n1:gravity="center_vertical" n1:id="@id/choice_cycleMeeting_time" n1:paddingLeft="@dimen/activity_horizontal_margin" n1:paddingRight="@dimen/activity_horizontal_margin" n1:visibility="gone" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_vertical_title" n1:onClick="onClick">
+                    <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/fontcolor" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/appointment_cyclemeeting_end_time" n1:layout_alignParentLeft="false" n1:layout_centerVertical="true" />
+                    <ImageView n1:id="@id/choice_cycleMeeting_time_arrow" n1:layout_width="@dimen/activity_horizontal_hint" n1:layout_height="@dimen/activity_horizontal_hint" n1:src="@drawable/icon_arrow_right_big" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+                    <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/light_gray" n1:layout_gravity="center_vertical" n1:id="@id/cycle_meeting_end_time_show" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/cycle_meeting_end_time_defualt" n1:layout_toLeftOf="@id/choice_cycleMeeting_time_arrow" n1:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <include n1:layout_width="fill_parent" n1:layout_height="fill_parent" layout="@layout/public_appointment_setting" />
+            <LinearLayout n1:gravity="center_horizontal" n1:layout_gravity="center_horizontal" n1:orientation="horizontal" n1:id="@id/layout_bottom_share" n1:paddingLeft="@dimen/activity_public_hint" n1:paddingRight="@dimen/activity_public_hint" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_button_oppointment" n1:layout_marginTop="@dimen/activity_public_hint" n1:layout_below="@id/public_setting">
+                <LinearLayout n1:id="@id/layout_add_room" n1:visibility="gone" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+                    <Button n1:textSize="@dimen/textSize24PX" n1:textColor="@color/violet" n1:id="@id/turn_add_room" n1:background="@drawable/shape_button" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/new_conference_room" />
+                </LinearLayout>
+                <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_horizontal_margin" n1:layout_weight="1.0">
+                    <Button n1:textSize="@dimen/textSize28px" n1:textColor="@color/violet" n1:id="@id/turn_room_list" n1:background="@drawable/shape_button" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_login_button" n1:text="@string/enter_the_conference_room_list" />
+                    <Button n1:textSize="@dimen/textSize28px" n1:textColor="@color/violet" n1:id="@id/btn_meeting_status" n1:background="@drawable/shape_button" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_login_button" n1:text="@string/realize_meeting_status" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

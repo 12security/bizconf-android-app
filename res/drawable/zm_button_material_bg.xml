@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item n1:state_enabled="false"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <shape>
+            <corners n1:radius="1.0dip" />
+            <solid n1:color="@color/zm_highlight_disabled" />
+        </shape>
+    </item>
+    <item n2:state_pressed="true"
+      xmlns:n2="http://schemas.android.com/apk/res/android">
+        <shape>
+            <corners n2:radius="1.0dip" />
+            <solid n2:color="@color/zm_highlight_pressed" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners n3:radius="1.0dip"
+              xmlns:n3="http://schemas.android.com/apk/res/android" />
+            <solid n4:color="@color/zm_highlight"
+              xmlns:n4="http://schemas.android.com/apk/res/android" />
+        </shape>
+    </item>
+</selector>

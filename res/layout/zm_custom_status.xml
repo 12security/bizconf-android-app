@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout n1:id="@id/panelTitleBar" n1:layout_width="fill_parent" n1:layout_height="@dimen/zm_pt_titlebar_height" n1:weightSum="1.0" n2:zm_leftButton="@id/btnCancel" n2:zm_rightButton="@id/btnSave" n2:zm_title="@id/txtTitle" style="@style/ZMTitleBar" xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <Button n1:id="@id/btnCancel" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_btn_cancel" style="@style/ZMButton.TitleBar" />
+        <Button n1:id="@id/btnSave" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:minWidth="55.0dip" n1:text="@string/zm_btn_save" style="@style/ZMButton.TitleBar" />
+        <us.zoom.androidlib.widget.ZMDynTextSizeTextView n1:ellipsize="end" n1:gravity="center" n1:id="@id/txtTitle" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_mm_title_set_custom_status_13602" n1:singleLine="true" style="@style/ZMTextView.Title" />
+    </us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <us.zoom.androidlib.widget.ZMSettingsLayout n1:orientation="vertical" n1:paddingLeft="0.0dip" n1:paddingTop="0.0dip" n1:paddingRight="0.0dip" n1:paddingBottom="@dimen/zm_setting_item_group_spacing" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <us.zoom.androidlib.widget.ZMSettingsCategory n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="50.0dip" n3:zm_showTopDivider="false" xmlns:n3="http://schemas.android.com/apk/res-auto">
+            <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:paddingLeft="@dimen/zm_setting_item_padding_left" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <EditText n1:id="@id/edtCustomStatus" n1:paddingTop="5.0dip" n1:paddingBottom="5.0dip" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="" n1:hint="@string/zm_hint_not_personal_note_13602" n1:maxLength="60" n1:layout_weight="1.0" n1:imeOptions="actionGo" style="@style/ZMEditText.SettingsItem">
+                    <requestFocus />
+                </EditText>
+                <ImageView n1:id="@id/imgClear" n1:visibility="invisible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_btn_clear_search_view" />
+            </LinearLayout>
+        </us.zoom.androidlib.widget.ZMSettingsCategory>
+    </us.zoom.androidlib.widget.ZMSettingsLayout>
+</LinearLayout>

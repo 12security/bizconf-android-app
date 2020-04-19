@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:paddingLeft="16.0dip" n1:paddingTop="4.0dip" n1:paddingRight="10.0dip" n1:paddingBottom="4.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/imgClose" n1:padding="4.0dip" n1:layout_width="32.0dip" n1:layout_height="32.0dip" n1:src="@drawable/zm_dialog_close" n1:layout_alignParentTop="true" n1:layout_alignParentRight="true" n1:contentDescription="@string/zm_btn_close" />
+    <TextView n1:id="@id/txtQuestion" n1:scrollbars="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" n1:layout_marginRight="9.0dip" n1:text="Beryl Cook is one of Britain’s most talented and amusing artists .Beryl’s pictures feature women of all shapes  enjoying themselves? " n1:maxLines="@integer/zm_qa_question_show_max_lines" n1:layout_below="@id/imgClose" style="@style/ZMTextView.OnLight.Medium.DeepGrey" />
+    <View n1:id="@id/viewDivider" n1:background="@color/zm_line_divider" n1:layout_width="fill_parent" n1:layout_height="1.0dip" n1:layout_marginLeft="5.0dip" n1:layout_marginTop="10.0dip" n1:layout_marginRight="9.0dip" n1:layout_marginBottom="14.0dip" n1:layout_below="@id/txtQuestion" />
+    <EditText n1:textSize="16.0sp" n1:textColorHint="@color/zm_text_gray" n1:gravity="top" n1:id="@id/edtContent" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="4.0dip" n1:layout_marginRight="8.0dip" n1:hint="@string/zm_qa_hint_answer_question_41047" n1:lines="@integer/zm_qa_question_input_max_lines" n1:maxLength="1000" n1:layout_below="@id/viewDivider" n1:inputType="textMultiLine" n1:imeOptions="actionSend" />
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="4.0dip" n1:layout_marginRight="8.0dip" n1:layout_below="@id/edtContent">
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/optionPrivately" n1:paddingTop="5.0dip" n1:paddingBottom="5.0dip" n1:layout_width="0.0dip" n1:layout_height="@dimen/zm_pt_titlebar_height" n1:layout_weight="1.0">
+            <CheckBox n1:id="@id/chkPrivately" n1:clickable="false" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+            <TextView n1:textSize="15.0sp" n1:id="@id/txtPrivately" n1:paddingLeft="4.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_qa_msg_send_privately_41047" style="@style/ZMTextView.OnLight.Normal" />
+        </LinearLayout>
+        <us.zoom.androidlib.widget.ZMTextButton n1:enabled="false" n1:textSize="14.0sp" n1:textColor="@drawable/zm_button_text_color" n1:id="@id/btnSend" n1:background="@drawable/zm_btn_with_light_grey_frame" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_btn_send" />
+    </LinearLayout>
+</RelativeLayout>

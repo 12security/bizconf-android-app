@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.zipow.videobox.view.IMView n1:id="@id/imView" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <us.zoom.androidlib.widget.ZMKeyboardDetector n1:id="@id/keyboardDetector" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+</FrameLayout>

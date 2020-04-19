@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="@dimen/activity_dialog_width" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/textSize28px" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@+id/dialog_msg" android:background="@drawable/public_shape_dialog" android:layout_width="wrap_content" android:layout_height="@dimen/activity_public_editext" android:text="@string/personal_remove_hint"/>
+        <include layout="@layout/public_grayline"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/activity_public_editext">
+            <Button android:textSize="@dimen/textSize26PX" android:textColor="@color/violet" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/remove_sure" android:background="@drawable/public_shape_dialog" android:layout_width="0dp" android:layout_height="@dimen/activity_public_editext" android:text="@string/personal_remove_yes" android:layout_weight="1" android:textAllCaps="false"/>
+            <View android:background="@color/light_gray" android:layout_width="0.1dp" android:layout_height="match_parent"/>
+            <Button android:textSize="@dimen/textSize26PX" android:textColor="@color/light_gray" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/remove_cancel" android:background="@drawable/public_shape_dialog" android:layout_width="0dp" android:layout_height="@dimen/activity_public_editext" android:text="@string/personal_remove_no" android:layout_weight="1" android:textAllCaps="false"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/udesk_demo_activity" n1:fitsSystemWindows="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layoutDirection="ltr"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <cn.udesk.widget.UdeskTitleBar n1:id="@id/udesktitlebar" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    <LinearLayout n1:orientation="vertical" n1:background="@android:color/white" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="vertical" n1:id="@id/udesk_helper_search" n1:background="#ffc9c8ce" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="44.0dip">
+            <RelativeLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:background="@drawable/udesk_helpersearch_editext" n1:paddingLeft="5.0dip" n1:paddingRight="5.0dip" n1:layout_width="fill_parent" n1:layout_height="32.0dip" n1:layout_marginLeft="10.0dip" n1:layout_marginRight="10.0dip">
+                <LinearLayout n1:gravity="center" n1:id="@id/udesk_helper_search_button" n1:layout_width="40.0dip" n1:layout_height="fill_parent" n1:layout_alignParentRight="true">
+                    <ImageView n1:layout_gravity="center" n1:layout_width="25.0dip" n1:layout_height="25.0dip" n1:src="@drawable/udesk_ic_search" />
+                </LinearLayout>
+                <EditText n1:textAppearance="?android:textAppearanceSmall" n1:textColor="#ff606060" n1:id="@id/udesk_helper_search_input" n1:background="@android:color/transparent" n1:layout_width="fill_parent" n1:layout_height="32.0dip" n1:hint="@string/udesk_navi_helper_input_hint" n1:singleLine="true" n1:layout_toLeftOf="@id/udesk_helper_search_button" n1:layout_alignParentLeft="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout n1:orientation="vertical" n1:id="@id/udesk_listviewcontain_view" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <include layout="@layout/udesk_line_horizontal" />
+            <ListView n1:scrollbarStyle="outsideOverlay" n1:id="@id/udesk_helper_list" n1:background="@android:color/white" n1:paddingLeft="10.0dip" n1:paddingRight="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:cacheColorHint="@android:color/transparent" n1:divider="#ffcecece" n1:dividerHeight="1.0px" />
+            <include layout="@layout/udesk_line_horizontal" />
+        </LinearLayout>
+        <LinearLayout n1:layout_gravity="center_horizontal" n1:orientation="vertical" n1:id="@id/udesk_navi_may_search_fail" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip">
+            <TextView n1:textSize="@dimen/udesk_sp14" n1:textColor="@color/udesk_color_text_gray" n1:gravity="center_horizontal" n1:layout_gravity="center_horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/udesk_label_search_fail" />
+            <TextView n1:textSize="@dimen/udesk_sp16" n1:textColor="@color/udesk_color_text_gray" n1:gravity="center_horizontal" n1:layout_gravity="center_horizontal" n1:id="@id/udesk_navi_to_im" n1:background="@drawable/udesk_helper_shape_bg" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:text="@string/udesk_navi_open_im" />
+        </LinearLayout>
+        <cn.udesk.widget.UdeskLoadingView n1:id="@id/udesk_loading" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

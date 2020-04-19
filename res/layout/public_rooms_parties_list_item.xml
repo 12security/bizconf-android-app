@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:gravity="center_vertical" n1:id="@id/time_zone_list_item" n1:background="@color/white" n1:paddingLeft="@dimen/activity_horizontal_margin" n1:paddingRight="@dimen/activity_horizontal_margin" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_public_editext">
+        <TextView n1:textSize="@dimen/textSize26PX" n1:id="@id/rooms_parties_show" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerVertical="true" />
+        <ImageView n1:id="@id/rooms_parties_image_checked" n1:layout_width="@dimen/activity_horizontal_margin" n1:layout_height="@dimen/activity_horizontal_margin" n1:src="@drawable/checked" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+        <ImageView n1:id="@id/rooms_parties_image_check" n1:layout_width="@dimen/activity_horizontal_margin" n1:layout_height="@dimen/activity_horizontal_margin" n1:src="@drawable/check" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+    <include layout="@layout/public_grayline" />
+</LinearLayout>

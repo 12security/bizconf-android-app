@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/activity_recommend_rooms" android:background="?android:attr/colorBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/public_toolbar"/>
+    <include layout="@layout/public_weekcalendar"/>
+    <cn.bizconf.vcpro.common.xList.XListView android:id="@+id/listView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="@drawable/zm_window_bg" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:id="@id/txtLabel" n1:paddingLeft="15.0dip" n1:paddingTop="10.0dip" n1:paddingBottom="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Waiting(2)" n1:layout_alignParentLeft="true" style="@style/ZMTextView.Normal.OnLight" />
+    <us.zoom.androidlib.widget.ZMTextButton n1:id="@id/btn_admit_all" n1:paddingTop="10.0dip" n1:paddingRight="15.0dip" n1:paddingBottom="10.0dip" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_btn_admit_all_39690" n1:layout_alignParentRight="true" style="@style/ZMMaterialButton" />
+</RelativeLayout>

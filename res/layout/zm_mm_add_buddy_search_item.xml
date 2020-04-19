@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:weightSum="1.0"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.zipow.videobox.view.AvatarView n1:id="@id/avatar" n1:layout_width="36.0dip" n1:layout_height="36.0dip" n1:layout_marginLeft="15.0dip" n1:layout_marginRight="15.0dip" n2:zm_description_enable="false" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n1:orientation="vertical" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+        <TextView n1:ellipsize="end" n1:id="@id/txtScreenName" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:maxLines="1" style="@style/ZMTextView" />
+        <TextView n1:ellipsize="end" n1:id="@id/txtEmail" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:maxLines="1" style="@style/ZMTextView.Small.Dimmed" />
+    </LinearLayout>
+    <TextView n1:textColor="@color/zm_mm_presence_offline" n1:gravity="center|left" n1:id="@id/waitApproval" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" n1:layout_marginRight="5.0dip" n1:text="@string/zm_lbl_wait_approval" style="@style/ZMTextView.Small" />
+    <TextView n1:textColor="@color/zm_btn_background_blue" n1:ellipsize="end" n1:id="@id/btnAdd" n1:background="@drawable/zm_btn_stroke_rounded_rect_blue" n1:paddingLeft="10.0dip" n1:paddingTop="5.0dip" n1:paddingRight="10.0dip" n1:paddingBottom="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="15.0dip" n1:layout_marginRight="15.0dip" n1:text="@string/zm_btn_invite_buddy_favorite" n1:maxLines="1" style="@style/ZMTextView" />
+</LinearLayout>

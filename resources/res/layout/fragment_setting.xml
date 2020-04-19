@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="?android:attr/colorBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/public_toolbar"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/turn_user_message" android:background="@color/white" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/activity_login_logo" android:layout_marginTop="@dimen/activity_horizontal_margin" android:onClick="onClick">
+        <ImageView android:id="@+id/chose_user_pic" android:visibility="gone" android:layout_width="@dimen/activity_tatal_radiogroup" android:layout_height="@dimen/activity_tatal_radiogroup"/>
+        <RelativeLayout android:id="@+id/default_user_pic" android:layout_width="@dimen/activity_tatal_radiogroup" android:layout_height="@dimen/activity_tatal_radiogroup">
+            <ImageView android:background="@drawable/public_user_pic_shape" android:layout_width="@dimen/activity_tatal_radiogroup" android:layout_height="@dimen/activity_tatal_radiogroup"/>
+            <TextView android:textSize="@dimen/textSize54PX" android:textColor="@color/white" android:gravity="center" android:id="@+id/user_nick_name_frist" android:layout_width="match_parent" android:layout_height="match_parent" android:text="李"/>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/activity_horizontal_margin">
+            <TextView android:textSize="@dimen/textSize28px" android:textColor="@color/black" android:ellipsize="end" android:id="@+id/user_nick_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_name" android:maxEms="15" android:singleLine="true"/>
+            <TextView android:textSize="@dimen/textSize24PX" android:textColor="@color/edittext_hint_fontcolor" android:id="@+id/login_name_show" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_email"/>
+            <TextView android:textSize="@dimen/textSize24PX" android:textColor="@color/edittext_hint_fontcolor" android:id="@+id/login_name_show_siteurl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_site"/>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:gravity="center_vertical" android:background="@color/white" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_horizontal_margin">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:layout_width="@dimen/activity_horizontal_margin" android:layout_height="@dimen/activity_horizontal_margin" android:src="@drawable/icon_metting_setting"/>
+                <TextView android:textSize="@dimen/textSize28px" android:textColor="@color/fontcolor" android:gravity="center_vertical" android:id="@+id/turn_meeting_setting" android:background="@color/white" android:paddingLeft="@dimen/activity_nomal_hint" android:clickable="true" android:layout_width="0dp" android:layout_height="@dimen/activity_vertical_title" android:text="@string/setting_meeting_setting" android:layout_weight="1" android:onClick="onClick"/>
+                <ImageView android:layout_gravity="center" android:layout_width="@dimen/activity_horizontal_hint" android:layout_height="@dimen/activity_horizontal_hint" android:src="@drawable/icon_arrow_right_big"/>
+            </LinearLayout>
+            <include layout="@layout/public_grayline"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:layout_width="@dimen/activity_horizontal_margin" android:layout_height="@dimen/activity_horizontal_margin" android:src="@drawable/icon_change_password"/>
+                <TextView android:textSize="@dimen/textSize28px" android:textColor="@color/fontcolor" android:gravity="center_vertical" android:id="@+id/turn_change_password" android:background="@color/white" android:paddingLeft="@dimen/activity_nomal_hint" android:clickable="true" android:layout_width="0dp" android:layout_height="@dimen/activity_vertical_title" android:text="@string/setting_change_password" android:layout_weight="1" android:onClick="onClick"/>
+                <ImageView android:layout_gravity="center" android:layout_width="@dimen/activity_horizontal_hint" android:layout_height="@dimen/activity_horizontal_hint" android:src="@drawable/icon_arrow_right_big"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@color/white" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_horizontal_margin">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:layout_width="@dimen/activity_horizontal_margin" android:layout_height="@dimen/activity_horizontal_margin" android:src="@drawable/icon_note"/>
+                <TextView android:textSize="@dimen/textSize28px" android:textColor="@color/fontcolor" android:gravity="center_vertical" android:id="@+id/turn_about" android:background="@color/white" android:paddingLeft="@dimen/activity_nomal_hint" android:clickable="true" android:layout_width="0dp" android:layout_height="@dimen/activity_vertical_title" android:text="@string/setting_about" android:layout_weight="1" android:onClick="onClick"/>
+                <ImageView android:layout_gravity="center" android:layout_width="@dimen/activity_horizontal_hint" android:layout_height="@dimen/activity_horizontal_hint" android:src="@drawable/icon_arrow_right_big"/>
+            </LinearLayout>
+            <include layout="@layout/public_grayline"/>
+            <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:layout_width="@dimen/activity_horizontal_margin" android:layout_height="@dimen/activity_horizontal_margin" android:src="@drawable/icon_setting_help"/>
+                <TextView android:textSize="@dimen/textSize28px" android:textColor="@color/fontcolor" android:gravity="center_vertical" android:id="@+id/turn_help" android:background="@color/white" android:paddingLeft="@dimen/activity_nomal_hint" android:clickable="true" android:layout_width="0dp" android:layout_height="@dimen/activity_vertical_title" android:text="@string/setting_help" android:layout_weight="1" android:onClick="onClick"/>
+                <ImageView android:layout_gravity="center" android:layout_width="@dimen/activity_horizontal_hint" android:layout_height="@dimen/activity_horizontal_hint" android:src="@drawable/icon_arrow_right_big"/>
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/public_grayline"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/activity_horizontal_margin" android:layout_height="@dimen/activity_horizontal_margin" android:src="@drawable/online_service"/>
+            <TextView android:textSize="@dimen/textSize28px" android:textColor="@color/fontcolor" android:gravity="center_vertical" android:id="@+id/onlineService" android:background="@color/white" android:paddingLeft="@dimen/activity_nomal_hint" android:clickable="true" android:layout_width="0dp" android:layout_height="@dimen/activity_vertical_title" android:text="@string/setting_online_service" android:layout_weight="1" android:onClick="onClick"/>
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/activity_horizontal_hint" android:layout_height="@dimen/activity_horizontal_hint" android:src="@drawable/icon_arrow_right_big"/>
+        </LinearLayout>
+        <include layout="@layout/public_grayline"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/activity_horizontal_margin" android:layout_height="@dimen/activity_horizontal_margin" android:src="@drawable/online_phone"/>
+            <TextView android:textSize="@dimen/textSize28px" android:textColor="@color/fontcolor" android:gravity="center_vertical" android:id="@+id/onlinePhone" android:background="@color/white" android:paddingLeft="@dimen/activity_nomal_hint" android:clickable="true" android:layout_width="0dp" android:layout_height="@dimen/activity_vertical_title" android:text="@string/setting_online_phone" android:layout_weight="1" android:onClick="onClick"/>
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/activity_horizontal_hint" android:layout_height="@dimen/activity_horizontal_hint" android:src="@drawable/icon_arrow_right_big"/>
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:textSize="@dimen/textSize28px" android:textColor="@color/violet" android:id="@+id/sign_out" android:background="@drawable/shape_button" android:layout_width="match_parent" android:layout_height="@dimen/activity_login_button" android:layout_marginLeft="@dimen/activity_vertical_title" android:layout_marginTop="@dimen/activity_public_hint" android:layout_marginRight="@dimen/activity_vertical_title" android:text="@string/setting_sign_out"/>
+</LinearLayout>

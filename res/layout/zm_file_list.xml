@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout n1:id="@id/panelTitleBar" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:zm_leftButton="@id/btnLeft" n2:zm_rightButton="@id/btnRight" n2:zm_title="@id/txtTitle" style="@style/ZMTitleBar" xmlns:n2="http://schemas.android.com/apk/res-auto">
+            <LinearLayout n1:layout_gravity="center|left" n1:orientation="horizontal" n1:id="@id/btnLeft" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                <Button n1:id="@id/btnExit" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_btn_exit" style="@style/ZMButton.NoBackground" />
+                <Button n1:id="@id/btnBack" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_btn_back" style="@style/ZMBackButton" />
+            </LinearLayout>
+            <LinearLayout n1:layout_gravity="center|right" n1:id="@id/btnRight" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                <Button n1:id="@id/btnClose" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:minWidth="50.0dip" n1:text="@string/zm_btn_close" style="@style/ZMButton.TitleBar" />
+                <Button n1:id="@id/btnSelect" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:minWidth="50.0dip" n1:text="@string/zm_btn_select" style="@style/ZMButton.TitleBar" />
+            </LinearLayout>
+            <us.zoom.androidlib.widget.ZMDynTextSizeTextView n1:gravity="center_horizontal" n1:id="@id/txtTitle" n1:paddingLeft="5.0dip" n1:paddingRight="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true" style="@style/ZMTextView.Title" />
+        </us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+        <LinearLayout n1:gravity="center|left" n1:orientation="horizontal" n1:id="@id/file_list_prompt" n1:background="@color/zm_notification_background" n1:paddingTop="8.0dip" n1:paddingBottom="8.0dip" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:gravity="center" n1:id="@id/prompt_message" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginRight="10.0dip" n1:text="file list promt" n1:layout_weight="1.0" style="@style/ZMTextView.Medium.OnLight" />
+        </LinearLayout>
+        <ListView n1:id="@id/file_list" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:drawSelectorOnTop="false" n1:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout n1:gravity="center_horizontal" n1:layout_gravity="center" n1:orientation="horizontal" n1:id="@id/waitingProgress" n1:padding="10.0dip" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <ProgressBar n1:layout_gravity="center_vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="10.0dip" style="@style/ZMProgressBar.Small" />
+        <TextView n1:layout_gravity="center_vertical" n1:id="@id/txtWaitingPromt" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_msg_loading" style="@style/ZMTextView.Medium" />
+    </LinearLayout>
+</FrameLayout>

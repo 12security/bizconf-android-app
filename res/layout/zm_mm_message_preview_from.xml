@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center|left" n1:orientation="horizontal" n1:id="@id/panelMsgLayout" n1:paddingLeft="8.0dip" n1:paddingTop="6.0dip" n1:paddingRight="8.0dip" n1:paddingBottom="6.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.zipow.videobox.view.AvatarView n1:layout_gravity="top" n1:id="@id/avatarView" n1:layout_width="35.0dip" n1:layout_height="35.0dip" n1:layout_marginRight="5.0dip" />
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <TextView n1:textSize="10.0sp" n1:textColor="@color/zm_white" n1:gravity="center" n1:id="@id/newMessage" n1:background="@drawable/zm_mm_new_message_bg" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginBottom="3.0dip" n1:text="@string/zm_mm_lbl_new_message_14491" />
+        <TextView n1:id="@id/txtScreenName" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:text="" style="@style/ZMTextView.ExSmall.Dimmed" />
+        <include layout="@layout/zm_mm_starred_message_title_view" />
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+            <LinearLayout n1:gravity="center_vertical" n1:orientation="vertical" n1:layout_width="@dimen/zm_mm_bubble_width" n1:layout_height="wrap_content">
+                <LinearLayout n1:orientation="vertical" n1:id="@id/panel_textMessage" n1:background="@drawable/zm_chatfrom_bg" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <com.zipow.videobox.view.TextViewFixTouchConsume n1:gravity="center|left" n1:autoLink="all" n1:id="@id/txtMessage" n1:focusable="true" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="" style="@style/ZMTextView.MMMessage" />
+                    <TextView n1:textSize="11.0sp" n1:textColor="@color/zm_mm_edit_message_time_19884" n1:layout_gravity="end" n1:id="@id/txtMessage_edit_time" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="11.0dip" n1:lines="1" />
+                </LinearLayout>
+                <LinearLayout n1:orientation="vertical" n1:id="@id/panelLinkPreview" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+            </LinearLayout>
+            <ImageView n1:id="@id/zm_mm_starred" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="6.0dip" n1:src="@drawable/zm_mm_starred_message_icon" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

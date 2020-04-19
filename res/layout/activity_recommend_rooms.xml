@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/activity_recommend_rooms" n1:background="?android:colorBackground" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/public_toolbar" />
+    <LinearLayout n1:orientation="vertical" n1:id="@id/recommend_room_one" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:background="@color/white" n1:paddingLeft="@dimen/activity_horizontal_margin" n1:paddingRight="@dimen/activity_horizontal_margin" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_horizontal_margin" n1:layout_marginTop="@dimen/activity_public_hint">
+            <TextView n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/appointment_recommend_room1" n1:layout_weight="1.0" n1:layout_centerVertical="true" />
+            <RadioButton n1:layout_gravity="center" n1:id="@id/commend_room_one_check" n1:layout_width="wrap_content" n1:layout_height="@dimen/activity_public_editext" n1:button="@drawable/public_radiobutton" />
+        </LinearLayout>
+        <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:textSize="@dimen/textSize28px" n1:id="@id/ruler_result_one" n1:background="@color/white" n1:paddingLeft="10.0dip" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="" />
+            <FrameLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@id/name">
+                <cn.bizconf.vcpro.common.view.ruler.RulerShow n1:orientation="horizontal" n1:id="@id/ruler_room_one" n1:background="#ffffffff" n1:paddingTop="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:max_unit_count="96" n2:per_unit_count="1" n2:screen_unit_size="6" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+                <TextView n1:textSize="9.0sp" n1:id="@id/ruler_result_text_one" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="25.0dip" n1:layout_marginTop="5.0dip" n1:text="x" />
+            </FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout n1:orientation="vertical" n1:id="@id/recommend_room_two" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:background="@color/white" n1:paddingLeft="@dimen/activity_horizontal_margin" n1:paddingRight="@dimen/activity_horizontal_margin" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_vertical_title" n1:layout_marginTop="@dimen/activity_horizontal_margin">
+            <TextView n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/appointment_recommend_room2" n1:layout_weight="1.0" n1:layout_centerVertical="true" />
+            <RadioButton n1:layout_gravity="center" n1:id="@id/commend_room_two_check" n1:layout_width="wrap_content" n1:layout_height="@dimen/activity_public_editext" n1:button="@drawable/public_recommend_checkbox" />
+        </LinearLayout>
+        <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:textSize="@dimen/textSize28px" n1:id="@id/ruler_result_two" n1:background="@color/white" n1:paddingLeft="10.0dip" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="" />
+            <FrameLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@id/name">
+                <cn.bizconf.vcpro.common.view.ruler.RulerShow n1:orientation="horizontal" n1:id="@id/ruler_room_two" n1:background="#ffffffff" n1:paddingTop="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n3:max_unit_count="96" n3:per_unit_count="1" n3:screen_unit_size="6" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+                <TextView n1:textSize="9.0sp" n1:id="@id/ruler_result_text_two" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="25.0dip" n1:layout_marginTop="5.0dip" n1:text="x" />
+            </FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout n1:orientation="vertical" n1:id="@id/recommend_room_three" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:background="@color/white" n1:paddingLeft="@dimen/activity_horizontal_margin" n1:paddingRight="@dimen/activity_horizontal_margin" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_vertical_title" n1:layout_marginTop="@dimen/activity_horizontal_margin">
+            <TextView n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/appointment_recommend_room3" n1:layout_weight="1.0" n1:layout_centerVertical="true" />
+            <RadioButton n1:layout_gravity="center" n1:id="@id/commend_room_three_check" n1:layout_width="wrap_content" n1:layout_height="@dimen/activity_public_editext" n1:button="@drawable/public_recommend_checkbox" />
+        </LinearLayout>
+        <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:textSize="@dimen/textSize28px" n1:id="@id/ruler_result_three" n1:background="@color/white" n1:paddingLeft="10.0dip" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="" />
+            <FrameLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@id/name">
+                <cn.bizconf.vcpro.common.view.ruler.RulerShow n1:orientation="horizontal" n1:id="@id/ruler_room_three" n1:background="#ffffffff" n1:paddingTop="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n4:max_unit_count="96" n4:per_unit_count="1" n4:screen_unit_size="6" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+                <TextView n1:textSize="9.0sp" n1:id="@id/ruler_result_text_three" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="25.0dip" n1:layout_marginTop="5.0dip" n1:text="x" />
+            </FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <RadioGroup n1:id="@id/radio_group" n1:layout_width="0.0dip" n1:layout_height="0.0dip" />
+</LinearLayout>

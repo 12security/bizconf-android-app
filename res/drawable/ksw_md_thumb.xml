@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item n1:state_enabled="false" n1:state_checked="true"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <layer-list>
+            <item>
+                <shape n1:shape="oval">
+                    <size n1:height="@dimen/ksw_md_thumb_ripple_size" n1:width="@dimen/ksw_md_thumb_ripple_size" />
+                    <solid n1:color="@android:color/transparent" />
+                </shape>
+            </item>
+            <item n1:gravity="center" n1:left="@dimen/ksw_md_thumb_shadow_inset" n1:top="@dimen/ksw_md_thumb_shadow_inset_top" n1:right="@dimen/ksw_md_thumb_shadow_inset" n1:bottom="@dimen/ksw_md_thumb_shadow_inset_bottom">
+                <shape n1:shape="oval">
+                    <solid n1:color="@color/ksw_md_solid_shadow" />
+                </shape>
+            </item>
+            <item n1:gravity="center" n1:left="@dimen/ksw_md_thumb_solid_inset" n1:top="@dimen/ksw_md_thumb_solid_inset" n1:right="@dimen/ksw_md_thumb_solid_inset" n1:bottom="@dimen/ksw_md_thumb_solid_inset">
+                <shape n1:shape="oval">
+                    <solid n1:color="@color/ksw_md_solid_checked_disable" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item n2:state_enabled="false"
+      xmlns:n2="http://schemas.android.com/apk/res/android">
+        <layer-list>
+            <item>
+                <shape n2:shape="oval">
+                    <size n2:height="@dimen/ksw_md_thumb_ripple_size" n2:width="@dimen/ksw_md_thumb_ripple_size" />
+                    <solid n2:color="@android:color/transparent" />
+                </shape>
+            </item>
+            <item n2:gravity="center" n2:left="@dimen/ksw_md_thumb_shadow_inset" n2:top="@dimen/ksw_md_thumb_shadow_inset_top" n2:right="@dimen/ksw_md_thumb_shadow_inset" n2:bottom="@dimen/ksw_md_thumb_shadow_inset_bottom">
+                <shape n2:shape="oval">
+                    <solid n2:color="@color/ksw_md_solid_shadow" />
+                </shape>
+            </item>
+            <item n2:gravity="center" n2:left="@dimen/ksw_md_thumb_solid_inset" n2:top="@dimen/ksw_md_thumb_solid_inset" n2:right="@dimen/ksw_md_thumb_solid_inset" n2:bottom="@dimen/ksw_md_thumb_solid_inset">
+                <shape n2:shape="oval">
+                    <solid n2:color="@color/ksw_md_solid_disable" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item n3:state_checked="true" n3:state_pressed="true"
+      xmlns:n3="http://schemas.android.com/apk/res/android">
+        <layer-list>
+            <item>
+                <shape n3:shape="oval">
+                    <size n3:height="@dimen/ksw_md_thumb_ripple_size" n3:width="@dimen/ksw_md_thumb_ripple_size" />
+                    <solid n3:color="@color/ksw_md_ripple_checked" />
+                </shape>
+            </item>
+            <item n3:gravity="center" n3:left="@dimen/ksw_md_thumb_shadow_inset" n3:top="@dimen/ksw_md_thumb_shadow_inset_top" n3:right="@dimen/ksw_md_thumb_shadow_inset" n3:bottom="@dimen/ksw_md_thumb_shadow_inset_bottom">
+                <shape n3:shape="oval">
+                    <solid n3:color="@color/ksw_md_solid_shadow" />
+                </shape>
+            </item>
+            <item n3:gravity="center" n3:left="@dimen/ksw_md_thumb_solid_inset" n3:top="@dimen/ksw_md_thumb_solid_inset" n3:right="@dimen/ksw_md_thumb_solid_inset" n3:bottom="@dimen/ksw_md_thumb_solid_inset">
+                <shape n3:shape="oval">
+                    <solid n3:color="@color/ksw_md_solid_checked" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item n4:state_checked="false" n4:state_pressed="true"
+      xmlns:n4="http://schemas.android.com/apk/res/android">
+        <layer-list>
+            <item>
+                <shape n4:shape="oval">
+                    <size n4:height="@dimen/ksw_md_thumb_ripple_size" n4:width="@dimen/ksw_md_thumb_ripple_size" />
+                    <solid n4:color="@color/ksw_md_ripple_normal" />
+                </shape>
+            </item>
+            <item n4:gravity="center" n4:left="@dimen/ksw_md_thumb_shadow_inset" n4:top="@dimen/ksw_md_thumb_shadow_inset_top" n4:right="@dimen/ksw_md_thumb_shadow_inset" n4:bottom="@dimen/ksw_md_thumb_shadow_inset_bottom">
+                <shape n4:shape="oval">
+                    <solid n4:color="@color/ksw_md_solid_shadow" />
+                </shape>
+            </item>
+            <item n4:gravity="center" n4:left="@dimen/ksw_md_thumb_solid_inset" n4:top="@dimen/ksw_md_thumb_solid_inset" n4:right="@dimen/ksw_md_thumb_solid_inset" n4:bottom="@dimen/ksw_md_thumb_solid_inset">
+                <shape n4:shape="oval">
+                    <solid n4:color="@color/ksw_md_solid_normal" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item n5:state_checked="true" n5:state_pressed="false"
+      xmlns:n5="http://schemas.android.com/apk/res/android">
+        <layer-list>
+            <item>
+                <shape n5:shape="oval">
+                    <size n5:height="@dimen/ksw_md_thumb_ripple_size" n5:width="@dimen/ksw_md_thumb_ripple_size" />
+                    <solid n5:color="@android:color/transparent" />
+                </shape>
+            </item>
+            <item n5:gravity="center" n5:left="@dimen/ksw_md_thumb_shadow_inset" n5:top="@dimen/ksw_md_thumb_shadow_inset_top" n5:right="@dimen/ksw_md_thumb_shadow_inset" n5:bottom="@dimen/ksw_md_thumb_shadow_inset_bottom">
+                <shape n5:shape="oval">
+                    <solid n5:color="@color/ksw_md_solid_shadow" />
+                </shape>
+            </item>
+            <item n5:gravity="center" n5:left="@dimen/ksw_md_thumb_solid_inset" n5:top="@dimen/ksw_md_thumb_solid_inset" n5:right="@dimen/ksw_md_thumb_solid_inset" n5:bottom="@dimen/ksw_md_thumb_solid_inset">
+                <shape n5:shape="oval">
+                    <solid n5:color="@color/ksw_md_solid_checked" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item>
+                <shape n6:shape="oval"
+                  xmlns:n6="http://schemas.android.com/apk/res/android">
+                    <size n6:height="@dimen/ksw_md_thumb_ripple_size" n6:width="@dimen/ksw_md_thumb_ripple_size" />
+                    <solid n6:color="@android:color/transparent" />
+                </shape>
+            </item>
+            <item n7:gravity="center" n7:left="@dimen/ksw_md_thumb_shadow_inset" n7:top="@dimen/ksw_md_thumb_shadow_inset_top" n7:right="@dimen/ksw_md_thumb_shadow_inset" n7:bottom="@dimen/ksw_md_thumb_shadow_inset_bottom"
+              xmlns:n7="http://schemas.android.com/apk/res/android">
+                <shape n7:shape="oval">
+                    <solid n7:color="@color/ksw_md_solid_shadow" />
+                </shape>
+            </item>
+            <item n8:gravity="center" n8:left="@dimen/ksw_md_thumb_solid_inset" n8:top="@dimen/ksw_md_thumb_solid_inset" n8:right="@dimen/ksw_md_thumb_solid_inset" n8:bottom="@dimen/ksw_md_thumb_solid_inset"
+              xmlns:n8="http://schemas.android.com/apk/res/android">
+                <shape n8:shape="oval">
+                    <solid n8:color="@color/ksw_md_solid_normal" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.zipow.videobox.sdk.SDKVideoView n1:id="@id/videoContainer" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <com.zipow.videobox.sdk.SDKShareView n1:id="@id/shareView" n1:background="#00ffffff" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+</RelativeLayout>

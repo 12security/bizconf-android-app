@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@drawable/zm_list_selector_white_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="vertical" n1:id="@id/panelNotificationInstant" n1:paddingTop="@dimen/zm_setting_item_padding_top" n1:paddingBottom="@dimen/zm_setting_item_padding_bottom" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <TextView n1:textSize="17.0sp" n1:id="@id/txtGroupName" n1:paddingBottom="3.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/zm_setting_item_padding_left" n1:layout_weight="1.0" style="@style/ZMTextView.Normal.OnLight" />
+        <TextView n1:id="@id/txtNotifyDes" n1:paddingBottom="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/zm_setting_item_padding_left" style="@style/ZMTextView.Small.Dimmed" />
+    </LinearLayout>
+    <View n1:id="@id/listDivider" n1:layout_width="fill_parent" n1:layout_height="0.5dip" />
+</LinearLayout>

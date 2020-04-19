@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:background="@color/zm_call_incall_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.zipow.videobox.view.sip.DialKeyboardView n1:id="@id/keyboard" n1:visibility="invisible" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="10.0dip" n1:layout_centerInParent="true" />
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="vertical" n1:id="@id/panelMultiBuddy" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginLeft="@dimen/zm_ui_kit_sip_page_left_padding_large" n1:layout_marginRight="@dimen/zm_ui_kit_sip_page_left_padding_large" n1:layout_above="@id/keyboard">
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/panelMultiCall2" n1:background="@drawable/zm_ui_kit_btn_normal_round_white_selector" n1:paddingLeft="3.0dip" n1:paddingTop="8.0dip" n1:paddingBottom="8.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <LinearLayout n1:orientation="vertical" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+                <TextView n1:ellipsize="marquee" n1:id="@id/txtMultiBuddyName2" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="1.0" n1:marqueeRepeatLimit="marquee_forever" n1:importantForAccessibility="no" style="@style/UIKitTextView.BuddyName.Bold.Blue.Selector" />
+                <TextView n1:id="@id/txtMultiDialState2" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:importantForAccessibility="no" style="@style/UIKitTextView.PrimaryText.Normal.Gray.Selector" />
+            </LinearLayout>
+            <ImageView n1:id="@id/btnMultiMore2" n1:layout_width="40.0dip" n1:layout_height="40.0dip" n1:src="@drawable/zm_sip_btn_merge_call" />
+        </LinearLayout>
+        <View style="@style/ZMLightLine" />
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/panelMultiCall1" n1:background="@drawable/zm_ui_kit_btn_normal_round_white_selector" n1:paddingLeft="3.0dip" n1:paddingTop="8.0dip" n1:paddingBottom="8.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <LinearLayout n1:orientation="vertical" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+                <TextView n1:ellipsize="marquee" n1:id="@id/txtMultiBuddyName1" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="1.0" n1:marqueeRepeatLimit="marquee_forever" n1:importantForAccessibility="no" style="@style/UIKitTextView.BuddyName.Bold.Blue.Selector" />
+                <TextView n1:id="@id/txtMultiDialState1" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:importantForAccessibility="no" style="@style/UIKitTextView.PrimaryText.Normal.Gray.Selector" />
+            </LinearLayout>
+            <ImageView n1:id="@id/btnMultiMore1" n1:layout_width="40.0dip" n1:layout_height="40.0dip" n1:src="@drawable/zm_sip_btn_more" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout n1:gravity="center" n1:orientation="vertical" n1:id="@id/panelOneBuddy" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginLeft="@dimen/zm_ui_kit_page_left_padding" n1:layout_marginRight="@dimen/zm_ui_kit_page_left_padding" n1:layout_above="@id/keyboard">
+        <TextView n1:ellipsize="marquee" n1:gravity="center" n1:id="@id/txtOneBuddyName" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="35.0dip" n1:layout_marginRight="35.0dip" n1:singleLine="true" n1:layout_centerHorizontal="true" n1:marqueeRepeatLimit="marquee_forever" n1:importantForAccessibility="no" style="@style/UIKitTextView.BuddyName.Large" />
+        <ImageView n1:id="@id/btnOneMore" n1:layout_width="40.0dip" n1:layout_height="40.0dip" n1:src="@drawable/zm_sip_btn_more" n1:layout_alignParentRight="true" n1:contentDescription="@string/zm_accessbility_sip_more_action_61394" />
+        <TextView n1:gravity="center" n1:id="@id/txtOneDialState" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="2.0dip" n1:singleLine="true" n1:layout_below="@id/txtOneBuddyName" n1:importantForAccessibility="no" style="@style/UIKitTextView.PrimaryText.Normal" />
+    </RelativeLayout>
+    <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:id="@id/panelCallBtns" n1:paddingLeft="@dimen/zm_ui_kit_sip_page_left_padding_large" n1:paddingRight="@dimen/zm_ui_kit_sip_page_left_padding_large" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@id/keyboard">
+        <ImageView n1:id="@id/btnEndCall" n1:visibility="gone" n1:layout_width="@dimen/zm_sip_dialpad_key_width" n1:layout_height="@dimen/zm_sip_dialpad_key_width" n1:src="@drawable/zm_sip_end_call" n1:contentDescription="@string/zm_accessbility_btn_end_call_14480" />
+        <LinearLayout n1:orientation="vertical" n1:id="@id/panelTransferOption" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="16.0dip">
+            <Button n1:id="@id/btnCompleteTransfer" n1:layout_width="fill_parent" n1:layout_height="@dimen/zm_ui_kit_large_button_height" n1:text="@string/zm_sip_btn_complete_transfer_61381" n1:contentDescription="@string/zm_sip_btn_complete_transfer_61381" style="@style/UIKitItinactivatedBtn" />
+            <TextView n1:gravity="center" n1:id="@id/btnCancelTransfer" n1:background="@drawable/zm_ui_kit_btn_big_round_white_selector" n1:layout_width="fill_parent" n1:layout_height="@dimen/zm_ui_kit_large_button_height" n1:layout_marginTop="8.0dip" n1:text="@string/zm_sip_btn_cancel_transfer_61381" n1:contentDescription="@string/zm_sip_btn_cancel_transfer_61381" style="@style/UIKitTextView.Large.Normal.Gray" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout n1:gravity="center|right" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/zm_sip_dialpad_content_margin_left" n1:layout_below="@id/panelCallBtns" n1:layout_alignParentBottom="true">
+        <TextView n1:id="@id/btnHideKeyboard" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_btn_hide_61381" style="@style/UIKitButton.White.BlueText" />
+    </LinearLayout>
+    <LinearLayout n1:orientation="vertical" n1:id="@id/panelInCall" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_centerInParent="true">
+        <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/zm_sip_dialpad_content_margin_left" n1:layout_marginRight="@dimen/zm_sip_dialpad_content_margin_left">
+            <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:id="@id/panelMute" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+                <ImageView n1:id="@id/imgMute" n1:background="@drawable/zm_sip_dialpad_key_bg" n1:layout_width="@dimen/zm_sip_dialpad_key_width" n1:layout_height="@dimen/zm_sip_dialpad_key_width" n1:src="@drawable/zm_sip_ic_mute" n1:scaleType="centerInside" n1:contentDescription="@string/zm_btn_mute_61381" />
+                <TextView n1:ellipsize="end" n1:id="@id/txtMute" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:text="@string/zm_btn_mute_61381" n1:maxLines="1" n1:importantForAccessibility="no" style="@style/UIKitTextView.Small.Normal.Gray.Selector" />
+            </LinearLayout>
+            <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:id="@id/panelDtmf" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+                <ImageView n1:id="@id/imgDtmf" n1:background="@drawable/zm_sip_dialpad_key_bg" n1:layout_width="@dimen/zm_sip_dialpad_key_width" n1:layout_height="@dimen/zm_sip_dialpad_key_width" n1:src="@drawable/zm_sip_ic_dtmf" n1:scaleType="centerInside" n1:contentDescription="@string/zm_btn_keypad_61381" />
+                <TextView n1:ellipsize="end" n1:id="@id/txtDtmf" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:text="@string/zm_btn_keypad_61381" n1:maxLines="1" n1:importantForAccessibility="no" style="@style/UIKitTextView.Small.Normal.Gray.Selector" />
+            </LinearLayout>
+            <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:id="@id/panelSpeakeron" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+                <ImageView n1:id="@id/imgSpeaker" n1:background="@drawable/zm_sip_dialpad_key_bg" n1:layout_width="@dimen/zm_sip_dialpad_key_width" n1:layout_height="@dimen/zm_sip_dialpad_key_width" n1:src="@drawable/zm_sip_ic_speaker" n1:scaleType="centerInside" n1:contentDescription="@string/zm_btn_speaker_61381" />
+                <TextView n1:ellipsize="end" n1:id="@id/txtSpeaker" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:text="@string/zm_btn_speaker_61381" n1:maxLines="1" n1:importantForAccessibility="no" style="@style/UIKitTextView.Small.Normal.Gray.Selector" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/zm_sip_dialpad_content_margin_left" n1:layout_marginTop="@dimen/zm_sip_panel_incall_botton_content_row_space" n1:layout_marginRight="@dimen/zm_sip_dialpad_content_margin_left">
+            <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:id="@id/panelAddCall" n1:visibility="gone" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+                <ImageView n1:id="@id/imgAddCall" n1:background="@drawable/zm_sip_dialpad_key_bg" n1:layout_width="@dimen/zm_sip_dialpad_key_width" n1:layout_height="@dimen/zm_sip_dialpad_key_width" n1:src="@drawable/zm_sip_ic_add_call" n1:scaleType="centerInside" n1:contentDescription="@string/zm_sip_add_call_61381" />
+                <TextView n1:ellipsize="end" n1:id="@id/txtAddCall" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:text="@string/zm_sip_add_call_61381" n1:maxLines="1" n1:importantForAccessibility="no" style="@style/UIKitTextView.Small.Normal.Gray.Selector" />
+            </LinearLayout>
+            <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:id="@id/panelHold" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+                <ImageView n1:id="@id/imgHold" n1:background="@drawable/zm_sip_dialpad_key_bg" n1:layout_width="@dimen/zm_sip_dialpad_key_width" n1:layout_height="@dimen/zm_sip_dialpad_key_width" n1:src="@drawable/zm_sip_ic_hold" n1:scaleType="centerInside" n1:contentDescription="@string/zm_sip_hold_61381" />
+                <TextView n1:ellipsize="end" n1:id="@id/txtHold" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:text="@string/zm_sip_hold_61381" n1:maxLines="1" n1:importantForAccessibility="no" style="@style/UIKitTextView.Small.Normal.Gray.Selector" />
+            </LinearLayout>
+            <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:id="@id/panelTransferInSip" n1:visibility="visible" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+                <ImageView n1:id="@id/imgTransferInSip" n1:background="@drawable/zm_sip_dialpad_key_bg" n1:layout_width="@dimen/zm_sip_dialpad_key_width" n1:layout_height="@dimen/zm_sip_dialpad_key_width" n1:src="@drawable/zm_sip_ic_transfer" n1:scaleType="centerInside" n1:contentDescription="@string/zm_sip_transfer_31432" />
+                <TextView n1:ellipsize="end" n1:id="@id/txtTransferInSip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:text="@string/zm_sip_transfer_31432" n1:maxLines="1" n1:importantForAccessibility="no" style="@style/UIKitTextView.Small.Normal.Gray.Selector" />
+            </LinearLayout>
+            <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:id="@id/panelTransfer" n1:visibility="invisible" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+                <ImageView n1:id="@id/imgTransfer" n1:background="@drawable/zm_sip_dialpad_key_bg" n1:layout_width="@dimen/zm_sip_dialpad_key_width" n1:layout_height="@dimen/zm_sip_dialpad_key_width" n1:src="@drawable/zm_sip_ic_transfer" n1:scaleType="centerInside" n1:contentDescription="@string/zm_sip_transfer_31432" />
+                <TextView n1:ellipsize="end" n1:id="@id/txtTransfer" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:text="@string/zm_sip_transfer_31432" n1:maxLines="1" n1:importantForAccessibility="no" style="@style/UIKitTextView.Small.Normal.Gray.Selector" />
+            </LinearLayout>
+            <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:id="@id/panelMore" n1:visibility="gone" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+                <ImageView n1:id="@id/imgActionMore" n1:background="@drawable/zm_sip_btn_incall_bg" n1:layout_width="@dimen/zm_sip_dialpad_key_width" n1:layout_height="@dimen/zm_sip_dialpad_key_width" n1:src="@drawable/zm_btn_sip_action_more" n1:contentDescription="@string/zm_sip_action_more_37980" />
+                <TextView n1:ellipsize="end" n1:id="@id/txtActionMore" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:text="@string/zm_sip_action_more_37980" n1:maxLines="1" n1:importantForAccessibility="no" style="@style/UIKitTextView.Small.Normal.Gray.Selector" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/zm_sip_dialpad_content_margin_left" n1:layout_marginTop="@dimen/zm_sip_panel_incall_botton_content_row_space" n1:layout_marginRight="@dimen/zm_sip_dialpad_content_margin_left">
+            <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:layout_width="0.0dip" n1:layout_height="1.0px" n1:layout_weight="1.0" />
+            <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:id="@id/panelRecord" n1:visibility="invisible" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+                <com.zipow.videobox.view.sip.RecordView n1:id="@id/recordView" n1:background="@drawable/zm_sip_dialpad_key_bg" n1:layout_width="@dimen/zm_sip_dialpad_key_width" n1:layout_height="@dimen/zm_sip_dialpad_key_width" n1:contentDescription="@string/zm_sip_record_61381" />
+                <TextView n1:ellipsize="end" n1:id="@id/txtRecord" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:text="@string/zm_sip_record_61381" n1:maxLines="1" n1:importantForAccessibility="no" style="@style/UIKitTextView.Small.Normal.Gray.Selector" />
+            </LinearLayout>
+            <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:layout_width="0.0dip" n1:layout_height="1.0px" n1:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

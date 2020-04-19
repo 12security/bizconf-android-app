@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <EditText n1:id="@id/etReceiveMsg" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:hint="接收的信息" n1:layout_weight="1.0" />
+    <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <EditText n1:id="@id/etSendMsg" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:hint="发送的信息" n1:layout_weight="1.0" />
+        <Button n1:id="@id/btnSendOne" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="发送1对1消息" n1:layout_weight="1.0" />
+        <Button n1:id="@id/btnSendMore" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="发送1对多消息" n1:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

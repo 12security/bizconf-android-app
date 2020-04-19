@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layoutDirection="ltr"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.facebook.drawee.view.SimpleDraweeView n1:id="@id/udesk_iv_picture" n1:layout_width="fill_parent" n1:layout_height="@dimen/udesk_100" n2:actualImageScaleType="fitXY" n2:placeholderImage="@drawable/udesk_image_placeholder" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <View n1:id="@id/udesk_v_selector" n1:background="#80333333" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="@dimen/udesk_100" />
+    <LinearLayout n1:gravity="right" n1:orientation="vertical" n1:id="@id/ll_check" n1:padding="@dimen/udesk_4" n1:layout_width="50.0dip" n1:layout_height="50.0dip" n1:layout_alignParentRight="true">
+        <TextView n1:textSize="12.0sp" n1:textStyle="bold" n1:textColor="@color/udesk_color_bg_white" n1:gravity="center" n1:id="@id/udesk_check" n1:background="@drawable/udesk_checkphoto_bg_select_false" n1:layout_width="22.0dip" n1:layout_height="22.0dip" />
+    </LinearLayout>
+    <TextView n1:textSize="@dimen/udesk_sp12" n1:textColor="@color/udesk_color_bg_white" n1:gravity="center_vertical" n1:id="@id/udesk_duration" n1:background="@drawable/udesk_photo_time_bg" n1:paddingLeft="5.0dip" n1:paddingTop="8.0dip" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="30.0dip" n1:text="00:00" n1:drawableLeft="@drawable/udesk_video_icon" n1:drawablePadding="5.0dip" n1:layout_alignParentBottom="true" />
+</RelativeLayout>

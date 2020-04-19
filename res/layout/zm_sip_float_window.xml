@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:gravity="center" n1:background="@drawable/zm_sip_float_window_panel" n1:layout_width="100.0dip" n1:layout_height="200.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/imageButton1" n1:layout_width="40.0dip" n1:layout_height="40.0dip" n1:layout_marginTop="5.0dip" n1:src="@drawable/sip_call" n1:layout_centerHorizontal="true" />
+    <TextView n1:textColor="#ff2aa515" n1:gravity="center" n1:id="@id/time" n1:paddingTop="3.0dip" n1:paddingBottom="3.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:text="@string/zm_sip_call_calling_503" n1:layout_below="@id/imageButton1" />
+</RelativeLayout>

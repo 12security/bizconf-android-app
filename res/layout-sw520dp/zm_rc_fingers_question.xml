@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="#ff004e85" n1:paddingLeft="40.0dip" n1:paddingTop="30.0dip" n1:paddingRight="40.0dip" n1:paddingBottom="30.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textSize="26.0sp" n1:gravity="center" n1:layout_gravity="center_horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="10.0dip" n1:text="@string/zm_rc_using_fingers_for_remote_control" style="@style/ZMTextView.ExtremLarge.OnDark" />
+    <LinearLayout n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+        <LinearLayout n1:orientation="vertical" n1:paddingLeft="5.0dip" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+            <LinearLayout n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="15.0dip">
+                <ImageView n1:layout_gravity="center_vertical" n1:paddingRight="5.0dip" n1:paddingBottom="0.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_rc_one_finger_tap" />
+                <LinearLayout n1:layout_gravity="top" n1:orientation="vertical" n1:paddingTop="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                    <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_rc_one_finger_tap" style="@style/ZMTextView.Medium.OnDark" />
+                    <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_rc_one_finger_tap_description" style="@style/ZMTextView.Normal.Dimmed" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="15.0dip">
+                <ImageView n1:layout_gravity="center_vertical" n1:paddingRight="5.0dip" n1:paddingBottom="0.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_rc_one_finger_double_taps" />
+                <LinearLayout n1:layout_gravity="top" n1:orientation="vertical" n1:paddingTop="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                    <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_rc_one_finger_double_taps" style="@style/ZMTextView.Medium.OnDark" />
+                    <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_rc_one_finger_double_taps_description" style="@style/ZMTextView.Normal.Dimmed" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="15.0dip">
+                <ImageView n1:layout_gravity="center_vertical" n1:paddingRight="5.0dip" n1:paddingBottom="0.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_rc_one_finger_long_tap" />
+                <LinearLayout n1:layout_gravity="top" n1:orientation="vertical" n1:paddingTop="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                    <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_rc_one_long_tap" style="@style/ZMTextView.Medium.OnDark" />
+                    <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_rc_one_long_tap_description" style="@style/ZMTextView.Normal.Dimmed" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout n1:orientation="vertical" n1:paddingLeft="5.0dip" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+            <LinearLayout n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="15.0dip">
+                <ImageView n1:layout_gravity="center_vertical" n1:paddingRight="5.0dip" n1:paddingBottom="0.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_rc_two_fingers_scroll" />
+                <LinearLayout n1:layout_gravity="top" n1:orientation="vertical" n1:paddingTop="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                    <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_rc_two_fingers_scroll" style="@style/ZMTextView.Medium.OnDark" />
+                    <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_rc_two_fingers_scroll_description" style="@style/ZMTextView.Normal.Dimmed" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="15.0dip">
+                <ImageView n1:layout_gravity="center_vertical" n1:paddingRight="5.0dip" n1:paddingBottom="0.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_rc_two_fingers_pinch" />
+                <LinearLayout n1:layout_gravity="top" n1:orientation="vertical" n1:paddingTop="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                    <TextView n1:layout_gravity="center_vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_rc_two_fingers_pinch" style="@style/ZMTextView.Medium.OnDark" />
+                    <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_rc_two_fingers_pinch_description" style="@style/ZMTextView.Normal.Dimmed" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="15.0dip">
+                <ImageView n1:layout_gravity="center_vertical" n1:paddingRight="5.0dip" n1:paddingBottom="0.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_rc_mouse_icon" />
+                <LinearLayout n1:layout_gravity="top" n1:orientation="vertical" n1:paddingTop="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                    <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_rc_mouse_icon" style="@style/ZMTextView.Medium.OnDark" />
+                    <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_rc_mouse_icon_description" style="@style/ZMTextView.Normal.Dimmed" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

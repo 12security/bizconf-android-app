@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="horizontal" n1:paddingRight="8.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.zipow.videobox.view.AvatarView n1:id="@id/giphy_avatar" n1:layout_width="35.0dip" n1:layout_height="35.0dip" n1:layout_marginLeft="5.0dip" n1:layout_marginTop="10.0dip" />
+    <LinearLayout n1:orientation="vertical" n1:id="@id/giphy_content_linear" n1:paddingTop="10.0dip" n1:paddingBottom="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="15.0dip">
+        <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:id="@id/giphy_avatar_name" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="giphy" style="@style/ZMTextView.ExSmall.Dimmed" />
+            <include layout="@layout/zm_mm_starred_message_title_view" />
+        </LinearLayout>
+        <LinearLayout n1:orientation="vertical" n1:background="@color/zm_white" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip">
+            <TextView n1:textColor="@android:color/holo_blue_dark" n1:id="@id/giphy_message_name" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="hello" />
+            <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                <LinearLayout n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                    <FrameLayout n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                        <com.zipow.videobox.view.ZMGifView n1:id="@id/giphy_gifView" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:maxWidth="150.0dip" n1:maxHeight="300.0dip" n1:minWidth="100.0dip" n1:minHeight="100.0dip" />
+                        <LinearLayout n1:gravity="center" n1:layout_gravity="center" n1:id="@id/giphy_panel_progress" n1:background="@color/zm_chat_msg_bg_plain_normal_19884" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:minWidth="100.0dip" n1:minHeight="100.0dip">
+                            <ProgressBar n1:layout_width="wrap_content" n1:layout_height="wrap_content" style="@style/ZMProgressBar.Small" />
+                        </LinearLayout>
+                        <LinearLayout n1:gravity="center" n1:id="@id/giphy_panel_place_holder" n1:background="@color/zm_chat_msg_bg_plain_normal_19884" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:minWidth="100.0dip" n1:minHeight="100.0dip">
+                            <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_image_download_error" />
+                        </LinearLayout>
+                    </FrameLayout>
+                    <ImageView n1:layout_gravity="right" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginTop="5.0dip" n1:src="@drawable/zm_mm_giphy_logo" />
+                </LinearLayout>
+                <ImageView n1:id="@id/zm_mm_starred" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" n1:src="@drawable/zm_mm_starred_message_icon" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

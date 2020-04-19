@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:padding="1.0dip" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.zipow.videobox.view.ZMGifView n1:id="@id/imgLinkIcon" n1:layout_width="fill_parent" n1:layout_height="110.0dip" n1:scaleType="fitCenter" />
+    <TextView n1:id="@id/txtLinkTitle" n1:padding="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:maxLines="2" style="@style/ZMTextView.Normal.OnLight" />
+    <TextView n1:id="@id/txtLinkDes" n1:padding="10.0dip" n1:paddingLeft="10.0dip" n1:paddingRight="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:maxLines="4" style="@style/ZMTextView.Small.Dimmed" />
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:padding="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <ImageView n1:id="@id/imgFavicon" n1:layout_width="15.0dip" n1:layout_height="15.0dip" />
+        <TextView n1:ellipsize="end" n1:id="@id/txtSiteName" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" n1:lines="1" style="@style/ZMTextView.Small.Dimmed" />
+    </LinearLayout>
+</LinearLayout>

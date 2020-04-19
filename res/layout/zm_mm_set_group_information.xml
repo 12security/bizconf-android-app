@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout n1:id="@id/panelTitleBar" n1:layout_width="fill_parent" n1:layout_height="@dimen/zm_pt_titlebar_height" n2:zm_leftButton="@id/btnBack" n2:zm_rightButton="@id/btnDone" n2:zm_title="@id/txtTitle" style="@style/ZMTitleBar" xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <Button n1:id="@id/btnBack" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:text="@string/zm_btn_back" style="@style/ZMBackButton" />
+        <Button n1:id="@id/btnDone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:minWidth="55.0dip" n1:text="@string/zm_btn_done" style="@style/ZMButton.TitleBar" />
+        <us.zoom.androidlib.widget.ZMDynTextSizeTextView n1:ellipsize="end" n1:gravity="center" n1:id="@id/txtTitle" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_title_channel_information_59554" n1:singleLine="true" style="@style/ZMTextView.Title" />
+    </us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <TextView n1:gravity="center_vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/zm_setting_item_padding_left" n1:layout_marginTop="15.0dip" n1:text="@string/zm_mm_lbl_chat_topic" style="@style/ZMTextView.Small" />
+    <us.zoom.androidlib.widget.ZMSettingsLayout n1:orientation="vertical" n1:paddingLeft="0.0dip" n1:paddingTop="0.0dip" n1:paddingRight="0.0dip" n1:paddingBottom="@dimen/zm_setting_item_group_spacing" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip">
+        <us.zoom.androidlib.widget.ZMSettingsCategory n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n3:zm_showTopDivider="false" xmlns:n3="http://schemas.android.com/apk/res-auto">
+            <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:paddingLeft="@dimen/zm_setting_item_padding_left" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <EditText n1:id="@id/edtTopic" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:text="" n1:hint="@string/zm_hintl_not_set" n1:singleLine="true" n1:maxLength="256" n1:inputType="textCapSentences" style="@style/ZMEditText.SettingsItem">
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+        </us.zoom.androidlib.widget.ZMSettingsCategory>
+        <us.zoom.androidlib.widget.ZMSettingsCategory n1:orientation="vertical" n1:id="@id/panelAccessHistory" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <LinearLayout n1:gravity="center|left" n1:id="@id/optionAccessHistory" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:focusable="true" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/zm_setting_item_group_spacing" n1:weightSum="1.0">
+                <TextView n1:gravity="left" n1:focusable="false" n1:clickable="false" n1:duplicateParentState="true" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_allow_new_member_see_chat_history" n1:layout_weight="1.0" style="@style/ZMTextView.SettingsItem" />
+                <us.zoom.androidlib.widget.ZMCheckedTextView n1:id="@id/chkAccessHistory" n1:clickable="false" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:checkMark="@drawable/zm_btn_toggle_default" />
+            </LinearLayout>
+        </us.zoom.androidlib.widget.ZMSettingsCategory>
+    </us.zoom.androidlib.widget.ZMSettingsLayout>
+    <us.zoom.androidlib.widget.ZMSettingsLayout n1:orientation="vertical" n1:id="@id/panelConvertPrivateGroup" n1:paddingLeft="0.0dip" n1:paddingTop="0.0dip" n1:paddingRight="0.0dip" n1:paddingBottom="@dimen/zm_setting_item_group_spacing" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip">
+        <us.zoom.androidlib.widget.ZMSettingsCategory n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n4:zm_showTopDivider="false" xmlns:n4="http://schemas.android.com/apk/res-auto">
+            <Button n1:gravity="center|left" n1:id="@id/btnConvertPrivateGroup" n1:paddingLeft="@dimen/zm_setting_item_padding_left" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:text="@string/zm_btn_convert_private_group_59554" style="@style/ZMButton.Dialog" />
+        </us.zoom.androidlib.widget.ZMSettingsCategory>
+        <TextView n1:gravity="center_vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/zm_setting_item_padding_left" n1:layout_marginTop="@dimen/zm_setting_item_padding_top" n1:layout_marginRight="@dimen/zm_setting_item_padding_right" n1:layout_marginBottom="@dimen/zm_setting_item_padding_bottom" n1:text="@string/zm_mm_lbl_private_group_des_59554" style="@style/ZMTextView.Small" />
+    </us.zoom.androidlib.widget.ZMSettingsLayout>
+</LinearLayout>

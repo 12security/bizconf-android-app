@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:minWidth="600.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout n1:gravity="center_vertical" n1:id="@id/panelTitleBar" n1:layout_width="fill_parent" n1:layout_height="@dimen/zm_pt_titlebar_height" n2:zm_leftButton="@id/btnBack" n2:zm_rightButton="@id/btnSave" n2:zm_title="@id/txtTitle" style="@style/ZMTitleBar" xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <Button n1:id="@id/btnBack" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_btn_cancel" style="@style/ZMButton.TitleBar" />
+        <Button n1:id="@id/btnSave" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:minWidth="55.0dip" n1:text="@string/zm_btn_save" style="@style/ZMButton.TitleBar" />
+        <us.zoom.androidlib.widget.ZMDynTextSizeTextView n1:gravity="center_horizontal" n1:id="@id/txtTitle" n1:paddingLeft="5.0dip" n1:paddingRight="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_title_choose_user_type" style="@style/ZMTextView.Title" />
+    </us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <us.zoom.androidlib.widget.ZMSettingsLayout n1:orientation="vertical" n1:paddingLeft="0.0dip" n1:paddingTop="0.0dip" n1:paddingRight="0.0dip" n1:paddingBottom="20.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n3:zm_settingsCategorySpacing="0.0dip" xmlns:n3="http://schemas.android.com/apk/res-auto">
+            <TextView n1:gravity="left" n1:id="@id/txtEnableAddrBookInstructions" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="20.0dip" n1:layout_marginBottom="5.0dip" n1:text="@string/zm_lbl_allow_join_choose_type" style="@style/ZMTextView.SettingsItemDesc" />
+            <us.zoom.androidlib.widget.ZMSettingsCategory n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n3:zm_showTopDivider="false">
+                <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@id/optEveryone" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <TextView n1:layout_gravity="center|left" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_allow_join_everyone" n1:layout_weight="1.0" style="@style/ZMTextView.SettingsItem.Small" />
+                    <ImageView n1:id="@id/imgEveryone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_ic_tick" />
+                </LinearLayout>
+                <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@id/optAnySign" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <TextView n1:layout_gravity="center|left" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_allow_join_signed" n1:layout_weight="1.0" style="@style/ZMTextView.SettingsItem.Small" />
+                    <ImageView n1:id="@id/imgAnySign" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_ic_tick" />
+                </LinearLayout>
+                <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@id/optSpecifiedDomains" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <TextView n1:layout_gravity="center|left" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_allow_join_specified_domains" n1:layout_weight="1.0" style="@style/ZMTextView.SettingsItem.Small" />
+                    <ImageView n1:id="@id/imgSpecifiedDomains" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_ic_tick" />
+                </LinearLayout>
+            </us.zoom.androidlib.widget.ZMSettingsCategory>
+            <TextView n1:gravity="left" n1:id="@id/txtDomainsLabel" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="20.0dip" n1:layout_marginBottom="5.0dip" n1:text="@string/zm_lbl_allow_join_qualified_domain" style="@style/ZMTextView.SettingsItemDesc" />
+            <us.zoom.androidlib.widget.ZMSettingsCategory n1:orientation="vertical" n1:id="@id/panleDomains" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n3:zm_showTopDivider="false">
+                <LinearLayout n1:gravity="center_vertical" n1:paddingLeft="@dimen/zm_setting_item_padding_left" n1:clickable="false" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <Button n1:gravity="center|left" n1:id="@id/btnAddNewDomain" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/zm_btn_allow_join_add_domain" style="@style/ZMButton.NoBackground.Medium" />
+                </LinearLayout>
+            </us.zoom.androidlib.widget.ZMSettingsCategory>
+        </us.zoom.androidlib.widget.ZMSettingsLayout>
+    </ScrollView>
+</LinearLayout>

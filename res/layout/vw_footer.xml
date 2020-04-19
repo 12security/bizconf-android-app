@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_public_editext"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:orientation="horizontal" n1:id="@id/footer_nothing_loading" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_public_editext">
+            <View n1:layout_gravity="center" n1:background="@color/xlist_footer" n1:layout_width="0.0dip" n1:layout_height="1.0dip" n1:layout_marginLeft="@dimen/activity_horizontal_margin" n1:layout_marginRight="@dimen/activity_horizontal_margin" n1:layout_weight="1.0" />
+            <TextView n1:textSize="@dimen/textSize24PX" n1:textColor="@color/xlist_footer" n1:gravity="center" n1:layout_width="wrap_content" n1:layout_height="@dimen/activity_public_editext" n1:text="@string/nothing_to_loading" />
+            <View n1:layout_gravity="center" n1:background="@color/xlist_footer" n1:layout_width="0.0dip" n1:layout_height="1.0dip" n1:layout_marginLeft="@dimen/activity_horizontal_margin" n1:layout_marginRight="@dimen/activity_horizontal_margin" n1:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout n1:orientation="horizontal" n1:id="@id/footer_foot" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_public_editext">
+            <View n1:layout_gravity="center" n1:background="@color/xlist_footer" n1:layout_width="0.0dip" n1:layout_height="1.0dip" n1:layout_marginLeft="@dimen/activity_horizontal_margin" n1:layout_marginRight="@dimen/activity_horizontal_margin" n1:layout_weight="1.0" />
+            <TextView n1:textSize="@dimen/textSize24PX" n1:textColor="@color/xlist_footer" n1:gravity="center" n1:id="@id/footer_hint_text" n1:layout_width="wrap_content" n1:layout_height="@dimen/activity_public_editext" n1:text="@string/load_more" />
+            <View n1:layout_gravity="center" n1:background="@color/xlist_footer" n1:layout_width="0.0dip" n1:layout_height="1.0dip" n1:layout_marginLeft="@dimen/activity_horizontal_margin" n1:layout_marginRight="@dimen/activity_horizontal_margin" n1:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

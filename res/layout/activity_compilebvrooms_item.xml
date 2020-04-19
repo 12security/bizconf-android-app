@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:gravity="center" n1:paddingLeft="10.0dip" n1:paddingTop="10.0dip" n1:paddingRight="10.0dip" n1:paddingBottom="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <TextView n1:textSize="@dimen/textSize28px" n1:gravity="center" n1:id="@id/tv_bvroomsname" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="会议名称" n1:layout_centerVertical="true" />
+        <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/violet" n1:id="@id/tv_bvroomsdelete" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/appointment_invite_bvrooms_delete" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View n1:background="@color/xlist_footer" n1:layout_width="fill_parent" n1:layout_height="1.0dip" n1:layout_marginLeft="10.0dip" n1:layout_marginRight="10.0dip" />
+</LinearLayout>

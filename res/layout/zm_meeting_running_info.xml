@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:weightSum="1.0"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout n1:id="@id/panelTitleBar" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:zm_leftButton="@id/btnBack" n2:zm_rightButton="@id/viewRight" n2:zm_title="@id/txtTitle" style="@style/ZMTitleBar" xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <Button n1:id="@id/btnBack" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_btn_back" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" style="@style/ZMBackButton" />
+        <View n1:id="@id/viewRight" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+        <TextView n1:gravity="center_horizontal" n1:id="@id/txtTitle" n1:paddingLeft="5.0dip" n1:paddingRight="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_title_meeting_information" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true" style="@style/ZMTextView.Title" />
+    </us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <ScrollView n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <LinearLayout n1:gravity="center_horizontal" n1:layout_gravity="center_horizontal" n1:orientation="vertical" n1:paddingLeft="0.0dip" n1:paddingTop="0.0dip" n1:paddingRight="0.0dip" n1:paddingBottom="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <us.zoom.androidlib.widget.ZMSettingsCategory n1:layout_gravity="left" n1:orientation="vertical" n1:id="@id/panelBasicInfo" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="20.0dip">
+                <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/panelMeetingTopic" n1:paddingLeft="@dimen/zm_setting_item_padding_left" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <TextView n1:paddingRight="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_topic" style="@style/ZMTextView.Large.OnLight" />
+                    <LinearLayout n1:gravity="right" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                        <TextView n1:id="@id/txtMeetingTopic" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="My meeting" style="@style/ZMTextView.Normal.Dimmed" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/panelMeetingId" n1:paddingLeft="@dimen/zm_setting_item_padding_left" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <TextView n1:paddingRight="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_meeting_id2" style="@style/ZMTextView.Large.OnLight" />
+                    <LinearLayout n1:gravity="right" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                        <TextView n1:id="@id/txtMeetingId" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="111 111 111" style="@style/ZMTextView.Normal.Dimmed" />
+                    </LinearLayout>
+                </LinearLayout>
+            </us.zoom.androidlib.widget.ZMSettingsCategory>
+            <LinearLayout n1:layout_gravity="left" n1:orientation="vertical" n1:id="@id/panelTeleConfInfo" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="20.0dip">
+                <TextView n1:id="@id/txtTeleInfoTitle" n1:paddingLeft="7.0sp" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:layout_marginBottom="5.0dip" n1:text="@string/zm_lbl_tele_conf" style="@style/ZMTextView.Large.OnLight" />
+                <us.zoom.androidlib.widget.ZMSettingsCategory n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <LinearLayout n1:layout_gravity="left" n1:orientation="vertical" n1:paddingLeft="@dimen/zm_setting_item_padding_left" n1:paddingTop="@dimen/zm_setting_item_padding_top" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:paddingBottom="@dimen/zm_setting_item_padding_bottom" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                        <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="3.0dip" n1:layout_marginBottom="5.0dip" n1:text="@string/zm_lbl_tele_conf_dial" style="@style/ZMTextView.Normal.Dimmed" />
+                        <LinearLayout n1:gravity="center|left|top" n1:layout_gravity="left" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="5.0dip">
+                            <LinearLayout n1:layout_gravity="left" n1:orientation="vertical" n1:id="@id/panelCallInNumbers" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="16.0sp" n1:layout_weight="1.0">
+                                <include layout="@layout/zm_callin_number" />
+                            </LinearLayout>
+                            <ImageView n1:id="@id/imgCountryFlag" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_flag_us" n1:scaleType="center" n1:contentDescription="@string/zm_description_btn_callin_choose_country" />
+                            <ImageView n1:id="@id/imgNextArrow" n1:layout_width="wrap_content" n1:layout_height="30.0dip" n1:src="@drawable/zm_next_arrow_normal" n1:scaleType="center" n1:contentDescription="@string/zm_description_btn_callin_choose_country" />
+                        </LinearLayout>
+                        <LinearLayout n1:layout_gravity="left" n1:orientation="vertical" n1:id="@id/panelTollFree" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="16.0sp" n1:layout_marginBottom="5.0dip">
+                            <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="3.0dip" n1:layout_marginBottom="5.0dip" n1:text="@string/zm_lbl_toll_free" style="@style/ZMTextView.Normal.Dimmed" />
+                            <LinearLayout n1:layout_gravity="left" n1:orientation="vertical" n1:id="@id/panelTollFreeNumbers" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                                <include layout="@layout/zm_callin_number" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <TextView n1:textColorLink="@color/zm_link" n1:id="@id/txtOtherNumbers" n1:paddingTop="5.0dip" n1:paddingBottom="10.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="16.0sp" n1:text="@string/zm_lbl_tele_conf_other_numbers" style="@style/ZMTextView.Normal.OnLight" />
+                        <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="5.0dip">
+                            <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="5.0dip" n1:text="@string/zm_lbl_tele_conf_enter_access_code" style="@style/ZMTextView.Normal.Dimmed" />
+                            <TextView n1:id="@id/txtAccessCode" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="123 456 789" style="@style/ZMTextView.Normal.Dimmed" />
+                        </LinearLayout>
+                        <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="5.0dip">
+                            <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="5.0dip" n1:text="@string/zm_lbl_tele_conf_input_pin" style="@style/ZMTextView.Normal.Dimmed" />
+                            <TextView n1:id="@id/txtAttendeeId" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="10" style="@style/ZMTextView.Normal.Dimmed" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </us.zoom.androidlib.widget.ZMSettingsCategory>
+            </LinearLayout>
+            <LinearLayout n1:layout_gravity="left" n1:orientation="vertical" n1:id="@id/panelH323Info" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="20.0dip">
+                <TextView n1:id="@id/txtH323InfoTitle" n1:paddingLeft="7.0sp" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:layout_marginBottom="5.0dip" n1:text="@string/zm_lbl_h323_conf" style="@style/ZMTextView.Large.OnLight" />
+                <us.zoom.androidlib.widget.ZMSettingsCategory n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <TableLayout n1:paddingLeft="@dimen/zm_setting_item_padding_left" n1:paddingTop="@dimen/zm_setting_item_padding_top" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:paddingBottom="@dimen/zm_setting_item_padding_bottom" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:shrinkColumns="1">
+                        <TableRow n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                            <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="5.0dip" n1:text="@string/zm_lbl_h323_ip_address" style="@style/ZMTextView.Normal.Dimmed" />
+                            <TextView n1:id="@id/txtH323Info" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="192.168.1.100 or 192.168.1.101" n1:singleLine="false" style="@style/ZMTextView.Normal.Dimmed" />
+                        </TableRow>
+                        <TableRow n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="3.0dip">
+                            <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="5.0dip" n1:text="@string/zm_lbl_h323_meeting_id" style="@style/ZMTextView.Normal.Dimmed" />
+                            <TextView n1:id="@id/txtH323MeetingId" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="\ 123456789" style="@style/ZMTextView.Normal.Dimmed" />
+                        </TableRow>
+                        <TableRow n1:id="@id/panelH323MeetingPassword" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="3.0dip">
+                            <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="5.0dip" n1:text="@string/zm_lbl_h323_meeting_password" style="@style/ZMTextView.Normal.Dimmed" />
+                            <TextView n1:id="@id/txtH323MeetingPassword" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="111111" style="@style/ZMTextView.Normal.Dimmed" />
+                        </TableRow>
+                    </TableLayout>
+                </us.zoom.androidlib.widget.ZMSettingsCategory>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

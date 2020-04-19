@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:gravity="center|left" n1:orientation="horizontal" n1:paddingTop="10.0dip" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:focusable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <TextView n1:gravity="center|left" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="@string/zm_qa_msg_allow_anonymousely_question_41047" n1:layout_weight="1.0" style="@style/ZMTextView.SettingsItem" />
+        <us.zoom.androidlib.widget.ZMCheckedTextView n1:id="@id/chkAllowAskQA" n1:clickable="false" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:checkMark="@drawable/zm_btn_toggle_default" />
+    </LinearLayout>
+    <TextView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_allow_ask_anonymous_question_34305" style="@style/ZMTextView.SettingsItemDesc.Small" />
+</LinearLayout>

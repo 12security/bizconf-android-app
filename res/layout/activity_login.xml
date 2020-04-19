@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/activity_login" n1:background="@color/activity_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:gravity="bottom|center" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0">
+            <ImageView n1:id="@id/imageView" n1:layout_width="@dimen/activity_login_logo" n1:layout_height="@dimen/activity_login_logo" n1:src="@drawable/logo" />
+        </LinearLayout>
+        <LinearLayout n1:orientation="vertical" n1:paddingLeft="@dimen/activity_button_oppointment" n1:paddingTop="30.0dip" n1:paddingRight="@dimen/activity_button_oppointment" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:weightSum="1.0" n1:layout_weight="2.0">
+            <LinearLayout n1:gravity="bottom" n1:paddingBottom="@dimen/activity_nomal_hint" n1:focusable="true" n1:focusableInTouchMode="true" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_vertical_title">
+                <ImageView n1:layout_gravity="center" n1:layout_width="20.0dip" n1:layout_height="20.0dip" n1:src="@drawable/icon_login_user_logo" />
+                <EditText n1:textSize="@dimen/textSize36PX" n1:textColor="@color/black" n1:textColorHint="@color/edittext_hint_fontcolor" n1:layout_gravity="center" n1:id="@id/login_user_name" n1:background="@null" n1:paddingLeft="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:hint="@string/hint_login_name" />
+            </LinearLayout>
+            <include layout="@layout/public_grayline" />
+            <LinearLayout n1:gravity="bottom" n1:paddingBottom="@dimen/activity_nomal_hint" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_vertical_title" n1:layout_marginTop="@dimen/activity_horizontal_hint">
+                <ImageView n1:layout_gravity="center" n1:layout_width="20.0dip" n1:layout_height="20.0dip" n1:src="@drawable/icon_login_key" />
+                <EditText n1:textSize="@dimen/textSize36PX" n1:textColor="@color/black" n1:textColorHint="@color/edittext_hint_fontcolor" n1:layout_gravity="center" n1:id="@id/login_user_password" n1:background="@null" n1:paddingLeft="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:hint="@string/hint_login_key" n1:inputType="textPassword" />
+            </LinearLayout>
+            <include layout="@layout/public_grayline" />
+            <LinearLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="15.0dip" n1:layout_marginBottom="15.0dip">
+                <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/forget_pwd_font_color" n1:gravity="right" n1:id="@id/btn_forget_password" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/hint_login_forgive" />
+            </LinearLayout>
+            <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginTop="30.0dip">
+                <Button n1:textSize="@dimen/textSize36PX" n1:textColor="@color/white" n1:id="@id/login_button_login" n1:background="@drawable/shape_button_login" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_login_button" n1:text="@string/hint_login_logo" />
+                <Button n1:textSize="@dimen/textSize36PX" n1:textColor="@drawable/public_login_join_text_shape" n1:id="@id/login_button_join" n1:background="@drawable/shape_login_join" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_login_button" n1:layout_marginTop="40.0dip" n1:text="@string/join" n1:layout_below="@id/login_button_login" />
+                <LinearLayout n1:gravity="center|top" n1:id="@id/version" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_login_button" n1:layout_alignParentBottom="true" n1:layout_centerVertical="true">
+                    <TextView n1:textSize="@dimen/textSize14PX" n1:textColor="@color/fontcolor" n1:layout_gravity="center" n1:id="@id/version_code" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/hint_login_version" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

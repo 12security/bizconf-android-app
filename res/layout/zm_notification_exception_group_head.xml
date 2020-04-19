@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <us.zoom.androidlib.widget.ZMSettingsLayout n1:orientation="vertical" n1:paddingLeft="0.0dip" n1:paddingTop="@dimen/zm_setting_item_group_spacing" n1:paddingRight="0.0dip" n1:paddingBottom="0.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <us.zoom.androidlib.widget.ZMSettingsCategory n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <RelativeLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/panelAddGroup" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <TextView n1:textColor="@drawable/zm_button_text_color" n1:gravity="center|left" n1:background="@color/zm_white" n1:paddingLeft="@dimen/zm_setting_item_padding_left" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:clickable="false" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_notification_add_exception_group_59554" style="@style/ZMButton.SettingsItem" />
+            </RelativeLayout>
+        </us.zoom.androidlib.widget.ZMSettingsCategory>
+        <TextView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:text="@string/zm_lbl_notification_exception_group_des_59554" style="@style/ZMTextView.SettingsItemDesc" />
+        <TextView n1:textColor="@color/zm_text_on_light" n1:id="@id/txtExceptionGroups" n1:paddingBottom="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="20.0dip" n1:text="@string/zm_lbl_notification_section_exception_group_59554" style="@style/ZMTextView.SettingsItemDesc" />
+    </us.zoom.androidlib.widget.ZMSettingsLayout>
+    <View n1:id="@id/lineHeadDivider" n1:background="@drawable/zm_settings_top_divider" n1:layout_width="fill_parent" n1:layout_height="0.5dip" />
+</LinearLayout>

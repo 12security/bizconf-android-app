@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <meeting.confcloud.cn.bizaudiosdk.view.SwipeRefreshView android:id="@+id/srl" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="8dp">
+        <ListView android:id="@+id/listView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" xmlns:ns1="http://schemas.android.com/apk/res-auto" ns1:layout_constraintBottom_toBottomOf="0" xmlns:ns2="http://schemas.android.com/apk/res-auto" ns2:layout_constraintEnd_toEndOf="0" xmlns:ns3="http://schemas.android.com/apk/res-auto" ns3:layout_constraintStart_toStartOf="0" xmlns:ns4="http://schemas.android.com/apk/res-auto" ns4:layout_constraintTop_toTopOf="0"/>
+    </meeting.confcloud.cn.bizaudiosdk.view.SwipeRefreshView>
+    <include android:id="@+id/layout_empty" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/listview_audio_empty_view"/>
+</LinearLayout>

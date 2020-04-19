@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <selector />
+    <item n1:state_pressed="true" n1:color="@color/violet" />
+    <item n1:state_pressed="false" n1:color="@color/violet" />
+</selector>

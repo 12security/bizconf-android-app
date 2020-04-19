@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@drawable/zm_window_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:gravity="center" n1:id="@id/panelTitleBar" n1:layout_width="fill_parent" n1:layout_height="@dimen/zm_pt_titlebar_height" style="@style/ZMTitleBar">
+        <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <Button n1:id="@id/btnBack" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_title_login" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" style="@style/ZMBackButton" />
+            <TextView n1:gravity="center_horizontal" n1:id="@id/txtTitle" n1:paddingLeft="5.0dip" n1:paddingRight="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_title_forgetpwd" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true" style="@style/ZMTextView.Title" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:gravity="center|top" n1:orientation="vertical" n1:paddingBottom="30.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:gravity="center" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/zm_msg_indication_forgetpwd" style="@style/ZMTextView.Instructions" />
+            <EditText n1:id="@id/edtEmail" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:hint="@string/zm_hint_email" n1:maxLength="128" n1:inputType="textEmailAddress" n1:imeOptions="actionDone" style="@style/ZMSettingOptionEdit" />
+            <Button n1:id="@id/btnSendEmail" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginTop="15.0dip" n1:layout_marginRight="10.0dip" n1:text="@string/zm_btn_send" style="@style/ZMButton.HappyPath" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

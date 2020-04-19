@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:layout_width="fill_parent" n1:layout_height="0.0px" n1:layout_weight="1.0">
+        <RelativeLayout n1:orientation="vertical" n1:id="@id/panelEmoji" n1:background="@color/zm_gray_5" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <us.zoom.androidlib.widget.ZMViewPager n1:id="@id/emojiPager" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_weight="1.0" />
+            <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@id/panelEmojiIndicator" n1:layout_width="fill_parent" n1:layout_height="10.0dip" n1:layout_alignBottom="@id/emojiPager" />
+        </RelativeLayout>
+        <com.zipow.videobox.view.GiphyPreviewView n1:id="@id/panelGiphyPreview" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+        <com.zipow.videobox.view.mm.sticker.CommonEmojiPanelView n1:id="@id/panelCommonEmojisView" n1:background="@color/zm_gray_5" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    </FrameLayout>
+    <LinearLayout n1:id="@id/panelType" n1:background="@color/zm_white" n1:layout_width="fill_parent" n1:layout_height="42.0dip">
+        <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@id/panelEmojiType" n1:paddingLeft="20.0dip" n1:paddingRight="20.0dip" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:contentDescription="@string/zm_accessibility_mm_btn_emoji_23159">
+            <ImageView n1:background="@drawable/zm_mm_emoji_panle_type_bg" n1:padding="1.0dip" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_mm_type_emoji" />
+        </LinearLayout>
+        <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@id/panelGiphyType" n1:paddingLeft="20.0dip" n1:paddingRight="20.0dip" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:contentDescription="@string/zm_accessibility_mm_btn_gif_22379">
+            <ImageView n1:background="@drawable/zm_mm_emoji_panle_type_bg" n1:padding="1.0dip" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_mm_giphy_btn" />
+        </LinearLayout>
+        <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@id/panelStickerType" n1:paddingLeft="20.0dip" n1:paddingRight="20.0dip" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:contentDescription="@string/zm_accessibility_mm_btn_sticker_9004">
+            <ImageView n1:background="@drawable/zm_mm_emoji_panle_type_bg" n1:padding="1.0dip" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_mm_sticker_btn" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

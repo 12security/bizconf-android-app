@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="?android:colorBackground" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/public_toolbar" />
+    <LinearLayout n1:orientation="vertical" n1:id="@id/exclusive_layout" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="vertical" n1:background="@color/white" n1:paddingLeft="@dimen/activity_horizontal_margin" n1:paddingRight="@dimen/activity_horizontal_margin" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_login_logo" n1:layout_below="@id/title_personal" n1:layout_alignParentLeft="true">
+            <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <TextView n1:textSize="@dimen/textSize22px" n1:textColor="@color/black" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/hint_join_ID" />
+                <TextView n1:textSize="@dimen/textSize40PX" n1:textColor="@color/black" n1:id="@id/exclusive_conference_id" n1:paddingLeft="@dimen/activity_horizontal_margin" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="\ 12342342342342" />
+            </LinearLayout>
+            <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@id/linearLayout" n1:layout_width="fill_parent" n1:layout_height="30.0dip" n1:layout_marginTop="@dimen/activity_vertical_hint">
+                <LinearLayout n1:gravity="center_horizontal" n1:paddingRight="@dimen/activity_horizontal_hint" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                    <Button n1:textSize="@dimen/textSize24PX" n1:textColor="@color/forget_pwd_font_color" n1:id="@id/start_meeting" n1:background="@drawable/shape_button2" n1:layout_width="100.0dip" n1:layout_height="wrap_content" n1:text="@string/personal_start_meeting" />
+                </LinearLayout>
+                <LinearLayout n1:gravity="center_horizontal" n1:paddingLeft="@dimen/activity_horizontal_hint" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                    <Button n1:textSize="@dimen/textSize24PX" n1:textColor="@color/forget_pwd_font_color" n1:id="@id/turn_personal_room_setting" n1:background="@drawable/shape_button2" n1:layout_width="100.0dip" n1:layout_height="fill_parent" n1:text="@string/personal_setting_meeting" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_horizontal_margin" />
+    </LinearLayout>
+    <include layout="@layout/public_weekcalendar" />
+    <LinearLayout n1:orientation="vertical" n1:id="@id/have_meetings" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <TextView n1:textSize="@dimen/textSize24PX" n1:gravity="center_vertical" n1:id="@id/appointment_meeting_number" n1:background="@color/light_yellow" n1:paddingLeft="@dimen/personal_meetings_width" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_public_hint" n1:layout_marginTop="@dimen/activity_horizontal_margin" n1:text="@string/personal_number_meeting" />
+        <cn.bizconf.vcpro.common.view.expandlayout.ExpandableLayoutListView n1:id="@id/list_view" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    </LinearLayout>
+    <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:id="@id/no_meeting" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/icon_no_meeting" />
+        <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/no_meetings" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/no_meetings" />
+    </LinearLayout>
+</LinearLayout>

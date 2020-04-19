@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<us.zoom.androidlib.widget.ZMSettingsLayout n1:orientation="vertical" n1:paddingTop="5.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:zm_settingsCategorySpacing="0.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android" xmlns:n2="http://schemas.android.com/apk/res-auto">
+    <us.zoom.androidlib.widget.ZMSettingsCategory n1:orientation="vertical" n1:id="@id/panelFeedback" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:zm_dividerHeight="0.0dip">
+        <TextView n1:gravity="center" n1:paddingTop="5.0dip" n1:paddingBottom="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_change_feedback_12050" style="@style/ZMTextView.SettingsItem" />
+        <com.zipow.videobox.view.NonVerbalFeedbackActionView n1:id="@id/viewFeedback" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_centerVertical="true" />
+    </us.zoom.androidlib.widget.ZMSettingsCategory>
+    <us.zoom.androidlib.widget.ZMSettingsCategory n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n2:zm_dividerHeight="0.0dip">
+        <TextView n1:gravity="center" n1:id="@id/txtClearFeedback" n1:background="@drawable/zm_settings_item_selector" n1:paddingTop="8.0dip" n1:paddingBottom="5.0dip" n1:focusable="true" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/zm_btn_clear_feedback_12050" style="@style/ZMTextView.SettingsItem" />
+    </us.zoom.androidlib.widget.ZMSettingsCategory>
+</us.zoom.androidlib.widget.ZMSettingsLayout>

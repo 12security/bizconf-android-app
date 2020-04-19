@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="zm_add_buddy_time_exceed_44781">
+        <item quantity="one">Sie haben zu viele ungültige Versuche unternommen. Versuchen Sie es in 1 Minute erneut.</item>
+        <item quantity="other">Sie haben zu viele ungültige Versuche unternommen. Versuchen Sie es in %d Minuten erneut.</item>
+    </plurals>
+    <plurals name="zm_lbl_folder_items">
+        <item quantity="one">1 Artikel</item>
+        <item quantity="other">%d Artikel</item>
+    </plurals>
+    <plurals name="zm_lbl_notification_snoozed_hour_19898">
+        <item quantity="one">1 Stunde</item>
+        <item quantity="other">%d Stunden</item>
+    </plurals>
+    <plurals name="zm_lbl_notification_snoozed_min_19898">
+        <item quantity="one">1 Minute</item>
+        <item quantity="other">%d Minuten</item>
+    </plurals>
+    <plurals name="zm_lbl_webinar_telephony_user_count">
+        <item quantity="one">Insgesamt 1 Telefon-Einwahl Zuhörer</item>
+        <item quantity="other">Insgesamt %d Telefon-Einwahl-Zuhörer</item>
+    </plurals>
+    <plurals name="zm_mm_lbl_new_message_count_14491">
+        <item quantity="one">↑%s neue Nachricht</item>
+        <item quantity="other">↑%s neue Nachrichten</item>
+    </plurals>
+    <plurals name="zm_mm_msg_day_33479">
+        <item quantity="one">1 Tag</item>
+        <item quantity="other">%d Tage</item>
+    </plurals>
+    <plurals name="zm_mm_msg_hour_33479">
+        <item quantity="one">1 Stunde</item>
+        <item quantity="other">%d Stunden</item>
+    </plurals>
+    <plurals name="zm_mm_msg_month_33479">
+        <item quantity="one">1 Monat</item>
+        <item quantity="other">%d Monate</item>
+    </plurals>
+    <plurals name="zm_mm_msg_year_33479">
+        <item quantity="one">1 Jahr</item>
+        <item quantity="other">%d Jahre</item>
+    </plurals>
+    <plurals name="zm_msg_charactors_left">
+        <item quantity="one">1 Zeichen übrig</item>
+        <item quantity="other">%d Zeichen übrig</item>
+    </plurals>
+    <plurals name="zm_msg_invitations_sent">
+        <item quantity="one">1 Einladung wurde versendet</item>
+        <item quantity="other">%d Einladungen wurden versendet</item>
+    </plurals>
+    <plurals name="zm_msg_join_meeting_in_waiting_list">
+        <item quantity="one">1 Perons ist in den Warteraum für dieses Meeting eingetreten</item>
+        <item quantity="other">%d Personen sind in den Warteraum für dieses Meeting eingetreten</item>
+    </plurals>
+    <plurals name="zm_msg_notification_unread_num_8295">
+        <item quantity="one">%1$s(1 Meldungen ungelesen)</item>
+        <item quantity="other">%1$s(%2$d Meldungen ungelesen)</item>
+    </plurals>
+    <plurals name="zm_sip_delete_x_items_61381">
+        <item quantity="one">1 Element löschen</item>
+        <item quantity="other">%d Elemente löschen</item>
+    </plurals>
+    <plurals name="zm_title_edit_emoji_selected">
+        <item quantity="one">Ein Emoji ausgewählt</item>
+        <item quantity="other">%d Emojis ausgewählt</item>
+    </plurals>
+</resources>

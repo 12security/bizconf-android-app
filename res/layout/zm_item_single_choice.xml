@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@drawable/zm_list_selector_background" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <TextView n1:gravity="center|left" n1:id="@id/txtTitle" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0" style="@style/ZMTextView.SettingsItem" />
+        <ImageView n1:id="@id/imgSelected" n1:visibility="visible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/zm_setting_item_padding_right" />
+    </LinearLayout>
+    <View n1:id="@id/divider" n1:background="@drawable/zm_settings_center_divider" n1:layout_width="fill_parent" n1:layout_height="2.0px" />
+</LinearLayout>

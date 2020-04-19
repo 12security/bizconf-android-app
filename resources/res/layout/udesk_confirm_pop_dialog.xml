@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/udesk_loginDialog_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/udesk_confirm_pop_panel" android:background="@drawable/udesk_puw_bg_corners" android:layout_width="260dp" android:layout_height="wrap_content" android:minHeight="180dp">
+        <FrameLayout android:layout_gravity="left|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="120dp">
+            <TextView android:textSize="@dimen/udesk_sp18" android:textColor="@color/udesk_custom_dialog_cancle_btn_color" android:gravity="center" android:layout_gravity="center" android:id="@+id/udesk_confirm_pop_content" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="@dimen/udesk_300"/>
+        </FrameLayout>
+        <include layout="@layout/udesk_line_horizontal"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="60dp" android:minHeight="60dp">
+            <TextView android:textSize="@dimen/udesk_sp15" android:textColor="@color/udesk_custom_dialog_cancle_btn_color" android:gravity="center" android:layout_gravity="center" android:id="@+id/udesk_confirm_pop_negative" android:background="@drawable/udesk_puw_bt_selecter_left" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+            <include layout="@layout/udesk_line_vertical"/>
+            <TextView android:textSize="@dimen/udesk_sp15" android:textColor="@color/udesk_custom_dialog_sure_btn_color" android:gravity="center" android:layout_gravity="center" android:id="@+id/udesk_confirm_pop_positive" android:background="@drawable/udesk_puw_bt_selecter_right" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

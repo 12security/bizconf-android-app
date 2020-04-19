@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="60.0dip">
+        <com.zipow.videobox.view.AvatarView n1:id="@id/zm_starred_list_item_avatarView" n1:layout_width="45.0dip" n1:layout_height="45.0dip" n1:layout_marginLeft="15.0dip" />
+        <TextView n1:id="@id/zm_starred_list_item_Name" n1:layout_width="0.0px" n1:layout_height="wrap_content" n1:layout_marginLeft="15.0dip" n1:singleLine="true" n1:layout_weight="1.0" />
+        <LinearLayout n1:gravity="center|right" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+            <ImageView n1:id="@id/zm_starred_list_item_star_btn" n1:padding="9.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="10.0dip" n1:src="@drawable/zm_starred_message_arrow" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<smack>
+    <startupClasses>
+        <className>udesk.org.jivesoftware.smackx.hoxt.HOXTManager</className>
+    </startupClasses>
+</smack>

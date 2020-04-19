@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@drawable/zm_window_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:weightSum="1.0"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout n1:gravity="center_vertical" n1:id="@id/panelTitleBar" n1:layout_width="fill_parent" n1:layout_height="@dimen/zm_pt_titlebar_height" n2:zm_leftButton="@id/btnClose" n2:zm_rightButton="@id/btnEmpty" n2:zm_title="@id/txtTitle" style="@style/ZMTitleBar" xmlns:n2="http://schemas.android.com/apk/res-auto">
+        <Button n1:id="@id/btnClose" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_btn_close" style="@style/ZMButton.TitleBar" />
+        <View n1:id="@id/btnEmpty" n1:layout_width="0.0dip" n1:layout_height="wrap_content" />
+        <us.zoom.androidlib.widget.ZMDynTextSizeTextView n1:gravity="center_horizontal" n1:id="@id/txtTitle" n1:paddingLeft="5.0dip" n1:paddingRight="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_title_feedback_list_12050" style="@style/ZMTextView.Title" />
+    </us.zoom.androidlib.widget.ZMIOSStyleTitlebarLayout>
+    <View n1:background="@color/zm_list_bg_grey" n1:layout_width="fill_parent" n1:layout_height="35.0dip" />
+    <FrameLayout n1:id="@id/listContainer" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0">
+        <com.zipow.videobox.view.NonVerbalFeedbackListView n1:id="@id/listView" n1:background="@color/zm_list_bg_grey" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    </FrameLayout>
+    <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:id="@id/panelActions" n1:background="@drawable/zm_tab_bg" n1:paddingLeft="3.0dip" n1:paddingTop="3.0dip" n1:paddingRight="3.0dip" n1:layout_width="fill_parent" n1:layout_height="@dimen/zm_pt_titlebar_height">
+        <Button n1:id="@id/btnClearAll" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_btn_clear_all_12050" style="@style/ZMButton.Mini" />
+    </LinearLayout>
+</LinearLayout>

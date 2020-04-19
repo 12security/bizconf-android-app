@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:background="@drawable/zm_bo_join_leave_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <LinearLayout n1:gravity="center_horizontal" n1:layout_gravity="center" n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <ImageView n1:id="@id/waitingAnimation" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_anim_bo_connecting_1" n1:layout_centerInParent="true" />
+            <ImageView n1:id="@id/joiningImage" n1:background="@drawable/zm_bo_join_arrow" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="16.0dip" n1:layout_toLeftOf="@id/waitingAnimation" n1:layout_centerVertical="true" />
+            <ImageView n1:id="@id/leavingImage" n1:background="@drawable/zm_bo_leave_arrow" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="16.0dip" n1:layout_toLeftOf="@id/waitingAnimation" n1:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView n1:gravity="center" n1:layout_gravity="center" n1:id="@id/txtJoiningPrompt" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="40.0dip" n1:text="@string/zm_bo_lbl_joining_prompt" style="@style/ZMTextView.ExtremLarge.OnDark" />
+        <TextView n1:layout_gravity="center" n1:id="@id/txtLeavingPrompt" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="40.0dip" n1:text="@string/zm_bo_lbl_leaving_prompt" style="@style/ZMTextView.ExtremLarge.OnDark" />
+        <TextView n1:textSize="13.0sp" n1:textColor="#fff8f8f8" n1:layout_gravity="center" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="20.0dip" n1:text="@string/zm_bo_lbl_waiting_prompt" />
+    </LinearLayout>
+</FrameLayout>

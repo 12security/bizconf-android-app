@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:paddingLeft="20.0dip" n1:paddingTop="5.0dip" n1:paddingRight="20.0dip" n1:paddingBottom="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:minHeight="46.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/imgIcon" n1:layout_width="48.0dip" n1:layout_height="48.0dip" n1:src="@android:drawable/sym_def_app_icon" />
+    <TextView n1:id="@id/txtLabel" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="15.0dip" n1:text="Email" style="@style/ZMTextView.PopItem" />
+</LinearLayout>

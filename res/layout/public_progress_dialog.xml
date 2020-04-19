@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="vertical" n1:id="@id/dialog_view" n1:background="@color/transparent_black" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:background="@drawable/public_dialog_shape" n1:layout_width="300.0dip" n1:layout_height="200.0dip" n1:minWidth="100.0dip" n1:layout_centerInParent="true">
+            <ImageView n1:id="@id/progress_dialog_img" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="28.0dip" n1:src="@drawable/loading" />
+            <TextView n1:textSize="@dimen/textSize28px" n1:textColor="#ff292415" n1:id="@id/progress_dialog_txt" n1:layout_width="wrap_content" n1:layout_height="@dimen/activity_public_editext" n1:layout_marginTop="28.0dip" n1:text="@string/please_wait" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

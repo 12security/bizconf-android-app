@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include layout="@layout/public_grayline"/>
+    <RelativeLayout android:id="@+id/rl_history" android:background="@color/white" android:layout_width="match_parent" android:layout_height="40dp">
+        <TextView android:textSize="@dimen/textSize26PX" android:textColor="@color/light_gray" android:ellipsize="end" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/pop_window_list_item" android:paddingLeft="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_vertical_margin" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/textSize26PX" android:textColor="@color/light_gray" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/pop_window_list_item_title" android:paddingLeft="@dimen/activity_vertical_margin" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" android:layout_toLeftOf="@+id/pop_window_list_item" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_deleteHistory" android:background="@color/activity_bg" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/public_grayline"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="45dp">
+            <TextView android:textSize="@dimen/textSize26PX" android:textColor="@color/forget_pwd_font_color" android:gravity="center" android:id="@+id/tv_deletehistory" android:paddingLeft="@dimen/activity_vertical_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/clear_history" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="@dimen/textSize26PX" android:textColor="@color/forget_pwd_font_color" android:gravity="center" android:id="@+id/tv_close" android:paddingLeft="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_vertical_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/close_history" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <include layout="@layout/public_grayline"/>
+    </LinearLayout>
+</LinearLayout>

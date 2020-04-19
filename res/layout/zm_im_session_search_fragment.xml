@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/panelSearch" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:paddingLeft="10.0dip" n1:paddingTop="10.0dip" n1:paddingBottom="10.0dip" n1:layout_width="fill_parent" n1:layout_height="@dimen/zm_pt_titlebar_height" style="@style/ZMTitleBar.Dark">
+        <RelativeLayout n1:id="@id/panelSearchBar" n1:background="@drawable/zm_search_corner_bg" n1:paddingLeft="5.0dip" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginRight="10.0dip" n1:layout_toLeftOf="@id/btnSearch" n1:layout_centerVertical="true" n1:layout_alignWithParentIfMissing="true">
+            <ImageView n1:id="@id/imgSearch" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" n1:layout_marginRight="5.0dip" n1:src="@drawable/zm_ic_search" n1:layout_centerVertical="true" />
+            <EditText n1:id="@id/edtSearch" n1:paddingRight="30.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:hint="@string/zm_hint_search_messages_18680" n1:layout_toRightOf="@id/imgSearch" n1:layout_centerVertical="true" n1:imeOptions="actionSearch" style="@style/ZMEditText.GlobalSearch" />
+            <ImageButton n1:id="@id/btnClearSearchView" n1:background="@null" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_btn_clear_search_view" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+        </RelativeLayout>
+        <Button n1:id="@id/btnSearch" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:text="@string/zm_btn_search" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" style="@style/ZMButton.TitleBar.OnDark" />
+    </RelativeLayout>
+    <LinearLayout n1:gravity="bottom|center" n1:orientation="horizontal" n1:id="@id/panelTitleBar" n1:background="@color/zm_title_bar_dark_bg" n1:paddingTop="0.0dip" n1:paddingBottom="0.0dip" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <LinearLayout n1:orientation="vertical" n1:id="@id/panelFiles" n1:layout_width="140.0dip" n1:layout_height="wrap_content">
+            <TextView n1:textColor="@drawable/zm_title_tab_text_color" n1:layout_gravity="center_horizontal" n1:id="@id/txtTabFilesLabel" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_tab_content_search_contents" style="@style/ZMTextView.Large" />
+            <View n1:background="@drawable/zm_title_tab_indicator_color" n1:duplicateParentState="true" n1:layout_width="fill_parent" n1:layout_height="2.0dip" n1:layout_marginTop="5.0dip" />
+        </LinearLayout>
+        <LinearLayout n1:orientation="vertical" n1:id="@id/panelMessages" n1:layout_width="140.0dip" n1:layout_height="wrap_content">
+            <TextView n1:textColor="@drawable/zm_title_tab_text_color" n1:layout_gravity="center_horizontal" n1:id="@id/txtTabMessagesLabel" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_tab_content_search_messages" style="@style/ZMTextView.Large" />
+            <View n1:background="@drawable/zm_title_tab_indicator_color" n1:duplicateParentState="true" n1:layout_width="fill_parent" n1:layout_height="2.0dip" n1:layout_marginTop="5.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout n1:id="@id/listContainer" n1:background="@color/zm_dimmed_forground" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0">
+        <com.zipow.videobox.view.mm.MMContentSearchFilesListView n1:id="@id/listViewContentFiles" n1:background="@drawable/zm_listview_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+        <com.zipow.videobox.view.mm.MMContentSearchMessagesListView n1:id="@id/listViewContentMessages" n1:background="@drawable/zm_listview_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+        <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:id="@id/panelEmptyView" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <TextView n1:gravity="center" n1:id="@id/txtEmptyView" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:text="@string/zm_lbl_content_search_result_empty" style="@style/ZMTextView.SettingsItem" />
+            <TextView n1:gravity="center" n1:id="@id/txtLoadingError" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:text="@string/zm_lbl_content_load_error" style="@style/ZMTextView.SettingsItem" />
+            <TextView n1:gravity="center" n1:id="@id/txtContentLoading" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_lbl_pull_down_refresh_list_loading" n1:drawableTop="@drawable/zm_ic_conent_loading" n1:drawablePadding="10.0dip" style="@style/ZMTextView.SettingsItem" />
+        </LinearLayout>
+        <ImageView n1:background="@drawable/zm_ic_titlebar_shadow" n1:layout_width="fill_parent" n1:layout_height="10.0dip" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:paddingTop="5.0dip" n1:paddingBottom="5.0dip" n1:descendantFocusability="blocksDescendants" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:ellipsize="end" n1:id="@id/txtCity" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/zm_setting_item_padding_left" n1:text="Asia/Shanghai" style="@style/ZMTextView.Medium.OnLight" />
+    <TextView n1:ellipsize="end" n1:id="@id/txtGMT" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/zm_setting_item_padding_left" n1:layout_marginTop="3.0dip" n1:text="China stardard time : GMT +8.0" style="@style/ZMTextView.Small.OnLight" />
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@color/zm_im_search_bar_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:id="@id/panelTitleBar" n1:paddingLeft="10.0dip" n1:paddingTop="10.0dip" n1:paddingBottom="10.0dip" n1:layout_width="fill_parent" n1:layout_height="@dimen/zm_pt_titlebar_height" style="@style/ZMTitleBar.Search">
+        <RelativeLayout n1:id="@id/panelSearchBar" n1:background="@drawable/zm_white_search_corner_bg" n1:paddingLeft="5.0dip" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_toLeftOf="@id/btnBack" n1:layout_centerVertical="true">
+            <ImageView n1:id="@id/imgSearch" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" n1:layout_marginRight="5.0dip" n1:src="@drawable/zm_ic_search" n1:layout_centerVertical="true" />
+            <EditText n1:textColorHint="@color/zm_im_search_text_hint" n1:id="@id/edtSearch" n1:paddingRight="30.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:hint="@string/zm_hint_search_im_18680" n1:layout_toRightOf="@id/imgSearch" n1:layout_centerVertical="true" n1:imeOptions="actionDone" style="@style/ZMEditText.GlobalSearch" />
+            <Button n1:id="@id/btnClearSearchView" n1:background="@drawable/zm_btn_clear_search_view" n1:visibility="gone" n1:layout_width="24.0dip" n1:layout_height="24.0dip" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+        </RelativeLayout>
+        <Button n1:textSize="16.0sp" n1:id="@id/btnBack" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_btn_cancel" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" style="@style/ZMButton.TitleBar.Search" />
+    </RelativeLayout>
+    <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:id="@id/panelSpecifiedContents" n1:background="@android:color/white" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <TextView n1:textSize="13.0sp" n1:textColor="@color/zm_im_search_specified_contents" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="33.0dip" n1:text="@string/zm_mm_search_global_title_18680" />
+        <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="20.0dip" n1:layout_marginTop="23.0dip" n1:divider="@drawable/zm_im_search_divider" n1:showDividers="middle" n1:dividerPadding="2.0dip">
+            <LinearLayout n1:gravity="center" n1:id="@id/btn_search_contacts" n1:layout_width="0.0px" n1:layout_height="fill_parent" n1:layout_weight="1.0">
+                <TextView n1:textSize="13.0sp" n1:textColor="@color/zm_im_search_text_color" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_mm_search_global_contacts_18680" />
+            </LinearLayout>
+            <LinearLayout n1:gravity="center" n1:id="@id/btn_search_messages" n1:layout_width="0.0px" n1:layout_height="fill_parent" n1:layout_weight="1.0">
+                <TextView n1:textSize="13.0sp" n1:textColor="@color/zm_im_search_text_color" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_mm_search_global_messages_18680" />
+            </LinearLayout>
+            <LinearLayout n1:gravity="center" n1:id="@id/btn_search_contents" n1:layout_width="0.0px" n1:layout_height="fill_parent" n1:layout_weight="1.0">
+                <TextView n1:textSize="13.0sp" n1:textColor="@color/zm_im_search_text_color" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_mm_search_global_contents_18680" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.zipow.videobox.view.IMSearchView n1:id="@id/searchResultListView" n1:background="@color/zm_white" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:divider="@android:color/transparent" />
+    <TextView n1:gravity="center|top" n1:layout_gravity="center_horizontal" n1:id="@id/txtEmptyView" n1:background="@color/zm_white" n1:paddingTop="30.0dip" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:text="@string/zm_lbl_search_result_empty" style="@style/ZMTextView.SettingsItem" />
+</LinearLayout>

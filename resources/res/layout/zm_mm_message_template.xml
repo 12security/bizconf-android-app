@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/panelMsgLayout" android:paddingLeft="8dp" android:paddingTop="6dp" android:paddingRight="8dp" android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.zipow.videobox.view.AvatarView android:layout_gravity="top" android:id="@+id/avatarView" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginRight="5dp"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/txtScreenName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Reed Yang" android:singleLine="true" style="@style/ZMTextView.ExSmall.Dimmed"/>
+        <include layout="@layout/zm_mm_starred_message_title_view"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/panelTemplate" android:layout_width="@dimen/zm_msg_addon_width" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/templateTitle" android:background="@drawable/zm_msg_template_title_bg" android:layout_width="match_parent" android:layout_height="30dp">
+                    <TextView android:id="@+id/titleTxt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:singleLine="true"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@drawable/zm_msg_template_content_bg" android:paddingTop="7dp" android:paddingBottom="7dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.zipow.videobox.view.mm.MMMessageTemplateItemView android:id="@+id/zm_msg_messages" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <com.zipow.videobox.view.mm.MMMessageTemplateAttachmentsView android:id="@+id/zm_msg_attachments" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp"/>
+                    <LinearLayout android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/template_action_bar_linear" android:paddingLeft="5dp" android:paddingTop="7dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="10sp" android:textColor="@color/zm_template_action_btn_txt" android:gravity="center" android:id="@+id/template_action_btn1" android:background="@drawable/zm_msg_template_action_btn_bg" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginLeft="5dp" android:maxWidth="90dp" android:minWidth="50dp" android:singleLine="true"/>
+                        <TextView android:textSize="10sp" android:textColor="@color/zm_template_action_btn_txt" android:gravity="center" android:id="@+id/template_action_btn2" android:background="@drawable/zm_msg_template_action_btn_bg" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginLeft="5dp" android:maxWidth="90dp" android:minWidth="50dp" android:singleLine="true"/>
+                        <TextView android:textSize="10sp" android:textColor="@color/zm_template_action_btn_txt" android:gravity="center" android:id="@+id/template_action_btn3" android:background="@drawable/zm_msg_template_action_btn_bg" android:paddingLeft="5dp" android:paddingRight="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginLeft="5dp" android:maxWidth="90dp" android:minWidth="50dp" android:singleLine="true"/>
+                        <TextView android:textSize="10sp" android:textColor="@color/zm_template_action_btn_txt" android:gravity="center" android:id="@+id/template_action_btn_more" android:background="@drawable/zm_msg_template_action_btn_bg" android:padding="5.76px" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginLeft="8dp" android:maxWidth="90dp" android:minWidth="50dp" android:text="@string/zm_mm_template_action_more_40639" android:drawableRight="@drawable/zm_mm_template_more_arrow"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:id="@+id/zm_mm_starred" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@drawable/zm_mm_starred_message_icon"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

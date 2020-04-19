@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="?android:colorBackground" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/public_toolbar" />
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/turn_user_message" n1:background="@color/white" n1:paddingLeft="@dimen/activity_horizontal_margin" n1:paddingRight="@dimen/activity_horizontal_margin" n1:clickable="true" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_login_logo" n1:layout_marginTop="@dimen/activity_horizontal_margin" n1:onClick="onClick">
+        <ImageView n1:id="@id/chose_user_pic" n1:visibility="gone" n1:layout_width="@dimen/activity_tatal_radiogroup" n1:layout_height="@dimen/activity_tatal_radiogroup" />
+        <RelativeLayout n1:id="@id/default_user_pic" n1:layout_width="@dimen/activity_tatal_radiogroup" n1:layout_height="@dimen/activity_tatal_radiogroup">
+            <ImageView n1:background="@drawable/public_user_pic_shape" n1:layout_width="@dimen/activity_tatal_radiogroup" n1:layout_height="@dimen/activity_tatal_radiogroup" />
+            <TextView n1:textSize="@dimen/textSize54PX" n1:textColor="@color/white" n1:gravity="center" n1:id="@id/user_nick_name_frist" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:text="李" />
+        </RelativeLayout>
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginLeft="@dimen/activity_horizontal_margin">
+            <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/black" n1:ellipsize="end" n1:id="@id/user_nick_name" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/setting_name" n1:maxEms="15" n1:singleLine="true" />
+            <TextView n1:textSize="@dimen/textSize24PX" n1:textColor="@color/edittext_hint_fontcolor" n1:id="@id/login_name_show" n1:paddingTop="5.0dip" n1:paddingBottom="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/setting_email" />
+            <TextView n1:textSize="@dimen/textSize24PX" n1:textColor="@color/edittext_hint_fontcolor" n1:id="@id/login_name_show_siteurl" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/setting_site" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout n1:gravity="center_vertical" n1:background="@color/white" n1:paddingLeft="@dimen/activity_horizontal_margin" n1:paddingRight="@dimen/activity_horizontal_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/activity_horizontal_margin">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <ImageView n1:layout_gravity="center" n1:layout_width="@dimen/activity_horizontal_margin" n1:layout_height="@dimen/activity_horizontal_margin" n1:src="@drawable/icon_metting_setting" />
+                <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/fontcolor" n1:gravity="center_vertical" n1:id="@id/turn_meeting_setting" n1:background="@color/white" n1:paddingLeft="@dimen/activity_nomal_hint" n1:clickable="true" n1:layout_width="0.0dip" n1:layout_height="@dimen/activity_vertical_title" n1:text="@string/setting_meeting_setting" n1:layout_weight="1.0" n1:onClick="onClick" />
+                <ImageView n1:layout_gravity="center" n1:layout_width="@dimen/activity_horizontal_hint" n1:layout_height="@dimen/activity_horizontal_hint" n1:src="@drawable/icon_arrow_right_big" />
+            </LinearLayout>
+            <include layout="@layout/public_grayline" />
+            <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <ImageView n1:layout_gravity="center" n1:layout_width="@dimen/activity_horizontal_margin" n1:layout_height="@dimen/activity_horizontal_margin" n1:src="@drawable/icon_change_password" />
+                <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/fontcolor" n1:gravity="center_vertical" n1:id="@id/turn_change_password" n1:background="@color/white" n1:paddingLeft="@dimen/activity_nomal_hint" n1:clickable="true" n1:layout_width="0.0dip" n1:layout_height="@dimen/activity_vertical_title" n1:text="@string/setting_change_password" n1:layout_weight="1.0" n1:onClick="onClick" />
+                <ImageView n1:layout_gravity="center" n1:layout_width="@dimen/activity_horizontal_hint" n1:layout_height="@dimen/activity_horizontal_hint" n1:src="@drawable/icon_arrow_right_big" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="vertical" n1:background="@color/white" n1:paddingLeft="@dimen/activity_horizontal_margin" n1:paddingRight="@dimen/activity_horizontal_margin" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/activity_horizontal_margin">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <ImageView n1:layout_gravity="center" n1:layout_width="@dimen/activity_horizontal_margin" n1:layout_height="@dimen/activity_horizontal_margin" n1:src="@drawable/icon_note" />
+                <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/fontcolor" n1:gravity="center_vertical" n1:id="@id/turn_about" n1:background="@color/white" n1:paddingLeft="@dimen/activity_nomal_hint" n1:clickable="true" n1:layout_width="0.0dip" n1:layout_height="@dimen/activity_vertical_title" n1:text="@string/setting_about" n1:layout_weight="1.0" n1:onClick="onClick" />
+                <ImageView n1:layout_gravity="center" n1:layout_width="@dimen/activity_horizontal_hint" n1:layout_height="@dimen/activity_horizontal_hint" n1:src="@drawable/icon_arrow_right_big" />
+            </LinearLayout>
+            <include layout="@layout/public_grayline" />
+            <LinearLayout n1:orientation="horizontal" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <ImageView n1:layout_gravity="center" n1:layout_width="@dimen/activity_horizontal_margin" n1:layout_height="@dimen/activity_horizontal_margin" n1:src="@drawable/icon_setting_help" />
+                <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/fontcolor" n1:gravity="center_vertical" n1:id="@id/turn_help" n1:background="@color/white" n1:paddingLeft="@dimen/activity_nomal_hint" n1:clickable="true" n1:layout_width="0.0dip" n1:layout_height="@dimen/activity_vertical_title" n1:text="@string/setting_help" n1:layout_weight="1.0" n1:onClick="onClick" />
+                <ImageView n1:layout_gravity="center" n1:layout_width="@dimen/activity_horizontal_hint" n1:layout_height="@dimen/activity_horizontal_hint" n1:src="@drawable/icon_arrow_right_big" />
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/public_grayline" />
+        <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <ImageView n1:layout_gravity="center" n1:layout_width="@dimen/activity_horizontal_margin" n1:layout_height="@dimen/activity_horizontal_margin" n1:src="@drawable/online_service" />
+            <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/fontcolor" n1:gravity="center_vertical" n1:id="@id/onlineService" n1:background="@color/white" n1:paddingLeft="@dimen/activity_nomal_hint" n1:clickable="true" n1:layout_width="0.0dip" n1:layout_height="@dimen/activity_vertical_title" n1:text="@string/setting_online_service" n1:layout_weight="1.0" n1:onClick="onClick" />
+            <ImageView n1:layout_gravity="center" n1:layout_width="@dimen/activity_horizontal_hint" n1:layout_height="@dimen/activity_horizontal_hint" n1:src="@drawable/icon_arrow_right_big" />
+        </LinearLayout>
+        <include layout="@layout/public_grayline" />
+        <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <ImageView n1:layout_gravity="center" n1:layout_width="@dimen/activity_horizontal_margin" n1:layout_height="@dimen/activity_horizontal_margin" n1:src="@drawable/online_phone" />
+            <TextView n1:textSize="@dimen/textSize28px" n1:textColor="@color/fontcolor" n1:gravity="center_vertical" n1:id="@id/onlinePhone" n1:background="@color/white" n1:paddingLeft="@dimen/activity_nomal_hint" n1:clickable="true" n1:layout_width="0.0dip" n1:layout_height="@dimen/activity_vertical_title" n1:text="@string/setting_online_phone" n1:layout_weight="1.0" n1:onClick="onClick" />
+            <ImageView n1:layout_gravity="center" n1:layout_width="@dimen/activity_horizontal_hint" n1:layout_height="@dimen/activity_horizontal_hint" n1:src="@drawable/icon_arrow_right_big" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button n1:textSize="@dimen/textSize28px" n1:textColor="@color/violet" n1:id="@id/sign_out" n1:background="@drawable/shape_button" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_login_button" n1:layout_marginLeft="@dimen/activity_vertical_title" n1:layout_marginTop="@dimen/activity_public_hint" n1:layout_marginRight="@dimen/activity_vertical_title" n1:text="@string/setting_sign_out" />
+</LinearLayout>

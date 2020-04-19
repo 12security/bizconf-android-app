@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layoutDirection="ltr"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager n1:id="@id/vpEmotioin" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0" />
+    <LinearLayout n1:gravity="center" n1:layout_gravity="center_horizontal" n1:orientation="horizontal" n1:id="@id/llPageNumber" n1:layout_width="wrap_content" n1:layout_height="12.0dip" n1:layout_marginTop="10.0dip" n1:layout_marginBottom="4.0dip" />
+    <View n1:background="@color/line" n1:layout_width="fill_parent" n1:layout_height="1.0dip" />
+    <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <RelativeLayout n1:id="@id/rlEmotionAdd" n1:background="@drawable/udesk_selector_common_item" n1:layout_width="55.0dip" n1:layout_height="35.0dip">
+            <View n1:background="@color/line" n1:layout_width="1.0dip" n1:layout_height="fill_parent" n1:layout_alignParentRight="true" />
+            <ImageView n1:id="@id/ivIcon" n1:layout_width="25.0dip" n1:layout_height="25.0dip" n1:layout_centerInParent="true" />
+        </RelativeLayout>
+        <HorizontalScrollView n1:scrollbars="none" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+            <LinearLayout n1:orientation="horizontal" n1:id="@id/llTabContainer" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+        </HorizontalScrollView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:id="@+id/txt_upcoming_time" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ZMTextView.Small.Dimmed.OnDark"/>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:id="@+id/txt_upcoming_meeting_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/ZMTextView.ConfChatTitle"/>
+        <TextView android:id="@+id/txt_upcoming_meeting_desc" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/ZMTextView.Small.Dimmed.OnDark"/>
+    </LinearLayout>
+    <Button android:id="@+id/btnUpcomingAction" android:duplicateParentState="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="48dp" android:text="@string/zm_btn_start" style="@style/ZMButton.Small"/>
+</LinearLayout>

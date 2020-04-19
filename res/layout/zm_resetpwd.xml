@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@drawable/zm_window_bg" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:gravity="center" n1:id="@id/panelTitleBar" n1:layout_width="fill_parent" n1:layout_height="@dimen/zm_pt_titlebar_height" style="@style/ZMTitleBar">
+        <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <Button n1:id="@id/btnBack" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_btn_cancel" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" style="@style/ZMButton.TitleBar" />
+            <TextView n1:gravity="center_horizontal" n1:id="@id/txtTitle" n1:paddingLeft="5.0dip" n1:paddingRight="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_title_resetpwd" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true" style="@style/ZMTextView.Title" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:gravity="center|top" n1:orientation="vertical" n1:paddingBottom="30.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:gravity="center" n1:id="@id/txtMessage" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="@string/zm_msg_indication_resetpwd" style="@style/ZMTextView.Instructions" />
+            <us.zoom.androidlib.widget.ZMSettingsCategory n1:orientation="vertical" n1:paddingBottom="5.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip">
+                <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:paddingLeft="@dimen/zm_setting_item_padding_left" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <EditText n1:enabled="false" n1:id="@id/edtEmail" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:editable="false" style="@style/ZMEditText.SettingsItem" />
+                </LinearLayout>
+                <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:paddingLeft="@dimen/zm_setting_item_padding_left" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <EditText n1:id="@id/edtPassword" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:hint="@string/zm_hint_zoom_pwd" n1:selectAllOnFocus="true" n1:maxLength="32" n1:inputType="textPassword" n1:imeOptions="actionNext" n1:contentDescription="@string/zm_hint_zoom_pwd" style="@style/ZMEditText.SettingsItem">
+                        <requestFocus />
+                    </EditText>
+                </LinearLayout>
+                <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:paddingLeft="@dimen/zm_setting_item_padding_left" n1:paddingRight="@dimen/zm_setting_item_padding_right" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <EditText n1:id="@id/edtVerifyPassword" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:hint="@string/zm_hint_retype_pwd" n1:selectAllOnFocus="true" n1:maxLength="32" n1:inputType="textPassword" n1:imeOptions="actionDone" n1:contentDescription="@string/zm_hint_retype_pwd" style="@style/ZMEditText.SettingsItem" />
+                </LinearLayout>
+            </us.zoom.androidlib.widget.ZMSettingsCategory>
+            <TextView n1:textColor="#ffff0000" n1:gravity="center" n1:id="@id/txtError" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:text="@string/zm_msg_confirm_password_not_match" style="@style/ZMTextView.Medium" />
+            <Button n1:id="@id/btnOK" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="15.0dip" n1:layout_marginTop="10.0dip" n1:layout_marginRight="15.0dip" n1:text="@string/zm_btn_ok" style="@style/ZMButton.HappyPath" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

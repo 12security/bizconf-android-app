@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/udesk_panel_zoom_imageview" android:background="@color/udesk_black" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr">
+    <Button android:textSize="@dimen/udesk_sp16" android:textColor="@android:color/white" android:id="@+id/udesk_zoom_save" android:background="@null" android:padding="@dimen/udesk_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/udesk_save" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"/>
+    <me.relex.photodraweeview.PhotoDraweeView android:id="@+id/udesk_zoom_imageview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/udesk_zoom_save" android:layout_alignParentTop="true"/>
+</RelativeLayout>

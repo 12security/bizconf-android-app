@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@android:color/white" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:layout_width="fill_parent" n1:layout_height="@dimen/zm_pt_titlebar_height" style="@style/ZMTitleBar.Light">
+        <TextView n1:layout_gravity="center|left" n1:id="@id/btn_cancel" n1:paddingLeft="13.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_btn_cancel" style="@style/ZMButton.NoBackground" />
+        <TextView n1:textSize="17.0sp" n1:textColor="@android:color/black" n1:layout_gravity="center" n1:id="@id/title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_mm_edit_message_19884" />
+        <TextView n1:layout_gravity="center|right" n1:id="@id/btn_done" n1:paddingRight="7.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_btn_done" style="@style/ZMButton.NoBackground" />
+    </FrameLayout>
+    <View n1:background="@color/zm_mm_edit_message_divider" n1:layout_width="fill_parent" n1:layout_height="0.5dip" />
+    <EditText n1:gravity="top" n1:id="@id/ext_content" n1:background="@android:color/white" n1:padding="13.0dip" n1:layout_width="fill_parent" n1:layout_height="0.0px" n1:maxLength="4096" n1:layout_weight="1.0" n1:inputType="textCapSentences|textMultiLine" />
+</LinearLayout>

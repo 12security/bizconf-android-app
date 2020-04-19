@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/udesk_demo_activity" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr">
+    <cn.udesk.widget.UdeskTitleBar android:id="@+id/udesktitlebar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/udesk_helper_search" android:background="#ffc9c8ce" android:visibility="gone" android:layout_width="match_parent" android:layout_height="44dp">
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/udesk_helpersearch_editext" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="32dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+                <LinearLayout android:gravity="center" android:id="@+id/udesk_helper_search_button" android:layout_width="40dp" android:layout_height="match_parent" android:layout_alignParentRight="true">
+                    <ImageView android:layout_gravity="center" android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/udesk_ic_search"/>
+                </LinearLayout>
+                <EditText android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="#ff606060" android:id="@+id/udesk_helper_search_input" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="32dp" android:hint="@string/udesk_navi_helper_input_hint" android:singleLine="true" android:layout_toLeftOf="@+id/udesk_helper_search_button" android:layout_alignParentLeft="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/udesk_listviewcontain_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include layout="@layout/udesk_line_horizontal"/>
+            <ListView android:scrollbarStyle="outsideOverlay" android:id="@+id/udesk_helper_list" android:background="@android:color/white" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:cacheColorHint="@android:color/transparent" android:divider="#ffcecece" android:dividerHeight="1px"/>
+            <include layout="@layout/udesk_line_horizontal"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/udesk_navi_may_search_fail" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <TextView android:textSize="@dimen/udesk_sp14" android:textColor="@color/udesk_color_text_gray" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/udesk_label_search_fail"/>
+            <TextView android:textSize="@dimen/udesk_sp16" android:textColor="@color/udesk_color_text_gray" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/udesk_navi_to_im" android:background="@drawable/udesk_helper_shape_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/udesk_navi_open_im"/>
+        </LinearLayout>
+        <cn.udesk.widget.UdeskLoadingView android:id="@+id/udesk_loading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

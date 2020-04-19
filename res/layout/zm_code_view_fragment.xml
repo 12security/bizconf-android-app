@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:background="@color/zm_code_view_title_bg" n1:layout_width="fill_parent" n1:layout_height="@dimen/zm_picker_titlebar_height">
+        <TextView n1:textSize="16.0dip" n1:textColor="@color/zm_black" n1:layout_gravity="center" n1:id="@id/zm_code_view_title_name" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Untitled" />
+        <ImageView n1:layout_gravity="center|right" n1:id="@id/zm_code_view_close_btn" n1:padding="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="13.0dip" n1:src="@drawable/zm_btn_viewer_close" />
+    </FrameLayout>
+    <View n1:background="@color/zm_code_view_line" n1:layout_width="fill_parent" n1:layout_height="1.0dip" />
+    <com.zipow.videobox.view.ZMCodeView n1:id="@id/codeView" n1:layout_width="fill_parent" n1:layout_height="0.0px" n1:layout_weight="1.0" />
+    <View n1:background="@color/zm_code_view_line" n1:layout_width="fill_parent" n1:layout_height="1.0dip" />
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:background="@color/zm_white" n1:layout_width="fill_parent" n1:layout_height="46.0dip">
+        <TextView n1:textSize="14.0dip" n1:textColor="@color/zm_code_view_bottom_txt" n1:id="@id/zm_code_view_bottom_content" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="16.0dip" n1:text="" />
+        <LinearLayout n1:gravity="center|right" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <ImageView n1:id="@id/zm_code_view_more_btn" n1:padding="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="11.0dip" n1:src="@drawable/zm_ic_btn_more" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

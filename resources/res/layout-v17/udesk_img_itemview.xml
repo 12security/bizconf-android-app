@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="@dimen/udesk_80" android:layout_height="@dimen/udesk_80" android:layoutDirection="ltr">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/udesk_iv_picture" android:layout_width="@dimen/udesk_80" android:layout_height="@dimen/udesk_80" xmlns:ns1="http://schemas.android.com/apk/res-auto" ns1:actualImageScaleType="0" xmlns:ns2="http://schemas.android.com/apk/res-auto" ns2:placeholderImage="@drawable/udesk_image_placeholder"/>
+    <ImageView android:id="@+id/video_tip" android:background="@drawable/udesk_video_play" android:visibility="gone" android:layout_width="40dp" android:layout_height="40dp" android:layout_centerInParent="true"/>
+</RelativeLayout>

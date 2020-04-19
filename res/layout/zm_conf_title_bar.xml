@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:gravity="center_vertical" n1:id="@id/viewLeft" n1:paddingLeft="4.0dip" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+        <ImageView n1:id="@id/imgAudioSource" n1:background="@null" n1:padding="4.0dip" n1:focusable="true" n1:clickable="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="4.0dip" n1:src="@drawable/zm_ic_speaker_off" />
+        <ImageView n1:id="@id/btnSwitchCamera" n1:background="@null" n1:padding="4.0dip" n1:focusable="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/zm_ic_switch_camera" />
+    </LinearLayout>
+    <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:id="@id/llCenter" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+            <TextView n1:textSize="16.0sp" n1:textStyle="normal" n1:id="@id/txtMeetingNumber" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="111-111-1111" style="@style/ZMTextView.Large.OnDark" />
+            <ImageView n1:id="@id/imgE2EIcon" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="5.0dip" n1:src="@drawable/zm_ic_e2e_meeting" />
+        </LinearLayout>
+        <TextView n1:id="@id/txtTimer" n1:layout_width="wrap_content" n1:layout_height="wrap_content" style="@style/ZMTextView.Normal.OnDark" />
+    </LinearLayout>
+    <LinearLayout n1:gravity="center|right" n1:orientation="horizontal" n1:id="@id/ll_right" n1:paddingLeft="8.0dip" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+        <com.zipow.videobox.view.PListNameRoleLayout n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+            <RelativeLayout n1:id="@id/rlQa" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:minWidth="48.0dip">
+                <Button n1:textSize="13.0sp" n1:ellipsize="middle" n1:id="@id/btnQA" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="16.0dip" n1:text="@string/zm_qa_title_qa" n1:singleLine="true" n1:layout_alignParentTop="true" n1:layout_centerHorizontal="true" style="@style/ZMButton.Small.OnLight" />
+                <TextView n1:gravity="center" n1:id="@id/txtQAOpenNumber" n1:visibility="visible" n1:duplicateParentState="true" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="-10.0dip" n1:layout_marginTop="0.0dip" n1:text="99" n1:singleLine="true" n1:layout_toRightOf="@id/btnQA" style="@style/ZMTextView.UnreadMessageCount.Small" />
+            </RelativeLayout>
+            <Button n1:ellipsize="middle" n1:id="@id/btnLeave" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/zm_btn_leave_meeting" n1:singleLine="true" style="@style/ZMButton.TitleBar.Warning" />
+        </com.zipow.videobox.view.PListNameRoleLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center" n1:orientation="vertical" n1:paddingLeft="10.0dip" n1:paddingTop="20.0dip" n1:paddingRight="10.0dip" n1:paddingBottom="20.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textStyle="normal" n1:textColor="@color/zm_highlight" n1:gravity="center" n1:id="@id/txtTitle" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="10.0dip" n1:text="@string/zm_title_enable_addrbook" style="@style/ZMTextView.ExtremLarge" />
+    <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="10.0dip" n1:src="@drawable/zm_addrbook_no_match" />
+    <TextView n1:gravity="center" n1:id="@id/txtMessage" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="10.0dip" n1:text="@string/zm_msg_enable_addrbook" style="@style/ZMTextView.Small.Dimmed" />
+    <Button n1:id="@id/btnEnable" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="20.0dip" n1:layout_marginRight="20.0dip" n1:layout_marginBottom="10.0dip" n1:text="@string/zm_btn_enable_addrbook" />
+</LinearLayout>

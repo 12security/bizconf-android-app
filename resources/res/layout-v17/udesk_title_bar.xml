@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/udesk_root" android:background="@color/udesk_titlebar_bg1" android:layout_width="match_parent" android:layout_height="@dimen/udesk_titlebar_height" android:layoutDirection="ltr">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/udesk_back_linear" android:layout_width="50dp" android:layout_height="match_parent">
+            <ImageView android:id="@+id/udesk_back_img" android:layout_width="@dimen/udesk_20" android:layout_height="@dimen/udesk_20" android:src="@drawable/udesk_titlebar_back"/>
+        </LinearLayout>
+        <TextView android:id="@+id/udesk_content" android:layout_marginLeft="@dimen/udesk_15" android:maxWidth="300dp" style="@style/udesk_titlebar_button_text_style"/>
+        <ImageView android:id="@+id/udesk_status" android:visibility="gone" android:layout_width="@dimen/udesk_8" android:layout_height="@dimen/udesk_8" android:layout_marginLeft="@dimen/udesk_2" android:src="@drawable/udesk_online_status"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_centerInParent="true">
+        <ImageView android:id="@+id/udesk_transfer_agent" android:visibility="gone" android:layout_width="@dimen/udesk_15" android:layout_height="@dimen/udesk_15" android:layout_marginRight="@dimen/udesk_2" android:src="@drawable/udesk_tip_agent"/>
+        <TextView android:id="@+id/udesk_titlebar_right" android:visibility="gone" android:layout_marginRight="@dimen/udesk_titlebar_right_margin" style="@style/udesk_titlebar_button_text_style"/>
+    </LinearLayout>
+</RelativeLayout>
